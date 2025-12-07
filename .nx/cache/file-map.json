@@ -1,0 +1,175 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.0.0",
+  "deps": {
+    "@nestjs/common": "10.3.0",
+    "@nestjs/core": "10.3.0",
+    "@nestjs/platform-express": "10.3.0",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "7.8.1",
+    "tslib": "2.6.2",
+    "next": "14.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@nx/next": "17.0.0",
+    "@nx/node": "17.0.0",
+    "@nx/workspace": "17.0.0",
+    "@types/node": "20.11.0",
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14",
+    "eslint": "8.56.0",
+    "nx": "17.0.0",
+    "typescript": "5.3.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "6468668766053406242"
+      },
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "12141744713065377524"
+      },
+      {
+        "file": ".nx/cache/d/server-process.json",
+        "hash": "7136911860454834160"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "1403062183282405948"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "4804965866394472549"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "8245350780192929841"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "11623478261097083428"
+      },
+      {
+        "file": ".nx/cache/run.json",
+        "hash": "4093284936515513364"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/7263558530447005671",
+        "hash": "8877440974670831933"
+      },
+      {
+        "file": "README.md",
+        "hash": "12216169280513471110"
+      },
+      {
+        "file": "nx.json",
+        "hash": "5672368071583008047"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "14525180815947838874"
+      },
+      {
+        "file": "package.json",
+        "hash": "4911540890043148930"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7917511511453749528"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~80d8a99a",
+        "hash": "12737251896490499801"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/15088081148979690031",
+        "hash": "3244421341483603138"
+      }
+    ],
+    "projectFileMap": {
+      "api": [
+        {
+          "file": "apps/api/project.json",
+          "hash": "250026334483773908"
+        },
+        {
+          "file": "apps/api/src/app.controller.ts",
+          "hash": "12871931785583091281",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app.module.ts",
+          "hash": "4590305082660932420",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app.service.ts",
+          "hash": "12929467463223358914",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "12913724749572653689",
+          "deps": [
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "13238060302026751848"
+        }
+      ],
+      "web": [
+        {
+          "file": "apps/web/app/globals.css",
+          "hash": "15560528208442266563"
+        },
+        {
+          "file": "apps/web/app/layout.tsx",
+          "hash": "17838700769853581247",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/page.tsx",
+          "hash": "16964969061119736740"
+        },
+        {
+          "file": "apps/web/next-env.d.ts",
+          "hash": "650381615855576712"
+        },
+        {
+          "file": "apps/web/next.config.js",
+          "hash": "16388411900715645371"
+        },
+        {
+          "file": "apps/web/project.json",
+          "hash": "5071143176759411042"
+        },
+        {
+          "file": "apps/web/styles/placeholder.txt",
+          "hash": "9274633116156084947"
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "6023666558334324888"
+        },
+        {
+          "file": "apps/web/public/.gitkeep",
+          "hash": "3244421341483603138"
+        }
+      ]
+    }
+  }
+}
