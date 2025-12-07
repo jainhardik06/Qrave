@@ -19,6 +19,7 @@
   },
   "projects": {
     "api": "apps/api",
-    "web": "apps/web"
+    "web": "apps/web",
+    "shared-types": "libs/shared-types"
   }
 }
