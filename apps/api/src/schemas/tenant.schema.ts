@@ -13,6 +13,9 @@ export class Tenant {
 
   @Prop({ type: String, default: 'TRIAL' })
   subscription_status!: string;
+
+  @Prop({ type: Object, default: {} })
+  features?: Record<string, boolean>;
 }
 
 export const TenantSchema = SchemaFactory.createForClass(Tenant);

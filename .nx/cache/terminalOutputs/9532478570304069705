@@ -1,0 +1,25 @@
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app.module.ts(2,30): error TS2307: Cannot find module '@nestjs/config' or its corresponding type declarations.
+apps/api/src/app/schemas/dish.schema.ts(7,3): error TS2564: Property 'name' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(10,3): error TS2564: Property 'description' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(13,3): error TS2564: Property 'price' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(16,3): error TS2564: Property 'category' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(19,3): error TS2564: Property 'image_url' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(22,3): error TS2564: Property 'is_available' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(33,3): error TS2564: Property 'recipe' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/upload/upload.controller.ts(23,7): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app.module.ts(2,30): error TS2307: Cannot find module '@nestjs/config' or its corresponding type declarations.
+apps/api/src/app/schemas/dish.schema.ts(7,3): error TS2564: Property 'name' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(10,3): error TS2564: Property 'description' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(13,3): error TS2564: Property 'price' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(16,3): error TS2564: Property 'category' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(19,3): error TS2564: Property 'image_url' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(22,3): error TS2564: Property 'is_available' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/schemas/dish.schema.ts(33,3): error TS2564: Property 'recipe' has no initializer and is not definitely assigned in the constructor.
+apps/api/src/app/upload/upload.controller.ts(23,7): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+Warning: command "tsc -p apps/api/tsconfig.json" exited with non-zero status code

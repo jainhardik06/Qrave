@@ -4,12 +4,26 @@
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 19.2s
-^C[2m> [22mcd apps/web && npx next dev -p 3000
+ [32m[1m✓[22m[39m Ready in 23.1s
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 32s (455 modules)
+ GET / [32m200[39m in 32925ms
+ [32m[1m✓[22m[39m Compiled in 905ms (441 modules)
+ GET / [32m200[39m in 230ms
+ GET / [32m200[39m in 124ms
+ GET / [32m200[39m in 81ms
+[2m> [22mcd apps/web && npx next dev -p 3000
 
   [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 19.2s
-^CWarning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code
+ [32m[1m✓[22m[39m Ready in 23.1s
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 32s (455 modules)
+ GET / [32m200[39m in 32925ms
+ [32m[1m✓[22m[39m Compiled in 905ms (441 modules)
+ GET / [32m200[39m in 230ms
+ GET / [32m200[39m in 124ms
+ GET / [32m200[39m in 81ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

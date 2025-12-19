@@ -1,0 +1,9 @@
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/menu/menu.module.ts(6,38): error TS2307: Cannot find module '../schemas/tenant.schema' or its corresponding type declarations.
+apps/api/src/app/upload/upload.module.ts(4,38): error TS2307: Cannot find module '../schemas/tenant.schema' or its corresponding type declarations.
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/menu/menu.module.ts(6,38): error TS2307: Cannot find module '../schemas/tenant.schema' or its corresponding type declarations.
+apps/api/src/app/upload/upload.module.ts(4,38): error TS2307: Cannot find module '../schemas/tenant.schema' or its corresponding type declarations.
+Warning: command "tsc -p apps/api/tsconfig.json" exited with non-zero status code

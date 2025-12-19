@@ -43,21 +43,27 @@ export class AuthService {
 
     const isMatch = await bcrypt.compare(dto.password, user.password_hash);
     if (!isMatch) throw new UnauthorizedException('Invalid credentials');
-
-    return this.generateToken(user, user.tenant_id.toString());
+    const tenantId = user.tenant_id ? user.tenant_id.toString() : null;
+    return this.generateToken(user, tenantId ?? undefined);
   }
 
-  private generateToken(user: User, tenantId: string) {
+  private generateToken(user: User, tenantId?: string | null) {
+    const role = (user as any).role;
+    const permissions = role === 'SUPERADMIN' || role === 'OWNER' ? ['*'] : [];
+
     const payload = {
       sub: (user as any)._id?.toString?.() ?? undefined,
       email: (user as any).email,
-      role: (user as any).role,
-      tenant_id: tenantId,
+      role,
+      tenant_id: tenantId ?? null,
+      permissions,
     };
 
     return {
       access_token: this.jwtService.sign(payload),
-      tenant_id: tenantId,
+      tenant_id: tenantId ?? null,
+      role,
+      permissions,
     };
   }
 }

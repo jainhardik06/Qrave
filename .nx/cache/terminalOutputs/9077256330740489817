@@ -1,0 +1,79 @@
+[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +27ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[31m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the FeatureFlagGuard (Reflector, ?). Please make sure that the argument "TenantModel" at index [1] is available in the UploadModule context.
+
+Potential solutions:
+- Is UploadModule a valid NestJS module?
+- If "TenantModel" is a provider, is it part of the current UploadModule?
+- If "TenantModel" is exported from a separate @Module, is that module imported within UploadModule?
+  @Module({
+    imports: [ /* the Module containing "TenantModel" */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the FeatureFlagGuard (Reflector, ?). Please make sure that the argument "TenantModel" at index [1] is available in the UploadModule context.
+
+Potential solutions:
+- Is UploadModule a valid NestJS module?
+- If "TenantModel" is a provider, is it part of the current UploadModule?
+- If "TenantModel" is exported from a separate @Module, is that module imported within UploadModule?
+  @Module({
+    imports: [ /* the Module containing "TenantModel" */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at async Injector.resolveComponentInstance (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at async resolveParam (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 1)
+    at async Injector.resolveConstructorParams (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at async Injector.loadInstance (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at async Injector.loadInjectable (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:94:9)
+    at async E:\D\Qrave\node_modules\@nestjs\core\injector\instance-loader.js:80:13
+    at async Promise.all (index 2)
+    at async InstanceLoader.createInstancesOfInjectables (E:\D\Qrave\node_modules\@nestjs\core\injector\instance-loader.js:79:9)
+[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +27ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[31m[Nest] 31380  - [39m19/12/2025, 1:10:07 pm [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the FeatureFlagGuard (Reflector, ?). Please make sure that the argument "TenantModel" at index [1] is available in the UploadModule context.
+
+Potential solutions:
+- Is UploadModule a valid NestJS module?
+- If "TenantModel" is a provider, is it part of the current UploadModule?
+- If "TenantModel" is exported from a separate @Module, is that module imported within UploadModule?
+  @Module({
+    imports: [ /* the Module containing "TenantModel" */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the FeatureFlagGuard (Reflector, ?). Please make sure that the argument "TenantModel" at index [1] is available in the UploadModule context.
+
+Potential solutions:
+- Is UploadModule a valid NestJS module?
+- If "TenantModel" is a provider, is it part of the current UploadModule?
+- If "TenantModel" is exported from a separate @Module, is that module imported within UploadModule?
+  @Module({
+    imports: [ /* the Module containing "TenantModel" */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at async Injector.resolveComponentInstance (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at async resolveParam (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 1)
+    at async Injector.resolveConstructorParams (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at async Injector.loadInstance (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at async Injector.loadInjectable (E:\D\Qrave\node_modules\@nestjs\core\injector\injector.js:94:9)
+    at async E:\D\Qrave\node_modules\@nestjs\core\injector\instance-loader.js:80:13
+    at async Promise.all (index 2)
+    at async InstanceLoader.createInstancesOfInjectables (E:\D\Qrave\node_modules\@nestjs\core\injector\instance-loader.js:79:9)
+Warning: command "node dist/apps/api/main.js" exited with non-zero status code

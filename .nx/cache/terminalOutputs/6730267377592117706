@@ -1,0 +1,31 @@
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/auth/auth.service.ts(47,37): error TS18048: 'user.tenant_id' is possibly 'undefined'.
+apps/api/src/app/common/guards/feature-flag.guard.ts(6,24): error TS2307: Cannot find module '../../schemas/tenant.schema' or its corresponding type declarations.
+apps/api/src/app/common/guards/feature-flag.guard.ts(7,32): error TS2307: Cannot find module '../../common/context/request-context' or its corresponding type declarations.
+apps/api/src/app/menu/menu.controller.ts(48,40): error TS2345: Argument of type 'UpdateDishDto' is not assignable to parameter of type 'Partial<CreateDishDto>'.
+  Types of property 'recipe' are incompatible.
+    Type 'UpdateRecipeItemDto[] | undefined' is not assignable to type 'RecipeItemDto[] | undefined'.
+      Type 'UpdateRecipeItemDto[]' is not assignable to type 'RecipeItemDto[]'.
+        Type 'UpdateRecipeItemDto' is not assignable to type 'RecipeItemDto'.
+          Types of property 'inventory_item_id' are incompatible.
+            Type 'string | undefined' is not assignable to type 'string'.
+              Type 'undefined' is not assignable to type 'string'.
+apps/api/src/main.ts(15,11): error TS2349: This expression is not callable.
+  Type 'typeof morgan' has no call signatures.
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/auth/auth.service.ts(47,37): error TS18048: 'user.tenant_id' is possibly 'undefined'.
+apps/api/src/app/common/guards/feature-flag.guard.ts(6,24): error TS2307: Cannot find module '../../schemas/tenant.schema' or its corresponding type declarations.
+apps/api/src/app/common/guards/feature-flag.guard.ts(7,32): error TS2307: Cannot find module '../../common/context/request-context' or its corresponding type declarations.
+apps/api/src/app/menu/menu.controller.ts(48,40): error TS2345: Argument of type 'UpdateDishDto' is not assignable to parameter of type 'Partial<CreateDishDto>'.
+  Types of property 'recipe' are incompatible.
+    Type 'UpdateRecipeItemDto[] | undefined' is not assignable to type 'RecipeItemDto[] | undefined'.
+      Type 'UpdateRecipeItemDto[]' is not assignable to type 'RecipeItemDto[]'.
+        Type 'UpdateRecipeItemDto' is not assignable to type 'RecipeItemDto'.
+          Types of property 'inventory_item_id' are incompatible.
+            Type 'string | undefined' is not assignable to type 'string'.
+              Type 'undefined' is not assignable to type 'string'.
+apps/api/src/main.ts(15,11): error TS2349: This expression is not callable.
+  Type 'typeof morgan' has no call signatures.
+Warning: command "tsc -p apps/api/tsconfig.json" exited with non-zero status code
