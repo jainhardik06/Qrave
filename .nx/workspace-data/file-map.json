@@ -1,35 +1,6 @@
 {
   "version": "6.0",
-  "nxVersion": "17.0.0",
-  "deps": {
-    "@nestjs/common": "10.3.0",
-    "@nestjs/core": "10.3.0",
-    "@nestjs/jwt": "10.2.0",
-    "@nestjs/passport": "10.0.3",
-    "@nestjs/platform-express": "10.3.0",
-    "@nestjs/mongoose": "10.0.1",
-    "bcrypt": "5.1.1",
-    "mongoose": "7.6.3",
-    "passport": "0.7.0",
-    "passport-jwt": "4.0.1",
-    "reflect-metadata": "0.1.13",
-    "rxjs": "7.8.1",
-    "tslib": "2.6.2",
-    "next": "14.0.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "@nx/next": "17.0.0",
-    "@nx/node": "17.0.0",
-    "@nx/workspace": "17.0.0",
-    "@types/node": "20.11.0",
-    "@types/bcrypt": "5.0.2",
-    "@types/passport-jwt": "4.0.1",
-    "@types/react": "18.2.33",
-    "@types/react-dom": "18.2.14",
-    "eslint": "8.56.0",
-    "nx": "17.0.0",
-    "typescript": "5.3.3"
-  },
+  "nxVersion": "22.1.3",
   "pathMappings": {
     "@qrave/shared-types": [
       "libs/shared-types/src/index.ts"
@@ -43,19 +14,11 @@
     "nonProjectFiles": [
       {
         "file": ".env.example",
-        "hash": "11184115284436907729"
+        "hash": "498708391746094572"
       },
       {
         "file": ".gitignore",
         "hash": "6468668766053406242"
-      },
-      {
-        "file": ".nx/cache/d/daemon.log",
-        "hash": "11360189252044308577"
-      },
-      {
-        "file": ".nx/cache/d/server-process.json",
-        "hash": "2012656084590824828"
       },
       {
         "file": "README.md",
@@ -67,46 +30,28 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "17957219549941231161"
+        "hash": "6830772689189522656"
       },
       {
         "file": "package.json",
-        "hash": "17784472763675468778"
+        "hash": "3695083779044728347"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "15378423341984598940"
-      },
-      {
-        "file": ".nx/cache/file-map.json",
-        "hash": "4957018529565661448"
-      },
-      {
-        "file": ".nx/cache/lockfile.hash",
-        "hash": "6997087728492259517"
-      },
-      {
-        "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "4397362931756585695"
-      },
-      {
-        "file": ".nx/cache/project-graph.json",
-        "hash": "5621239237860424789"
-      },
-      {
-        "file": ".nx/cache/terminalOutputs/76422543580692896",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".nx/cache/project-graph.json~2b597222",
-        "hash": "5621239237860424789"
-      },
-      {
-        "file": ".nx/cache/file-map.json~0e718891",
-        "hash": "14289403364888679529"
       }
     ],
     "projectFileMap": {
+      "shared-types": [
+        {
+          "file": "libs/shared-types/project.json",
+          "hash": "11102004796360553658"
+        },
+        {
+          "file": "libs/shared-types/src/index.ts",
+          "hash": "12740873421295123623"
+        }
+      ],
       "api": [
         {
           "file": "apps/api/project.json",
@@ -121,9 +66,10 @@
         },
         {
           "file": "apps/api/src/app.module.ts",
-          "hash": "3680873571234279249",
+          "hash": "15454945697903821204",
           "deps": [
-            "npm:@nestjs/common"
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose"
           ]
         },
         {
@@ -134,8 +80,51 @@
           ]
         },
         {
+          "file": "apps/api/src/app/auth/auth.controller.ts",
+          "hash": "1811232649393220132",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/auth/auth.module.ts",
+          "hash": "12021025231076348691",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose",
+            "npm:@nestjs/jwt"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/auth/auth.service.ts",
+          "hash": "6094033022369115393",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose",
+            "npm:mongoose",
+            "npm:@nestjs/jwt",
+            "npm:bcrypt"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/auth/jwt.strategy.ts",
+          "hash": "2371913318062094448",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport",
+            "npm:passport-jwt"
+          ]
+        },
+        {
+          "file": "apps/api/src/common/context/request-context.ts",
+          "hash": "12179945852916667889",
+          "deps": [
+            "npm:mongoose"
+          ]
+        },
+        {
           "file": "apps/api/src/database/database.module.ts",
-          "hash": "3650201977006978146",
+          "hash": "6124873390492999457",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose"
@@ -149,18 +138,40 @@
           ]
         },
         {
-          "file": "apps/api/tsconfig.json",
-          "hash": "13238060302026751848"
-        }
-      ],
-      "shared-types": [
-        {
-          "file": "libs/shared-types/project.json",
-          "hash": "11102004796360553658"
+          "file": "apps/api/src/middleware/tenancy.middleware.ts",
+          "hash": "5698043171054925543",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/jwt",
+            "npm:express"
+          ]
         },
         {
-          "file": "libs/shared-types/src/index.ts",
-          "hash": "12740873421295123623"
+          "file": "apps/api/src/plugins/tenancy.plugin.ts",
+          "hash": "1827446928409499053",
+          "deps": [
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/schemas/tenant.schema.ts",
+          "hash": "12249866154165703552",
+          "deps": [
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/schemas/user.schema.ts",
+          "hash": "2628883992384381507",
+          "deps": [
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "13238060302026751848"
         }
       ],
       "web": [
@@ -181,7 +192,7 @@
         },
         {
           "file": "apps/web/next-env.d.ts",
-          "hash": "650381615855576712"
+          "hash": "10054213917412045845"
         },
         {
           "file": "apps/web/next.config.js",
@@ -205,5 +216,6 @@
         }
       ]
     }
-  }
+  },
+  "externalNodesHash": "9464236415935910010"
 }

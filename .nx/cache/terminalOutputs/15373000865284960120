@@ -1,0 +1,5 @@
+[2m> [22mnode dist/apps/api/main.js
+
+^C[2m> [22mnode dist/apps/api/main.js
+
+^CWarning: command "node dist/apps/api/main.js" exited with non-zero status code

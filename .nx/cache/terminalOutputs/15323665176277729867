@@ -1,0 +1,47 @@
+[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:54 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +164ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +724ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +19ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +10ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/register, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +9ms[39m
+Qrave API running on http://localhost:3001
+[31m[Nest] 37860  - [39m08/12/2025, 8:02:06 pm [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39m[31mE11000 duplicate key error collection: test.users index: email_1 dup key: { email: "owner@qravepizza.com" }[39m
+MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "owner@qravepizza.com" }
+    at D:\D\Qrave\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\D\Qrave\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:54 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +164ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +724ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +19ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +10ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/register, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37860  - [39m08/12/2025, 8:00:55 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +9ms[39m
+Qrave API running on http://localhost:3001
+[31m[Nest] 37860  - [39m08/12/2025, 8:02:06 pm [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39m[31mE11000 duplicate key error collection: test.users index: email_1 dup key: { email: "owner@qravepizza.com" }[39m
+MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "owner@qravepizza.com" }
+    at D:\D\Qrave\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\D\Qrave\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Warning: command "node dist/apps/api/main.js" exited with non-zero status code

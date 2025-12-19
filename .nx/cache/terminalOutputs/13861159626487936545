@@ -1,0 +1,7 @@
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/schemas/tenant.schema.ts(19,18): error TS2345: Argument of type '"skipTenantPlugin"' is not assignable to parameter of type 'keyof SchemaOptions<unknown, {}, {}, {}, {}, Document<unknown, {}, unknown> & { _id: ObjectId; }>'.
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/schemas/tenant.schema.ts(19,18): error TS2345: Argument of type '"skipTenantPlugin"' is not assignable to parameter of type 'keyof SchemaOptions<unknown, {}, {}, {}, {}, Document<unknown, {}, unknown> & { _id: ObjectId; }>'.
+Warning: command "tsc -p apps/api/tsconfig.json" exited with non-zero status code
