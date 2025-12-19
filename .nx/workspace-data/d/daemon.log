@@ -5002,3 +5002,200 @@ DEBUG nx::native::tasks::task_hasher: hash_plans COMPLETED in 22.665ms - process
 [NX v22.1.3 Daemon Server] - 2025-12-19T08:11:50.888Z - Done responding to the client handleRunPostTasksExecution
 [NX v22.1.3 Daemon Server] - 2025-12-19T08:11:50.888Z - Handled json message POST_TASKS_EXECUTION. Handling time: 1. Response time: 0.
 [NX v22.1.3 Daemon Server] - 2025-12-19T08:11:50.931Z - Closed a connection. Number of open connections: 0
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:00.817Z - Established a connection. Number of open connections: 1
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:00.818Z - Closed a connection. Number of open connections: 0
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:00.819Z - Established a connection. Number of open connections: 1
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.057Z - Received raw message of length 32
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.057Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.057Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.057Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.057Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.057Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.057Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 0.
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.133Z - Received raw message of length 32
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.133Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.133Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.134Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.163Z - Wrote project graph cache to E:\D\Qrave\.nx\workspace-data\project-graph.json
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.164Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.164Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.164Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.167Z - Time taken for 'total for creating and serializing project graph' 30.16649999981746ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.169Z - Done responding to the client project-graph
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.169Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 31. Response time: 5.
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.183Z - Received raw message of length 654
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.184Z - Received json message of type PRE_TASKS_EXECUTION
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.185Z - Serializing response for PRE_TASKS_EXECUTION message in json mode
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.185Z - Responding to PRE_TASKS_EXECUTION message
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.185Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.185Z - Time taken for 'preTasksExecution' 1.038399999961257ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.186Z - Done responding to the client handleRunPreTasksExecution
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.186Z - Handled json message PRE_TASKS_EXECUTION. Handling time: 1. Response time: 1.
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.237Z - Received raw message of length 8029
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.238Z - Received json message of type HASH_TASKS
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.238Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.267Z - Wrote project graph cache to E:\D\Qrave\.nx\workspace-data\project-graph.json
+DEBUG nx::native::tasks::hash_planner: get_plans_internal COMPLETED in 18.6321ms - processed 3 tasks (setup: 16.9341ms, parallel_planning: 1.6544ms)
+DEBUG nx::native::tasks::task_hasher: hash_plans COMPLETED in 18.3045ms - processed 3 plans (setup: 1.3584ms, hashing: 16.9243ms, assembly: 6.4836ms)
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.316Z - Serializing response for HASH_TASKS message in json mode
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.317Z - Responding to HASH_TASKS message
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.317Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.317Z - Time taken for 'write cache' 29.319199999794364ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.318Z - Done responding to the client handleHashTasks
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.318Z - Handled json message HASH_TASKS. Handling time: 78. Response time: 2.
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.378Z - Received raw message of length 154
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.378Z - Received json message of type GET_ESTIMATED_TASK_TIMINGS
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.378Z - Serializing response for GET_ESTIMATED_TASK_TIMINGS message in json mode
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.378Z - Responding to GET_ESTIMATED_TASK_TIMINGS message
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.378Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.378Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:01.378Z - Handled json message GET_ESTIMATED_TASK_TIMINGS. Handling time: 0. Response time: 0.
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:03.881Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:03.936Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:03.996Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.047Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.085Z - Received raw message of length 148
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.085Z - Received json message of type RECORD_OUTPUTS_HASH
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.104Z - Serializing response for RECORD_OUTPUTS_HASH message in json mode
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.104Z - Responding to RECORD_OUTPUTS_HASH message
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.104Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.105Z - Done responding to the client recordOutputsHash
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.105Z - Handled json message RECORD_OUTPUTS_HASH. Handling time: 19. Response time: 1.
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.111Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.397Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.474Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.699Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.779Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:04.857Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:21.095Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:21.475Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:21.537Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:22.197Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:22.341Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:22.690Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:22.752Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:23.021Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:13:23.260Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:11.818Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:11.887Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:11.952Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:12.036Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:12.153Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:12.222Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:12.826Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:13.402Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:13.474Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:13.591Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:21.983Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:22:22.460Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:23:22.107Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:23:22.535Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:23:22.599Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:23:22.678Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.271Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.281Z - [WATCHER]: README.md was modified
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.442Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.443Z - [REQUEST]: README.md
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.443Z - [REQUEST]: 
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.448Z - Time taken for 'hash changed files from watcher' 52.928599999751896ms
+Time for 'nx/core/project-json:createNodes' 1.0585000002756715
+Time for 'nx/core/package-json:createNodes' 1.5489000002853572
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 14.252800000365824
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.497Z - Time taken for 'build-project-configs' 36.47970000002533ms
+Time for 'build typescript dependencies' 0.0736000002361834
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.533Z - [SYNC]: collect registered sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.534Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.534Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:28:48.534Z - Time taken for 'total execution time for createProjectGraph()' 44.54850000003353ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.363Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.370Z - [WATCHER]: README.md was modified
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.598Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.599Z - [REQUEST]: README.md
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.599Z - [REQUEST]: 
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.611Z - Time taken for 'hash changed files from watcher' 8.776800000108778ms
+Time for 'nx/core/package-json:createNodes' 2.1964000002481043
+Time for 'nx/core/project-json:createNodes' 1.5267000002786517
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 42.32560000009835
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.717Z - Time taken for 'build-project-configs' 73.68999999994412ms
+Time for 'build typescript dependencies' 0.05400000000372529
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.781Z - [SYNC]: collect registered sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.783Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.784Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:30:34.784Z - Time taken for 'total execution time for createProjectGraph()' 93.4089999999851ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:51.682Z - [WATCHER]: README.md was modified
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:51.683Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:52.084Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:52.084Z - [REQUEST]: README.md
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:52.084Z - [REQUEST]: 
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:52.090Z - Time taken for 'hash changed files from watcher' 0.5104000000283122ms
+Time for 'nx/core/package-json:createNodes' 2.185899999924004
+Time for 'nx/core/project-json:createNodes' 1.5690999999642372
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 20.09819999989122
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:52.155Z - Time taken for 'build-project-configs' 40.42189999995753ms
+Time for 'build typescript dependencies' 0.057200000155717134
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:52.235Z - [SYNC]: collect registered sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:52.236Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:52.236Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:33:52.237Z - Time taken for 'total execution time for createProjectGraph()' 96.50780000025406ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:09.379Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:09.383Z - [WATCHER]: README.md was modified
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:10.188Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:10.188Z - [REQUEST]: README.md
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:10.188Z - [REQUEST]: 
+Time for 'nx/core/package-json:createNodes' 0.8171999999321997
+Time for 'nx/core/project-json:createNodes' 0.5656999996863306
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:10.194Z - Time taken for 'hash changed files from watcher' 0.5395999997854233ms
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 16.613200000021607
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:10.252Z - Time taken for 'build-project-configs' 35.942000000271946ms
+Time for 'build typescript dependencies' 0.07349999994039536
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:10.316Z - [SYNC]: collect registered sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:10.318Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:10.318Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:34:10.318Z - Time taken for 'total execution time for createProjectGraph()' 79.69029999990016ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:56.696Z - [WATCHER]: README.md was modified
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:56.697Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:58.312Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:58.312Z - [REQUEST]: README.md
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:58.312Z - [REQUEST]: 
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:58.319Z - Time taken for 'hash changed files from watcher' 1.3490999997593462ms
+Time for 'nx/core/package-json:createNodes' 1.5856000003404915
+Time for 'nx/core/project-json:createNodes' 1.6297999997623265
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 21.315599999856204
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:58.379Z - Time taken for 'build-project-configs' 40.51629999978468ms
+Time for 'build typescript dependencies' 0.13459999999031425
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:58.499Z - [SYNC]: collect registered sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:58.501Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:58.501Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:36:58.502Z - Time taken for 'total execution time for createProjectGraph()' 133.07329999981448ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:26.167Z - [WATCHER]: README.md was deleted
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:26.167Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:29.371Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:29.372Z - [REQUEST]: 
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:29.372Z - [REQUEST]: README.md
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:29.378Z - Time taken for 'hash changed files from watcher' 0.6307000000961125ms
+Time for 'nx/core/package-json:createNodes' 1.2957999999634922
+Time for 'nx/core/project-json:createNodes' 1.0232000001706183
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 18.550100000109524
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:29.434Z - Time taken for 'build-project-configs' 36.05200000014156ms
+Time for 'build typescript dependencies' 0.04920000024139881
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:29.481Z - [SYNC]: collect registered sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:29.483Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:29.483Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:29.483Z - Time taken for 'total execution time for createProjectGraph()' 60.002400000113994ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:46.942Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:46.945Z - [WATCHER]: README.md was modified
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:53.415Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:53.416Z - [REQUEST]: README.md
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:53.416Z - [REQUEST]: 
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:53.424Z - Time taken for 'hash changed files from watcher' 65.42819999996573ms
+Time for 'nx/core/project-json:createNodes' 1.404199999757111
+Time for 'nx/core/package-json:createNodes' 2.0686999997124076
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 29.70439999969676
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:53.472Z - Time taken for 'build-project-configs' 43.478099999949336ms
+Time for 'build typescript dependencies' 0.04740000003948808
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:53.556Z - [SYNC]: collect registered sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:53.558Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:53.558Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:53.559Z - Time taken for 'total execution time for createProjectGraph()' 85.04820000007749ms
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:58.524Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.3 Daemon Server] - 2025-12-19T08:41:58.528Z - [WATCHER]: README.md was modified
