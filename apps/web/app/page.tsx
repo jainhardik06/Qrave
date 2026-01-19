@@ -1,9 +1,11 @@
 async function fetchApiStatus() {
   try {
-    const res = await fetch('http://localhost:3001', { cache: 'no-store' });
-    if (!res.ok) throw new Error('API unreachable');
-    return res.json();
+    const res = await fetch('http://localhost:3001/api', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`API returned ${res.status}`);
+    const data = await res.json();
+    return data || { message: 'API connected' };
   } catch (error) {
+    console.error('API fetch error:', error);
     return { message: 'API not connected yet' };
   }
 }

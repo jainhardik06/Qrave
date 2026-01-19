@@ -1,93 +1,49 @@
 [2m> [22mnode dist/apps/api/main.js
 
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:25 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +82ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +2ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +597ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +28ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +4ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMenuModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAdminModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRolesModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +21ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +5ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +2ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMenuController {/api/menu}:[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu, POST} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu, GET} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, DELETE} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, GET} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, PATCH} route[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/signature, GET} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAdminController {/api/admin}:[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, POST} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRolesController {/api/roles}:[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, POST} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, GET} route[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, GET} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, PATCH} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, DELETE} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[SuperAdminSeeder] [39m[32mSuper admin already exists, skipping seed[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
-Qrave API running on http://localhost:3001
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +20ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:54:03 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (1)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:54:36 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (2)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:55:09 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (3)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:55:42 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (4)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:56:15 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (5)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:56:49 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (6)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:57:22 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (7)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:57:55 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (8)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:58:29 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (9)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:58:29 pm [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mCould not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/[39m
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\D\Qrave\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.asPromise (D:\D\Qrave\node_modules\mongoose\lib\connection.js:1278:11)
+    at async D:\D\Qrave\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:62:112
 [2m> [22mnode dist/apps/api/main.js
 
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:25 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +82ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +2ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +597ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +28ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +4ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMenuModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAdminModule dependencies initialized[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRolesModule dependencies initialized[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +21ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +5ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +2ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMenuController {/api/menu}:[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu, POST} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu, GET} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, DELETE} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, GET} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, PATCH} route[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/signature, GET} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAdminController {/api/admin}:[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, POST} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRolesController {/api/roles}:[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, POST} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, GET} route[39m[38;5;3m +0ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, GET} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, PATCH} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, DELETE} route[39m[38;5;3m +1ms[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[SuperAdminSeeder] [39m[32mSuper admin already exists, skipping seed[39m
-[32m[Nest] 33564  - [39m19/12/2025, 1:38:26 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
-Qrave API running on http://localhost:3001
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +20ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 15992  - [39m19/01/2026, 1:53:32 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:54:03 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (1)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:54:36 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (2)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:55:09 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (3)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:55:42 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (4)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:56:15 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (5)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:56:49 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (6)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:57:22 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (7)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:57:55 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (8)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:58:29 pm [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (9)...[39m
+[31m[Nest] 15992  - [39m19/01/2026, 1:58:29 pm [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mCould not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/[39m
+MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\D\Qrave\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.asPromise (D:\D\Qrave\node_modules\mongoose\lib\connection.js:1278:11)
+    at async D:\D\Qrave\node_modules\@nestjs\mongoose\dist\mongoose-core.module.js:62:112
 Warning: command "node dist/apps/api/main.js" exited with non-zero status code

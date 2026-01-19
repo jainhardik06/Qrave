@@ -17,35 +17,112 @@
         "hash": "13653663135303113341"
       },
       {
-        "file": "package.json",
-        "hash": "16327998386682798674"
+        "file": ".gitignore",
+        "hash": "6468668766053406242"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "15378423341984598940"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "16162588273668625770"
+        "file": "README.md",
+        "hash": "5721681303227786399"
       },
       {
         "file": "nx.json",
         "hash": "3897980461332312024"
       },
       {
-        "file": ".gitignore",
-        "hash": "6468668766053406242"
+        "file": "package-lock.json",
+        "hash": "16162588273668625770"
       },
       {
-        "file": "README.md",
-        "hash": "15515364208459508327"
+        "file": "package.json",
+        "hash": "16327998386682798674"
       },
       {
         "file": "token.txt",
         "hash": "15558633194263700325"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "15378423341984598940"
       }
     ],
     "projectFileMap": {
+      "web": [
+        {
+          "file": "apps/web/app/components/dashboard/AddDishForm.tsx",
+          "hash": "1455565833144944943",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@hookform/resolvers",
+            "npm:zod",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/components/dashboard/DishesList.tsx",
+          "hash": "6126139713643025483",
+          "deps": [
+            "npm:react",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/page.tsx",
+          "hash": "3987034975964520438",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/globals.css",
+          "hash": "15560528208442266563"
+        },
+        {
+          "file": "apps/web/app/layout.tsx",
+          "hash": "17838700769853581247",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/page.tsx",
+          "hash": "16964969061119736740"
+        },
+        {
+          "file": "apps/web/next-env.d.ts",
+          "hash": "10054213917412045845"
+        },
+        {
+          "file": "apps/web/next.config.js",
+          "hash": "16388411900715645371"
+        },
+        {
+          "file": "apps/web/project.json",
+          "hash": "5071143176759411042"
+        },
+        {
+          "file": "apps/web/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web/styles/placeholder.txt",
+          "hash": "9274633116156084947"
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "6023666558334324888"
+        }
+      ],
+      "shared-types": [
+        {
+          "file": "libs/shared-types/project.json",
+          "hash": "11102004796360553658"
+        },
+        {
+          "file": "libs/shared-types/src/index.ts",
+          "hash": "12740873421295123623"
+        }
+      ],
       "api": [
         {
           "file": "apps/api/jest.config.ts",
@@ -401,83 +478,6 @@
         {
           "file": "apps/api/tsconfig.json",
           "hash": "13238060302026751848"
-        }
-      ],
-      "shared-types": [
-        {
-          "file": "libs/shared-types/project.json",
-          "hash": "11102004796360553658"
-        },
-        {
-          "file": "libs/shared-types/src/index.ts",
-          "hash": "12740873421295123623"
-        }
-      ],
-      "web": [
-        {
-          "file": "apps/web/app/components/dashboard/AddDishForm.tsx",
-          "hash": "1455565833144944943",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:@hookform/resolvers",
-            "npm:zod",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/components/dashboard/DishesList.tsx",
-          "hash": "6126139713643025483",
-          "deps": [
-            "npm:react",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/page.tsx",
-          "hash": "3987034975964520438",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/globals.css",
-          "hash": "15560528208442266563"
-        },
-        {
-          "file": "apps/web/app/layout.tsx",
-          "hash": "17838700769853581247",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/page.tsx",
-          "hash": "16964969061119736740"
-        },
-        {
-          "file": "apps/web/next-env.d.ts",
-          "hash": "10054213917412045845"
-        },
-        {
-          "file": "apps/web/next.config.js",
-          "hash": "16388411900715645371"
-        },
-        {
-          "file": "apps/web/project.json",
-          "hash": "5071143176759411042"
-        },
-        {
-          "file": "apps/web/public/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/web/styles/placeholder.txt",
-          "hash": "9274633116156084947"
-        },
-        {
-          "file": "apps/web/tsconfig.json",
-          "hash": "6023666558334324888"
         }
       ]
     }
