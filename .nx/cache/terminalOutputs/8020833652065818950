@@ -1,0 +1,59 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1785ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1307ms (455 modules)
+ GET / [32m200[39m in 1609ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 303ms (444 modules)
+ GET /admin [33m404[39m in 476ms
+ [32m[1m✓[22m[39m Compiled /superadmin in 473ms (455 modules)
+ GET /superadmin [32m200[39m in 611ms
+ [32m[1m✓[22m[39m Compiled in 164ms (455 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /superadmin [32m200[39m in 108ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 345ms (458 modules)
+ GET /superadmin/tenants [32m200[39m in 439ms
+ GET /superadmin [32m200[39m in 44ms
+ [32m[1m✓[22m[39m Compiled /superadmin/users in 224ms (464 modules)
+ GET /superadmin/users [32m200[39m in 321ms
+ GET /superadmin [32m200[39m in 48ms
+ [32m[1m✓[22m[39m Compiled in 437ms (474 modules)
+ [32m[1m✓[22m[39m Compiled in 216ms (456 modules)
+ [32m[1m✓[22m[39m Compiled in 106ms (470 modules)
+ [32m[1m✓[22m[39m Compiled in 159ms (227 modules)
+ GET /superadmin [32m200[39m in 97ms
+ [32m[1m✓[22m[39m Compiled in 59ms (227 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1785ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1307ms (455 modules)
+ GET / [32m200[39m in 1609ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 303ms (444 modules)
+ GET /admin [33m404[39m in 476ms
+ [32m[1m✓[22m[39m Compiled /superadmin in 473ms (455 modules)
+ GET /superadmin [32m200[39m in 611ms
+ [32m[1m✓[22m[39m Compiled in 164ms (455 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /superadmin [32m200[39m in 108ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 345ms (458 modules)
+ GET /superadmin/tenants [32m200[39m in 439ms
+ GET /superadmin [32m200[39m in 44ms
+ [32m[1m✓[22m[39m Compiled /superadmin/users in 224ms (464 modules)
+ GET /superadmin/users [32m200[39m in 321ms
+ GET /superadmin [32m200[39m in 48ms
+ [32m[1m✓[22m[39m Compiled in 437ms (474 modules)
+ [32m[1m✓[22m[39m Compiled in 216ms (456 modules)
+ [32m[1m✓[22m[39m Compiled in 106ms (470 modules)
+ [32m[1m✓[22m[39m Compiled in 159ms (227 modules)
+ GET /superadmin [32m200[39m in 97ms
+ [32m[1m✓[22m[39m Compiled in 59ms (227 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

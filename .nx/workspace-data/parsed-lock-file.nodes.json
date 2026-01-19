@@ -1,5 +1,14 @@
 {
   "nodes": {
+    "npm:@alloc/quick-lru": {
+      "type": "npm",
+      "name": "npm:@alloc/quick-lru",
+      "data": {
+        "version": "5.2.0",
+        "packageName": "@alloc/quick-lru",
+        "hash": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="
+      }
+    },
     "npm:@babel/code-frame": {
       "type": "npm",
       "name": "npm:@babel/code-frame",
@@ -3798,24 +3807,6 @@
         "hash": "sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg=="
       }
     },
-    "npm:postcss@8.5.6": {
-      "type": "npm",
-      "name": "npm:postcss@8.5.6",
-      "data": {
-        "version": "8.5.6",
-        "packageName": "postcss",
-        "hash": "sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg=="
-      }
-    },
-    "npm:postcss": {
-      "type": "npm",
-      "name": "npm:postcss",
-      "data": {
-        "version": "8.4.31",
-        "packageName": "postcss",
-        "hash": "sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ=="
-      }
-    },
     "npm:undici-types@7.16.0": {
       "type": "npm",
       "name": "npm:undici-types@7.16.0",
@@ -5760,6 +5751,15 @@
         "hash": "sha512-1APHAyr3+PCamwNw3bXCPp4HFLONZt/yIH0sZp0/469KWNTEy+qN5jQ3GVX6DMZ1UXAi34yVwtTeaG/HpBuuzw=="
       }
     },
+    "npm:any-promise": {
+      "type": "npm",
+      "name": "npm:any-promise",
+      "data": {
+        "version": "1.3.0",
+        "packageName": "any-promise",
+        "hash": "sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A=="
+      }
+    },
     "npm:anymatch": {
       "type": "npm",
       "name": "npm:anymatch",
@@ -5794,6 +5794,15 @@
         "version": "2.0.0",
         "packageName": "are-we-there-yet",
         "hash": "sha512-Ci/qENmwHnsYo9xKIcUJN5LeDKdJ6R1Z1j9V/J5wyq8nh/mYPEpIKJbBZXtZjG04HiK7zV/p6Vs9952MrMeUIw=="
+      }
+    },
+    "npm:arg": {
+      "type": "npm",
+      "name": "npm:arg",
+      "data": {
+        "version": "5.0.2",
+        "packageName": "arg",
+        "hash": "sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg=="
       }
     },
     "npm:argparse": {
@@ -5881,9 +5890,9 @@
       "type": "npm",
       "name": "npm:autoprefixer",
       "data": {
-        "version": "10.4.22",
+        "version": "10.4.23",
         "packageName": "autoprefixer",
-        "hash": "sha512-ARe0v/t9gO28Bznv6GgqARmVqcWOV3mfgUPn9becPHMiD3o9BwlRgaeccZnwTpZ7Zwqrm+c1sUSsMxIzQzc8Xg=="
+        "hash": "sha512-YYTXSFulfwytnjAPlw8QHncHJmlvFKtczb8InXaAx9Q0LbfDnfEYDE55omerIJKihhmU61Ft+cAOSzQVaBUmeA=="
       }
     },
     "npm:axios": {
@@ -6399,6 +6408,15 @@
         "hash": "sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ=="
       }
     },
+    "npm:camelcase-css": {
+      "type": "npm",
+      "name": "npm:camelcase-css",
+      "data": {
+        "version": "2.0.1",
+        "packageName": "camelcase-css",
+        "hash": "sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA=="
+      }
+    },
     "npm:caniuse-api": {
       "type": "npm",
       "name": "npm:caniuse-api",
@@ -6412,9 +6430,9 @@
       "type": "npm",
       "name": "npm:caniuse-lite",
       "data": {
-        "version": "1.0.30001759",
+        "version": "1.0.30001765",
         "packageName": "caniuse-lite",
-        "hash": "sha512-Pzfx9fOKoKvevQf8oCXoyNRQ5QyxJj+3O0Rqx2V5oxT61KGx8+n6hV/IUyJeifUci2clnmmKVpvtiqRzgiWjSw=="
+        "hash": "sha512-LWcNtSyZrakjECqmpP4qdg0MMGdN368D7X8XvvAqOcqMv0RxnlqVKZl2V6/mBR68oYMxOZPLw/gO7DuisMHUvQ=="
       }
     },
     "npm:chai": {
@@ -6685,6 +6703,15 @@
         "version": "7.2.0",
         "packageName": "commander",
         "hash": "sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw=="
+      }
+    },
+    "npm:commander@4.1.1": {
+      "type": "npm",
+      "name": "npm:commander@4.1.1",
+      "data": {
+        "version": "4.1.1",
+        "packageName": "commander",
+        "hash": "sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA=="
       }
     },
     "npm:commander@2.20.3": {
@@ -7344,6 +7371,15 @@
         "hash": "sha512-rXSP0bf+5n0Qonsb+SVVfNfIsimO4HEtmnIpPHY8Q1UCzKlQrDMfdobr8nJOOsRgWCyMRqeSBQzmWUMq7zvVig=="
       }
     },
+    "npm:didyoumean": {
+      "type": "npm",
+      "name": "npm:didyoumean",
+      "data": {
+        "version": "1.2.2",
+        "packageName": "didyoumean",
+        "hash": "sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw=="
+      }
+    },
     "npm:diff-sequences": {
       "type": "npm",
       "name": "npm:diff-sequences",
@@ -7360,6 +7396,15 @@
         "version": "3.0.1",
         "packageName": "dir-glob",
         "hash": "sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA=="
+      }
+    },
+    "npm:dlv": {
+      "type": "npm",
+      "name": "npm:dlv",
+      "data": {
+        "version": "1.1.3",
+        "packageName": "dlv",
+        "hash": "sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA=="
       }
     },
     "npm:dns-packet": {
@@ -8059,9 +8104,9 @@
       "type": "npm",
       "name": "npm:fast-glob",
       "data": {
-        "version": "3.2.7",
+        "version": "3.3.3",
         "packageName": "fast-glob",
-        "hash": "sha512-rYGMRwip6lUMvYD3BTScMwT1HtAs2d71SMv66Vrxs0IekGZEjhM0pcMfjQPnknBt2zeCwQMEupiN02ZP4DiT1Q=="
+        "hash": "sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg=="
       }
     },
     "npm:fast-json-stable-stringify": {
@@ -9576,6 +9621,15 @@
         "hash": "sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A=="
       }
     },
+    "npm:jiti@1.21.7": {
+      "type": "npm",
+      "name": "npm:jiti@1.21.7",
+      "data": {
+        "version": "1.21.7",
+        "packageName": "jiti",
+        "hash": "sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A=="
+      }
+    },
     "npm:js-tokens": {
       "type": "npm",
       "name": "npm:js-tokens",
@@ -10512,6 +10566,15 @@
         "hash": "sha512-2eznPJP8z2BFLX50tf0LuODrpINqP1RVIm/CObbTcBRITQgmC/TjcREF1NeTBzIcR5XO/ukWo+YHOjBbFwIupg=="
       }
     },
+    "npm:mz": {
+      "type": "npm",
+      "name": "npm:mz",
+      "data": {
+        "version": "2.7.0",
+        "packageName": "mz",
+        "hash": "sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q=="
+      }
+    },
     "npm:nanoid": {
       "type": "npm",
       "name": "npm:nanoid",
@@ -10564,6 +10627,24 @@
         "version": "14.2.33",
         "packageName": "next",
         "hash": "sha512-GiKHLsD00t4ACm1p00VgrI0rUFAC9cRDGReKyERlM57aeEZkOQGcZTpIbsGn0b562FTPJWmYfKwplfO9EaT6ng=="
+      }
+    },
+    "npm:postcss@8.4.31": {
+      "type": "npm",
+      "name": "npm:postcss@8.4.31",
+      "data": {
+        "version": "8.4.31",
+        "packageName": "postcss",
+        "hash": "sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ=="
+      }
+    },
+    "npm:postcss": {
+      "type": "npm",
+      "name": "npm:postcss",
+      "data": {
+        "version": "8.5.6",
+        "packageName": "postcss",
+        "hash": "sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg=="
       }
     },
     "npm:no-case": {
@@ -10656,15 +10737,6 @@
         "hash": "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA=="
       }
     },
-    "npm:normalize-range": {
-      "type": "npm",
-      "name": "npm:normalize-range",
-      "data": {
-        "version": "0.1.2",
-        "packageName": "normalize-range",
-        "hash": "sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA=="
-      }
-    },
     "npm:normalize-url": {
       "type": "npm",
       "name": "npm:normalize-url",
@@ -10717,6 +10789,15 @@
         "version": "4.1.1",
         "packageName": "object-assign",
         "hash": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg=="
+      }
+    },
+    "npm:object-hash": {
+      "type": "npm",
+      "name": "npm:object-hash",
+      "data": {
+        "version": "3.0.0",
+        "packageName": "object-hash",
+        "hash": "sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw=="
       }
     },
     "npm:object-inspect": {
@@ -11241,6 +11322,24 @@
         "hash": "sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw=="
       }
     },
+    "npm:postcss-import@15.1.0": {
+      "type": "npm",
+      "name": "npm:postcss-import@15.1.0",
+      "data": {
+        "version": "15.1.0",
+        "packageName": "postcss-import",
+        "hash": "sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew=="
+      }
+    },
+    "npm:postcss-js": {
+      "type": "npm",
+      "name": "npm:postcss-js",
+      "data": {
+        "version": "4.1.0",
+        "packageName": "postcss-js",
+        "hash": "sha512-oIAOTqgIo7q2EOwbhb8UalYePMvYoIeRY2YKntdpFQXNosSu3vLrniGgmH9OKs/qAkfoj5oB3le/7mINW1LCfw=="
+      }
+    },
     "npm:postcss-loader": {
       "type": "npm",
       "name": "npm:postcss-loader",
@@ -11419,6 +11518,15 @@
         "version": "4.0.0",
         "packageName": "postcss-modules-values",
         "hash": "sha512-RDxHkAiEGI78gS2ofyvCsu7iycRv7oqw5xMWn9iMoR0N/7mf9D50ecQqUo5BZ9Zh2vH4bCUR/ktCqbB9m8vJjQ=="
+      }
+    },
+    "npm:postcss-nested": {
+      "type": "npm",
+      "name": "npm:postcss-nested",
+      "data": {
+        "version": "6.2.0",
+        "packageName": "postcss-nested",
+        "hash": "sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ=="
       }
     },
     "npm:postcss-normalize-charset": {
@@ -12058,6 +12166,15 @@
         "version": "3.1.4",
         "packageName": "postcss-load-config",
         "hash": "sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg=="
+      }
+    },
+    "npm:postcss-load-config@4.0.2": {
+      "type": "npm",
+      "name": "npm:postcss-load-config@4.0.2",
+      "data": {
+        "version": "4.0.2",
+        "packageName": "postcss-load-config",
+        "hash": "sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ=="
       }
     },
     "npm:stylehacks@5.1.1": {
@@ -12879,6 +12996,15 @@
         "hash": "sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw=="
       }
     },
+    "npm:sucrase": {
+      "type": "npm",
+      "name": "npm:sucrase",
+      "data": {
+        "version": "3.35.1",
+        "packageName": "sucrase",
+        "hash": "sha512-DhuTmvZWux4H1UOnWMB3sk0sbaCVOoQZjv8u1rDoTV0HTdGem9hkAZtl4JZy8P2z4Bg0nT+YMeOFyVr4zcG5Tw=="
+      }
+    },
     "npm:superagent": {
       "type": "npm",
       "name": "npm:superagent",
@@ -12940,6 +13066,15 @@
         "version": "0.11.11",
         "packageName": "synckit",
         "hash": "sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw=="
+      }
+    },
+    "npm:tailwindcss": {
+      "type": "npm",
+      "name": "npm:tailwindcss",
+      "data": {
+        "version": "3.4.14",
+        "packageName": "tailwindcss",
+        "hash": "sha512-IcSvOcTRcUtQQ7ILQL5quRDg7Xs93PdJEk1ZLbhhvJc7uj/OAhYOnruEiwnGgBvUtaUAJ8/mhSw1o8L2jCiENA=="
       }
     },
     "npm:tapable": {
@@ -13012,6 +13147,24 @@
         "version": "0.2.0",
         "packageName": "text-table",
         "hash": "sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw=="
+      }
+    },
+    "npm:thenify": {
+      "type": "npm",
+      "name": "npm:thenify",
+      "data": {
+        "version": "3.3.1",
+        "packageName": "thenify",
+        "hash": "sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw=="
+      }
+    },
+    "npm:thenify-all": {
+      "type": "npm",
+      "name": "npm:thenify-all",
+      "data": {
+        "version": "1.6.0",
+        "packageName": "thenify-all",
+        "hash": "sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA=="
       }
     },
     "npm:thingies": {
@@ -13129,6 +13282,15 @@
         "version": "1.2.2",
         "packageName": "tree-kill",
         "hash": "sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A=="
+      }
+    },
+    "npm:ts-interface-checker": {
+      "type": "npm",
+      "name": "npm:ts-interface-checker",
+      "data": {
+        "version": "0.1.13",
+        "packageName": "ts-interface-checker",
+        "hash": "sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA=="
       }
     },
     "npm:ts-jest": {
@@ -13655,6 +13817,7 @@
     }
   },
   "keyMap": {
+    "node_modules/@alloc/quick-lru": "npm:@alloc/quick-lru",
     "node_modules/@babel/code-frame": "npm:@babel/code-frame",
     "node_modules/@babel/compat-data": "npm:@babel/compat-data",
     "node_modules/@babel/core": "npm:@babel/core",
@@ -14010,18 +14173,15 @@
     "node_modules/@nx/react/node_modules/fdir": "npm:fdir@6.5.0",
     "node_modules/@nx/react/node_modules/json-schema-traverse": "npm:json-schema-traverse@1.0.0",
     "node_modules/@nx/react/node_modules/minimatch": "npm:minimatch@9.0.3",
-    "node_modules/@nx/react/node_modules/postcss": "npm:postcss@8.5.6",
     "node_modules/@nx/react/node_modules/undici-types": "npm:undici-types@7.16.0",
     "node_modules/@nx/react/node_modules/vite": "npm:vite@7.2.6",
     "node_modules/@nx/react/node_modules/vite/node_modules/picomatch": "npm:picomatch@4.0.3",
     "node_modules/@nx/rollup": "npm:@nx/rollup",
     "node_modules/@nx/rollup/node_modules/picomatch": "npm:picomatch@4.0.2",
-    "node_modules/@nx/rollup/node_modules/postcss": "npm:postcss@8.5.6",
     "node_modules/@nx/web": "npm:@nx/web",
     "node_modules/@nx/webpack": "npm:@nx/webpack",
     "node_modules/@nx/webpack/node_modules/ajv": "npm:ajv@8.17.1",
     "node_modules/@nx/webpack/node_modules/json-schema-traverse": "npm:json-schema-traverse@1.0.0",
-    "node_modules/@nx/webpack/node_modules/postcss": "npm:postcss@8.5.6",
     "node_modules/@nx/workspace": "npm:@nx/workspace",
     "node_modules/@nx/workspace/node_modules/picomatch": "npm:picomatch@4.0.2",
     "node_modules/@paralleldrive/cuid2": "npm:@paralleldrive/cuid2",
@@ -14247,10 +14407,12 @@
     "node_modules/ansi-html-community": "npm:ansi-html-community",
     "node_modules/ansi-regex": "npm:ansi-regex",
     "node_modules/ansi-styles": "npm:ansi-styles",
+    "node_modules/any-promise": "npm:any-promise",
     "node_modules/anymatch": "npm:anymatch",
     "node_modules/append-field": "npm:append-field",
     "node_modules/aproba": "npm:aproba",
     "node_modules/are-we-there-yet": "npm:are-we-there-yet",
+    "node_modules/arg": "npm:arg",
     "node_modules/argparse": "npm:argparse",
     "node_modules/array-flatten": "npm:array-flatten",
     "node_modules/array-union": "npm:array-union",
@@ -14321,6 +14483,7 @@
     "node_modules/call-bound": "npm:call-bound",
     "node_modules/callsites": "npm:callsites",
     "node_modules/camelcase": "npm:camelcase",
+    "node_modules/camelcase-css": "npm:camelcase-css",
     "node_modules/caniuse-api": "npm:caniuse-api",
     "node_modules/caniuse-lite": "npm:caniuse-lite",
     "node_modules/chai": "npm:chai",
@@ -14433,7 +14596,6 @@
     "node_modules/cross-spawn": "npm:cross-spawn",
     "node_modules/css-declaration-sorter": "npm:css-declaration-sorter",
     "node_modules/css-loader": "npm:css-loader",
-    "node_modules/css-loader/node_modules/postcss": "npm:postcss@8.5.6",
     "node_modules/css-minimizer-webpack-plugin": "npm:css-minimizer-webpack-plugin",
     "node_modules/css-minimizer-webpack-plugin/node_modules/ci-info": "npm:ci-info@3.9.0",
     "node_modules/css-minimizer-webpack-plugin/node_modules/jest-util": "npm:jest-util@29.7.0",
@@ -14469,8 +14631,10 @@
     "node_modules/detect-node": "npm:detect-node",
     "node_modules/detect-port": "npm:detect-port",
     "node_modules/dezalgo": "npm:dezalgo",
+    "node_modules/didyoumean": "npm:didyoumean",
     "node_modules/diff-sequences": "npm:diff-sequences",
     "node_modules/dir-glob": "npm:dir-glob",
+    "node_modules/dlv": "npm:dlv",
     "node_modules/dns-packet": "npm:dns-packet",
     "node_modules/doctrine": "npm:doctrine",
     "node_modules/dom-serializer": "npm:dom-serializer",
@@ -14927,6 +15091,7 @@
     "node_modules/ms": "npm:ms",
     "node_modules/multer": "npm:multer",
     "node_modules/multicast-dns": "npm:multicast-dns",
+    "node_modules/mz": "npm:mz",
     "node_modules/nanoid": "npm:nanoid",
     "node_modules/napi-postinstall": "npm:napi-postinstall",
     "node_modules/natural-compare": "npm:natural-compare",
@@ -14935,6 +15100,7 @@
     "node_modules/negotiator": "npm:negotiator",
     "node_modules/neo-async": "npm:neo-async",
     "node_modules/next": "npm:next",
+    "node_modules/next/node_modules/postcss": "npm:postcss@8.4.31",
     "node_modules/no-case": "npm:no-case",
     "node_modules/node-abort-controller": "npm:node-abort-controller",
     "node_modules/node-addon-api": "npm:node-addon-api",
@@ -14946,7 +15112,6 @@
     "node_modules/node-schedule": "npm:node-schedule",
     "node_modules/nopt": "npm:nopt",
     "node_modules/normalize-path": "npm:normalize-path",
-    "node_modules/normalize-range": "npm:normalize-range",
     "node_modules/normalize-url": "npm:normalize-url",
     "node_modules/npm-run-path": "npm:npm-run-path",
     "node_modules/npmlog": "npm:npmlog",
@@ -14958,6 +15123,7 @@
     "node_modules/nx/node_modules/ignore": "npm:ignore@7.0.5",
     "node_modules/nx/node_modules/minimatch": "npm:minimatch@9.0.3",
     "node_modules/object-assign": "npm:object-assign",
+    "node_modules/object-hash": "npm:object-hash",
     "node_modules/object-inspect": "npm:object-inspect",
     "node_modules/obuf": "npm:obuf",
     "node_modules/obug": "npm:obug",
@@ -15019,6 +15185,7 @@
     "node_modules/postcss-discard-empty": "npm:postcss-discard-empty",
     "node_modules/postcss-discard-overridden": "npm:postcss-discard-overridden",
     "node_modules/postcss-import": "npm:postcss-import",
+    "node_modules/postcss-js": "npm:postcss-js",
     "node_modules/postcss-loader": "npm:postcss-loader",
     "node_modules/postcss-loader/node_modules/cosmiconfig": "npm:cosmiconfig@7.1.0",
     "node_modules/postcss-loader/node_modules/yaml": "npm:yaml@1.10.2",
@@ -15035,6 +15202,7 @@
     "node_modules/postcss-modules-scope": "npm:postcss-modules-scope",
     "node_modules/postcss-modules-scope/node_modules/postcss-selector-parser": "npm:postcss-selector-parser@7.1.1",
     "node_modules/postcss-modules-values": "npm:postcss-modules-values",
+    "node_modules/postcss-nested": "npm:postcss-nested",
     "node_modules/postcss-normalize-charset": "npm:postcss-normalize-charset",
     "node_modules/postcss-normalize-display-values": "npm:postcss-normalize-display-values",
     "node_modules/postcss-normalize-positions": "npm:postcss-normalize-positions",
@@ -15269,6 +15437,9 @@
     "node_modules/style-loader": "npm:style-loader",
     "node_modules/styled-jsx": "npm:styled-jsx",
     "node_modules/stylehacks": "npm:stylehacks",
+    "node_modules/sucrase": "npm:sucrase",
+    "node_modules/sucrase/node_modules/commander": "npm:commander@4.1.1",
+    "node_modules/sucrase/node_modules/lines-and-columns": "npm:lines-and-columns@1.2.4",
     "node_modules/superagent": "npm:superagent",
     "node_modules/superagent/node_modules/mime": "npm:mime@2.6.0",
     "node_modules/supertest": "npm:supertest",
@@ -15280,6 +15451,12 @@
     "node_modules/sync-child-process": "npm:sync-child-process",
     "node_modules/sync-message-port": "npm:sync-message-port",
     "node_modules/synckit": "npm:synckit",
+    "node_modules/tailwindcss": "npm:tailwindcss",
+    "node_modules/tailwindcss/node_modules/jiti": "npm:jiti@1.21.7",
+    "node_modules/tailwindcss/node_modules/lilconfig": "npm:lilconfig@2.1.0",
+    "node_modules/tailwindcss/node_modules/postcss-import": "npm:postcss-import@15.1.0",
+    "node_modules/tailwindcss/node_modules/postcss-load-config": "npm:postcss-load-config@4.0.2",
+    "node_modules/tailwindcss/node_modules/postcss-load-config/node_modules/lilconfig": "npm:lilconfig",
     "node_modules/tapable": "npm:tapable",
     "node_modules/tar": "npm:tar",
     "node_modules/tar-stream": "npm:tar-stream",
@@ -15296,6 +15473,8 @@
     "node_modules/terser/node_modules/source-map-support": "npm:source-map-support@0.5.21",
     "node_modules/test-exclude": "npm:test-exclude",
     "node_modules/text-table": "npm:text-table",
+    "node_modules/thenify": "npm:thenify",
+    "node_modules/thenify-all": "npm:thenify-all",
     "node_modules/thingies": "npm:thingies",
     "node_modules/thunky": "npm:thunky",
     "node_modules/tinybench": "npm:tinybench",
@@ -15312,6 +15491,7 @@
     "node_modules/tr46": "npm:tr46",
     "node_modules/tree-dump": "npm:tree-dump",
     "node_modules/tree-kill": "npm:tree-kill",
+    "node_modules/ts-interface-checker": "npm:ts-interface-checker",
     "node_modules/ts-jest": "npm:ts-jest",
     "node_modules/ts-jest/node_modules/ci-info": "npm:ci-info@3.9.0",
     "node_modules/ts-jest/node_modules/jest-util": "npm:jest-util@29.7.0",
@@ -15382,7 +15562,6 @@
     "node_modules/vitest/node_modules/esbuild": "npm:esbuild@0.27.2",
     "node_modules/vitest/node_modules/estree-walker": "npm:estree-walker@3.0.3",
     "node_modules/vitest/node_modules/fdir": "npm:fdir@6.5.0",
-    "node_modules/vitest/node_modules/postcss": "npm:postcss@8.5.6",
     "node_modules/walker": "npm:walker",
     "node_modules/wbuf": "npm:wbuf",
     "node_modules/wcwidth": "npm:wcwidth",

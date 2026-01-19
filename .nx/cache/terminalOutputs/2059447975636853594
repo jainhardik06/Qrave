@@ -4,20 +4,118 @@
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 13.4s
+ [32m[1m✓[22m[39m Ready in 2.9s
  [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 11.6s (455 modules)
- GET / [32m200[39m in 12092ms
- GET / [32m200[39m in 62ms
+ [32m[1m✓[22m[39m Compiled / in 2.6s (455 modules)
+ GET / [32m200[39m in 2927ms
+ GET / [32m200[39m in 41ms
+ GET / [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 311ms (444 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 449ms
+ GET / [32m200[39m in 52ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 90ms
+ GET / [32m200[39m in 73ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 65ms
+ [32m[1m✓[22m[39m Compiled in 147ms (222 modules)
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ [32m[1m✓[22m[39m Compiled in 70ms (222 modules)
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ GET / [32m200[39m in 151ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 43ms
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ GET / [32m200[39m in 58ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 65ms
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ GET / [32m200[39m in 36ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 33ms
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ GET / [32m200[39m in 33ms
+ [32m[1m✓[22m[39m Compiled in 123ms (221 modules)
+ GET / [32m200[39m in 105ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 279ms (444 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 362ms
+ [32m[1m✓[22m[39m Compiled in 50ms (222 modules)
+ [32m[1m✓[22m[39m Compiled in 124ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 124ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 66ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 76ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 242ms (455 modules)
+ [32m[1m✓[22m[39m Compiled in 75ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 94ms (455 modules)
+ GET / [32m200[39m in 113ms
 [2m> [22mcd apps/web && npx next dev -p 3000
 
   [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 13.4s
+ [32m[1m✓[22m[39m Ready in 2.9s
  [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 11.6s (455 modules)
- GET / [32m200[39m in 12092ms
- GET / [32m200[39m in 62ms
+ [32m[1m✓[22m[39m Compiled / in 2.6s (455 modules)
+ GET / [32m200[39m in 2927ms
+ GET / [32m200[39m in 41ms
+ GET / [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 311ms (444 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 449ms
+ GET / [32m200[39m in 52ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 90ms
+ GET / [32m200[39m in 73ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 65ms
+ [32m[1m✓[22m[39m Compiled in 147ms (222 modules)
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ [32m[1m✓[22m[39m Compiled in 70ms (222 modules)
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ GET / [32m200[39m in 151ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 43ms
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ GET / [32m200[39m in 58ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 65ms
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ GET / [32m200[39m in 36ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 33ms
+API fetch error: Error: API returned 404
+    at fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:13:28)
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18)
+ GET / [32m200[39m in 33ms
+ [32m[1m✓[22m[39m Compiled in 123ms (221 modules)
+ GET / [32m200[39m in 105ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 279ms (444 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 362ms
+ [32m[1m✓[22m[39m Compiled in 50ms (222 modules)
+ [32m[1m✓[22m[39m Compiled in 124ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 124ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 66ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 76ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 242ms (455 modules)
+ [32m[1m✓[22m[39m Compiled in 75ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 94ms (455 modules)
+ GET / [32m200[39m in 113ms
 Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

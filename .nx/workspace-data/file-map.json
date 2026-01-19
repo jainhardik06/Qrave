@@ -30,11 +30,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "16162588273668625770"
+        "hash": "3766219113342714607"
       },
       {
         "file": "package.json",
-        "hash": "16327998386682798674"
+        "hash": "15851382054516983987"
       },
       {
         "file": "token.txt",
@@ -75,18 +75,59 @@
         },
         {
           "file": "apps/web/app/globals.css",
-          "hash": "15560528208442266563"
+          "hash": "12845073157604142621"
         },
         {
           "file": "apps/web/app/layout.tsx",
-          "hash": "17838700769853581247",
+          "hash": "17119992047858118964",
           "deps": [
             "npm:react"
           ]
         },
         {
+          "file": "apps/web/app/login/page.tsx",
+          "hash": "11668432441637166201",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
           "file": "apps/web/app/page.tsx",
-          "hash": "16964969061119736740"
+          "hash": "5478466786085398709"
+        },
+        {
+          "file": "apps/web/app/superadmin/layout.tsx",
+          "hash": "1015199228255545711"
+        },
+        {
+          "file": "apps/web/app/superadmin/page.tsx",
+          "hash": "17980489158150899100",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/tenants/new/page.tsx",
+          "hash": "17261188709296540974",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/tenants/page.tsx",
+          "hash": "11330903657903377000",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/users/page.tsx",
+          "hash": "1793893854343736635",
+          "deps": [
+            "npm:react"
+          ]
         },
         {
           "file": "apps/web/next-env.d.ts",
@@ -95,6 +136,10 @@
         {
           "file": "apps/web/next.config.js",
           "hash": "16388411900715645371"
+        },
+        {
+          "file": "apps/web/postcss.config.js",
+          "hash": "16750483254333733706"
         },
         {
           "file": "apps/web/project.json",
@@ -107,6 +152,10 @@
         {
           "file": "apps/web/styles/placeholder.txt",
           "hash": "9274633116156084947"
+        },
+        {
+          "file": "apps/web/tailwind.config.js",
+          "hash": "13487245939906621909"
         },
         {
           "file": "apps/web/tsconfig.json",
@@ -162,7 +211,7 @@
         },
         {
           "file": "apps/api/src/app/admin/admin.controller.ts",
-          "hash": "6587628262863622980",
+          "hash": "5237131464919478961",
           "deps": [
             "npm:@nestjs/common"
           ]
@@ -177,7 +226,7 @@
         },
         {
           "file": "apps/api/src/app/admin/admin.service.ts",
-          "hash": "18255476360868435064",
+          "hash": "13689969794278693615",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -187,7 +236,7 @@
         },
         {
           "file": "apps/api/src/app/admin/dto/create-tenant-owner.dto.ts",
-          "hash": "17750768339029304636",
+          "hash": "8632709899357533053",
           "deps": [
             "npm:class-validator"
           ]
@@ -454,7 +503,7 @@
         },
         {
           "file": "apps/api/src/schemas/tenant.schema.ts",
-          "hash": "12538408590782942922",
+          "hash": "2317267552727646846",
           "deps": [
             "npm:@nestjs/mongoose",
             "npm:mongoose"
@@ -482,5 +531,5 @@
       ]
     }
   },
-  "externalNodesHash": "13734945565139127293"
+  "externalNodesHash": "15616318736887333828"
 }
