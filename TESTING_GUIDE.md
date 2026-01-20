@@ -253,7 +253,7 @@ If you see errors:
 
 ### Check 2: MongoDB Data
 Use MongoDB Compass:
-1. Connect to: `mongodb+srv://qrave_admin:Hardik2005@qravecluster.qtcveit.mongodb.net/`
+1. Connect to: `Mongo url/`
 2. Navigate to: `qrave_db` → `categories` collection
 3. Check filter: `{ tenant_id: ObjectId("your-tenant-id") }`
 4. Should see your categories
