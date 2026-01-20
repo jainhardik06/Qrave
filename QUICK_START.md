@@ -135,7 +135,7 @@ Look for these success logs:
 ### MongoDB Verification
 ```
 Use MongoDB Compass:
-1. Connect: mongodb+srv://qrave_admin:Hardik2005@qravecluster.qtcveit.mongodb.net/
+1. Connect: mongo url
 2. Database: qrave_db
 3. Collections: categories, dishes
 4. Filter: { tenant_id: ObjectId("your-tenant-id") }
