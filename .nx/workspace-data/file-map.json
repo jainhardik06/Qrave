@@ -30,11 +30,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "3766219113342714607"
+        "hash": "13352636312856310210"
       },
       {
         "file": "package.json",
-        "hash": "15851382054516983987"
+        "hash": "1893944631874410878"
       },
       {
         "file": "token.txt",
@@ -46,132 +46,6 @@
       }
     ],
     "projectFileMap": {
-      "web": [
-        {
-          "file": "apps/web/app/components/dashboard/AddDishForm.tsx",
-          "hash": "1455565833144944943",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:@hookform/resolvers",
-            "npm:zod",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/components/dashboard/DishesList.tsx",
-          "hash": "6126139713643025483",
-          "deps": [
-            "npm:react",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/page.tsx",
-          "hash": "3987034975964520438",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/globals.css",
-          "hash": "12845073157604142621"
-        },
-        {
-          "file": "apps/web/app/layout.tsx",
-          "hash": "17119992047858118964",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/login/page.tsx",
-          "hash": "11668432441637166201",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/page.tsx",
-          "hash": "5478466786085398709"
-        },
-        {
-          "file": "apps/web/app/superadmin/layout.tsx",
-          "hash": "1015199228255545711"
-        },
-        {
-          "file": "apps/web/app/superadmin/page.tsx",
-          "hash": "17980489158150899100",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/superadmin/tenants/new/page.tsx",
-          "hash": "17261188709296540974",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/superadmin/tenants/page.tsx",
-          "hash": "11330903657903377000",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/superadmin/users/page.tsx",
-          "hash": "1793893854343736635",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/next-env.d.ts",
-          "hash": "10054213917412045845"
-        },
-        {
-          "file": "apps/web/next.config.js",
-          "hash": "16388411900715645371"
-        },
-        {
-          "file": "apps/web/postcss.config.js",
-          "hash": "16750483254333733706"
-        },
-        {
-          "file": "apps/web/project.json",
-          "hash": "5071143176759411042"
-        },
-        {
-          "file": "apps/web/public/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/web/styles/placeholder.txt",
-          "hash": "9274633116156084947"
-        },
-        {
-          "file": "apps/web/tailwind.config.js",
-          "hash": "13487245939906621909"
-        },
-        {
-          "file": "apps/web/tsconfig.json",
-          "hash": "6023666558334324888"
-        }
-      ],
-      "shared-types": [
-        {
-          "file": "libs/shared-types/project.json",
-          "hash": "11102004796360553658"
-        },
-        {
-          "file": "libs/shared-types/src/index.ts",
-          "hash": "12740873421295123623"
-        }
-      ],
       "api": [
         {
           "file": "apps/api/jest.config.ts",
@@ -193,7 +67,7 @@
         },
         {
           "file": "apps/api/src/app.module.ts",
-          "hash": "1646400954940263074",
+          "hash": "4482708584289790680",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/core",
@@ -239,6 +113,30 @@
           "hash": "8632709899357533053",
           "deps": [
             "npm:class-validator"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/analytics/analytics.controller.ts",
+          "hash": "8310993466357329853",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/analytics/analytics.module.ts",
+          "hash": "11385978991913534152",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/analytics/analytics.service.ts",
+          "hash": "13790929122273338535",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
           ]
         },
         {
@@ -369,7 +267,7 @@
         },
         {
           "file": "apps/api/src/app/menu/menu.controller.ts",
-          "hash": "10884289325861498637",
+          "hash": "5232679272800370382",
           "deps": [
             "npm:@nestjs/common"
           ]
@@ -385,6 +283,46 @@
         {
           "file": "apps/api/src/app/menu/menu.service.ts",
           "hash": "10993713306820278040",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/orders/dto/create-order.dto.ts",
+          "hash": "3716556757359788463",
+          "deps": [
+            "npm:class-transformer",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/orders/dto/update-order.dto.ts",
+          "hash": "15066423627634517135",
+          "deps": [
+            "npm:@nestjs/mapped-types",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/orders/orders.controller.ts",
+          "hash": "1749496831820438068",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/orders/orders.module.ts",
+          "hash": "6539642507017080316",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/orders/orders.service.ts",
+          "hash": "9460334677707053030",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -431,10 +369,57 @@
         },
         {
           "file": "apps/api/src/app/schemas/dish.schema.ts",
-          "hash": "17502312045458500941",
+          "hash": "16520009359260844743",
           "deps": [
             "npm:@nestjs/mongoose",
             "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/schemas/order.schema.ts",
+          "hash": "6467885633914425201",
+          "deps": [
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/staff/dto/create-staff.dto.ts",
+          "hash": "5760772566810114301",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/staff/dto/update-staff.dto.ts",
+          "hash": "8448358559910005707",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/staff/staff.controller.ts",
+          "hash": "16031986075758147516",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/staff/staff.module.ts",
+          "hash": "9440818385030073428",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/staff/staff.service.ts",
+          "hash": "13705608160546838801",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose",
+            "npm:mongoose",
+            "npm:bcrypt"
           ]
         },
         {
@@ -528,8 +513,199 @@
           "file": "apps/api/tsconfig.json",
           "hash": "13238060302026751848"
         }
+      ],
+      "web": [
+        {
+          "file": "apps/web/app/components/dashboard/AddDishForm.tsx",
+          "hash": "1455565833144944943",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@hookform/resolvers",
+            "npm:zod",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/components/dashboard/DishesList.tsx",
+          "hash": "6126139713643025483",
+          "deps": [
+            "npm:react",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/analytics/page.tsx",
+          "hash": "11019112087441508651",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/layout.tsx",
+          "hash": "6753281791976053208",
+          "deps": [
+            "npm:next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/menu/page.tsx",
+          "hash": "13155903941880127522",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/orders/page.tsx",
+          "hash": "10694061366155048244",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/page.tsx",
+          "hash": "7498509552754085005",
+          "deps": [
+            "npm:next",
+            "npm:react",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/settings/page.tsx",
+          "hash": "5966910570758807778",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/staff/page.tsx",
+          "hash": "15560951162156474887",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/globals.css",
+          "hash": "12845073157604142621"
+        },
+        {
+          "file": "apps/web/app/layout.tsx",
+          "hash": "17119992047858118964",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/login/page.tsx",
+          "hash": "6431386461888858153",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/page.tsx",
+          "hash": "5478466786085398709"
+        },
+        {
+          "file": "apps/web/app/superadmin/SuperadminNav.tsx",
+          "hash": "12260328871454932525",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/layout.tsx",
+          "hash": "8566565295191894980",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/page.tsx",
+          "hash": "17980489158150899100",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/tenants/new/page.tsx",
+          "hash": "17261188709296540974",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/tenants/page.tsx",
+          "hash": "15135730862765353230",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/users/page.tsx",
+          "hash": "8983607454573783502",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/next-env.d.ts",
+          "hash": "10054213917412045845"
+        },
+        {
+          "file": "apps/web/next.config.js",
+          "hash": "16388411900715645371"
+        },
+        {
+          "file": "apps/web/postcss.config.js",
+          "hash": "16750483254333733706"
+        },
+        {
+          "file": "apps/web/project.json",
+          "hash": "5071143176759411042"
+        },
+        {
+          "file": "apps/web/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web/styles/placeholder.txt",
+          "hash": "9274633116156084947"
+        },
+        {
+          "file": "apps/web/tailwind.config.js",
+          "hash": "13487245939906621909"
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "6023666558334324888"
+        }
+      ],
+      "shared-types": [
+        {
+          "file": "libs/shared-types/project.json",
+          "hash": "11102004796360553658"
+        },
+        {
+          "file": "libs/shared-types/src/index.ts",
+          "hash": "12740873421295123623"
+        }
       ]
     }
   },
-  "externalNodesHash": "15616318736887333828"
+  "externalNodesHash": "3101071575673129961"
 }

@@ -1,0 +1,35 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.2s
+ [37m[1m○[22m[39m Compiling /login ...
+ [32m[1m✓[22m[39m Compiled /login in 2.4s (463 modules)
+ GET /login [32m200[39m in 2648ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 1075ms (452 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1027ms
+ GET /login [32m200[39m in 44ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 85ms
+ GET /login [32m200[39m in 69ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 55ms
+^C[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.2s
+ [37m[1m○[22m[39m Compiling /login ...
+ [32m[1m✓[22m[39m Compiled /login in 2.4s (463 modules)
+ GET /login [32m200[39m in 2648ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 1075ms (452 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1027ms
+ GET /login [32m200[39m in 44ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 85ms
+ GET /login [32m200[39m in 69ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 55ms
+^CWarning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

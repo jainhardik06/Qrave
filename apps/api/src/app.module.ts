@@ -15,6 +15,9 @@ import { UploadModule } from './app/upload/upload.module';
 import { AdminModule } from './app/admin/admin.module';
 import { RolesModule } from './app/roles/roles.module';
 import { FeatureFlagGuard } from './app/common/guards/feature-flag.guard';
+import { OrdersModule } from './app/orders/orders.module';
+import { AnalyticsModule } from './app/analytics/analytics.module';
+import { StaffModule } from './app/staff/staff.module';
 
 @Module({
   imports: [
@@ -40,6 +43,9 @@ import { FeatureFlagGuard } from './app/common/guards/feature-flag.guard';
     UploadModule,
     AdminModule,
     RolesModule,
+    OrdersModule,
+    AnalyticsModule,
+    StaffModule,
   ],
   controllers: [AppController],
   providers: [

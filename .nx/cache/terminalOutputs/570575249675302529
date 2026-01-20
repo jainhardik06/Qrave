@@ -1,0 +1,213 @@
+[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +1649ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMenuModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAdminModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRolesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMenuController {/api/menu}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/signature, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAdminController {/api/admin}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/status, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/features, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/stats, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRolesController {/api/roles}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[SuperAdminSeeder] [39m[32mSuper admin already exists, skipping seed[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+Qrave API running on http://localhost:3001
+GET /api/admin/stats 401 108 - 12.960 ms
+GET /api/admin/stats 401 108 - 4.182 ms
+GET /api/admin/stats 401 108 - 3.233 ms
+GET /api/admin/stats 401 108 - 3.706 ms
+GET /api/admin/tenants 401 110 - 3.552 ms
+GET /api/admin/tenants 401 110 - 3.491 ms
+GET /api/admin/stats 401 108 - 3.425 ms
+GET /api/admin/stats 401 108 - 4.487 ms
+GET /api/admin/users 401 108 - 4.104 ms
+GET /api/admin/users 401 108 - 3.865 ms
+GET /api/admin/users 401 108 - 3.802 ms
+GET /api/admin/users 401 108 - 4.002 ms
+GET /api/admin/stats 401 108 - 3.037 ms
+GET /api/admin/stats 401 108 - 3.676 ms
+GET /api/admin/tenants 401 110 - 3.255 ms
+GET /api/admin/tenants 401 110 - 3.879 ms
+GET /api/admin/stats 401 108 - 3.627 ms
+GET /api/admin/stats 401 108 - 4.345 ms
+GET /api/admin/users 401 108 - 3.359 ms
+GET /api/admin/users 401 108 - 2.950 ms
+GET /api/admin/stats 401 108 - 3.604 ms
+GET /api/admin/stats 401 108 - 3.513 ms
+GET /api/admin/stats 401 108 - 2.574 ms
+GET /api/admin/stats 401 108 - 2.578 ms
+GET /api/admin/tenants 401 110 - 3.121 ms
+GET /api/admin/tenants 401 110 - 3.377 ms
+GET /api/admin/stats 401 108 - 2.862 ms
+GET /api/admin/stats 401 108 - 2.752 ms
+GET /api/admin/users 401 108 - 3.484 ms
+GET /api/admin/users 401 108 - 3.517 ms
+GET /api/admin/stats 401 108 - 2.774 ms
+GET /api/admin/stats 401 108 - 3.204 ms
+GET /api/admin/stats 401 108 - 2.326 ms
+GET /api/admin/stats 401 108 - 1.273 ms
+POST /api/auth/login 201 371 - 1141.428 ms
+GET /api/admin/stats 200 126 - 388.851 ms
+GET /api/admin/stats 304 - - 396.305 ms
+GET /api/admin/tenants 200 683 - 926.170 ms
+GET /api/admin/tenants 304 - - 206.633 ms
+GET /api/admin/tenants 304 - - 560.529 ms
+GET /api/admin/tenants 304 - - 169.068 ms
+GET /api/admin/stats 304 - - 376.905 ms
+GET /api/admin/stats 304 - - 370.739 ms
+GET /api/admin/users 200 1188 - 306.406 ms
+GET /api/admin/users 304 - - 111.954 ms
+GET /api/admin/tenants 304 - - 1074.767 ms
+GET /api/admin/tenants 304 - - 1025.292 ms
+GET /api/admin/stats - - - - ms
+GET /api/admin/stats 500 117 - 30011.041 ms
+GET /api/admin/stats 500 117 - 30012.276 ms
+POST /api/auth/login 500 116 - 30008.206 ms
+POST /api/auth/login - - - - ms
+POST /api/auth/login 500 116 - 30008.844 ms
+[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:29 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +1649ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMenuModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAdminModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRolesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMenuController {/api/menu}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/menu/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/signature, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAdminController {/api/admin}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/status, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/features, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/stats, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRolesController {/api/roles}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[SuperAdminSeeder] [39m[32mSuper admin already exists, skipping seed[39m
+[32m[Nest] 17404  - [39m19/01/2026, 2:41:31 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+Qrave API running on http://localhost:3001
+GET /api/admin/stats 401 108 - 12.960 ms
+GET /api/admin/stats 401 108 - 4.182 ms
+GET /api/admin/stats 401 108 - 3.233 ms
+GET /api/admin/stats 401 108 - 3.706 ms
+GET /api/admin/tenants 401 110 - 3.552 ms
+GET /api/admin/tenants 401 110 - 3.491 ms
+GET /api/admin/stats 401 108 - 3.425 ms
+GET /api/admin/stats 401 108 - 4.487 ms
+GET /api/admin/users 401 108 - 4.104 ms
+GET /api/admin/users 401 108 - 3.865 ms
+GET /api/admin/users 401 108 - 3.802 ms
+GET /api/admin/users 401 108 - 4.002 ms
+GET /api/admin/stats 401 108 - 3.037 ms
+GET /api/admin/stats 401 108 - 3.676 ms
+GET /api/admin/tenants 401 110 - 3.255 ms
+GET /api/admin/tenants 401 110 - 3.879 ms
+GET /api/admin/stats 401 108 - 3.627 ms
+GET /api/admin/stats 401 108 - 4.345 ms
+GET /api/admin/users 401 108 - 3.359 ms
+GET /api/admin/users 401 108 - 2.950 ms
+GET /api/admin/stats 401 108 - 3.604 ms
+GET /api/admin/stats 401 108 - 3.513 ms
+GET /api/admin/stats 401 108 - 2.574 ms
+GET /api/admin/stats 401 108 - 2.578 ms
+GET /api/admin/tenants 401 110 - 3.121 ms
+GET /api/admin/tenants 401 110 - 3.377 ms
+GET /api/admin/stats 401 108 - 2.862 ms
+GET /api/admin/stats 401 108 - 2.752 ms
+GET /api/admin/users 401 108 - 3.484 ms
+GET /api/admin/users 401 108 - 3.517 ms
+GET /api/admin/stats 401 108 - 2.774 ms
+GET /api/admin/stats 401 108 - 3.204 ms
+GET /api/admin/stats 401 108 - 2.326 ms
+GET /api/admin/stats 401 108 - 1.273 ms
+POST /api/auth/login 201 371 - 1141.428 ms
+GET /api/admin/stats 200 126 - 388.851 ms
+GET /api/admin/stats 304 - - 396.305 ms
+GET /api/admin/tenants 200 683 - 926.170 ms
+GET /api/admin/tenants 304 - - 206.633 ms
+GET /api/admin/tenants 304 - - 560.529 ms
+GET /api/admin/tenants 304 - - 169.068 ms
+GET /api/admin/stats 304 - - 376.905 ms
+GET /api/admin/stats 304 - - 370.739 ms
+GET /api/admin/users 200 1188 - 306.406 ms
+GET /api/admin/users 304 - - 111.954 ms
+GET /api/admin/tenants 304 - - 1074.767 ms
+GET /api/admin/tenants 304 - - 1025.292 ms
+GET /api/admin/stats - - - - ms
+GET /api/admin/stats 500 117 - 30011.041 ms
+GET /api/admin/stats 500 117 - 30012.276 ms
+POST /api/auth/login 500 116 - 30008.206 ms
+POST /api/auth/login - - - - ms
+POST /api/auth/login 500 116 - 30008.844 ms
+Warning: command "node dist/apps/api/main.js" exited with non-zero status code

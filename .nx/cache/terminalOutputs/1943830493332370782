@@ -1,0 +1,7 @@
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/orders/dto/update-order.dto.ts(1,29): error TS2307: Cannot find module '@nestjs/mapped-types' or its corresponding type declarations.
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/orders/dto/update-order.dto.ts(1,29): error TS2307: Cannot find module '@nestjs/mapped-types' or its corresponding type declarations.
+Warning: command "tsc -p apps/api/tsconfig.json" exited with non-zero status code

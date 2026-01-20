@@ -5330,6 +5330,26 @@
     "type": "static"
   },
   {
+    "source": "npm:@nestjs/mapped-types",
+    "target": "npm:@nestjs/common",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/mapped-types",
+    "target": "npm:class-transformer",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/mapped-types",
+    "target": "npm:class-validator",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/mapped-types",
+    "target": "npm:reflect-metadata",
+    "type": "static"
+  },
+  {
     "source": "npm:@nestjs/mongoose",
     "target": "npm:@nestjs/common",
     "type": "static"

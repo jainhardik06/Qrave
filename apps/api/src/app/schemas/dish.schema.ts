@@ -1,8 +1,11 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document, Schema as MongooseSchema } from 'mongoose';
+import { Document, Schema as MongooseSchema, Types } from 'mongoose';
 
 @Schema({ timestamps: true })
 export class Dish extends Document {
+  @Prop({ type: Types.ObjectId, ref: 'Tenant', required: true })
+  tenant_id!: Types.ObjectId;
+
   @Prop({ required: true })
   name!: string;
 

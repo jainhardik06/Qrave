@@ -1,0 +1,9 @@
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/analytics/analytics.module.ts(10,3): error TS1005: ',' expected.
+apps/api/src/app/orders/orders.module.ts(10,3): error TS1005: ',' expected.
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/analytics/analytics.module.ts(10,3): error TS1005: ',' expected.
+apps/api/src/app/orders/orders.module.ts(10,3): error TS1005: ',' expected.
+Warning: command "tsc -p apps/api/tsconfig.json" exited with non-zero status code

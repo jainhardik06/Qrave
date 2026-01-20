@@ -1,0 +1,323 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.2s
+ [37m[1m○[22m[39m Compiling /superadmin ...
+ [32m[1m✓[22m[39m Compiled /superadmin in 17.4s (464 modules)
+ GET /superadmin [32m200[39m in 17701ms
+ [32m[1m✓[22m[39m Compiled in 240ms (239 modules)
+ GET /superadmin [32m200[39m in 50ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 352ms (456 modules)
+ GET /superadmin/tenants [32m200[39m in 531ms
+ GET /superadmin [32m200[39m in 60ms
+ [32m[1m✓[22m[39m Compiled /superadmin/users in 196ms (462 modules)
+ GET /superadmin/users [32m200[39m in 306ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 321ms (476 modules)
+ GET /superadmin/users [32m200[39m in 86ms
+ GET /superadmin [32m200[39m in 60ms
+ [32m[1m✓[22m[39m Compiled in 254ms (476 modules)
+ GET /superadmin/tenants [32m200[39m in 81ms
+ GET /superadmin [32m200[39m in 62ms
+ [32m[1m✓[22m[39m Compiled in 259ms (476 modules)
+ GET /superadmin/users [32m200[39m in 50ms
+ GET /superadmin [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants/new in 326ms (470 modules)
+ GET /superadmin/tenants/new [32m200[39m in 499ms
+ GET /superadmin [32m200[39m in 61ms
+ GET /superadmin/tenants [32m200[39m in 83ms
+ GET /superadmin [32m200[39m in 41ms
+ GET /superadmin/users [32m200[39m in 31ms
+ GET /superadmin [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 262ms (484 modules)
+ [32m[1m✓[22m[39m Compiled in 406ms (484 modules)
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "3344328537"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [32m[1m✓[22m[39m Compiled in 94ms (246 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 96ms (246 modules)
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "1444550514"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "1444550514"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /superadmin [31m500[39m in 171ms
+ [32m[1m✓[22m[39m Compiled in 105ms (246 modules)
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "1444550514"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "1444550514"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ GET /superadmin [31m500[39m in 77ms
+ [32m[1m✓[22m[39m Compiled in 214ms (484 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (4:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:12:89)
+    at stringify (<anonymous>)
+digest: "367436030"
+[0m [90m 2 |[39m   [36mreturn[39m ([0m
+[0m [90m 3 |[39m     [33m<[39m[33mdiv[39m className[33m=[39m[32m"min-h-screen bg-gray-50"[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m   |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 5 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 6 |[39m         {children}[0m
+[0m [90m 7 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (4:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:12:89)
+    at stringify (<anonymous>)
+digest: "367436030"
+[0m [90m 2 |[39m   [36mreturn[39m ([0m
+[0m [90m 3 |[39m     [33m<[39m[33mdiv[39m className[33m=[39m[32m"min-h-screen bg-gray-50"[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m   |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 5 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 6 |[39m         {children}[0m
+[0m [90m 7 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ GET /superadmin [31m500[39m in 116ms
+ [32m[1m✓[22m[39m Compiled in 552ms (529 modules)
+ GET /superadmin [32m200[39m in 127ms
+ [32m[1m✓[22m[39m Compiled in 148ms (268 modules)
+ [32m[1m✓[22m[39m Compiled in 105ms (268 modules)
+ [32m[1m✓[22m[39m Compiled /login in 250ms (521 modules)
+ GET /superadmin/tenants [32m200[39m in 132ms
+ GET /superadmin/tenants/new [32m200[39m in 64ms
+ GET /superadmin/tenants [32m200[39m in 78ms
+ [32m[1m✓[22m[39m Compiled in 328ms (535 modules)
+ GET /superadmin/tenants/new [32m200[39m in 111ms
+ GET /superadmin/tenants [32m200[39m in 61ms
+ GET /superadmin/users [32m200[39m in 55ms
+ [32m[1m✓[22m[39m Compiled in 518ms (535 modules)
+ [32m[1m✓[22m[39m Compiled in 246ms (535 modules)
+ [32m[1m✓[22m[39m Compiled in 254ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 220ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 392ms (535 modules)
+ [32m[1m✓[22m[39m Compiled in 204ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 318ms (521 modules)
+ [32m[1m✓[22m[39m Compiled in 187ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 153ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 164ms (521 modules)
+ [32m[1m✓[22m[39m Compiled in 176ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 213ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 234ms (270 modules)
+ GET /superadmin [32m200[39m in 114ms
+ [32m[1m✓[22m[39m Compiled in 286ms (535 modules)
+ GET /login [32m200[39m in 97ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 591ms (524 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 715ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.2s
+ [37m[1m○[22m[39m Compiling /superadmin ...
+ [32m[1m✓[22m[39m Compiled /superadmin in 17.4s (464 modules)
+ GET /superadmin [32m200[39m in 17701ms
+ [32m[1m✓[22m[39m Compiled in 240ms (239 modules)
+ GET /superadmin [32m200[39m in 50ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 352ms (456 modules)
+ GET /superadmin/tenants [32m200[39m in 531ms
+ GET /superadmin [32m200[39m in 60ms
+ [32m[1m✓[22m[39m Compiled /superadmin/users in 196ms (462 modules)
+ GET /superadmin/users [32m200[39m in 306ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 321ms (476 modules)
+ GET /superadmin/users [32m200[39m in 86ms
+ GET /superadmin [32m200[39m in 60ms
+ [32m[1m✓[22m[39m Compiled in 254ms (476 modules)
+ GET /superadmin/tenants [32m200[39m in 81ms
+ GET /superadmin [32m200[39m in 62ms
+ [32m[1m✓[22m[39m Compiled in 259ms (476 modules)
+ GET /superadmin/users [32m200[39m in 50ms
+ GET /superadmin [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants/new in 326ms (470 modules)
+ GET /superadmin/tenants/new [32m200[39m in 499ms
+ GET /superadmin [32m200[39m in 61ms
+ GET /superadmin/tenants [32m200[39m in 83ms
+ GET /superadmin [32m200[39m in 41ms
+ GET /superadmin/users [32m200[39m in 31ms
+ GET /superadmin [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 262ms (484 modules)
+ [32m[1m✓[22m[39m Compiled in 406ms (484 modules)
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "3344328537"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [32m[1m✓[22m[39m Compiled in 94ms (246 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 96ms (246 modules)
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "1444550514"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "1444550514"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /superadmin [31m500[39m in 171ms
+ [32m[1m✓[22m[39m Compiled in 105ms (246 modules)
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "1444550514"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (27:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:96:89)
+    at stringify (<anonymous>)
+digest: "1444550514"
+[0m [90m 25 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33m/[39m[33mnav[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 29 |[39m         {children}[0m
+[0m [90m 30 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ GET /superadmin [31m500[39m in 77ms
+ [32m[1m✓[22m[39m Compiled in 214ms (484 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (4:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:12:89)
+    at stringify (<anonymous>)
+digest: "367436030"
+[0m [90m 2 |[39m   [36mreturn[39m ([0m
+[0m [90m 3 |[39m     [33m<[39m[33mdiv[39m className[33m=[39m[32m"min-h-screen bg-gray-50"[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m   |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 5 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 6 |[39m         {children}[0m
+[0m [90m 7 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ [31m[1m⨯[22m[39m app\superadmin\layout.tsx (4:8) @ SuperadminNav
+ [31m[1m⨯[22m[39m ReferenceError: SuperadminNav is not defined
+    at SuperadminLayout (./app/superadmin/layout.tsx:12:89)
+    at stringify (<anonymous>)
+digest: "367436030"
+[0m [90m 2 |[39m   [36mreturn[39m ([0m
+[0m [90m 3 |[39m     [33m<[39m[33mdiv[39m className[33m=[39m[32m"min-h-screen bg-gray-50"[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 |[39m       [33m<[39m[33mSuperadminNav[39m [33m/[39m[33m>[39m[0m
+[0m [90m   |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 5 |[39m       [33m<[39m[33mmain[39m className[33m=[39m[32m"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"[39m[33m>[39m[0m
+[0m [90m 6 |[39m         {children}[0m
+[0m [90m 7 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m[0m
+ GET /superadmin [31m500[39m in 116ms
+ [32m[1m✓[22m[39m Compiled in 552ms (529 modules)
+ GET /superadmin [32m200[39m in 127ms
+ [32m[1m✓[22m[39m Compiled in 148ms (268 modules)
+ [32m[1m✓[22m[39m Compiled in 105ms (268 modules)
+ [32m[1m✓[22m[39m Compiled /login in 250ms (521 modules)
+ GET /superadmin/tenants [32m200[39m in 132ms
+ GET /superadmin/tenants/new [32m200[39m in 64ms
+ GET /superadmin/tenants [32m200[39m in 78ms
+ [32m[1m✓[22m[39m Compiled in 328ms (535 modules)
+ GET /superadmin/tenants/new [32m200[39m in 111ms
+ GET /superadmin/tenants [32m200[39m in 61ms
+ GET /superadmin/users [32m200[39m in 55ms
+ [32m[1m✓[22m[39m Compiled in 518ms (535 modules)
+ [32m[1m✓[22m[39m Compiled in 246ms (535 modules)
+ [32m[1m✓[22m[39m Compiled in 254ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 220ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 392ms (535 modules)
+ [32m[1m✓[22m[39m Compiled in 204ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 318ms (521 modules)
+ [32m[1m✓[22m[39m Compiled in 187ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 153ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 164ms (521 modules)
+ [32m[1m✓[22m[39m Compiled in 176ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 213ms (270 modules)
+ [32m[1m✓[22m[39m Compiled in 234ms (270 modules)
+ GET /superadmin [32m200[39m in 114ms
+ [32m[1m✓[22m[39m Compiled in 286ms (535 modules)
+ GET /login [32m200[39m in 97ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 591ms (524 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 715ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

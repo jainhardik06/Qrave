@@ -1,0 +1,57 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1709ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 2.7s (455 modules)
+ GET / [32m200[39m in 3172ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 1434ms (444 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1174ms
+ [37m[1m○[22m[39m Compiling /superadmin ...
+ [32m[1m✓[22m[39m Compiled /superadmin in 527ms (504 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /superadmin [32m200[39m in 705ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 41ms
+ [32m[1m✓[22m[39m Compiled /login in 203ms (510 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 319ms (516 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin/users in 230ms (522 modules)
+ GET /superadmin/tenants [32m200[39m in 93ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants/new in 222ms (528 modules)
+ GET /superadmin/tenants/new [32m200[39m in 330ms
+ GET /tennent [33m404[39m in 71ms
+ GET / [32m200[39m in 53ms
+ GET /tenent [33m404[39m in 34ms
+ GET /login [32m200[39m in 48ms
+^C[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1709ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 2.7s (455 modules)
+ GET / [32m200[39m in 3172ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 1434ms (444 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1174ms
+ [37m[1m○[22m[39m Compiling /superadmin ...
+ [32m[1m✓[22m[39m Compiled /superadmin in 527ms (504 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /superadmin [32m200[39m in 705ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 41ms
+ [32m[1m✓[22m[39m Compiled /login in 203ms (510 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 319ms (516 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin/users in 230ms (522 modules)
+ GET /superadmin/tenants [32m200[39m in 93ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants/new in 222ms (528 modules)
+ GET /superadmin/tenants/new [32m200[39m in 330ms
+ GET /tennent [33m404[39m in 71ms
+ GET / [32m200[39m in 53ms
+ GET /tenent [33m404[39m in 34ms
+ GET /login [32m200[39m in 48ms
+^CWarning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

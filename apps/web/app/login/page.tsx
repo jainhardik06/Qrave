@@ -19,6 +19,8 @@ export default function LoginPage() {
       else router.replace('/dashboard');
     } catch (e) {
       localStorage.removeItem('token');
+      localStorage.removeItem('tenant_id');
+      localStorage.removeItem('role');
     }
   }, [router]);
 
@@ -37,10 +39,12 @@ export default function LoginPage() {
       if (res.ok) {
         const data = await res.json();
         localStorage.setItem('token', data.access_token);
+        if (data?.tenant_id) localStorage.setItem('tenant_id', data.tenant_id);
 
         // Decode JWT to check role (basic client-side decode)
         const payload = JSON.parse(atob(data.access_token.split('.')[1]));
-        
+        if (payload?.role) localStorage.setItem('role', payload.role);
+
         if (payload.role === 'SUPERADMIN') {
           router.push('/superadmin');
         } else {

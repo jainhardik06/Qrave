@@ -15,35 +15,35 @@ export class MenuController {
 
   @Post()
   @Permissions('menu.write')
-  @FeatureFlag('menu')
+  @FeatureFlag('menu_management')
   create(@Body() dto: CreateDishDto) {
     return this.menuService.create(dto);
   }
 
   @Get()
   @Permissions('menu.read')
-  @FeatureFlag('menu')
+  @FeatureFlag('menu_management')
   findAll() {
     return this.menuService.findAll();
   }
 
   @Delete(':id')
   @Permissions('menu.delete')
-  @FeatureFlag('menu')
+  @FeatureFlag('menu_management')
   delete(@Param('id') id: string) {
     return this.menuService.delete(id);
   }
 
   @Get(':id')
   @Permissions('menu.read')
-  @FeatureFlag('menu')
+  @FeatureFlag('menu_management')
   findOne(@Param('id') id: string) {
     return this.menuService.findOne(id);
   }
 
   @Patch(':id')
   @Permissions('menu.write')
-  @FeatureFlag('menu')
+  @FeatureFlag('menu_management')
   update(@Param('id') id: string, @Body() dto: UpdateDishDto) {
     return this.menuService.update(id, dto);
   }
