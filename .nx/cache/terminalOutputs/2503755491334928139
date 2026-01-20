@@ -1,0 +1,211 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.9s
+ [37m[1m○[22m[39m Compiling /dashboard/menu/dishes/[id] ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 4.2s (698 modules)
+ [32m[1m✓[22m[39m Compiled in 314ms (317 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 3.1s (706 modules)
+ GET /dashboard/menu [32m200[39m in 3307ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 260ms (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 336ms
+ [32m[1m✓[22m[39m Compiled in 424ms (720 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 175ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 202ms (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 273ms
+ [32m[1m✓[22m[39m Compiled in 455ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 310ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 247ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 387ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 516ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 265ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 224ms (720 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 178ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 638ms (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 729ms
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 97ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 44ms
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 53ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 59ms
+ [32m[1m✓[22m[39m Compiled in 417ms (723 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 169ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 282ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 262ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 379ms (723 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 140ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 487ms (720 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 202ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 242ms (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 324ms
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 90ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 420ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 333ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 350ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 596ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 264ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 327ms (723 modules)
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/dishes/[id]/page.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\menu\dishes\[id]\page.tsx[0m:75:1]
+ [2m75[0m |     is_bestseller: false,
+ [2m76[0m |     is_new: false,
+ [2m77[0m |     is_available: true,
+ [2m78[0m |     calories: ,
+    : [31;1m              ^[0m
+ [2m79[0m |     is_vegetarian: false,
+ [2m80[0m |     is_vegan: false,
+ [2m80[0m |   });
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/menu/dishes/[id]/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 1135ms (946 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 146ms
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 77ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 318ms (935 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 394ms
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/dishes/[id]/page.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\menu\dishes\[id]\page.tsx[0m:75:1]
+ [2m75[0m |     is_bestseller: false,
+ [2m76[0m |     is_new: false,
+ [2m77[0m |     is_available: true,
+ [2m78[0m |     calories: ,
+    : [31;1m              ^[0m
+ [2m79[0m |     is_vegetarian: false,
+ [2m80[0m |     is_vegan: false,
+ [2m80[0m |   });
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/menu/dishes/[id]/page.tsx
+ [32m[1m✓[22m[39m Compiled in 377ms (935 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 205ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 285ms (949 modules)
+ [32m[1m✓[22m[39m Compiled in 419ms (944 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.9s
+ [37m[1m○[22m[39m Compiling /dashboard/menu/dishes/[id] ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 4.2s (698 modules)
+ [32m[1m✓[22m[39m Compiled in 314ms (317 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 3.1s (706 modules)
+ GET /dashboard/menu [32m200[39m in 3307ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 260ms (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 336ms
+ [32m[1m✓[22m[39m Compiled in 424ms (720 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 175ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 202ms (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 273ms
+ [32m[1m✓[22m[39m Compiled in 455ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 310ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 247ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 387ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 516ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 265ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 224ms (720 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 178ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 638ms (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 729ms
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 97ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 44ms
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 53ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 59ms
+ [32m[1m✓[22m[39m Compiled in 417ms (723 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 169ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 282ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 262ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 379ms (723 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 140ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 487ms (720 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 202ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 242ms (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 324ms
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 90ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 420ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 333ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 350ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 596ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 264ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 327ms (723 modules)
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/dishes/[id]/page.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\menu\dishes\[id]\page.tsx[0m:75:1]
+ [2m75[0m |     is_bestseller: false,
+ [2m76[0m |     is_new: false,
+ [2m77[0m |     is_available: true,
+ [2m78[0m |     calories: ,
+    : [31;1m              ^[0m
+ [2m79[0m |     is_vegetarian: false,
+ [2m80[0m |     is_vegan: false,
+ [2m80[0m |   });
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/menu/dishes/[id]/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 1135ms (946 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 146ms
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 77ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 318ms (935 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 394ms
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/dishes/[id]/page.tsx
+Error: 
+  [31mx[0m Expression expected
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\menu\dishes\[id]\page.tsx[0m:75:1]
+ [2m75[0m |     is_bestseller: false,
+ [2m76[0m |     is_new: false,
+ [2m77[0m |     is_available: true,
+ [2m78[0m |     calories: ,
+    : [31;1m              ^[0m
+ [2m79[0m |     is_vegetarian: false,
+ [2m80[0m |     is_vegan: false,
+ [2m80[0m |   });
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/menu/dishes/[id]/page.tsx
+ [32m[1m✓[22m[39m Compiled in 377ms (935 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 205ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 285ms (949 modules)
+ [32m[1m✓[22m[39m Compiled in 419ms (944 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

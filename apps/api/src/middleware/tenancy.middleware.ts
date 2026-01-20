@@ -9,17 +9,22 @@ export class TenancyMiddleware implements NestMiddleware {
     secret: process.env.JWT_SECRET || 'dev-secret',
   });
 
-  use(req: Request, _res: Response, next: NextFunction) {
+  use(req: Request, res: Response, next: NextFunction) {
+    // Wrap the entire request handling in RequestContext.run()
     RequestContext.run(() => {
       const payload = this.extractJwtPayload(req);
       if (payload) {
-        RequestContext.setTenantId(payload.tenant_id || payload.tenantId);
-        RequestContext.setUser({
+        const tenantId = payload.tenant_id || payload.tenantId;
+        console.log('TenancyMiddleware - Setting tenant_id:', tenantId);
+        RequestContext.set({
+          tenantId,
           userId: payload.sub,
           email: payload.email,
           roles: payload.roles,
           token: this.getToken(req),
         });
+      } else {
+        console.warn('TenancyMiddleware - No JWT payload found');
       }
       next();
     });

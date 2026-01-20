@@ -1,0 +1,47 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.5s
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1907ms (455 modules)
+ GET / [32m200[39m in 2410ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 641ms (444 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 417ms
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 1228ms (721 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard [32m200[39m in 1507ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 32ms
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 279ms (743 modules)
+ GET /dashboard/menu [32m200[39m in 136ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 59ms
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 347ms (749 modules)
+ [32m[1m✓[22m[39m Compiled in 840ms (741 modules)
+ [32m[1m✓[22m[39m Compiled in 299ms (741 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.5s
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1907ms (455 modules)
+ GET / [32m200[39m in 2410ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 641ms (444 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 417ms
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 1228ms (721 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard [32m200[39m in 1507ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 32ms
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 279ms (743 modules)
+ GET /dashboard/menu [32m200[39m in 136ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 59ms
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 347ms (749 modules)
+ [32m[1m✓[22m[39m Compiled in 840ms (741 modules)
+ [32m[1m✓[22m[39m Compiled in 299ms (741 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

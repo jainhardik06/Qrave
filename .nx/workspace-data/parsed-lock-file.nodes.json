@@ -10224,6 +10224,15 @@
         "hash": "sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ=="
       }
     },
+    "npm:lucide-react": {
+      "type": "npm",
+      "name": "npm:lucide-react",
+      "data": {
+        "version": "0.562.0",
+        "packageName": "lucide-react",
+        "hash": "sha512-82hOAu7y0dbVuFfmO4bYF1XEwYk/mEbM5E+b1jgci/udUBEE/R7LF5Ip0CCEmXe8AybRM8L+04eP+LGZeDvkiw=="
+      }
+    },
     "npm:luxon": {
       "type": "npm",
       "name": "npm:luxon",
@@ -15057,6 +15066,7 @@
     "node_modules/loose-envify": "npm:loose-envify",
     "node_modules/lower-case": "npm:lower-case",
     "node_modules/lru-cache": "npm:lru-cache",
+    "node_modules/lucide-react": "npm:lucide-react",
     "node_modules/luxon": "npm:luxon",
     "node_modules/magic-string": "npm:magic-string",
     "node_modules/make-dir": "npm:make-dir",

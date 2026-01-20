@@ -10354,6 +10354,15 @@
         "hash": "sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ=="
       }
     },
+    "npm:lucide-react": {
+      "type": "npm",
+      "name": "npm:lucide-react",
+      "data": {
+        "version": "0.562.0",
+        "packageName": "lucide-react",
+        "hash": "sha512-82hOAu7y0dbVuFfmO4bYF1XEwYk/mEbM5E+b1jgci/udUBEE/R7LF5Ip0CCEmXe8AybRM8L+04eP+LGZeDvkiw=="
+      }
+    },
     "npm:luxon": {
       "type": "npm",
       "name": "npm:luxon",
@@ -14078,6 +14087,11 @@
       {
         "source": "web",
         "target": "npm:next",
+        "type": "static"
+      },
+      {
+        "source": "web",
+        "target": "npm:lucide-react",
         "type": "static"
       }
     ],
@@ -27421,6 +27435,13 @@
         "type": "static"
       }
     ],
+    "npm:lucide-react": [
+      {
+        "source": "npm:lucide-react",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
     "npm:magic-string": [
       {
         "source": "npm:magic-string",
@@ -32986,5 +33007,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1768819470890
+  "computedAt": 1768886187395
 }

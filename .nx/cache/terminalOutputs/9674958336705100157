@@ -1,21 +1,179 @@
 [2m> [22mcd apps/web && npx next dev -p 3000
 
- [31m[1m⨯[22m[39m Failed to start server
-Error: listen EADDRINUSE: address already in use :::3000
-[90m    at Server.setupListenHandle [as _listen2] (node:net:1939:16)[39m
-[90m    at listenInCluster (node:net:1996:12)[39m
-[90m    at Server.listen (node:net:2101:7)[39m
-    at D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\start-server.js:280:16
-    at new Promise (<anonymous>)
-    at startServer (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\start-server.js:191:11)
-    at D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\start-server.js:310:52
-    at Span.traceAsyncFn (D:\D\Qrave\node_modules\[4mnext[24m\dist\trace\trace.js:154:26)
-    at process.<anonymous> (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\start-server.js:310:35)
-[90m    at process.emit (node:events:518:28)[39m {
-  code: [32m'EADDRINUSE'[39m,
-  errno: [33m-4091[39m,
-  syscall: [32m'listen'[39m,
-  address: [32m'::'[39m,
-  port: [33m3000[39m
-}
-[?25h
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.1s
+ [37m[1m○[22m[39m Compiling /superadmin ...
+ [32m[1m✓[22m[39m Compiled /superadmin in 1788ms (511 modules)
+ GET /superadmin [32m200[39m in 2155ms
+ [32m[1m✓[22m[39m Compiled in 335ms (262 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants/new in 293ms (503 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /superadmin/tenants/new [32m200[39m in 431ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 239ms (509 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 178ms (512 modules)
+ GET /dasboard [33m404[39m in 263ms
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 2s (741 modules)
+ GET /dashboard [32m200[39m in 2226ms
+ [32m[1m✓[22m[39m Compiled /dashboard/staff in 467ms (747 modules)
+ GET /dashboard/staff [32m200[39m in 692ms
+ GET /superadmin/tenants [32m200[39m in 65ms
+ [32m[1m✓[22m[39m Compiled in 449ms (739 modules)
+ [32m[1m✓[22m[39m Compiled /login in 299ms (591 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard in 133ms (416 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 349ms (752 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 314ms (758 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/staff in 184ms (424 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/analytics in 387ms (760 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/settings in 426ms (758 modules)
+ GET /dashboard [32m200[39m in 1069ms
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [37m[1m○[22m[39m Compiling /_error ...
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ GET /dashboard [31m500[39m in 54ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.1s
+ [37m[1m○[22m[39m Compiling /superadmin ...
+ [32m[1m✓[22m[39m Compiled /superadmin in 1788ms (511 modules)
+ GET /superadmin [32m200[39m in 2155ms
+ [32m[1m✓[22m[39m Compiled in 335ms (262 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants/new in 293ms (503 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /superadmin/tenants/new [32m200[39m in 431ms
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 239ms (509 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 178ms (512 modules)
+ GET /dasboard [33m404[39m in 263ms
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 2s (741 modules)
+ GET /dashboard [32m200[39m in 2226ms
+ [32m[1m✓[22m[39m Compiled /dashboard/staff in 467ms (747 modules)
+ GET /dashboard/staff [32m200[39m in 692ms
+ GET /superadmin/tenants [32m200[39m in 65ms
+ [32m[1m✓[22m[39m Compiled in 449ms (739 modules)
+ [32m[1m✓[22m[39m Compiled /login in 299ms (591 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard in 133ms (416 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 349ms (752 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 314ms (758 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/staff in 184ms (424 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/analytics in 387ms (760 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/settings in 426ms (758 modules)
+ GET /dashboard [32m200[39m in 1069ms
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [37m[1m○[22m[39m Compiling /_error ...
+ [31m[1m⨯[22m[39m ./app/dashboard/menu/page.tsx:6:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32mlucide-react[39m'
+[0m [90m 4 |[39m [36mimport[39m { useRouter } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { [33mPlus[39m[33m,[39m [33mEdit2[39m[33m,[39m [33mTrash2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m [36minterface[39m [33mCategory[39m {[0m
+[0m [90m 9 |[39m   _id[33m:[39m string[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ GET /dashboard [31m500[39m in 54ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

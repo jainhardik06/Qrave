@@ -9,38 +9,37 @@ type StoreShape = {
   token?: string;
 };
 
-// Small helper to carry request-scoped values such as tenant id using AsyncLocalStorage.
+// Small helper to carry request-scoped values such as tenant id
 class RequestContextHost {
-  private readonly storage = new AsyncLocalStorage<StoreShape>();
+  private static storage = new AsyncLocalStorage<StoreShape>();
 
-  run(callback: () => void) {
-    this.storage.run({}, callback);
+  static run<T>(callback: () => T): T {
+    return RequestContextHost.storage.run({}, callback);
   }
 
-  get store(): StoreShape | undefined {
-    return this.storage.getStore();
-  }
-
-  setTenantId(tenantId?: Types.ObjectId | string) {
-    const store = this.storage.getStore();
+  static set(data: Partial<StoreShape>) {
+    const store = RequestContextHost.storage.getStore();
     if (store) {
-      store.tenantId = tenantId;
+      Object.assign(store, data);
     }
   }
 
-  setUser(payload: Partial<Pick<StoreShape, 'userId' | 'email' | 'roles' | 'token'>>) {
-    const store = this.storage.getStore();
-    if (store) {
-      store.userId = payload.userId ?? store.userId;
-      store.email = payload.email ?? store.email;
-      store.roles = payload.roles ?? store.roles;
-      store.token = payload.token ?? store.token;
-    }
+  static getTenantId(): Types.ObjectId | string | undefined {
+    return RequestContextHost.storage.getStore()?.tenantId;
   }
 
-  getTenantId() {
-    return this.storage.getStore()?.tenantId;
+  static getUserId(): string | undefined {
+    return RequestContextHost.storage.getStore()?.userId;
+  }
+
+  static getUser() {
+    const store = RequestContextHost.storage.getStore();
+    return {
+      userId: store?.userId,
+      email: store?.email,
+      roles: store?.roles,
+    };
   }
 }
 
-export const RequestContext = new RequestContextHost();
+export const RequestContext = RequestContextHost;

@@ -1,0 +1,5 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

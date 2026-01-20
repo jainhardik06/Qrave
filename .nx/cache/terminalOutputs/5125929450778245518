@@ -1,0 +1,57 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1968ms
+ [37m[1m○[22m[39m Compiling /dashboard/menu/dishes/[id] ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 2.3s (698 modules)
+ [32m[1m✓[22m[39m Compiled in 270ms (317 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 3122ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 311ms (687 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 456ms
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 444ms (709 modules)
+ GET /dashboard/menu [32m200[39m in 167ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 422ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 439ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 354ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 302ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 316ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 367ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 743ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 504ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 339ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 273ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 466ms (724 modules)
+ [32m[1m✓[22m[39m Compiled in 243ms (724 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1968ms
+ [37m[1m○[22m[39m Compiling /dashboard/menu/dishes/[id] ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 2.3s (698 modules)
+ [32m[1m✓[22m[39m Compiled in 270ms (317 modules)
+ GET /dashboard/menu/dishes/new?category=null [32m200[39m in 3122ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 311ms (687 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 456ms
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 444ms (709 modules)
+ GET /dashboard/menu [32m200[39m in 167ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 422ms (723 modules)
+ [32m[1m✓[22m[39m Compiled in 439ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 354ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 302ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 316ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 367ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 743ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 504ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 339ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 273ms (720 modules)
+ [32m[1m✓[22m[39m Compiled in 466ms (724 modules)
+ [32m[1m✓[22m[39m Compiled in 243ms (724 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

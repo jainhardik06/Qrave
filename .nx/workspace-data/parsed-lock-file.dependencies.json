@@ -16740,6 +16740,11 @@
     "type": "static"
   },
   {
+    "source": "npm:lucide-react",
+    "target": "npm:react",
+    "type": "static"
+  },
+  {
     "source": "npm:magic-string",
     "target": "npm:@jridgewell/sourcemap-codec",
     "type": "static"

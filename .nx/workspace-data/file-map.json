@@ -13,32 +13,32 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".env.example",
-        "hash": "13653663135303113341"
+        "file": "nx.json",
+        "hash": "3897980461332312024"
+      },
+      {
+        "file": "package.json",
+        "hash": "8510451765899302735"
       },
       {
         "file": ".gitignore",
         "hash": "6468668766053406242"
       },
       {
+        "file": "token.txt",
+        "hash": "15558633194263700325"
+      },
+      {
+        "file": ".env.example",
+        "hash": "13653663135303113341"
+      },
+      {
         "file": "README.md",
         "hash": "5721681303227786399"
       },
       {
-        "file": "nx.json",
-        "hash": "3897980461332312024"
-      },
-      {
         "file": "package-lock.json",
-        "hash": "13352636312856310210"
-      },
-      {
-        "file": "package.json",
-        "hash": "1893944631874410878"
-      },
-      {
-        "file": "token.txt",
-        "hash": "15558633194263700325"
+        "hash": "2157159737062501812"
       },
       {
         "file": "tsconfig.base.json",
@@ -250,6 +250,38 @@
           ]
         },
         {
+          "file": "apps/api/src/app/menu/category.controller.ts",
+          "hash": "18015056372056141267",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/menu/category.service.ts",
+          "hash": "8788865544202644784",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/menu/dish.controller.ts",
+          "hash": "15270375662047819093",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/menu/dish.service.ts",
+          "hash": "12257805425365368436",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
           "file": "apps/api/src/app/menu/dto/create-dish.dto.ts",
           "hash": "16175185190621991499",
           "deps": [
@@ -274,7 +306,7 @@
         },
         {
           "file": "apps/api/src/app/menu/menu.module.ts",
-          "hash": "11435164202447365547",
+          "hash": "56270230716491529",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose"
@@ -440,17 +472,18 @@
         },
         {
           "file": "apps/api/src/common/context/request-context.ts",
-          "hash": "12179945852916667889",
+          "hash": "9065485447529254174",
           "deps": [
             "npm:mongoose"
           ]
         },
         {
           "file": "apps/api/src/database/database.module.ts",
-          "hash": "6124873390492999457",
+          "hash": "16961457074960732326",
           "deps": [
             "npm:@nestjs/common",
-            "npm:@nestjs/mongoose"
+            "npm:@nestjs/mongoose",
+            "npm:@nestjs/config"
           ]
         },
         {
@@ -464,7 +497,7 @@
         },
         {
           "file": "apps/api/src/middleware/tenancy.middleware.ts",
-          "hash": "5698043171054925543",
+          "hash": "1634292185173516745",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/jwt",
@@ -475,6 +508,22 @@
           "file": "apps/api/src/plugins/tenancy.plugin.ts",
           "hash": "1827446928409499053",
           "deps": [
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/schemas/category.schema.ts",
+          "hash": "13771488711567271523",
+          "deps": [
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/schemas/dish.schema.ts",
+          "hash": "14504936900047236090",
+          "deps": [
+            "npm:@nestjs/mongoose",
             "npm:mongoose"
           ]
         },
@@ -495,8 +544,24 @@
           ]
         },
         {
+          "file": "apps/api/src/schemas/topping.schema.ts",
+          "hash": "6557567972893374393",
+          "deps": [
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
           "file": "apps/api/src/schemas/user.schema.ts",
           "hash": "11617119999217645180",
+          "deps": [
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/api/src/schemas/variant.schema.ts",
+          "hash": "15476157003162447788",
           "deps": [
             "npm:@nestjs/mongoose",
             "npm:mongoose"
@@ -552,12 +617,27 @@
           ]
         },
         {
-          "file": "apps/web/app/dashboard/menu/page.tsx",
-          "hash": "13155903941880127522",
+          "file": "apps/web/app/dashboard/menu/dishes/[id]/page.tsx",
+          "hash": "6707526418872364181",
           "deps": [
             "npm:react",
             "npm:next",
-            "npm:axios"
+            "npm:axios",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/menu/dishes/[id]/page.tsx.bak",
+          "hash": "15568517184675838582"
+        },
+        {
+          "file": "apps/web/app/dashboard/menu/page.tsx",
+          "hash": "1725147480404676852",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios",
+            "npm:lucide-react"
           ]
         },
         {
@@ -707,5 +787,5 @@
       ]
     }
   },
-  "externalNodesHash": "3101071575673129961"
+  "externalNodesHash": "1213804566680186068"
 }

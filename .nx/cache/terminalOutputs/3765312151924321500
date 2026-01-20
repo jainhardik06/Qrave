@@ -1,0 +1,47 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.6s
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 4.5s (714 modules)
+ GET /dashboard/menu [32m200[39m in 5011ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 4.2s (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 3864ms
+ [32m[1m✓[22m[39m Compiled in 404ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 240ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 207ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 229ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 236ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 232ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 224ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 235ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 224ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 238ms (708 modules)
+^C[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.6s
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 4.5s (714 modules)
+ GET /dashboard/menu [32m200[39m in 5011ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 4.2s (709 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 3864ms
+ [32m[1m✓[22m[39m Compiled in 404ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 240ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 207ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 229ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 236ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 232ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 224ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 235ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 224ms (708 modules)
+ [32m[1m✓[22m[39m Compiled in 238ms (708 modules)
+^CWarning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code
