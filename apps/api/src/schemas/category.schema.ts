@@ -5,8 +5,8 @@ export type CategoryDocument = Category & Document;
 
 @Schema({ timestamps: true })
 export class Category {
-  @Prop({ type: Types.ObjectId, ref: 'Tenant', required: true })
-  tenant_id: any;
+  @Prop({ type: String, ref: 'Tenant', required: true })
+  tenant_id: string = '';
 
   @Prop({ required: true, trim: true })
   name: string = '';

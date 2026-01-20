@@ -22,8 +22,8 @@ export interface Topping {
 
 @Schema({ timestamps: true })
 export class Dish {
-  @Prop({ type: Types.ObjectId, ref: 'Tenant', required: true })
-  tenant_id!: Types.ObjectId;
+  @Prop({ type: String, ref: 'Tenant', required: true })
+  tenant_id!: string;
 
   @Prop({ type: [Types.ObjectId], ref: 'Category', required: true, default: [] })
   category_ids!: Types.ObjectId[];

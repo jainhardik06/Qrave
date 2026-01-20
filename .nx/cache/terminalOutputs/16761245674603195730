@@ -1,0 +1,7 @@
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/schemas/category.schema.ts(9,3): error TS2564: Property 'tenant_id' has no initializer and is not definitely assigned in the constructor.
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/schemas/category.schema.ts(9,3): error TS2564: Property 'tenant_id' has no initializer and is not definitely assigned in the constructor.
+Warning: command "tsc -p apps/api/tsconfig.json" exited with non-zero status code

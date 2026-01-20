@@ -30,7 +30,7 @@ export class DishService {
   }): Promise<Dish> {
     try {
       const tenant_id = RequestContext.getTenantId();
-      console.log('DishService.create - tenant_id:', tenant_id);
+      console.log('DishService.create - tenant_id:', tenant_id, 'type:', typeof tenant_id);
       const { category_ids, ...rest } = createDishDto;
       
       if (!category_ids || category_ids.length === 0) {
@@ -41,12 +41,13 @@ export class DishService {
         throw new Error('Tenant ID is required');
       }
       
+      // Store tenant_id as string (database stores it as string)
       const dish = new this.dishModel({
-        tenant_id,
+        tenant_id: tenant_id,
         category_ids: category_ids.map(id => new Types.ObjectId(id)),
         ...rest,
       });
-      console.log('DishService.create - saving dish:', { tenant_id, category_ids, name: rest.name });
+      console.log('DishService.create - saving dish with tenant_id:', tenant_id, 'categories:', category_ids.length);
       return dish.save();
     } catch (error) {
       console.error('Error creating dish:', error);
@@ -59,24 +60,36 @@ export class DishService {
     allergen?: string,
   ): Promise<Dish[]> {
     const tenant_id = RequestContext.getTenantId();
-    const query: any = { tenant_id, is_available: true };
-
+    console.log('DishService.findAll - tenant_id:', tenant_id, 'type:', typeof tenant_id);
+    
+    if (!tenant_id) {
+      console.warn('DishService.findAll - No tenant_id found!');
+      return [];
+    }
+    
+    // Query with string tenant_id (database stores it as string)
+    const query: any = { tenant_id: tenant_id };
+    
     if (categoryId) {
-      query.category_ids = new Types.ObjectId(categoryId);
+      // Use $in operator for array field
+      query.category_ids = { $in: [new Types.ObjectId(categoryId)] };
     }
 
     if (allergen) {
       query.allergens = { $nin: [allergen] };
     }
 
-    return this.dishModel.find(query).exec();
+    console.log('DishService.findAll - query:', JSON.stringify(query));
+    const dishes = await this.dishModel.find(query).exec();
+    console.log('DishService.findAll - found dishes:', dishes.length);
+    return dishes;
   }
 
   async findOne(id: string): Promise<Dish | null> {
     const tenant_id = RequestContext.getTenantId();
     return this.dishModel.findOne({
       _id: new Types.ObjectId(id),
-      tenant_id,
+      tenant_id: tenant_id,
     });
   }
 
@@ -95,7 +108,7 @@ export class DishService {
     }
     
     return this.dishModel.findOneAndUpdate(
-      { _id: new Types.ObjectId(id), tenant_id },
+      { _id: new Types.ObjectId(id), tenant_id: tenant_id },
       updateData,
       { new: true },
     );
@@ -105,7 +118,7 @@ export class DishService {
     const tenant_id = RequestContext.getTenantId();
     await this.dishModel.deleteOne({
       _id: new Types.ObjectId(id),
-      tenant_id,
+      tenant_id: tenant_id,
     });
   }
 
@@ -113,9 +126,8 @@ export class DishService {
     const tenant_id = RequestContext.getTenantId();
     return this.dishModel
       .find({
-        tenant_id,
-        category_ids: new Types.ObjectId(categoryId),
-        is_available: true,
+        tenant_id: tenant_id,
+        category_ids: { $in: [new Types.ObjectId(categoryId)] },
       })
       .exec();
   }

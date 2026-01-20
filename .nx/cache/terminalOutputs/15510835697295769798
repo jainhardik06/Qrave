@@ -4,32 +4,52 @@
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 2.1s
+ [32m[1m✓[22m[39m Ready in 2.3s
  [37m[1m○[22m[39m Compiling /dashboard/menu ...
- [32m[1m✓[22m[39m Compiled /dashboard/menu in 2.5s (714 modules)
- GET /dashboard/menu [32m200[39m in 3022ms
- [32m[1m✓[22m[39m Compiled /_not-found in 810ms (703 modules)
- GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 628ms
- GET /dashboard/menu [32m200[39m in 98ms
- GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 38ms
- [32m[1m✓[22m[39m Compiled /dashboard/orders in 490ms (709 modules)
- [32m[1m✓[22m[39m Compiled /dashboard in 349ms (745 modules)
- [32m[1m✓[22m[39m Compiled in 442ms (759 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 2.3s (714 modules)
+ GET /dashboard/menu [32m200[39m in 2798ms
+ [32m[1m✓[22m[39m Compiled in 471ms (325 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 322ms (703 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 463ms
+ GET /dashboard/menu [32m200[39m in 133ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 40ms
+ GET /dashboard/menu [32m200[39m in 69ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 62ms
+ [32m[1m✓[22m[39m Compiled in 540ms (714 modules)
+ [32m[1m✓[22m[39m Compiled in 217ms (325 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/menu [32m200[39m in 100ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 180ms (703 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 271ms
+ [32m[1m✓[22m[39m Compiled in 397ms (327 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/menu [32m200[39m in 38ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 80ms
 [2m> [22mcd apps/web && npx next dev -p 3000
 
   [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 2.1s
+ [32m[1m✓[22m[39m Ready in 2.3s
  [37m[1m○[22m[39m Compiling /dashboard/menu ...
- [32m[1m✓[22m[39m Compiled /dashboard/menu in 2.5s (714 modules)
- GET /dashboard/menu [32m200[39m in 3022ms
- [32m[1m✓[22m[39m Compiled /_not-found in 810ms (703 modules)
- GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 628ms
- GET /dashboard/menu [32m200[39m in 98ms
- GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 38ms
- [32m[1m✓[22m[39m Compiled /dashboard/orders in 490ms (709 modules)
- [32m[1m✓[22m[39m Compiled /dashboard in 349ms (745 modules)
- [32m[1m✓[22m[39m Compiled in 442ms (759 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 2.3s (714 modules)
+ GET /dashboard/menu [32m200[39m in 2798ms
+ [32m[1m✓[22m[39m Compiled in 471ms (325 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 322ms (703 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 463ms
+ GET /dashboard/menu [32m200[39m in 133ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 40ms
+ GET /dashboard/menu [32m200[39m in 69ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 62ms
+ [32m[1m✓[22m[39m Compiled in 540ms (714 modules)
+ [32m[1m✓[22m[39m Compiled in 217ms (325 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/menu [32m200[39m in 100ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 180ms (703 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 271ms
+ [32m[1m✓[22m[39m Compiled in 397ms (327 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/menu [32m200[39m in 38ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 80ms
 Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

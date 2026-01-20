@@ -13,12 +13,32 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "package.json",
+        "hash": "8510451765899302735"
+      },
+      {
+        "file": "FINAL_REPORT.md",
+        "hash": "3810500943016669946"
+      },
+      {
         "file": "nx.json",
         "hash": "3897980461332312024"
       },
       {
-        "file": "package.json",
-        "hash": "8510451765899302735"
+        "file": "DEEP_DIVE_FIX.md",
+        "hash": "11333975308720943759"
+      },
+      {
+        "file": "RESOLUTION_SUMMARY.md",
+        "hash": "695467965577687361"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "15378423341984598940"
+      },
+      {
+        "file": "API_CONTRACT.md",
+        "hash": "18141321249637467054"
       },
       {
         "file": ".gitignore",
@@ -29,23 +49,41 @@
         "hash": "15558633194263700325"
       },
       {
-        "file": ".env.example",
-        "hash": "13653663135303113341"
-      },
-      {
         "file": "README.md",
         "hash": "5721681303227786399"
+      },
+      {
+        "file": "SYSTEM_FLOW_COMPLETE.md",
+        "hash": "5210863026931858132"
+      },
+      {
+        "file": "QUICK_START.md",
+        "hash": "5593026590595840098"
+      },
+      {
+        "file": "TESTING_GUIDE.md",
+        "hash": "456947720581159473"
       },
       {
         "file": "package-lock.json",
         "hash": "2157159737062501812"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "15378423341984598940"
+        "file": ".env.example",
+        "hash": "13653663135303113341"
       }
     ],
     "projectFileMap": {
+      "shared-types": [
+        {
+          "file": "libs/shared-types/project.json",
+          "hash": "11102004796360553658"
+        },
+        {
+          "file": "libs/shared-types/src/index.ts",
+          "hash": "12740873421295123623"
+        }
+      ],
       "api": [
         {
           "file": "apps/api/jest.config.ts",
@@ -258,7 +296,7 @@
         },
         {
           "file": "apps/api/src/app/menu/category.service.ts",
-          "hash": "8788865544202644784",
+          "hash": "18272743949636086172",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -274,7 +312,7 @@
         },
         {
           "file": "apps/api/src/app/menu/dish.service.ts",
-          "hash": "12257805425365368436",
+          "hash": "11776413041205372814",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -497,7 +535,7 @@
         },
         {
           "file": "apps/api/src/middleware/tenancy.middleware.ts",
-          "hash": "1634292185173516745",
+          "hash": "13107564249741494145",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/jwt",
@@ -513,7 +551,7 @@
         },
         {
           "file": "apps/api/src/schemas/category.schema.ts",
-          "hash": "13771488711567271523",
+          "hash": "13431831853244351539",
           "deps": [
             "npm:@nestjs/mongoose",
             "npm:mongoose"
@@ -521,7 +559,7 @@
         },
         {
           "file": "apps/api/src/schemas/dish.schema.ts",
-          "hash": "14504936900047236090",
+          "hash": "10939303971561162778",
           "deps": [
             "npm:@nestjs/mongoose",
             "npm:mongoose"
@@ -632,7 +670,7 @@
         },
         {
           "file": "apps/web/app/dashboard/menu/page.tsx",
-          "hash": "1725147480404676852",
+          "hash": "4447632588457559811",
           "deps": [
             "npm:react",
             "npm:next",
@@ -773,16 +811,6 @@
         {
           "file": "apps/web/tsconfig.json",
           "hash": "6023666558334324888"
-        }
-      ],
-      "shared-types": [
-        {
-          "file": "libs/shared-types/project.json",
-          "hash": "11102004796360553658"
-        },
-        {
-          "file": "libs/shared-types/src/index.ts",
-          "hash": "12740873421295123623"
         }
       ]
     }
