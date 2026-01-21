@@ -4,20 +4,32 @@
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 7.2s
- [37m[1m○[22m[39m Compiling /dashboard/menu ...
- [32m[1m✓[22m[39m Compiled /dashboard/menu in 3.7s (722 modules)
- GET /dashboard/menu [32m200[39m in 4287ms
- [32m[1m✓[22m[39m Compiled in 629ms (329 modules)
+ [32m[1m✓[22m[39m Ready in 15s
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 15.9s (455 modules)
+ [32m[1m✓[22m[39m Compiled in 373ms (234 modules)
+ GET / [32m200[39m in 16809ms
+ [32m[1m✓[22m[39m Compiled in 167ms (234 modules)
+ [32m[1m✓[22m[39m Compiled in 156ms (234 modules)
+ [32m[1m✓[22m[39m Compiled in 124ms (234 modules)
+ [32m[1m✓[22m[39m Compiled in 166ms (234 modules)
+ [32m[1m✓[22m[39m Compiled in 132ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 264ms (234 modules)
 [2m> [22mcd apps/web && npx next dev -p 3000
 
   [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 7.2s
- [37m[1m○[22m[39m Compiling /dashboard/menu ...
- [32m[1m✓[22m[39m Compiled /dashboard/menu in 3.7s (722 modules)
- GET /dashboard/menu [32m200[39m in 4287ms
- [32m[1m✓[22m[39m Compiled in 629ms (329 modules)
+ [32m[1m✓[22m[39m Ready in 15s
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 15.9s (455 modules)
+ [32m[1m✓[22m[39m Compiled in 373ms (234 modules)
+ GET / [32m200[39m in 16809ms
+ [32m[1m✓[22m[39m Compiled in 167ms (234 modules)
+ [32m[1m✓[22m[39m Compiled in 156ms (234 modules)
+ [32m[1m✓[22m[39m Compiled in 124ms (234 modules)
+ [32m[1m✓[22m[39m Compiled in 166ms (234 modules)
+ [32m[1m✓[22m[39m Compiled in 132ms (441 modules)
+ [32m[1m✓[22m[39m Compiled in 264ms (234 modules)
 Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

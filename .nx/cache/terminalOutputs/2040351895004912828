@@ -1,0 +1,161 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.2s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 1921ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 292ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 2643ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 225ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 361ms
+ [33m[1m⚠[22m[39m Found a change in next.config.js. Restarting the server to apply the changes...
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.3s (500 modules)
+ [32m[1m✓[22m[39m Compiled in 299ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 3040ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 228ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 388ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 41ms
+ [33m[1m⚠[22m[39m Found a change in next.config.js. Restarting the server to apply the changes...
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1954ms
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.1s (500 modules)
+ [32m[1m✓[22m[39m Compiled in 132ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 2552ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 144ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 240ms
+ [32m[1m✓[22m[39m Compiled in 336ms (503 modules)
+ [32m[1m✓[22m[39m Compiled in 522ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 440ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 401ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 502ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 511ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 520ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 272ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 345ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 473ms (258 modules)
+ [32m[1m✓[22m[39m Compiled in 446ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 534ms (500 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx:8:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32m../components/CartDrawer[39m'
+[0m [90m  6 |[39m [36mimport[39m { [33mCategory[39m[33m,[39m [33mDish[39m[33m,[39m [33mDishWithCategories[39m[33m,[39m [33mFilterState[39m[33m,[39m [33mCartState[39m[33m,[39m [33mCartItem[39m } [36mfrom[39m [32m'../types'[39m[33m;[39m[0m
+[0m [90m  7 |[39m [36mimport[39m { [33mDishDetailModal[39m } [36mfrom[39m [32m'../components/DishDetailModal'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  8 |[39m [36mimport[39m { [33mCartDrawer[39m } [36mfrom[39m [32m'../components/CartDrawer'[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m  9 |[39m[0m
+[0m [90m 10 |[39m [90m// API base URL from environment[39m[0m
+[0m [90m 11 |[39m [36mconst[39m [33mAPI_BASE[39m [33m=[39m process[33m.[39menv[33m.[39m[33mNEXT_PUBLIC_API_BASE_URL[39m [33m||[39m [32m'http://localhost:3001/api'[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx:8:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32m../components/CartDrawer[39m'
+[0m [90m  6 |[39m [36mimport[39m { [33mCategory[39m[33m,[39m [33mDish[39m[33m,[39m [33mDishWithCategories[39m[33m,[39m [33mFilterState[39m[33m,[39m [33mCartState[39m[33m,[39m [33mCartItem[39m } [36mfrom[39m [32m'../types'[39m[33m;[39m[0m
+[0m [90m  7 |[39m [36mimport[39m { [33mDishDetailModal[39m } [36mfrom[39m [32m'../components/DishDetailModal'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  8 |[39m [36mimport[39m { [33mCartDrawer[39m } [36mfrom[39m [32m'../components/CartDrawer'[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m  9 |[39m[0m
+[0m [90m 10 |[39m [90m// API base URL from environment[39m[0m
+[0m [90m 11 |[39m [36mconst[39m [33mAPI_BASE[39m [33m=[39m process[33m.[39menv[33m.[39m[33mNEXT_PUBLIC_API_BASE_URL[39m [33m||[39m [32m'http://localhost:3001/api'[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [32m[1m✓[22m[39m Compiled in 398ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 457ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 431ms (502 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 153ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 542ms (491 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 674ms
+ [32m[1m✓[22m[39m Compiled in 503ms (502 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.2s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 1921ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 292ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 2643ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 225ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 361ms
+ [33m[1m⚠[22m[39m Found a change in next.config.js. Restarting the server to apply the changes...
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.3s (500 modules)
+ [32m[1m✓[22m[39m Compiled in 299ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 3040ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 228ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 388ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 41ms
+ [33m[1m⚠[22m[39m Found a change in next.config.js. Restarting the server to apply the changes...
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1954ms
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.1s (500 modules)
+ [32m[1m✓[22m[39m Compiled in 132ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 2552ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 144ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 240ms
+ [32m[1m✓[22m[39m Compiled in 336ms (503 modules)
+ [32m[1m✓[22m[39m Compiled in 522ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 440ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 401ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 502ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 511ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 520ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 272ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 345ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 473ms (258 modules)
+ [32m[1m✓[22m[39m Compiled in 446ms (500 modules)
+ [32m[1m✓[22m[39m Compiled in 534ms (500 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx:8:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32m../components/CartDrawer[39m'
+[0m [90m  6 |[39m [36mimport[39m { [33mCategory[39m[33m,[39m [33mDish[39m[33m,[39m [33mDishWithCategories[39m[33m,[39m [33mFilterState[39m[33m,[39m [33mCartState[39m[33m,[39m [33mCartItem[39m } [36mfrom[39m [32m'../types'[39m[33m;[39m[0m
+[0m [90m  7 |[39m [36mimport[39m { [33mDishDetailModal[39m } [36mfrom[39m [32m'../components/DishDetailModal'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  8 |[39m [36mimport[39m { [33mCartDrawer[39m } [36mfrom[39m [32m'../components/CartDrawer'[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m  9 |[39m[0m
+[0m [90m 10 |[39m [90m// API base URL from environment[39m[0m
+[0m [90m 11 |[39m [36mconst[39m [33mAPI_BASE[39m [33m=[39m process[33m.[39menv[33m.[39m[33mNEXT_PUBLIC_API_BASE_URL[39m [33m||[39m [32m'http://localhost:3001/api'[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx:8:1
+[31m[1mModule not found[22m[39m: Can't resolve '[32m../components/CartDrawer[39m'
+[0m [90m  6 |[39m [36mimport[39m { [33mCategory[39m[33m,[39m [33mDish[39m[33m,[39m [33mDishWithCategories[39m[33m,[39m [33mFilterState[39m[33m,[39m [33mCartState[39m[33m,[39m [33mCartItem[39m } [36mfrom[39m [32m'../types'[39m[33m;[39m[0m
+[0m [90m  7 |[39m [36mimport[39m { [33mDishDetailModal[39m } [36mfrom[39m [32m'../components/DishDetailModal'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  8 |[39m [36mimport[39m { [33mCartDrawer[39m } [36mfrom[39m [32m'../components/CartDrawer'[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[0m
+[0m [90m  9 |[39m[0m
+[0m [90m 10 |[39m [90m// API base URL from environment[39m[0m
+[0m [90m 11 |[39m [36mconst[39m [33mAPI_BASE[39m [33m=[39m process[33m.[39menv[33m.[39m[33mNEXT_PUBLIC_API_BASE_URL[39m [33m||[39m [32m'http://localhost:3001/api'[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ [32m[1m✓[22m[39m Compiled in 398ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 457ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 431ms (502 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 153ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 542ms (491 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 674ms
+ [32m[1m✓[22m[39m Compiled in 503ms (502 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

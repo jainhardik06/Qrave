@@ -1,0 +1,67 @@
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully
+ [37m[1m [22m[39m Linting and checking validity of types ...
+ [37m[1m [22m[39m Collecting page data ...
+ [37m[1m [22m[39m Generating static pages (0/15) ...
+ [37m[1m [22m[39m Generating static pages (3/15) 
+ [37m[1m [22m[39m Generating static pages (7/15) 
+ [37m[1m [22m[39m Generating static pages (11/15) 
+API fetch error: n [Error]: Dynamic server usage: no-store fetch http://localhost:3001/api /
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:14358
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21972
+    at o.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:21455[90m)[39m
+    at u.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:15655[90m)[39m
+    at u.startActiveSpan [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:30710[90m)[39m
+    at o.startActiveSpan [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:31244[90m)[39m
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21505
+    at o.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:21455[90m)[39m
+    at u.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:15655[90m)[39m
+    at y.trace [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21459[90m)[39m {
+  description: [32m'no-store fetch http://localhost:3001/api /'[39m,
+  digest: [32m'DYNAMIC_SERVER_USAGE'[39m
+}
+API fetch error: n [Error]: Dynamic server usage: no-store fetch http://localhost:3001/api /
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:14358
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21972
+    at o.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:21455[90m)[39m
+    at u.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:15655[90m)[39m
+    at u.startActiveSpan [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:30710[90m)[39m
+    at o.startActiveSpan [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:31244[90m)[39m
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21505
+    at o.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:21455[90m)[39m
+    at u.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:15655[90m)[39m
+    at y.trace [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21459[90m)[39m {
+  description: [32m'no-store fetch http://localhost:3001/api /'[39m,
+  digest: [32m'DYNAMIC_SERVER_USAGE'[39m
+}
+ [32m[1m✓[22m[39m Generating static pages (15/15)
+ [37m[1m [22m[39m Finalizing page optimization ...
+ [37m[1m [22m[39m Collecting build traces ...
+
+[4mRoute (app)[24m                              [4mSize[24m     [4mFirst Load JS[24m
+┌ ƒ /                                    138 B          [37m[1m87.4 kB[22m[39m
+├ ○ /_not-found                          873 B          [37m[1m88.2 kB[22m[39m
+├ ○ /dashboard                           24.4 kB         [37m[1m142 kB[22m[39m
+├ ○ /dashboard/analytics                 1.35 kB         [37m[1m119 kB[22m[39m
+├ ○ /dashboard/menu                      4.81 kB         [37m[1m113 kB[22m[39m
+├ ƒ /dashboard/menu/dishes/[id]          4.07 kB         [37m[1m113 kB[22m[39m
+├ ○ /dashboard/orders                    1.57 kB         [37m[1m119 kB[22m[39m
+├ ○ /dashboard/settings                  1.49 kB        [37m[1m97.5 kB[22m[39m
+├ ○ /dashboard/staff                     1.64 kB         [37m[1m119 kB[22m[39m
+├ ○ /login                               1.36 kB        [37m[1m88.7 kB[22m[39m
+├ ƒ /qr/[tenant]/menu                    8.82 kB        [37m[1m96.1 kB[22m[39m
+├ ○ /superadmin                          1.46 kB        [37m[1m88.7 kB[22m[39m
+├ ○ /superadmin/tenants                  2.55 kB        [37m[1m89.8 kB[22m[39m
+├ ○ /superadmin/tenants/new              1.86 kB        [37m[1m89.1 kB[22m[39m
+└ ○ /superadmin/users                    1.02 kB        [37m[1m88.3 kB[22m[39m
++ First Load JS shared by all            [37m[1m87.3 kB[22m[39m
+  ├ chunks/1dd3208c-84bd1f3e3ca5a6bd.js  53.6 kB
+  ├ chunks/528-1160a582ee723037.js       31.7 kB
+  └ other shared chunks (total)          1.95 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

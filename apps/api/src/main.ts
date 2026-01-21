@@ -10,7 +10,8 @@ async function bootstrap() {
   app.enableCors({
     origin: ['http://localhost:3000'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-    allowedHeaders: 'Content-Type, Authorization',
+    allowedHeaders: 'Content-Type, Authorization, X-Tenant',
+    credentials: true,
   });
   app.use(morgan('tiny'));
   app.useGlobalFilters(new HttpErrorFilter());

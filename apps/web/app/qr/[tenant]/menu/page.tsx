@@ -1,0 +1,894 @@
+'use client';
+
+import { useEffect, useState, useMemo, useRef } from 'react';
+import { useParams, useRouter } from 'next/navigation';
+import Image from 'next/image';
+import { Category, Dish, DishWithCategories, FilterState, CartState, CartItem } from '../types';
+import { DishDetailModal } from '../components/DishDetailModal';
+import { CartDrawer } from '../components/CartDrawer';
+
+// API base URL from environment
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3001/api';
+
+/**
+ * QR Menu Page - Mobile-first Swiggy/Zomato style interface
+ * Route: /qr/[tenant]/menu
+ * 
+ * Features:
+ * - SSR fetch of categories and dishes
+ * - Mobile-optimized layout
+ * - Search, filter, and sort
+ * - Multi-category dish duplication
+ * - Floating category navigator
+ * - Dish cards with variants and badges
+ * - Sticky top bar with controls
+ * - Cart mini-bar at bottom
+ */
+
+export default function QRMenuPage() {
+  const params = useParams();
+  const router = useRouter();
+  const tenant = params?.tenant as string;
+
+  // Data states
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [dishes, setDishes] = useState<Dish[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Filter & sort state
+  const [filters, setFilters] = useState<FilterState>({
+    searchQuery: '',
+    vegetarianOnly: false,
+    nonVegOnly: false,
+    allergenExclusions: [],
+    availableOnly: true,
+    sortBy: null,
+    bestsellerOnly: false,
+  });
+
+  const sortLabel =
+    filters.sortBy === 'price-low'
+      ? 'Price low to high'
+      : filters.sortBy === 'price-high'
+      ? 'Price high to low'
+      : null;
+
+  // Cart state
+  const [cart, setCart] = useState<CartState>({
+    items: [],
+    total: 0,
+    itemCount: 0,
+  });
+
+  // UI state
+  const [showCategorySheet, setShowCategorySheet] = useState(false);
+  const [activeCategoryId, setActiveCategoryId] = useState<string | null>(null);
+  const [selectedDish, setSelectedDish] = useState<Dish | null>(null);
+  const [showDishModal, setShowDishModal] = useState(false);
+  const [showCartDrawer, setShowCartDrawer] = useState(false);
+  const [showSortMenu, setShowSortMenu] = useState(false);
+  const sortButtonRef = useRef<HTMLButtonElement>(null);
+  const categoryRefsMap = useRef<{ [key: string]: HTMLDivElement | null }>({});
+
+  // Fetch data on mount
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+
+        // Build headers
+        const headers: HeadersInit = {
+          'X-Tenant': tenant || '',
+        };
+        
+        const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+        if (token) {
+          headers['Authorization'] = `Bearer ${token}`;
+        }
+
+        // Fetch categories
+        const catRes = await fetch(`${API_BASE}/categories`, {
+          headers,
+        });
+
+        if (!catRes.ok) {
+          throw new Error(`Failed to fetch categories: ${catRes.statusText}`);
+        }
+        const categoriesData: Category[] = await catRes.json();
+        setCategories(categoriesData);
+
+        // Fetch dishes
+        const dishRes = await fetch(`${API_BASE}/dishes`, {
+          headers,
+        });
+
+        if (!dishRes.ok) {
+          throw new Error(`Failed to fetch dishes: ${dishRes.statusText}`);
+        }
+        const dishesData: Dish[] = await dishRes.json();
+        setDishes(dishesData);
+
+        // Set first category as active if available
+        if (categoriesData.length > 0) {
+          setActiveCategoryId(categoriesData[0]._id);
+        }
+      } catch (err) {
+        console.error('Error fetching QR menu data:', err);
+        setError(err instanceof Error ? err.message : 'Failed to load menu');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (tenant) {
+      fetchData();
+    }
+  }, [tenant]);
+
+  // Memoized filtered and sorted dishes
+  const filteredAndSortedDishes = useMemo(() => {
+    let filtered = [...dishes];
+
+    // Search filter
+    if (filters.searchQuery) {
+      const query = filters.searchQuery.toLowerCase();
+      filtered = filtered.filter(
+        (d) =>
+          d.name.toLowerCase().includes(query) ||
+          d.description?.toLowerCase().includes(query)
+      );
+    }
+
+    // Vegetarian filter
+    if (filters.vegetarianOnly) {
+      filtered = filtered.filter((d) => d.is_vegetarian);
+    }
+
+    // Non-veg filter
+    if (filters.nonVegOnly) {
+      filtered = filtered.filter((d) => !d.is_vegetarian);
+    }
+
+    // Bestseller filter
+    if (filters.bestsellerOnly) {
+      filtered = filtered.filter((d) => d.is_bestseller);
+    }
+
+    // Allergen exclusion
+    if (filters.allergenExclusions.length > 0) {
+      filtered = filtered.filter((d) => {
+        const dishAllergens = d.allergens || [];
+        return !filters.allergenExclusions.some((allergen) =>
+          dishAllergens.includes(allergen)
+        );
+      });
+    }
+
+    // Availability filter
+    if (filters.availableOnly) {
+      filtered = filtered.filter((d) => d.is_available !== false);
+    }
+
+    // Sort
+    if (filters.sortBy) {
+      switch (filters.sortBy) {
+        case 'price-low':
+          filtered.sort((a, b) => a.base_price - b.base_price);
+          break;
+        case 'price-high':
+          filtered.sort((a, b) => b.base_price - a.base_price);
+          break;
+      }
+    }
+
+    return filtered;
+  }, [dishes, filters]);
+
+  // Build category-wise organized dishes (with duplication for multi-category)
+  const organizeDishesByCategory = useMemo(() => {
+    const organized: { [categoryId: string]: DishWithCategories[] } = {};
+
+    // Add "Bestsellers" synthetic category
+    const bestsellers = filteredAndSortedDishes.filter((d) => d.is_bestseller);
+    if (bestsellers.length > 0) {
+      organized['bestsellers'] = bestsellers.map((d) => ({
+        ...d,
+        displayCategoryId: 'bestsellers',
+      }));
+    }
+
+    // Add dishes to their actual categories (duplication if multi-category)
+    categories.forEach((cat) => {
+      organized[cat._id] = filteredAndSortedDishes
+        .filter((d) => d.category_ids.includes(cat._id))
+        .map((d) => ({
+          ...d,
+          displayCategoryId: cat._id,
+        }));
+    });
+
+    return organized;
+  }, [filteredAndSortedDishes, categories]);
+
+  // Scroll to category section
+  const scrollToCategory = (categoryId: string) => {
+    const ref = categoryRefsMap.current[categoryId];
+    if (ref) {
+      ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setActiveCategoryId(categoryId);
+      setShowCategorySheet(false);
+    }
+  };
+
+  const computeCartTotals = (items: CartItem[]): CartState => {
+    const total = items.reduce((sum, i) => sum + i.price, 0);
+    const itemCount = items.reduce((sum, i) => sum + i.quantity, 0);
+    return { items, total, itemCount };
+  };
+
+  // Add to cart handler
+  const handleAddToCart = (item: CartItem) => {
+    setCart((prev) => {
+      const unitPrice = item.unitPrice ?? item.price / item.quantity;
+      // Check if item already exists (same dish, variant, toppings)
+      const existingIndex = prev.items.findIndex(
+        (existingItem) =>
+          existingItem.dishId === item.dishId &&
+          existingItem.selectedVariant?.name === item.selectedVariant?.name
+      );
+
+      let updatedItems: CartItem[];
+      if (existingIndex > -1) {
+        // Update quantity
+        updatedItems = [...prev.items];
+        const existing = updatedItems[existingIndex];
+        const finalUnit = unitPrice || existing.unitPrice || existing.price / existing.quantity;
+        const newQty = existing.quantity + item.quantity;
+        updatedItems[existingIndex] = {
+          ...existing,
+          quantity: newQty,
+          unitPrice: finalUnit,
+          price: finalUnit * newQty,
+        };
+      } else {
+        // Add new item
+        updatedItems = [
+          ...prev.items,
+          {
+            ...item,
+            unitPrice,
+            price: unitPrice * item.quantity,
+          },
+        ];
+      }
+
+      return computeCartTotals(updatedItems);
+    });
+
+    // Show success feedback (optional toast here)
+    console.log('Item added to cart:', item);
+  };
+
+  const updateCartQuantity = (dishId: string, variantName: string | undefined, delta: number) => {
+    setCart((prev) => {
+      const updated = prev.items
+        .map((item) => {
+          if (
+            item.dishId === dishId &&
+            item.selectedVariant?.name === variantName
+          ) {
+            const unit = item.unitPrice ?? item.price / Math.max(item.quantity, 1);
+            const newQty = item.quantity + delta;
+            if (newQty <= 0) return null;
+            return {
+              ...item,
+              quantity: newQty,
+              unitPrice: unit,
+              price: unit * newQty,
+            };
+          }
+          return item;
+        })
+        .filter((i): i is CartItem => Boolean(i));
+
+      return computeCartTotals(updated);
+    });
+  };
+
+  const removeCartItem = (dishId: string, variantName: string | undefined) => {
+    setCart((prev) => {
+      const updated = prev.items.filter(
+        (item) =>
+          !(item.dishId === dishId && item.selectedVariant?.name === variantName)
+      );
+      return computeCartTotals(updated);
+    });
+  };
+
+  // Open dish detail modal
+  const openDishModal = (dish: Dish) => {
+    setSelectedDish(dish);
+    setShowDishModal(true);
+  };
+
+  // Loading skeleton
+  if (loading) {
+    return (
+      <div className="w-full min-h-screen bg-white">
+        <div className="animate-pulse">
+          {/* Header skeleton */}
+          <div className="h-40 bg-slate-200"></div>
+
+          {/* Filter bar skeleton */}
+          <div className="h-12 bg-slate-100"></div>
+
+          {/* Card skeletons */}
+          <div className="p-4 space-y-4">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <div key={i} className="h-64 bg-slate-200 rounded-lg"></div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="w-full min-h-screen bg-white flex items-center justify-center p-4">
+        <div className="text-center">
+          <h2 className="text-xl font-bold text-red-600 mb-2">Error</h2>
+          <p className="text-slate-600 mb-4">{error}</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg"
+          >
+            Retry
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+      {/* HEADER SECTION */}
+      <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+        {/* Top search row */}
+        <div className="px-4 pt-3 pb-2 bg-gradient-to-r from-orange-50 to-amber-50">
+          <div className="flex items-center gap-3">
+            <div className="flex-1 h-11 bg-white rounded-2xl shadow-sm px-3 flex items-center gap-3 border border-slate-100 ring-1 ring-transparent focus-within:ring-orange-200 transition-all">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-slate-500"
+              >
+                <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" />
+                <path d="m20 20-3.5-3.5" />
+              </svg>
+              <input
+                type="text"
+                placeholder="Search dishes or cuisines"
+                value={filters.searchQuery}
+                onChange={(e) =>
+                  setFilters((prev) => ({
+                    ...prev,
+                    searchQuery: e.target.value,
+                  }))
+                }
+                className="flex-1 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none"
+              />
+            </div>
+
+            <button
+              onClick={() => router.push(`/qr/${tenant}/checkout`)}
+              className="relative w-11 h-11 rounded-2xl bg-white shadow-sm flex items-center justify-center text-slate-700 border border-slate-100 hover:border-orange-200 hover:text-orange-600 transition-colors"
+              aria-label="View cart"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.9"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="9" cy="20" r="1.2" />
+                <circle cx="17" cy="20" r="1.2" />
+                <path d="M3 4h2l1.6 9.2a1 1 0 0 0 1 .8h8.8a1 1 0 0 0 1-.7l1-3.3H7.1" />
+              </svg>
+              {cart.itemCount > 0 && (
+                <span className="absolute -top-1.5 -right-1.5 min-w-[18px] h-[18px] px-1 rounded-full bg-orange-600 text-white text-[10px] font-semibold leading-[18px] text-center shadow">{cart.itemCount}</span>
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Quick Filter Chips */}
+        <div className="px-3 py-2 flex overflow-x-auto gap-2 scrollbar-hide">
+          {/* Sort pill with dropdown */}
+          <div className="relative">
+            <button
+              ref={sortButtonRef}
+              onClick={() => setShowSortMenu((s) => !s)}
+              className={`flex items-center gap-2 px-3 py-2 rounded-2xl text-[12px] font-semibold whitespace-nowrap border shadow-sm transition-colors ${
+                showSortMenu || sortLabel ? 'border-orange-500 text-orange-700 bg-orange-50' : 'border-slate-200 text-slate-800 bg-white'
+              }`}
+              aria-haspopup="menu"
+              aria-expanded={showSortMenu}
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-current"
+              >
+                <path d="M6 4h12" />
+                <path d="M6 10h9" />
+                <path d="M6 16h6" />
+              </svg>
+              {sortLabel && <span>{sortLabel}</span>}
+            </button>
+          </div>
+          
+          {showSortMenu && (
+            <>
+              <div 
+                className="fixed inset-0 z-[60]" 
+                onClick={() => setShowSortMenu(false)}
+              />
+              <div 
+                className="fixed w-48 rounded-xl bg-white shadow-2xl border border-slate-200 z-[70] p-1"
+                style={{
+                  left: sortButtonRef.current ? `${sortButtonRef.current.getBoundingClientRect().left}px` : '0',
+                  top: sortButtonRef.current ? `${sortButtonRef.current.getBoundingClientRect().bottom + 8}px` : '0'
+                }}
+              >
+                <button
+                  onClick={() => {
+                    setFilters((prev) => ({ ...prev, sortBy: 'price-low' }));
+                    setShowSortMenu(false);
+                  }}
+                  className={`w-full text-left px-3 py-2 rounded-lg text-[12px] font-semibold transition-colors ${
+                    filters.sortBy === 'price-low'
+                      ? 'bg-orange-50 text-orange-700'
+                      : 'text-slate-800 hover:bg-slate-50'
+                  }`}
+                >
+                  Price low to high
+                </button>
+                <button
+                  onClick={() => {
+                    setFilters((prev) => ({ ...prev, sortBy: 'price-high' }));
+                    setShowSortMenu(false);
+                  }}
+                  className={`w-full text-left px-3 py-2 rounded-lg text-[12px] font-semibold transition-colors ${
+                    filters.sortBy === 'price-high'
+                      ? 'bg-orange-50 text-orange-700'
+                      : 'text-slate-800 hover:bg-slate-50'
+                  }`}
+                >
+                  Price high to low
+                </button>
+                <button
+                  onClick={() => {
+                    setFilters((prev) => ({ ...prev, sortBy: null }));
+                    setShowSortMenu(false);
+                  }}
+                  className="w-full text-left px-3 py-2 rounded-lg text-[12px] font-semibold text-slate-500 hover:bg-slate-50"
+                >
+                  Clear sort
+                </button>
+              </div>
+            </>
+          )}
+
+          {/* Veg switch */}
+          <button
+            onClick={() =>
+              setFilters((prev) => ({
+                ...prev,
+                vegetarianOnly: !prev.vegetarianOnly,
+                nonVegOnly: prev.vegetarianOnly ? prev.nonVegOnly : false,
+              }))
+            }
+            className={`px-3 py-2 rounded-2xl text-[12px] font-semibold whitespace-nowrap border transition-all flex items-center gap-2.5 shadow-sm ${
+              filters.vegetarianOnly
+                ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                : 'bg-white text-slate-800 border-slate-200'
+            }`}
+          >
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-sm border border-emerald-500" />
+              <span>Veg</span>
+            </span>
+            <span
+              className={`w-9 h-5 rounded-full transition-colors ${
+                filters.vegetarianOnly ? 'bg-emerald-500' : 'bg-slate-200'
+              } flex items-center px-0.5`}
+            >
+              <span
+                className={`h-4 w-4 bg-white rounded-full shadow transition-transform ${
+                  filters.vegetarianOnly ? 'translate-x-4' : 'translate-x-0'
+                }`}
+              />
+            </span>
+          </button>
+
+          {/* Non-veg switch */}
+          <button
+            onClick={() =>
+              setFilters((prev) => ({
+                ...prev,
+                nonVegOnly: !prev.nonVegOnly,
+                vegetarianOnly: prev.nonVegOnly ? prev.vegetarianOnly : false,
+              }))
+            }
+            className={`px-3 py-2 rounded-2xl text-[12px] font-semibold whitespace-nowrap border transition-all flex items-center gap-2.5 shadow-sm ${
+              filters.nonVegOnly
+                ? 'bg-rose-50 text-rose-700 border-rose-200'
+                : 'bg-white text-slate-800 border-slate-200'
+            }`}
+          >
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-sm border border-rose-500" />
+              <span>Non-Veg</span>
+            </span>
+            <span
+              className={`w-9 h-5 rounded-full transition-colors ${
+                filters.nonVegOnly ? 'bg-rose-500' : 'bg-slate-200'
+              } flex items-center px-0.5`}
+            >
+              <span
+                className={`h-4 w-4 bg-white rounded-full shadow transition-transform ${
+                  filters.nonVegOnly ? 'translate-x-4' : 'translate-x-0'
+                }`}
+              />
+            </span>
+          </button>
+
+          {/* Bestseller toggle */}
+          <button
+            onClick={() =>
+              setFilters((prev) => ({
+                ...prev,
+                bestsellerOnly: !prev.bestsellerOnly,
+              }))
+            }
+            className={`px-3 py-2 rounded-2xl text-[12px] font-semibold whitespace-nowrap border transition-all flex items-center gap-2 shadow-sm ${
+              filters.bestsellerOnly
+                ? 'bg-orange-50 text-orange-700 border-orange-200'
+                : 'bg-white text-slate-800 border-slate-200'
+            }`}
+          >
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-orange-600"
+            >
+              <path d="M12 3 9.5 9h-6L8 13l-1.5 6L12 15l5.5 4L16 13l4.5-4h-6Z" />
+            </svg>
+            <span>Bestseller</span>
+          </button>
+        </div>
+      </div>
+
+      {/* MAIN CONTENT */}
+      <div className="flex-1 overflow-y-auto">
+        {Object.keys(organizeDishesByCategory).length === 0 ? (
+          <div className="p-4 text-center text-slate-600">
+            <p>No dishes found. Try adjusting your filters.</p>
+          </div>
+        ) : (
+          Object.entries(organizeDishesByCategory).map(([categoryId, dishList]) => {
+            if (dishList.length === 0) return null;
+
+            const categoryName =
+              categoryId === 'bestsellers'
+                ? 'Bestsellers'
+                : categories.find((c) => c._id === categoryId)?.name || categoryId;
+
+            return (
+              <div
+                key={categoryId}
+                ref={(ref) => {
+                  if (ref) categoryRefsMap.current[categoryId] = ref;
+                }}
+                className="py-2"
+              >
+                {/* Category header */}
+                <div className="sticky top-16 bg-white/95 backdrop-blur px-4 py-3 z-30 border-b border-slate-100 flex items-center justify-between">
+                  <div>
+                    <h2 className="text-lg font-bold text-slate-900">{categoryName}</h2>
+                    <p className="text-xs text-slate-500">{dishList.length} items</p>
+                  </div>
+                  <span className="text-xl text-slate-400">›</span>
+                </div>
+
+                {/* Dish grid - 1 column on mobile, 2 on tablet */}
+                <div className="p-3 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                  {dishList.map((dish) => (
+                    <DishCard
+                      key={`${dish._id}-${categoryId}`}
+                      dish={dish}
+                      onAddToCart={() => openDishModal(dish)}
+                    />
+                  ))}
+                </div>
+              </div>
+            );
+          })
+        )}
+      </div>
+
+      {/* DISH DETAIL MODAL */}
+      {selectedDish && (
+        <DishDetailModal
+          dish={selectedDish}
+          isOpen={showDishModal}
+          onClose={() => {
+            setShowDishModal(false);
+            setSelectedDish(null);
+          }}
+          onAddToCart={handleAddToCart}
+        />
+      )}
+
+      {/* FLOATING CATEGORY FAB */}
+      {categories.length > 0 && (
+        <>
+          <button
+            onClick={() => setShowCategorySheet(true)}
+            className="fixed bottom-20 right-4 w-14 h-14 rounded-full bg-orange-600 text-white shadow-lg flex items-center justify-center hover:bg-orange-700 transition-all z-50"
+            title="Browse categories"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="3" y="4" width="18" height="16" rx="3" />
+              <path d="M3 9h18" />
+              <path d="M8 13h8" />
+              <path d="M10 17h4" />
+            </svg>
+          </button>
+
+          {/* Category bottom sheet */}
+          {showCategorySheet && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-50 z-50"
+              onClick={() => setShowCategorySheet(false)}
+            >
+              <div
+                className="absolute bottom-0 left-0 right-0 bg-white rounded-t-2xl p-4 max-h-96 overflow-y-auto"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-lg font-bold">Browse Categories</h3>
+                  <button
+                    onClick={() => setShowCategorySheet(false)}
+                    className="text-2xl"
+                  >
+                    ✕
+                  </button>
+                </div>
+
+                {/* Bestsellers chip */}
+                {Object.keys(organizeDishesByCategory).includes('bestsellers') && (
+                  <button
+                    onClick={() => scrollToCategory('bestsellers')}
+                    className={`w-full text-left px-4 py-3 rounded-lg mb-2 font-medium transition-all ${
+                      activeCategoryId === 'bestsellers'
+                        ? 'bg-orange-600 text-white'
+                        : 'bg-slate-100 text-slate-900 hover:bg-slate-200'
+                    }`}
+                  >
+                    Bestsellers
+                  </button>
+                )}
+
+                {/* Category chips grid */}
+                <div className="grid grid-cols-2 gap-2">
+                  {categories.map((cat) => (
+                    <button
+                      key={cat._id}
+                      onClick={() => scrollToCategory(cat._id)}
+                      className={`px-4 py-3 rounded-lg font-medium transition-all ${
+                        activeCategoryId === cat._id
+                          ? 'bg-orange-600 text-white'
+                          : 'bg-slate-100 text-slate-900 hover:bg-slate-200'
+                      }`}
+                    >
+                      <span className="text-lg mr-1">{cat.icon || '•'}</span>
+                      <span className="text-sm">{cat.name}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </>
+      )}
+
+      {/* CART MINI BAR (PHASE 2) */}
+      {cart.itemCount > 0 && (
+        <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg p-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="text-sm font-medium text-slate-700">
+              {cart.itemCount} item{cart.itemCount > 1 ? 's' : ''}
+            </span>
+          </div>
+          <div className="text-right">
+            <p className="text-sm text-slate-600">Total</p>
+            <p className="text-xl font-bold text-orange-600">₹{cart.total}</p>
+          </div>
+          <button
+            onClick={() => setShowCartDrawer(true)}
+            className="ml-4 bg-orange-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-700 transition-all"
+          >
+            View Cart
+          </button>
+        </div>
+      )}
+
+      {/* CART DRAWER */}
+      {cart.itemCount > 0 && (
+        <CartDrawer
+          isOpen={showCartDrawer}
+          cart={cart}
+          onClose={() => setShowCartDrawer(false)}
+          onUpdateQuantity={(item: CartItem, delta: number) =>
+            updateCartQuantity(item.dishId, item.selectedVariant?.name, delta)
+          }
+          onRemove={(item: CartItem) =>
+            removeCartItem(item.dishId, item.selectedVariant?.name)
+          }
+        />
+      )}
+    </div>
+  );
+}
+
+/**
+ * Dish Card Component
+ * Displays dish image, name, price, badges, and add to cart button
+ */
+function DishCard({
+  dish,
+  onAddToCart,
+}: {
+  dish: DishWithCategories;
+  onAddToCart: () => void;
+}) {
+  const displayPrice =
+    dish.variants && dish.variants.length > 0
+      ? `₹${dish.variants[0].price} - ₹${
+          dish.variants[dish.variants.length - 1].price
+        }`
+      : `₹${dish.base_price}`;
+
+  return (
+    <div
+      className={`rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-200 ease-out ${
+        !dish.is_available ? 'opacity-60' : ''
+      } hover:-translate-y-0.5`}
+    >
+      {/* Image */}
+      <div className="relative h-44 bg-slate-100">
+        {dish.image_url ? (
+          <Image
+            src={dish.image_url}
+            alt={dish.name}
+            fill
+            className="object-cover"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-4xl">
+            <span className="text-xl text-slate-400">Image</span>
+          </div>
+        )}
+
+        {/* Veg / Bestseller badges */}
+        <div className="absolute bottom-2 left-2 flex items-center gap-2 flex-wrap">
+          <span className="px-2 py-1 rounded-full bg-white text-xs font-semibold text-green-600 border border-green-200">
+            {dish.is_vegetarian || dish.is_vegan ? 'Veg' : 'Non-Veg'}
+          </span>
+          {dish.is_bestseller && (
+            <span className="px-2 py-1 rounded-full bg-red-50 text-xs font-semibold text-red-600 border border-red-200">
+              Bestseller
+            </span>
+          )}
+        </div>
+
+        {!dish.is_available && (
+          <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <p className="text-white font-bold">Out of Stock</p>
+          </div>
+        )}
+      </div>
+
+      {/* Content */}
+      <div className="p-3 flex flex-col gap-2">
+        <h3 className="font-bold text-slate-900 text-sm leading-snug line-clamp-2">
+          {dish.name}
+        </h3>
+
+        {/* Price row */}
+        <div className="flex items-center justify-between">
+          <p className="font-bold text-slate-900">{displayPrice}</p>
+          {dish.preparation_time_minutes && (
+            <p className="text-xs text-slate-500 flex items-center gap-1">
+              <span className="inline-block w-2 h-2 rounded-full bg-slate-400" />
+              {dish.preparation_time_minutes} min
+            </p>
+          )}
+        </div>
+
+        {/* Description */}
+        {dish.description && (
+          <p className="text-xs text-slate-600 line-clamp-1">{dish.description}</p>
+        )}
+
+        {/* Allergens */}
+        {dish.allergens && dish.allergens.length > 0 && (
+          <div className="flex flex-wrap gap-1">
+            {dish.allergens.slice(0, 2).map((allergen) => (
+              <span
+                key={allergen}
+                className="text-[11px] bg-red-50 text-red-600 px-2 py-0.5 rounded-full border border-red-100"
+              >
+                Allergen: {allergen}
+              </span>
+            ))}
+            {dish.allergens.length > 2 && (
+              <span className="text-[11px] text-slate-500 px-1">
+                +{dish.allergens.length - 2}
+              </span>
+            )}
+          </div>
+        )}
+
+        {/* Add Button */}
+        <button
+          onClick={onAddToCart}
+          disabled={!dish.is_available}
+          className={`w-full mt-1 py-2 rounded-xl font-semibold text-sm border transition-all ${
+            dish.is_available
+              ? 'border-emerald-600 text-emerald-700 hover:bg-emerald-50'
+              : 'border-slate-200 text-slate-400 cursor-not-allowed'
+          }`}
+        >
+          {dish.is_available ? 'ADD' : 'Unavailable'}
+        </button>
+      </div>
+    </div>
+  );
+}
