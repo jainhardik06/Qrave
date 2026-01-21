@@ -1,0 +1,171 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1870ms
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.3s (500 modules)
+ [32m[1m✓[22m[39m Compiled in 346ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 3085ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 205ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 342ms
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 1582ms (750 modules)
+ GET /dashboard/menu [32m200[39m in 1913ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 55ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 393ms (756 modules)
+ [32m[1m✓[22m[39m Compiled in 404ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 483ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 652ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 327ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 203ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 175ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 245ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 467ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 315ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 458ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 348ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 226ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 694ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 473ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 516ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 454ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 412ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 610ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 579ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 387ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 641ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 524ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 604ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 163ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 428ms (756 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 536ms
+ [32m[1m✓[22m[39m Compiled in 724ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 499ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 670ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 618ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 623ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 690ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 137ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 544ms (756 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 688ms
+ [32m[1m✓[22m[39m Compiled in 784ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 123ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 307ms (756 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 415ms
+ [32m[1m✓[22m[39m Compiled in 500ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 676ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 426ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 523ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 5.1s (770 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 5556ms
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 5659ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1929ms
+ [32m[1m✓[22m[39m Compiled in 8.5s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 5.9s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 3.6s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 585ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 10s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 9.6s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 4.2s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 5.2s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 1031ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 1237ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 2.5s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 632ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 704ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 342ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 3.6s (756 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 4066ms
+ [32m[1m✓[22m[39m Compiled in 747ms (770 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1870ms
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.3s (500 modules)
+ [32m[1m✓[22m[39m Compiled in 346ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 3085ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 205ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 342ms
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 1582ms (750 modules)
+ GET /dashboard/menu [32m200[39m in 1913ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 55ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 393ms (756 modules)
+ [32m[1m✓[22m[39m Compiled in 404ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 483ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 652ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 327ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 203ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 175ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 245ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 467ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 315ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 458ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 348ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 226ms (349 modules)
+ [32m[1m✓[22m[39m Compiled in 694ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 473ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 516ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 454ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 412ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 610ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 579ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 387ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 641ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 524ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 604ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 163ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 428ms (756 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 536ms
+ [32m[1m✓[22m[39m Compiled in 724ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 499ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 670ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 618ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 623ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 690ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 137ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 544ms (756 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 688ms
+ [32m[1m✓[22m[39m Compiled in 784ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 123ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 307ms (756 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 415ms
+ [32m[1m✓[22m[39m Compiled in 500ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 676ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 426ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 523ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 5.1s (770 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 5556ms
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 5659ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1929ms
+ [32m[1m✓[22m[39m Compiled in 8.5s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 5.9s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 3.6s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 585ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 10s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 9.6s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 4.2s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 5.2s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 1031ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 1237ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 2.5s (767 modules)
+ [32m[1m✓[22m[39m Compiled in 632ms (767 modules)
+ [32m[1m✓[22m[39m Compiled in 704ms (767 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 342ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 3.6s (756 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 4066ms
+ [32m[1m✓[22m[39m Compiled in 747ms (770 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

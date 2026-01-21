@@ -35,11 +35,44 @@ export class Order extends Document {
   @Prop({ type: String, enum: ['QUEUED', 'PREPARING', 'READY', 'COMPLETED', 'CANCELLED'], default: 'QUEUED' })
   status!: OrderStatus;
 
+  // Consumer reference (replaces customer_name/phone for CRM tracking)
+  @Prop({ type: Types.ObjectId, ref: 'Consumer', required: true })
+  consumer_id!: Types.ObjectId;
+
+  // Legacy fields (kept for backwards compatibility, auto-populated from Consumer)
   @Prop({ type: String })
   customer_name?: string;
 
   @Prop({ type: String })
   customer_phone?: string;
+
+  @Prop({ type: String })
+  customer_email?: string;
+
+  // Order type & delivery details
+  @Prop({ type: String, enum: ['dine-in', 'takeaway', 'delivery'], default: 'dine-in' })
+  order_type!: string;
+
+  @Prop({
+    type: {
+      address_line: String,
+      area: String,
+      landmark: String,
+      coordinates: {
+        latitude: Number,
+        longitude: Number,
+      },
+    },
+  })
+  delivery_address?: {
+    address_line?: string;
+    area?: string;
+    landmark?: string;
+    coordinates?: {
+      latitude: number;
+      longitude: number;
+    };
+  };
 
   @Prop({ type: Types.ObjectId, ref: 'User' })
   staff_id?: Types.ObjectId;

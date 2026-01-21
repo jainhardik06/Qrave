@@ -47,6 +47,21 @@ export class CreateOrderDto {
   @IsOptional()
   customer_phone?: string;
 
+  @IsString()
+  @IsOptional()
+  customer_email?: string;
+
+  @IsMongoId()
+  @IsOptional()
+  consumer_id?: string;
+
+  @IsString()
+  @IsOptional()
+  order_type?: string;
+
+  @IsOptional()
+  delivery_address?: any;
+
   @IsMongoId()
   @IsOptional()
   staff_id?: string;

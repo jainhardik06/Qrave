@@ -7,21 +7,18 @@ const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3001/
 
 interface Order {
   _id: string;
-  customer: {
-    name: string;
-    phone: string;
-  };
+  customer_name?: string;
+  customer_phone?: string;
   status: string;
-  delivery_type: string;
-  billing: {
-    subtotal: number;
-    gst: number;
-    platform_fee: number;
-    delivery_charge: number;
-    total: number;
-  };
-  created_at: string;
-  items: any[];
+  total_amount: number;
+  createdAt: string;
+  items: Array<{
+    dish_id: string;
+    quantity: number;
+    price: number;
+    notes?: string;
+  }>;
+  notes?: string;
 }
 
 export default function OrderConfirmationPage() {
@@ -127,17 +124,23 @@ export default function OrderConfirmationPage() {
       {/* Order Details */}
       <div className="px-4 py-6 max-w-2xl mx-auto space-y-6">
         {/* Customer Info */}
-        <div className="bg-white rounded-xl p-4 border border-slate-200">
-          <h2 className="text-sm font-semibold text-slate-900 mb-3">Customer Details</h2>
-          <div className="space-y-2 text-sm">
-            <p className="text-slate-700">
-              <span className="font-medium">Name:</span> {order.customer.name}
-            </p>
-            <p className="text-slate-700">
-              <span className="font-medium">Phone:</span> {order.customer.phone}
-            </p>
+        {(order.customer_name || order.customer_phone) && (
+          <div className="bg-white rounded-xl p-4 border border-slate-200">
+            <h2 className="text-sm font-semibold text-slate-900 mb-3">Customer Details</h2>
+            <div className="space-y-2 text-sm">
+              {order.customer_name && (
+                <p className="text-slate-700">
+                  <span className="font-medium">Name:</span> {order.customer_name}
+                </p>
+              )}
+              {order.customer_phone && (
+                <p className="text-slate-700">
+                  <span className="font-medium">Phone:</span> {order.customer_phone}
+                </p>
+              )}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Order Items */}
         <div className="bg-white rounded-xl p-4 border border-slate-200">
@@ -146,10 +149,11 @@ export default function OrderConfirmationPage() {
             {order.items.map((item, idx) => (
               <div key={idx} className="flex justify-between text-sm">
                 <div>
-                  <p className="text-slate-900 font-medium">{item.dishName}</p>
+                  <p className="text-slate-900 font-medium">Item {idx + 1}</p>
                   <p className="text-xs text-slate-600">Qty: {item.quantity}</p>
+                  {item.notes && <p className="text-xs text-slate-500">{item.notes}</p>}
                 </div>
-                <p className="font-semibold text-slate-900">₹{item.price.toFixed(2)}</p>
+                <p className="font-semibold text-slate-900">₹{(item.price * item.quantity).toFixed(2)}</p>
               </div>
             ))}
           </div>
@@ -157,41 +161,28 @@ export default function OrderConfirmationPage() {
 
         {/* Billing Summary */}
         <div className="bg-white rounded-xl p-4 border border-slate-200">
-          <h2 className="text-sm font-semibold text-slate-900 mb-3">Billing Summary</h2>
+          <h2 className="text-sm font-semibold text-slate-900 mb-3">Order Total</h2>
           <div className="space-y-2 text-sm">
-            <div className="flex justify-between text-slate-700">
-              <span>Subtotal</span>
-              <span>₹{order.billing.subtotal.toFixed(2)}</span>
-            </div>
-            <div className="flex justify-between text-slate-700">
-              <span>GST (5%)</span>
-              <span>₹{order.billing.gst.toFixed(2)}</span>
-            </div>
-            <div className="flex justify-between text-slate-700">
-              <span>Platform Fee</span>
-              <span>₹{order.billing.platform_fee.toFixed(2)}</span>
-            </div>
-            {order.billing.delivery_charge > 0 && (
-              <div className="flex justify-between text-slate-700">
-                <span>Delivery Charge</span>
-                <span>₹{order.billing.delivery_charge.toFixed(2)}</span>
-              </div>
-            )}
-            <div className="flex justify-between font-bold text-lg text-slate-900 pt-2 border-t border-slate-200">
-              <span>Total</span>
-              <span className="text-green-600">₹{order.billing.total.toFixed(2)}</span>
+            <div className="flex justify-between font-bold text-lg text-slate-900 pt-2">
+              <span>Total Amount</span>
+              <span className="text-green-600">₹{order.total_amount.toFixed(2)}</span>
             </div>
           </div>
         </div>
 
-        {/* Delivery Type */}
+        {/* Order Status */}
         <div className="bg-blue-50 rounded-xl p-4 border border-blue-200">
           <p className="text-sm text-slate-700">
-            <span className="font-medium">Delivery Type:</span>{' '}
+            <span className="font-medium">Status:</span>{' '}
             <span className="capitalize font-semibold text-blue-700">
-              {order.delivery_type.replace('-', ' ')}
+              {order.status}
             </span>
           </p>
+          {order.notes && (
+            <p className="text-xs text-slate-600 mt-2">
+              <span className="font-medium">Notes:</span> {order.notes}
+            </p>
+          )}
         </div>
 
         {/* Next Steps */}
@@ -199,8 +190,10 @@ export default function OrderConfirmationPage() {
           <h3 className="text-sm font-semibold text-slate-900 mb-2">What's Next?</h3>
           <ul className="text-sm text-slate-700 space-y-1">
             <li>✓ Your order is confirmed and being prepared</li>
-            <li>✓ You will receive updates via SMS to {order.customer.phone}</li>
-            <li>✓ Payment to be made on {order.delivery_type === 'delivery' ? 'delivery' : 'pickup'}</li>
+            {order.customer_phone && (
+              <li>✓ You will receive updates via SMS to {order.customer_phone}</li>
+            )}
+            <li>✓ Payment via Cash on Delivery</li>
           </ul>
         </div>
       </div>

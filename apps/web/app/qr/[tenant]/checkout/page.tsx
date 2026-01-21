@@ -29,6 +29,7 @@ type PaymentMethod = 'cash' | 'card' | 'upi';
 interface OrderData {
   customerName: string;
   customerPhone: string;
+  customerEmail?: string;
   deliveryType: 'dine-in' | 'takeaway' | 'delivery';
   deliveryAddress?: string;
   addressForm?: AddressForm;
@@ -47,6 +48,7 @@ export default function CheckoutPage() {
   const [orderData, setOrderData] = useState<OrderData>({
     customerName: '',
     customerPhone: '',
+    customerEmail: '',
     deliveryType: 'dine-in',
     paymentMethod: 'cash',
     addressForm: { houseNo: '', area: '', landmark: '' },
@@ -80,6 +82,7 @@ export default function CheckoutPage() {
 
   const GST_RATE = 0.05;
   const [isPlacingOrder, setIsPlacingOrder] = useState(false);
+  const [isPaymentOpen, setIsPaymentOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -312,24 +315,42 @@ export default function CheckoutPage() {
     setIsPlacingOrder(true);
     try {
       const orderPayload = {
-        tenant,
-        ...orderData,
         items: cart.items.map((item) => ({
-          dish: item.dishId,
-          dishName: item.dishName,
+          dish_id: item.dishId,
           quantity: item.quantity,
-          variant: item.selectedVariant,
-          toppings: item.selectedToppings || [],
-          price: item.price,
+          // price must be unit price per DTO expectation
+          price: item.unitPrice ?? item.price / item.quantity,
+          // Pack variant/toppings and email into notes for staff context
+          notes: [
+            item.selectedVariant ? `Variant: ${item.selectedVariant.name}` : null,
+            item.selectedToppings && item.selectedToppings.length > 0
+              ? `Toppings: ${item.selectedToppings.map((t) => t.name).join(', ')}`
+              : null,
+          ]
+            .filter(Boolean)
+            .join(' | '),
         })),
-        subtotal: cart.total,
-        gst: cart.total * GST_RATE,
-        deliveryCharge,
-        total: cart.total + cart.total * GST_RATE + deliveryCharge,
-        deliveryDistance,
+        total_amount: cart.total, // service will recompute if omitted
+        customer_name: orderData.customerName,
+        customer_phone: orderData.customerPhone,
+        // Combine extra info into notes
+        notes: [
+          orderData.specialInstructions ? `Instructions: ${orderData.specialInstructions}` : null,
+          orderData.customerEmail ? `Email: ${orderData.customerEmail}` : null,
+          `Payment: ${orderData.paymentMethod}`,
+          `Mode: ${orderData.deliveryType}`,
+          orderData.deliveryAddress ? `Address: ${orderData.deliveryAddress}` : null,
+          orderData.addressForm?.houseNo ? `House: ${orderData.addressForm?.houseNo}` : null,
+          orderData.addressForm?.area ? `Area: ${orderData.addressForm?.area}` : null,
+          orderData.addressForm?.landmark ? `Landmark: ${orderData.addressForm?.landmark}` : null,
+          deliveryDistance ? `Distance: ${deliveryDistance}km` : null,
+          deliveryCharge ? `DeliveryCharge: ₹${deliveryCharge}` : null,
+        ]
+          .filter(Boolean)
+          .join(' | '),
       };
 
-      const res = await fetch(`${API_BASE}/orders`, {
+      const res = await fetch(`${API_BASE}/public/orders`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -479,6 +500,34 @@ export default function CheckoutPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Contact Details - positioned just above delivery options */}
+        <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-5">
+          <h2 className="text-base font-bold text-slate-900 mb-4">Contact Details</h2>
+          <div className="space-y-3">
+            <input
+              type="text"
+              placeholder="Your Name"
+              value={orderData.customerName}
+              onChange={(e) => setOrderData((prev) => ({ ...prev, customerName: e.target.value }))}
+              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              value={orderData.customerPhone}
+              onChange={(e) => setOrderData((prev) => ({ ...prev, customerPhone: e.target.value }))}
+              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm"
+            />
+            <input
+              type="email"
+              placeholder="Email (optional)"
+              value={orderData.customerEmail || ''}
+              onChange={(e) => setOrderData((prev) => ({ ...prev, customerEmail: e.target.value }))}
+              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm"
+            />
           </div>
         </div>
 
@@ -727,26 +776,7 @@ export default function CheckoutPage() {
           </div>
         )}
 
-        {/* Customer Details */}
-        <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-5">
-          <h2 className="text-base font-bold text-slate-900 mb-4">Contact Details</h2>
-          <div className="space-y-3">
-            <input
-              type="text"
-              placeholder="Your Name"
-              value={orderData.customerName}
-              onChange={(e) => setOrderData((prev) => ({ ...prev, customerName: e.target.value }))}
-              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm"
-            />
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              value={orderData.customerPhone}
-              onChange={(e) => setOrderData((prev) => ({ ...prev, customerPhone: e.target.value }))}
-              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm"
-            />
-          </div>
-        </div>
+        {/* Customer Details moved above */}
 
         {/* Bill Summary */}
         <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-5">
@@ -784,25 +814,101 @@ export default function CheckoutPage() {
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-40">
         <div className="max-w-4xl mx-auto px-4 py-4">
           <div className="flex items-center gap-3">
-            {/* Payment Method Dropup */}
+            {/* Payment Method Dropup (overlay) */}
             <div className="relative">
-              <select
-                value={orderData.paymentMethod}
-                onChange={(e) => setOrderData((prev) => ({ ...prev, paymentMethod: e.target.value as PaymentMethod }))}
-                className="px-4 py-3.5 pr-10 border-2 border-slate-300 rounded-lg bg-white text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 appearance-none cursor-pointer hover:border-slate-400 transition-colors min-w-[180px]"
-                style={{
-                  backgroundImage: 'none',
-                }}
+              <button
+                type="button"
+                onClick={() => setIsPaymentOpen((v) => !v)}
+                className="px-4 py-3.5 pr-9 border-2 border-slate-300 rounded-lg bg-white text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 hover:border-slate-400 transition-colors min-w-[220px] text-left flex items-center gap-2"
               >
-                <option value="cash">💵 Cash on Delivery</option>
-                <option value="card" disabled>💳 Card (Soon)</option>
-                <option value="upi" disabled>📱 UPI (Soon)</option>
-              </select>
-              <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-600">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="m18 15-6-6-6 6" />
-                </svg>
-              </div>
+                {/* Left icon */}
+                {orderData.paymentMethod === 'cash' && (
+                  <span className="text-green-600" aria-hidden>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="2" y="6" width="20" height="12" rx="2" />
+                      <circle cx="12" cy="12" r="2.5" />
+                    </svg>
+                  </span>
+                )}
+                {orderData.paymentMethod === 'card' && (
+                  <span className="text-slate-600" aria-hidden>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="2" y="5" width="20" height="14" rx="2" />
+                      <path d="M2 10h20" />
+                    </svg>
+                  </span>
+                )}
+                {orderData.paymentMethod === 'upi' && (
+                  <span className="text-slate-600" aria-hidden>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M3 12h18" />
+                      <path d="M7 8l-4 4 4 4" />
+                      <path d="M17 8l4 4-4 4" />
+                    </svg>
+                  </span>
+                )}
+                <span>
+                  {orderData.paymentMethod === 'cash' && 'Cash'}
+                  {orderData.paymentMethod === 'card' && 'Card (Soon)'}
+                  {orderData.paymentMethod === 'upi' && 'UPI (Soon)'}
+                </span>
+                <span className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-600">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="m18 15-6-6-6 6" />
+                  </svg>
+                </span>
+              </button>
+
+              {isPaymentOpen && (
+                <div className="absolute bottom-full mb-2 left-0 w-72 bg-white border border-slate-200 rounded-lg shadow-xl z-50 overflow-hidden">
+                  <div className="py-1">
+                    <button
+                      onClick={() => {
+                        setOrderData((p) => ({ ...p, paymentMethod: 'cash' }));
+                        setIsPaymentOpen(false);
+                      }}
+                      className={`w-full text-left px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50 ${
+                        orderData.paymentMethod === 'cash' ? 'bg-orange-50 text-orange-700' : 'text-slate-800'
+                      }`}
+                    >
+                      <span className="text-green-600" aria-hidden>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <rect x="2" y="6" width="20" height="12" rx="2" />
+                          <circle cx="12" cy="12" r="2.5" />
+                        </svg>
+                      </span>
+                      <span>Cash on Delivery</span>
+                    </button>
+
+                    <button
+                      disabled
+                      className="w-full text-left px-4 py-3 text-sm flex items-center gap-3 text-slate-400 cursor-not-allowed"
+                    >
+                      <span aria-hidden>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <rect x="2" y="5" width="20" height="14" rx="2" />
+                          <path d="M2 10h20" />
+                        </svg>
+                      </span>
+                      <span>Card (Soon)</span>
+                    </button>
+
+                    <button
+                      disabled
+                      className="w-full text-left px-4 py-3 text-sm flex items-center gap-3 text-slate-400 cursor-not-allowed"
+                    >
+                      <span aria-hidden>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M3 12h18" />
+                          <path d="M7 8l-4 4 4 4" />
+                          <path d="M17 8l4 4-4 4" />
+                        </svg>
+                      </span>
+                      <span>UPI (Soon)</span>
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Place Order Button */}

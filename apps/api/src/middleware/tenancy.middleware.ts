@@ -10,27 +10,27 @@ export class TenancyMiddleware implements NestMiddleware {
   });
 
   use(req: Request, res: Response, next: NextFunction) {
-    // Extract JWT payload first
+    // Prefer explicit X-Tenant header for public flows; fall back to JWT
+    const headerTenant = (req.headers['x-tenant'] as string) || undefined;
     const payload = this.extractJwtPayload(req);
-    const tenantId = payload?.tenant_id || payload?.tenantId;
-    
+    const tenantId = headerTenant || payload?.tenant_id || payload?.tenantId;
+
     if (tenantId) {
       console.log('TenancyMiddleware - Setting tenant_id:', tenantId);
     } else {
-      console.warn('TenancyMiddleware - No tenant_id found in token');
+      console.warn('TenancyMiddleware - No tenant context (neither X-Tenant nor token)');
     }
 
     // Wrap the entire request handling in RequestContext.run()
     RequestContext.run(() => {
-      if (payload) {
-        RequestContext.set({
-          tenantId,
-          userId: payload.sub,
-          email: payload.email,
-          roles: payload.roles,
-          token: this.getToken(req),
-        });
-      }
+      // Always set available context so plugins can assign tenant_id on writes
+      RequestContext.set({
+        tenantId,
+        userId: payload?.sub,
+        email: payload?.email,
+        roles: payload?.roles,
+        token: this.getToken(req),
+      });
       next();
     });
   }
