@@ -1,0 +1,225 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.3s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 3.5s (500 modules)
+ [32m[1m✓[22m[39m Compiled in 371ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 4328ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 1355ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1506ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 301ms (495 modules)
+ [32m[1m✓[22m[39m Compiled in 462ms (509 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/checkout/page.tsx
+Error: 
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:298:1]
+ [2m298[0m |       setIsPlacingOrder(false);
+ [2m299[0m |     }
+ [2m300[0m |   };
+ [2m301[0m |     } catch (err) {
+     : [31;1m      ^^^^^[0m
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m303[0m |   };
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:301:1]
+ [2m301[0m |     } catch (err) {
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m304[0m |   };
+     : [31;1m  ^[0m
+ [2m305[0m | 
+ [2m306[0m |   // Get place details and coordinates
+ [2m306[0m |   const handleSelectSuggestion = async (placeId: string, fullText: string) => {
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/checkout/page.tsx
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/checkout/page.tsx
+Error: 
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:298:1]
+ [2m298[0m |       setIsPlacingOrder(false);
+ [2m299[0m |     }
+ [2m300[0m |   };
+ [2m301[0m |     } catch (err) {
+     : [31;1m      ^^^^^[0m
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m303[0m |   };
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:301:1]
+ [2m301[0m |     } catch (err) {
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m304[0m |   };
+     : [31;1m  ^[0m
+ [2m305[0m | 
+ [2m306[0m |   // Get place details and coordinates
+ [2m306[0m |   const handleSelectSuggestion = async (placeId: string, fullText: string) => {
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/checkout/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 17ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/checkout/page.tsx
+Error: 
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:298:1]
+ [2m298[0m |       setIsPlacingOrder(false);
+ [2m299[0m |     }
+ [2m300[0m |   };
+ [2m301[0m |     } catch (err) {
+     : [31;1m      ^^^^^[0m
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m303[0m |   };
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:301:1]
+ [2m301[0m |     } catch (err) {
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m304[0m |   };
+     : [31;1m  ^[0m
+ [2m305[0m | 
+ [2m306[0m |   // Get place details and coordinates
+ [2m306[0m |   const handleSelectSuggestion = async (placeId: string, fullText: string) => {
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/checkout/page.tsx
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 108ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.3s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 3.5s (500 modules)
+ [32m[1m✓[22m[39m Compiled in 371ms (258 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 4328ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 1355ms (489 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1506ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 301ms (495 modules)
+ [32m[1m✓[22m[39m Compiled in 462ms (509 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/checkout/page.tsx
+Error: 
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:298:1]
+ [2m298[0m |       setIsPlacingOrder(false);
+ [2m299[0m |     }
+ [2m300[0m |   };
+ [2m301[0m |     } catch (err) {
+     : [31;1m      ^^^^^[0m
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m303[0m |   };
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:301:1]
+ [2m301[0m |     } catch (err) {
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m304[0m |   };
+     : [31;1m  ^[0m
+ [2m305[0m | 
+ [2m306[0m |   // Get place details and coordinates
+ [2m306[0m |   const handleSelectSuggestion = async (placeId: string, fullText: string) => {
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/checkout/page.tsx
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/checkout/page.tsx
+Error: 
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:298:1]
+ [2m298[0m |       setIsPlacingOrder(false);
+ [2m299[0m |     }
+ [2m300[0m |   };
+ [2m301[0m |     } catch (err) {
+     : [31;1m      ^^^^^[0m
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m303[0m |   };
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:301:1]
+ [2m301[0m |     } catch (err) {
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m304[0m |   };
+     : [31;1m  ^[0m
+ [2m305[0m | 
+ [2m306[0m |   // Get place details and coordinates
+ [2m306[0m |   const handleSelectSuggestion = async (placeId: string, fullText: string) => {
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/checkout/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 17ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/checkout/page.tsx
+Error: 
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:298:1]
+ [2m298[0m |       setIsPlacingOrder(false);
+ [2m299[0m |     }
+ [2m300[0m |   };
+ [2m301[0m |     } catch (err) {
+     : [31;1m      ^^^^^[0m
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m303[0m |   };
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\checkout\page.tsx[0m:301:1]
+ [2m301[0m |     } catch (err) {
+ [2m302[0m |       console.error('Error fetching address suggestions:', err);
+ [2m303[0m |     }
+ [2m304[0m |   };
+     : [31;1m  ^[0m
+ [2m305[0m | 
+ [2m306[0m |   // Get place details and coordinates
+ [2m306[0m |   const handleSelectSuggestion = async (placeId: string, fullText: string) => {
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/checkout/page.tsx
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 108ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

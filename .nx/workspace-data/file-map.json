@@ -13,88 +13,88 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".gitignore",
-        "hash": "6468668766053406242"
-      },
-      {
-        "file": "NEXT_STEPS.md",
-        "hash": "12178758053152467833"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "2157159737062501812"
-      },
-      {
-        "file": "FINAL_REPORT.md",
-        "hash": "3810500943016669946"
-      },
-      {
-        "file": "API_CONTRACT.md",
-        "hash": "18141321249637467054"
+        "file": "README.md",
+        "hash": "5721681303227786399"
       },
       {
         "file": "SYSTEM_FLOW_COMPLETE.md",
         "hash": "5210863026931858132"
       },
       {
-        "file": "QR_MENU_PROGRESS.md",
-        "hash": "8780921513570309407"
+        "file": "RESOLUTION_SUMMARY.md",
+        "hash": "695467965577687361"
       },
       {
-        "file": "nx.json",
-        "hash": "3897980461332312024"
-      },
-      {
-        "file": "QR_MENU_STEP2_COMPLETE.md",
-        "hash": "2400536422361615732"
-      },
-      {
-        "file": "TESTING_GUIDE.md",
-        "hash": "7359223042151484867"
-      },
-      {
-        "file": ".env.example",
-        "hash": "13653663135303113341"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "15378423341984598940"
-      },
-      {
-        "file": "QUICK_START.md",
-        "hash": "11312994313527281237"
-      },
-      {
-        "file": "token.txt",
-        "hash": "15558633194263700325"
-      },
-      {
-        "file": "README.md",
-        "hash": "5721681303227786399"
+        "file": ".gitignore",
+        "hash": "6468668766053406242"
       },
       {
         "file": "package.json",
         "hash": "8510451765899302735"
       },
       {
+        "file": "QR_MENU_PROGRESS.md",
+        "hash": "8780921513570309407"
+      },
+      {
+        "file": "QR_MENU_STEP2_COMPLETE.md",
+        "hash": "2400536422361615732"
+      },
+      {
         "file": "DEEP_DIVE_FIX.md",
         "hash": "11333975308720943759"
       },
       {
-        "file": "QR_MENU_STEP1_COMPLETE.md",
-        "hash": "6838011169087266931"
+        "file": "nx.json",
+        "hash": "3897980461332312024"
       },
       {
-        "file": "RESOLUTION_SUMMARY.md",
-        "hash": "695467965577687361"
+        "file": "IMPLEMENTATION_STATUS.md",
+        "hash": "12419914318062959032"
+      },
+      {
+        "file": "API_CONTRACT.md",
+        "hash": "18141321249637467054"
+      },
+      {
+        "file": "token.txt",
+        "hash": "15558633194263700325"
+      },
+      {
+        "file": "FINAL_REPORT.md",
+        "hash": "3810500943016669946"
+      },
+      {
+        "file": "QUICK_START.md",
+        "hash": "11312994313527281237"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "15378423341984598940"
       },
       {
         "file": "menu.md",
         "hash": "18200153328103519120"
       },
       {
-        "file": "IMPLEMENTATION_STATUS.md",
-        "hash": "12419914318062959032"
+        "file": ".env.example",
+        "hash": "13653663135303113341"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2157159737062501812"
+      },
+      {
+        "file": "NEXT_STEPS.md",
+        "hash": "12178758053152467833"
+      },
+      {
+        "file": "QR_MENU_STEP1_COMPLETE.md",
+        "hash": "6838011169087266931"
+      },
+      {
+        "file": "TESTING_GUIDE.md",
+        "hash": "7359223042151484867"
       }
     ],
     "projectFileMap": {
@@ -229,12 +229,20 @@
           "hash": "5478466786085398709"
         },
         {
+          "file": "apps/web/app/qr/[tenant]/checkout/page.tsx",
+          "hash": "18149083421421152685",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
           "file": "apps/web/app/qr/[tenant]/components/CartDrawer.tsx",
           "hash": "4799806542837563907"
         },
         {
           "file": "apps/web/app/qr/[tenant]/components/DishDetailModal.tsx",
-          "hash": "1411106166705275506",
+          "hash": "8646915123461370501",
           "deps": [
             "npm:react",
             "npm:next"
@@ -242,7 +250,15 @@
         },
         {
           "file": "apps/web/app/qr/[tenant]/menu/page.tsx",
-          "hash": "8873006380888158618",
+          "hash": "4487426786537556542",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/qr/[tenant]/order-confirmation/page.tsx",
+          "hash": "2341781916453152757",
           "deps": [
             "npm:react",
             "npm:next"

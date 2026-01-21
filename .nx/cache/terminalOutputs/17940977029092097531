@@ -1,0 +1,777 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1957ms
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.5s (502 modules)
+ [32m[1m✓[22m[39m Compiled in 211ms (259 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 3131ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 134ms (491 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 241ms
+ [32m[1m✓[22m[39m Compiled in 615ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 384ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 531ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 545ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 437ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 516ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 434ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 649ms (502 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 623ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 307ms (491 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 441ms
+ [32m[1m✓[22m[39m Compiled in 373ms (505 modules)
+ [32m[1m✓[22m[39m Compiled in 295ms (505 modules)
+ [32m[1m✓[22m[39m Compiled in 379ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 408ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 432ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 601ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 291ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 367ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 254ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 476ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 413ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 361ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 438ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 272ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 273ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 350ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 292ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 367ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 275ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 269ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 262ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 326ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 281ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 237ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 243ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 474ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 449ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 504ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 375ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 339ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 567ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 436ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 259ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 371ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 428ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 321ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 583ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 386ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 368ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 282ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 219ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 319ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 325ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 490ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 595ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 469ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 376ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 451ms (502 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `< (jsx tag start)`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:80:1]
+ [2m80[0m | 
+ [2m81[0m |         // Build headers
+ [2m82[0m |         const headers: HeadersInit = {
+ [2m83[0m |             <div
+    : [31;1m            ^[0m
+ [2m84[0m |               className="fixed inset-0 bg-black/55 z-50"
+ [2m85[0m |               onClick={() => setShowCategorySheet(false)}
+ [2m85[0m |             >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `< (jsx tag start)`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:80:1]
+ [2m80[0m | 
+ [2m81[0m |         // Build headers
+ [2m82[0m |         const headers: HeadersInit = {
+ [2m83[0m |             <div
+    : [31;1m            ^[0m
+ [2m84[0m |               className="fixed inset-0 bg-black/55 z-50"
+ [2m85[0m |               onClick={() => setShowCategorySheet(false)}
+ [2m85[0m |             >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 26ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `< (jsx tag start)`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:80:1]
+ [2m80[0m | 
+ [2m81[0m |         // Build headers
+ [2m82[0m |         const headers: HeadersInit = {
+ [2m83[0m |             <div
+    : [31;1m            ^[0m
+ [2m84[0m |               className="fixed inset-0 bg-black/55 z-50"
+ [2m85[0m |               onClick={() => setShowCategorySheet(false)}
+ [2m85[0m |             >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 257ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `< (jsx tag start)`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:80:1]
+ [2m80[0m | 
+ [2m81[0m |         // Build headers
+ [2m82[0m |         const headers: HeadersInit = {
+ [2m83[0m |             <div
+    : [31;1m            ^[0m
+ [2m84[0m |               className="fixed inset-0 bg-black/55 z-50"
+ [2m85[0m |               onClick={() => setShowCategorySheet(false)}
+ [2m85[0m |             >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 432ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 20ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 14ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:116:1]
+ [2m116[0m |     }
+ [2m117[0m | 
+ [2m118[0m |     return filtered;
+ [2m119[0m |   }, [dishes, filters]);
+     : [31;1m   ^[0m
+ [2m120[0m | 
+ [2m121[0m |   // Build category-wise organized dishes (with duplication for multi-category)
+ [2m121[0m |   const organizeDishesByCategory = useMemo(() => {
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:116:1]
+ [2m116[0m |     }
+ [2m117[0m | 
+ [2m118[0m |     return filtered;
+ [2m119[0m |   }, [dishes, filters]);
+     : [31;1m   ^[0m
+ [2m120[0m | 
+ [2m121[0m |   // Build category-wise organized dishes (with duplication for multi-category)
+ [2m121[0m |   const organizeDishesByCategory = useMemo(() => {
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 404ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 25ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 8ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 1028ms (718 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 1123ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 82ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 22ms
+ [32m[1m✓[22m[39m Compiled in 460ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 309ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 497ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 373ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 369ms (445 modules)
+ [32m[1m✓[22m[39m Compiled in 468ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 445ms (729 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 23ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 284ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 327ms (718 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 495ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 171ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 73ms
+ [32m[1m✓[22m[39m Compiled in 295ms (732 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 13ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 115ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 306ms (718 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 436ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 136ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 26ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 12ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 13ms
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 10ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [32m[1m✓[22m[39m Compiled in 426ms (718 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 406ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 62ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 62ms
+ [32m[1m✓[22m[39m Compiled in 282ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 617ms (732 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 154ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 63ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 14ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 15ms
+ [32m[1m✓[22m[39m Compiled in 363ms (718 modules)
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 520ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 151ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 64ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 458ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 296ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 270ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 424ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 313ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 583ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 590ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 344ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 916ms (727 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 210ms (716 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [33m404[39m in 135ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 60ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 92ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 563ms (730 modules)
+ [32m[1m✓[22m[39m Compiled in 483ms (727 modules)
+ [32m[1m✓[22m[39m Compiled in 339ms (444 modules)
+ [32m[1m✓[22m[39m Compiled in 212ms (444 modules)
+ [32m[1m✓[22m[39m Compiled in 301ms (727 modules)
+ [32m[1m✓[22m[39m Compiled in 350ms (727 modules)
+ [32m[1m✓[22m[39m Compiled in 179ms (444 modules)
+ [32m[1m✓[22m[39m Compiled in 223ms (444 modules)
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/checkout ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 685ms (719 modules)
+ [32m[1m✓[22m[39m Compiled in 521ms (733 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 400ms (722 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 541ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 56ms
+ [32m[1m✓[22m[39m Compiled in 596ms (736 modules)
+ [32m[1m✓[22m[39m Compiled in 534ms (733 modules)
+ [32m[1m✓[22m[39m Compiled in 432ms (733 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 146ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 129ms (722 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 211ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1957ms
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.5s (502 modules)
+ [32m[1m✓[22m[39m Compiled in 211ms (259 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 3131ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 134ms (491 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 241ms
+ [32m[1m✓[22m[39m Compiled in 615ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 384ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 531ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 545ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 437ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 516ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 434ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 649ms (502 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 623ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 307ms (491 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 441ms
+ [32m[1m✓[22m[39m Compiled in 373ms (505 modules)
+ [32m[1m✓[22m[39m Compiled in 295ms (505 modules)
+ [32m[1m✓[22m[39m Compiled in 379ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 408ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 432ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 601ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 291ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 367ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 254ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 476ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 413ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 361ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 438ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 272ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 273ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 350ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 292ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 367ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 275ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 269ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 262ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 326ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 281ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 237ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 243ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 474ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 449ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 504ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 375ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 339ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 567ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 436ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 259ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 371ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 428ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 321ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 583ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 386ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 368ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 282ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 219ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 319ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 325ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 490ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 595ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 469ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 376ms (502 modules)
+ [32m[1m✓[22m[39m Compiled in 451ms (502 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `< (jsx tag start)`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:80:1]
+ [2m80[0m | 
+ [2m81[0m |         // Build headers
+ [2m82[0m |         const headers: HeadersInit = {
+ [2m83[0m |             <div
+    : [31;1m            ^[0m
+ [2m84[0m |               className="fixed inset-0 bg-black/55 z-50"
+ [2m85[0m |               onClick={() => setShowCategorySheet(false)}
+ [2m85[0m |             >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `< (jsx tag start)`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:80:1]
+ [2m80[0m | 
+ [2m81[0m |         // Build headers
+ [2m82[0m |         const headers: HeadersInit = {
+ [2m83[0m |             <div
+    : [31;1m            ^[0m
+ [2m84[0m |               className="fixed inset-0 bg-black/55 z-50"
+ [2m85[0m |               onClick={() => setShowCategorySheet(false)}
+ [2m85[0m |             >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 26ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `< (jsx tag start)`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:80:1]
+ [2m80[0m | 
+ [2m81[0m |         // Build headers
+ [2m82[0m |         const headers: HeadersInit = {
+ [2m83[0m |             <div
+    : [31;1m            ^[0m
+ [2m84[0m |               className="fixed inset-0 bg-black/55 z-50"
+ [2m85[0m |               onClick={() => setShowCategorySheet(false)}
+ [2m85[0m |             >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 257ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `< (jsx tag start)`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:80:1]
+ [2m80[0m | 
+ [2m81[0m |         // Build headers
+ [2m82[0m |         const headers: HeadersInit = {
+ [2m83[0m |             <div
+    : [31;1m            ^[0m
+ [2m84[0m |               className="fixed inset-0 bg-black/55 z-50"
+ [2m85[0m |               onClick={() => setShowCategorySheet(false)}
+ [2m85[0m |             >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 432ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 20ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 14ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:116:1]
+ [2m116[0m |     }
+ [2m117[0m | 
+ [2m118[0m |     return filtered;
+ [2m119[0m |   }, [dishes, filters]);
+     : [31;1m   ^[0m
+ [2m120[0m | 
+ [2m121[0m |   // Build category-wise organized dishes (with duplication for multi-category)
+ [2m121[0m |   const organizeDishesByCategory = useMemo(() => {
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:116:1]
+ [2m116[0m |     }
+ [2m117[0m | 
+ [2m118[0m |     return filtered;
+ [2m119[0m |   }, [dishes, filters]);
+     : [31;1m   ^[0m
+ [2m120[0m | 
+ [2m121[0m |   // Build category-wise organized dishes (with duplication for multi-category)
+ [2m121[0m |   const organizeDishesByCategory = useMemo(() => {
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 404ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 25ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 8ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 1028ms (718 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 1123ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 82ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 22ms
+ [32m[1m✓[22m[39m Compiled in 460ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 309ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 497ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 373ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 369ms (445 modules)
+ [32m[1m✓[22m[39m Compiled in 468ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 445ms (729 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 23ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 284ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 327ms (718 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 495ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 171ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 73ms
+ [32m[1m✓[22m[39m Compiled in 295ms (732 modules)
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 13ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 115ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 306ms (718 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 436ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 136ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 26ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 12ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 13ms
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 10ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [32m[1m✓[22m[39m Compiled in 426ms (718 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 406ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 62ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 62ms
+ [32m[1m✓[22m[39m Compiled in 282ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 617ms (732 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 154ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 63ms
+ [31m[1m⨯[22m[39m ./app/qr/[tenant]/menu/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\qr\[tenant]\menu\page.tsx[0m:362:1]
+ [2m362[0m |   }
+ [2m363[0m | 
+ [2m364[0m |   return (
+ [2m365[0m |     <div className="w-full min-h-screen bg-white flex flex-col pb-20">
+     : [31;1m     ^^^[0m
+ [2m366[0m |       {/* HEADER SECTION */}
+ [2m367[0m |       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+ [2m367[0m |         {/* Top search row */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/qr/[tenant]/menu/page.tsx
+ GET /qr/696e0b78acfe64aa03824c94/menu [31m500[39m in 14ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 15ms
+ [32m[1m✓[22m[39m Compiled in 363ms (718 modules)
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 520ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 151ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 64ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 458ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 296ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 270ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 424ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 313ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 583ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 590ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 344ms (729 modules)
+ [32m[1m✓[22m[39m Compiled in 916ms (727 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 210ms (716 modules)
+ GET /qr/696e0b78acfe64aa03824c94/checkout [33m404[39m in 135ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 60ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 92ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 563ms (730 modules)
+ [32m[1m✓[22m[39m Compiled in 483ms (727 modules)
+ [32m[1m✓[22m[39m Compiled in 339ms (444 modules)
+ [32m[1m✓[22m[39m Compiled in 212ms (444 modules)
+ [32m[1m✓[22m[39m Compiled in 301ms (727 modules)
+ [32m[1m✓[22m[39m Compiled in 350ms (727 modules)
+ [32m[1m✓[22m[39m Compiled in 179ms (444 modules)
+ [32m[1m✓[22m[39m Compiled in 223ms (444 modules)
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/checkout ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 685ms (719 modules)
+ [32m[1m✓[22m[39m Compiled in 521ms (733 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 400ms (722 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 541ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 56ms
+ [32m[1m✓[22m[39m Compiled in 596ms (736 modules)
+ [32m[1m✓[22m[39m Compiled in 534ms (733 modules)
+ [32m[1m✓[22m[39m Compiled in 432ms (733 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /qr/696e0b78acfe64aa03824c94/checkout [32m200[39m in 146ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 129ms (722 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 211ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

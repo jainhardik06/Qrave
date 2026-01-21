@@ -141,14 +141,14 @@ export default function QRMenuPage() {
       );
     }
 
-    // Vegetarian filter
+    // Vegetarian filter - use dietary_tags
     if (filters.vegetarianOnly) {
-      filtered = filtered.filter((d) => d.is_vegetarian);
+      filtered = filtered.filter((d) => d.dietary_tags?.includes('vegetarian'));
     }
 
-    // Non-veg filter
+    // Non-veg filter - use dietary_tags (NOT vegetarian)
     if (filters.nonVegOnly) {
-      filtered = filtered.filter((d) => !d.is_vegetarian);
+      filtered = filtered.filter((d) => !d.dietary_tags?.includes('vegetarian'));
     }
 
     // Bestseller filter
@@ -235,6 +235,13 @@ export default function QRMenuPage() {
     const itemCount = items.reduce((sum, i) => sum + i.quantity, 0);
     return { items, total, itemCount };
   };
+
+  // Persist cart to localStorage
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('qrave_cart', JSON.stringify(cart));
+    }
+  }, [cart]);
 
   // Add to cart handler
   const handleAddToCart = (item: CartItem) => {
@@ -366,26 +373,26 @@ export default function QRMenuPage() {
       {/* HEADER SECTION */}
       <div className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
         {/* Top search row */}
-        <div className="px-4 pt-3 pb-2 bg-gradient-to-r from-orange-50 to-amber-50">
-          <div className="flex items-center gap-3">
-            <div className="flex-1 h-11 bg-white rounded-2xl shadow-sm px-3 flex items-center gap-3 border border-slate-100 ring-1 ring-transparent focus-within:ring-orange-200 transition-all">
+        <div className="px-3 sm:px-4 pt-3 pb-2 bg-gradient-to-r from-orange-50 to-amber-50">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="flex-1 h-10 sm:h-11 bg-white rounded-2xl shadow-sm px-2.5 sm:px-3 flex items-center gap-2.5 sm:gap-3 border border-slate-100 ring-1 ring-transparent focus-within:ring-orange-200 transition-all">
               <svg
-                width="18"
-                height="18"
+                width="16"
+                height="16"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.75"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-slate-500"
+                className="text-slate-500 flex-shrink-0"
               >
                 <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" />
                 <path d="m20 20-3.5-3.5" />
               </svg>
               <input
                 type="text"
-                placeholder="Search dishes or cuisines"
+                placeholder="Search dishes..."
                 value={filters.searchQuery}
                 onChange={(e) =>
                   setFilters((prev) => ({
@@ -393,13 +400,13 @@ export default function QRMenuPage() {
                     searchQuery: e.target.value,
                   }))
                 }
-                className="flex-1 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none"
+                className="flex-1 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none"
               />
             </div>
 
             <button
               onClick={() => router.push(`/qr/${tenant}/checkout`)}
-              className="relative w-11 h-11 rounded-2xl bg-white shadow-sm flex items-center justify-center text-slate-700 border border-slate-100 hover:border-orange-200 hover:text-orange-600 transition-colors"
+              className="relative w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-slate-700 border border-slate-100 hover:border-orange-200 hover:text-orange-600 transition-colors flex-shrink-0"
               aria-label="View cart"
             >
               <svg
@@ -513,7 +520,7 @@ export default function QRMenuPage() {
               setFilters((prev) => ({
                 ...prev,
                 vegetarianOnly: !prev.vegetarianOnly,
-                nonVegOnly: prev.vegetarianOnly ? prev.nonVegOnly : false,
+                nonVegOnly: false,
               }))
             }
             className={`px-3 py-2 rounded-2xl text-[12px] font-semibold whitespace-nowrap border transition-all flex items-center gap-2.5 shadow-sm ${
@@ -545,7 +552,7 @@ export default function QRMenuPage() {
               setFilters((prev) => ({
                 ...prev,
                 nonVegOnly: !prev.nonVegOnly,
-                vegetarianOnly: prev.nonVegOnly ? prev.vegetarianOnly : false,
+                vegetarianOnly: false,
               }))
             }
             className={`px-3 py-2 rounded-2xl text-[12px] font-semibold whitespace-nowrap border transition-all flex items-center gap-2.5 shadow-sm ${
@@ -750,41 +757,7 @@ export default function QRMenuPage() {
         </>
       )}
 
-      {/* CART MINI BAR (PHASE 2) */}
-      {cart.itemCount > 0 && (
-        <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg p-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-medium text-slate-700">
-              {cart.itemCount} item{cart.itemCount > 1 ? 's' : ''}
-            </span>
-          </div>
-          <div className="text-right">
-            <p className="text-sm text-slate-600">Total</p>
-            <p className="text-xl font-bold text-orange-600">₹{cart.total}</p>
-          </div>
-          <button
-            onClick={() => setShowCartDrawer(true)}
-            className="ml-4 bg-orange-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-700 transition-all"
-          >
-            View Cart
-          </button>
-        </div>
-      )}
-
-      {/* CART DRAWER */}
-      {cart.itemCount > 0 && (
-        <CartDrawer
-          isOpen={showCartDrawer}
-          cart={cart}
-          onClose={() => setShowCartDrawer(false)}
-          onUpdateQuantity={(item: CartItem, delta: number) =>
-            updateCartQuantity(item.dishId, item.selectedVariant?.name, delta)
-          }
-          onRemove={(item: CartItem) =>
-            removeCartItem(item.dishId, item.selectedVariant?.name)
-          }
-        />
-      )}
+      {/* CART MINI BAR - REMOVED: Cart icon in header reflects items */}
     </div>
   );
 }
@@ -832,12 +805,12 @@ function DishCard({
       <div className="p-3 space-y-2.5">
         {/* Badges Row - Veg/Non-veg + Bestseller */}
         <div className="flex items-center gap-2">
-          {/* Veg/Non-veg indicator */}
+          {/* Veg/Non-veg indicator based on dietary_tags */}
           <div className={`w-4 h-4 rounded-sm border flex items-center justify-center ${
-            dish.is_vegetarian ? 'border-green-600' : 'border-red-600'
+            dish.dietary_tags?.includes('vegetarian') ? 'border-green-600' : 'border-red-600'
           }`}>
             <div className={`w-2 h-2 rounded-full ${
-              dish.is_vegetarian ? 'bg-green-600' : 'bg-red-600'
+              dish.dietary_tags?.includes('vegetarian') ? 'bg-green-600' : 'bg-red-600'
             }`} />
           </div>
           

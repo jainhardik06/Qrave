@@ -12,13 +12,8 @@ interface DishDetailModalProps {
 }
 
 /**
- * DishDetailModal Component
- * Allows users to:
- * - View full dish details
- * - Select variants (sizes)
- * - Select toppings
- * - Adjust quantity
- * - Add to cart
+ * DishDetailModal Component - Swiggy/Zomato style
+ * Clean, minimal modal with radio buttons for variants and checkboxes for toppings
  */
 export function DishDetailModal({
   dish,
@@ -65,7 +60,7 @@ export function DishDetailModal({
       // Close modal after short delay
       setTimeout(() => {
         onClose();
-      }, 500);
+      }, 300);
     } finally {
       setIsAdding(false);
     }
@@ -73,105 +68,149 @@ export function DishDetailModal({
 
   const toggleTopping = (topping: Topping) => {
     setSelectedToppings((prev) => {
-      const isSelected = prev.some((t) => t._id === topping._id || t.name === topping.name);
+      const toppingId = topping._id || topping.name;
+      const isSelected = prev.some((t) => (t._id || t.name) === toppingId);
       if (isSelected) {
-        return prev.filter((t) => t._id !== topping._id && t.name !== topping.name);
+        return prev.filter((t) => (t._id || t.name) !== toppingId);
       } else {
         return [...prev, topping];
       }
     });
   };
 
+  const selectAllToppings = () => {
+    if (dish.toppings) {
+      if (selectedToppings.length === dish.toppings.length) {
+        setSelectedToppings([]);
+      } else {
+        setSelectedToppings([...dish.toppings]);
+      }
+    }
+  };
+
   return (
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black bg-opacity-50 z-40"
+        className="fixed inset-0 bg-black/60 z-[60] animate-in fade-in duration-200"
         onClick={onClose}
       />
 
       {/* Modal */}
-      <div className="fixed inset-0 z-50 overflow-y-auto flex items-end">
+      <div className="fixed inset-0 z-[70] flex items-end">
         <div
-          className="w-full bg-white rounded-t-2xl shadow-xl max-h-96 overflow-y-auto"
+          className="w-full bg-white rounded-t-[28px] shadow-2xl max-h-[90vh] overflow-hidden flex flex-col animate-in slide-in-from-bottom duration-300"
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Header */}
-          <div className="sticky top-0 bg-white border-b border-slate-200 p-4 flex items-start justify-between">
-            <div className="flex-1">
-              <h2 className="text-xl font-bold text-slate-900">{dish.name}</h2>
-              <p className="text-sm text-slate-600 mt-1">{dish.description}</p>
+          {/* Fixed Header with Image and Close Button */}
+          <div className="relative flex-shrink-0 border-b border-slate-100">
+            {/* Dish Image & Name */}
+            <div className="p-5 pb-4">
+              <div className="flex items-start gap-3">
+                {dish.image_url && (
+                  <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-slate-100 flex-shrink-0 shadow-sm">
+                    <Image
+                      src={dish.image_url}
+                      alt={dish.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                <div className="flex-1 min-w-0 pr-10">
+                  <h2 className="text-lg font-semibold text-slate-900 leading-tight mb-1">
+                    {dish.name}
+                  </h2>
+                  {dish.description && (
+                    <p className="text-sm text-slate-600 leading-relaxed line-clamp-2">
+                      {dish.description}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* Additional Info Pills */}
+              <div className="flex flex-wrap gap-2 mt-3">
+                {dish.preparation_time_minutes && (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M12 6v6l4 2"/>
+                    </svg>
+                    {dish.preparation_time_minutes} min
+                  </span>
+                )}
+                {dish.calories && (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-medium">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                    {dish.calories} cal
+                  </span>
+                )}
+                {dish.allergens && dish.allergens.length > 0 && (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-red-50 text-red-700 rounded-full text-xs font-medium">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/>
+                      <path d="M12 9v4m0 4h.01"/>
+                    </svg>
+                    Contains allergens
+                  </span>
+                )}
+              </div>
             </div>
+
+            {/* Close Button */}
             <button
               onClick={onClose}
-              className="text-2xl font-light text-slate-500 hover:text-slate-700"
+              className="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 transition-all"
+              aria-label="Close"
             >
-              ✕
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 6 6 18M6 6l12 12" />
+              </svg>
             </button>
           </div>
 
-          <div className="p-4">
-            {/* Image */}
-            {dish.image_url && (
-              <div className="relative h-48 bg-slate-100 rounded-lg overflow-hidden mb-4">
-                <Image
-                  src={dish.image_url}
-                  alt={dish.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            )}
-
-            {/* Dish Info */}
-            <div className="mb-4 p-3 bg-slate-50 rounded-lg">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-medium text-slate-700">Base Price</span>
-                <span className="text-lg font-bold text-orange-600">₹{dish.base_price}</span>
-              </div>
-
-              {dish.preparation_time_minutes && (
-                <div className="flex items-center justify-between text-sm text-slate-600">
-                  <span>Prep Time</span>
-                  <span>{dish.preparation_time_minutes} min</span>
-                </div>
-              )}
-
-              {dish.allergens && dish.allergens.length > 0 && (
-                <div className="mt-2 pt-2 border-t border-slate-200">
-                  <p className="text-xs font-medium text-slate-700 mb-1">Contains:</p>
-                  <div className="flex flex-wrap gap-1">
-                    {dish.allergens.map((allergen) => (
-                      <span
-                        key={allergen}
-                        className="text-xs bg-red-50 text-red-700 px-2 py-0.5 rounded"
-                      >
-                        Allergen: {allergen}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Variants/Sizes */}
+          {/* Scrollable Content */}
+          <div className="flex-1 overflow-y-auto px-5 py-4">
+            {/* Variants Section */}
             {dish.variants && dish.variants.length > 0 && (
-              <div className="mb-4">
-                <h3 className="font-bold text-slate-900 mb-2">Select Size</h3>
-                <div className="space-y-2">
+              <div className="mb-5">
+                <h3 className="text-base font-semibold text-slate-900 mb-3">
+                  {dish.name}
+                </h3>
+                <p className="text-sm text-slate-600 mb-3">Select any 1</p>
+                
+                <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden">
                   {dish.variants.map((variant, idx) => (
                     <button
                       key={idx}
                       onClick={() => setSelectedVariant(variant)}
-                      className={`w-full px-4 py-3 rounded-lg border-2 font-medium transition-all ${
-                        selectedVariant?.name === variant.name
-                          ? 'border-orange-600 bg-orange-50 text-orange-900'
-                          : 'border-slate-200 bg-white text-slate-900 hover:border-orange-300'
+                      className={`w-full px-4 py-3.5 flex items-center justify-between text-left transition-colors ${
+                        idx !== dish.variants!.length - 1 ? 'border-b border-slate-100' : ''
+                      } ${
+                        selectedVariant?.name === variant.name ? 'bg-orange-50' : 'bg-white hover:bg-slate-50'
                       }`}
                     >
-                      <span className="flex items-center justify-between">
-                        <span>{variant.name}</span>
-                        <span className="font-bold">₹{variant.price}</span>
+                      <div className="flex items-center gap-3 flex-1 min-w-0">
+                        <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${
+                          selectedVariant?.name === variant.name
+                            ? 'border-orange-600'
+                            : 'border-slate-300'
+                        }`}>
+                          {selectedVariant?.name === variant.name && (
+                            <div className="w-2 h-2 rounded-full bg-orange-600" />
+                          )}
+                        </div>
+                        <span className={`text-[15px] font-medium truncate ${
+                          selectedVariant?.name === variant.name ? 'text-slate-900' : 'text-slate-700'
+                        }`}>
+                          {variant.name}
+                        </span>
+                      </div>
+                      <span className="text-sm font-semibold text-slate-900 ml-2">
+                        ₹{variant.price}
                       </span>
                     </button>
                   ))}
@@ -179,42 +218,62 @@ export function DishDetailModal({
               </div>
             )}
 
-            {/* Toppings */}
+            {/* Toppings Section */}
             {dish.toppings && dish.toppings.length > 0 && (
-              <div className="mb-4">
-                <h3 className="font-bold text-slate-900 mb-2">Add Toppings</h3>
-                <p className="text-xs text-slate-600 mb-2">Additional charges apply</p>
-                <div className="space-y-2 max-h-48 overflow-y-auto">
-                  {dish.toppings.map((topping) => {
+              <div className="mb-5">
+                <div className="flex items-center justify-between mb-3">
+                  <div>
+                    <h3 className="text-base font-semibold text-slate-900">
+                      Reg Extra Topping
+                    </h3>
+                    <p className="text-sm text-slate-600">Select upto {dish.toppings.length}</p>
+                  </div>
+                  <button
+                    onClick={selectAllToppings}
+                    className="text-sm font-semibold text-orange-600 hover:text-orange-700"
+                  >
+                    {selectedToppings.length === dish.toppings.length ? 'Deselect All' : 'Select All'}
+                  </button>
+                </div>
+
+                <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                  {dish.toppings.map((topping, idx) => {
+                    const toppingId = topping._id || topping.name;
                     const isSelected = selectedToppings.some(
-                      (t) => t._id === topping._id || t.name === topping.name
+                      (t) => (t._id || t.name) === toppingId
                     );
                     return (
                       <button
-                        key={topping._id || topping.name}
+                        key={toppingId}
                         onClick={() => toggleTopping(topping)}
-                        className={`w-full px-4 py-2 rounded-lg border-2 text-left font-medium transition-all ${
-                          isSelected
-                            ? 'border-orange-600 bg-orange-50'
-                            : 'border-slate-200 bg-white hover:border-slate-300'
+                        className={`w-full px-4 py-3.5 flex items-center justify-between text-left transition-colors ${
+                          idx !== dish.toppings!.length - 1 ? 'border-b border-slate-100' : ''
+                        } ${
+                          isSelected ? 'bg-green-50' : 'bg-white hover:bg-slate-50'
                         }`}
                       >
-                        <span className="flex items-center justify-between">
-                          <span className="flex items-center gap-2">
-                            <span
-                              className={`w-5 h-5 rounded border-2 flex items-center justify-center ${
-                                isSelected
-                                  ? 'border-orange-600 bg-orange-600'
-                                  : 'border-slate-300'
-                              }`}
-                            >
-                              {isSelected && <span className="text-white text-sm">✓</span>}
+                        <div className="flex items-center gap-3 flex-1 min-w-0">
+                          <div className={`w-4 h-4 rounded border-2 flex items-center justify-center flex-shrink-0 ${
+                            isSelected
+                              ? 'border-green-600 bg-green-600'
+                              : 'border-slate-300'
+                          }`}>
+                            {isSelected && (
+                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                              </svg>
+                            )}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <span className={`text-[15px] font-medium ${
+                              isSelected ? 'text-slate-900' : 'text-slate-700'
+                            }`}>
+                              {topping.name}
                             </span>
-                            {topping.name}
-                          </span>
-                          <span className="text-sm font-bold text-orange-600">
-                            +₹{topping.price}
-                          </span>
+                          </div>
+                        </div>
+                        <span className="text-sm font-semibold text-slate-900 ml-2">
+                          + ₹{topping.price}
                         </span>
                       </button>
                     );
@@ -222,63 +281,41 @@ export function DishDetailModal({
                 </div>
               </div>
             )}
+          </div>
 
-            {/* Quantity Selector */}
-            <div className="mb-4 flex items-center gap-4 p-3 bg-slate-50 rounded-lg">
-              <span className="font-medium text-slate-900">Quantity</span>
-              <div className="flex items-center border border-slate-300 rounded-lg">
+          {/* Fixed Bottom: Quantity & Add Button Side by Side */}
+          <div className="flex-shrink-0 border-t border-slate-200 p-4 bg-white">
+            <div className="flex items-center gap-3">
+              {/* Quantity Controls */}
+              <div className="flex items-center bg-white border-2 border-slate-200 rounded-full px-1 py-1">
                 <button
                   onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  className="px-3 py-1 text-lg font-bold text-slate-600 hover:bg-slate-100"
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-emerald-600 font-bold text-xl hover:bg-slate-50 transition-colors"
+                  aria-label="Decrease quantity"
                 >
                   −
                 </button>
-                <span className="px-4 py-1 font-bold text-slate-900 min-w-12 text-center">
+                <span className="text-lg font-semibold text-slate-900 min-w-[2.5rem] text-center">
                   {quantity}
                 </span>
                 <button
                   onClick={() => setQuantity(quantity + 1)}
-                  className="px-3 py-1 text-lg font-bold text-slate-600 hover:bg-slate-100"
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-emerald-600 font-bold text-xl hover:bg-slate-50 transition-colors"
+                  aria-label="Increase quantity"
                 >
                   +
                 </button>
               </div>
+
+              {/* Add Button */}
+              <button
+                onClick={handleAddToCart}
+                disabled={isAdding}
+                className="flex-1 py-3.5 bg-emerald-600 text-white rounded-2xl font-semibold text-base hover:bg-emerald-700 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-emerald-600/20"
+              >
+                {isAdding ? 'Adding...' : `Add Item | ₹${finalPrice}`}
+              </button>
             </div>
-
-            {/* Price Breakdown */}
-            <div className="mb-4 space-y-1 text-sm">
-              <div className="flex items-center justify-between text-slate-600">
-                <span>Item Price:</span>
-                <span>₹{(basePrice * quantity).toFixed(2)}</span>
-              </div>
-              {selectedToppings.length > 0 && (
-                <div className="flex items-center justify-between text-slate-600">
-                  <span>Toppings:</span>
-                  <span>₹{(toppingPrice * quantity).toFixed(2)}</span>
-                </div>
-              )}
-              <div className="border-t border-slate-200 pt-1 flex items-center justify-between font-bold text-lg text-orange-600">
-                <span>Total:</span>
-                <span>₹{finalPrice.toFixed(2)}</span>
-              </div>
-            </div>
-
-            {/* Add to Cart Button */}
-            <button
-              onClick={handleAddToCart}
-              disabled={isAdding}
-              className="w-full py-3 bg-orange-600 text-white rounded-lg font-bold text-lg hover:bg-orange-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isAdding ? 'Adding...' : `Add to Cart - ₹${finalPrice.toFixed(2)}`}
-            </button>
-
-            {/* Continue Shopping */}
-            <button
-              onClick={onClose}
-              className="w-full mt-2 py-2 border border-slate-300 text-slate-900 rounded-lg font-medium hover:bg-slate-50 transition-all"
-            >
-              Continue Shopping
-            </button>
           </div>
         </div>
       </div>
