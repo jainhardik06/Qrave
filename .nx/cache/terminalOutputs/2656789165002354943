@@ -1,0 +1,113 @@
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/inventory/inventory.controller.ts(31,44): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(44,53): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(59,44): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(72,52): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(89,44): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(107,57): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(117,48): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(130,49): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(143,54): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(158,58): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(171,63): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(184,67): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(199,46): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(212,47): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(225,65): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(238,46): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(251,39): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(268,63): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(269,63): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(270,70): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(291,54): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(305,55): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(319,62): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(337,54): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(351,54): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(365,55): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(379,68): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/inventory/inventory.controller.ts(31,44): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(44,53): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(59,44): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(72,52): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(89,44): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(107,57): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(117,48): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(130,49): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(143,54): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(158,58): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(171,63): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(184,67): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(199,46): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(212,47): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(225,65): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(238,46): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(251,39): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(268,63): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(269,63): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(270,70): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(291,54): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(305,55): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(319,62): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(337,54): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(351,54): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(365,55): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+apps/api/src/app/inventory/inventory.controller.ts(379,68): error TS2345: Argument of type 'string | ObjectId' is not assignable to parameter of type 'string'.
+  Type 'ObjectId' is not assignable to type 'string'.
+Warning: command "tsc -p apps/api/tsconfig.json" exited with non-zero status code

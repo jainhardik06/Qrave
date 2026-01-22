@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
-import { Plus, Edit2, Trash2, Search, Grid3x3, Tag, Clock, Star } from 'lucide-react';
+import { Plus, Edit2, Trash2, Search, Grid3x3, Clock, Star } from 'lucide-react';
 
 interface Category {
   _id: string;
@@ -79,6 +79,7 @@ export default function MenuPage() {
   }, []);
 
   useEffect(() => {
+    if (!allDishes.length) return;
     filterDishes();
   }, [selectedCategory, searchQuery, allDishes]);
 
@@ -276,9 +277,8 @@ export default function MenuPage() {
               All Items ({allDishes.length})
             </button>
             {categories.map((cat) => (
-              <button
+              <div
                 key={cat._id}
-                onClick={() => setSelectedCategory(cat._id)}
                 className={`px-5 py-3 rounded-xl font-medium transition-all flex items-center gap-2 ${
                   selectedCategory === cat._id
                     ? 'text-white shadow-lg'
@@ -288,11 +288,16 @@ export default function MenuPage() {
                   selectedCategory === cat._id ? { backgroundColor: cat.color } : {}
                 }
               >
-                <span className="text-xl">{ICON_MAP[cat.icon] || '🍽️'}</span>
-                <span>{cat.name}</span>
-                <span className="text-xs opacity-75">
-                  ({allDishes.filter((d) => d.category_ids?.includes(cat._id) || d.category_id === cat._id).length})
-                </span>
+                <div
+                  onClick={() => setSelectedCategory(cat._id)}
+                  className="flex items-center gap-2 flex-1 cursor-pointer"
+                >
+                  <span className="text-xl">{ICON_MAP[cat.icon] || '🍽️'}</span>
+                  <span>{cat.name}</span>
+                  <span className="text-xs opacity-75">
+                    ({allDishes.filter((d) => d.category_ids?.includes(cat._id) || d.category_id === cat._id).length})
+                  </span>
+                </div>
                 <div className="flex gap-1 ml-2">
                   <button
                     onClick={(e) => {
@@ -313,7 +318,7 @@ export default function MenuPage() {
                     <Trash2 size={14} />
                   </button>
                 </div>
-              </button>
+              </div>
             ))}
           </div>
         </div>
@@ -361,6 +366,27 @@ export default function MenuPage() {
                         🍽️
                       </div>
                     )}
+                    {/* Delete Button */}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (confirm('Are you sure you want to delete this dish?')) {
+                          const token = localStorage.getItem('token');
+                          axios.delete(`http://localhost:3001/api/dishes/${dish._id}`, {
+                            headers: { Authorization: `Bearer ${token}` },
+                          }).then(() => {
+                            fetchData();
+                          }).catch((error) => {
+                            console.error('Error deleting dish:', error);
+                            alert('Failed to delete dish');
+                          });
+                        }
+                      }}
+                      className="absolute top-3 left-3 p-2 bg-red-500 text-white rounded-full shadow-lg hover:bg-red-600 transition z-10"
+                    >
+                      <Trash2 size={16} />
+                    </button>
+                    
                     {/* Badges */}
                     <div className="absolute top-3 right-3 flex flex-col gap-2">
                       {dish.is_bestseller && (

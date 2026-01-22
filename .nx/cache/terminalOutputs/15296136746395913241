@@ -1,0 +1,159 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 10.1s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 17.8s (734 modules)
+ [31m[1m⨯[22m[39m TypeError: e[o] is not a function
+    at Object.t [as require] (D:\D\Qrave\apps\web\.next\server\webpack-runtime.js:1:127)
+digest: "3896485803"
+TypeError: e[o] is not a function
+    at Object.t [as require] [90m(D:\D\Qrave\apps\web\[39m.next\server\webpack-runtime.js:1:127[90m)[39m
+    at require (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:16:18839)
+    at I (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:94364)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:96670
+    at F._fromJSON (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:97108)
+    at JSON.parse (<anonymous>)
+    at O (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:94085)
+    at t (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:100584)
+[90m    at runNextTicks (node:internal/process/task_queues:65:5)[39m
+[90m    at process.processTimers (node:internal/timers:520:9)[39m
+ [31m[1m⨯[22m[39m TypeError: e[o] is not a function
+    at Object.t [as require] [90m(D:\D\Qrave\apps\web\[39m.next\server\webpack-runtime.js:1:127[90m)[39m
+    at require (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:16:18839)
+    at I (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:94364)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:96670
+    at F._fromJSON (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:97108)
+    at JSON.parse (<anonymous>)
+    at O (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:94085)
+    at t (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:100584)
+[90m    at runNextTicks (node:internal/process/task_queues:65:5)[39m
+[90m    at process.processTimers (node:internal/timers:520:9)[39m {
+  page: [32m'/dashboard/inventory'[39m
+}
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 1681ms (946 modules)
+ GET /dashboard/inventory [31m500[39m in 22868ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 581ms (949 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1104ms
+ [31m[1m⨯[22m[39m TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] (D:\D\Qrave\apps\web\.next\server\webpack-runtime.js:33:42)
+digest: "3957187549"
+TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] [90m(D:\D\Qrave\apps\web\[39m.next\server\webpack-runtime.js:33:42[90m)[39m
+    at require (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:20088)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108280
+    at eo (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108465)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:110694
+    at Object._fromJSON (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:111250)
+    at JSON.parse (<anonymous>)
+    at eu (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108959)
+    at en (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108027)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115169
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115186
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115219
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115236
+    at t (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115459)
+ [31m[1m⨯[22m[39m TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] [90m(D:\D\Qrave\apps\web\[39m.next\server\webpack-runtime.js:33:42[90m)[39m
+    at require (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:20088)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108280
+    at eo (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108465)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:110694
+    at Object._fromJSON (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:111250)
+    at JSON.parse (<anonymous>)
+    at eu (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108959)
+    at en (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108027)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115169
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115186
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115219
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115236
+    at t (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115459) {
+  page: [32m'/dashboard/inventory'[39m
+}
+ GET /dashboard/inventory [31m500[39m in 117ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 50ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 10.1s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 17.8s (734 modules)
+ [31m[1m⨯[22m[39m TypeError: e[o] is not a function
+    at Object.t [as require] (D:\D\Qrave\apps\web\.next\server\webpack-runtime.js:1:127)
+digest: "3896485803"
+TypeError: e[o] is not a function
+    at Object.t [as require] [90m(D:\D\Qrave\apps\web\[39m.next\server\webpack-runtime.js:1:127[90m)[39m
+    at require (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:16:18839)
+    at I (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:94364)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:96670
+    at F._fromJSON (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:97108)
+    at JSON.parse (<anonymous>)
+    at O (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:94085)
+    at t (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:100584)
+[90m    at runNextTicks (node:internal/process/task_queues:65:5)[39m
+[90m    at process.processTimers (node:internal/timers:520:9)[39m
+ [31m[1m⨯[22m[39m TypeError: e[o] is not a function
+    at Object.t [as require] [90m(D:\D\Qrave\apps\web\[39m.next\server\webpack-runtime.js:1:127[90m)[39m
+    at require (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:16:18839)
+    at I (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:94364)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:96670
+    at F._fromJSON (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:97108)
+    at JSON.parse (<anonymous>)
+    at O (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:94085)
+    at t (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.prod.js:12:100584)
+[90m    at runNextTicks (node:internal/process/task_queues:65:5)[39m
+[90m    at process.processTimers (node:internal/timers:520:9)[39m {
+  page: [32m'/dashboard/inventory'[39m
+}
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 1681ms (946 modules)
+ GET /dashboard/inventory [31m500[39m in 22868ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 581ms (949 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1104ms
+ [31m[1m⨯[22m[39m TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] (D:\D\Qrave\apps\web\.next\server\webpack-runtime.js:33:42)
+digest: "3957187549"
+TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] [90m(D:\D\Qrave\apps\web\[39m.next\server\webpack-runtime.js:33:42[90m)[39m
+    at require (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:20088)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108280
+    at eo (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108465)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:110694
+    at Object._fromJSON (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:111250)
+    at JSON.parse (<anonymous>)
+    at eu (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108959)
+    at en (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108027)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115169
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115186
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115219
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115236
+    at t (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115459)
+ [31m[1m⨯[22m[39m TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] [90m(D:\D\Qrave\apps\web\[39m.next\server\webpack-runtime.js:33:42[90m)[39m
+    at require (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:20088)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108280
+    at eo (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108465)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:110694
+    at Object._fromJSON (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:111250)
+    at JSON.parse (<anonymous>)
+    at eu (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108959)
+    at en (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:108027)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115169
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115186
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115219
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115236
+    at t (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:115459) {
+  page: [32m'/dashboard/inventory'[39m
+}
+ GET /dashboard/inventory [31m500[39m in 117ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 50ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

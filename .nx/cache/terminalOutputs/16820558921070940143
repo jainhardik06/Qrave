@@ -1,0 +1,199 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 4s
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 6.3s (728 modules)
+ GET /dashboard [32m200[39m in 6987ms
+ [32m[1m✓[22m[39m Compiled in 729ms (332 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/orders ...
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 3.7s (720 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 1688ms (750 modules)
+ [32m[1m✓[22m[39m Compiled in 2.3s (764 modules)
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 1920ms (753 modules)
+ GET /dashboard/inventory [33m404[39m in 246ms
+ GET /dashboard/inventory [33m404[39m in 119ms
+ GET /dashboard [32m200[39m in 431ms
+ GET /dashboard/inventory [33m404[39m in 112ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 1510ms (754 modules)
+ [31m[1m⨯[22m[39m Error: The default export is not a React Component in page: "/dashboard/inventory"
+    at rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:9654)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async rW (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:12704)
+    at async r0 (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:16198)
+    at async doRender (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1427:30)
+    at async cacheEntry.responseCache.get.routeKind (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:818:17)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\D\Qrave\node_modules\[4mnext[24m\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\start-server.js:141:13) {
+  page: [32m'/dashboard/inventory'[39m
+}
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 1443ms (980 modules)
+ [31m[1m⨯[22m[39m Error: The default export is not a React Component in page: "/dashboard/inventory"
+    at rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:9654)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async rW (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:12704)
+    at async r0 (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:16198)
+    at async doRender (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1427:30)
+    at async cacheEntry.responseCache.get.routeKind (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:818:17)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\D\Qrave\node_modules\[4mnext[24m\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\start-server.js:141:13) {
+  page: [32m'/dashboard/inventory'[39m
+}
+ [32m[1m✓[22m[39m Compiled in 1323ms (1008 modules)
+ [32m[1m✓[22m[39m Compiled (994 modules)
+ GET /dashboard/inventory [32m200[39m in 205ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory/items/new ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 997ms (1000 modules)
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 790ms (1003 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1173ms
+ [32m[1m✓[22m[39m Compiled in 875ms (1017 modules)
+ [32m[1m✓[22m[39m Compiled in 1014ms (1012 modules)
+ [32m[1m✓[22m[39m Compiled in 637ms (1012 modules)
+ [32m[1m✓[22m[39m Compiled in 488ms (1020 modules)
+ [32m[1m✓[22m[39m Compiled in 306ms (1020 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 4s
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 6.3s (728 modules)
+ GET /dashboard [32m200[39m in 6987ms
+ [32m[1m✓[22m[39m Compiled in 729ms (332 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/orders ...
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 3.7s (720 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 1688ms (750 modules)
+ [32m[1m✓[22m[39m Compiled in 2.3s (764 modules)
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 1920ms (753 modules)
+ GET /dashboard/inventory [33m404[39m in 246ms
+ GET /dashboard/inventory [33m404[39m in 119ms
+ GET /dashboard [32m200[39m in 431ms
+ GET /dashboard/inventory [33m404[39m in 112ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 1510ms (754 modules)
+ [31m[1m⨯[22m[39m Error: The default export is not a React Component in page: "/dashboard/inventory"
+    at rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:9654)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async rW (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:12704)
+    at async r0 (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:16198)
+    at async doRender (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1427:30)
+    at async cacheEntry.responseCache.get.routeKind (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:818:17)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\D\Qrave\node_modules\[4mnext[24m\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\start-server.js:141:13) {
+  page: [32m'/dashboard/inventory'[39m
+}
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 1443ms (980 modules)
+ [31m[1m⨯[22m[39m Error: The default export is not a React Component in page: "/dashboard/inventory"
+    at rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:9654)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10412
+    at async Promise.all (index 0)
+    at async rU (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:10117)
+    at async rW (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:12704)
+    at async r0 (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:39:16198)
+    at async doRender (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1427:30)
+    at async cacheEntry.responseCache.get.routeKind (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\base-server.js:818:17)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\D\Qrave\node_modules\[4mnext[24m\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (D:\D\Qrave\node_modules\[4mnext[24m\dist\server\lib\start-server.js:141:13) {
+  page: [32m'/dashboard/inventory'[39m
+}
+ [32m[1m✓[22m[39m Compiled in 1323ms (1008 modules)
+ [32m[1m✓[22m[39m Compiled (994 modules)
+ GET /dashboard/inventory [32m200[39m in 205ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory/items/new ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 997ms (1000 modules)
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 790ms (1003 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 1173ms
+ [32m[1m✓[22m[39m Compiled in 875ms (1017 modules)
+ [32m[1m✓[22m[39m Compiled in 1014ms (1012 modules)
+ [32m[1m✓[22m[39m Compiled in 637ms (1012 modules)
+ [32m[1m✓[22m[39m Compiled in 488ms (1020 modules)
+ [32m[1m✓[22m[39m Compiled in 306ms (1020 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

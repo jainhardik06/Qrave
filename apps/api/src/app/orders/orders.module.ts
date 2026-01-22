@@ -7,6 +7,7 @@ import { PublicOrdersController } from './public-orders.controller';
 import { Order, OrderSchema } from '../schemas/order.schema';
 import { Consumer, ConsumerSchema } from '../../schemas/consumer.schema';
 import { Tenant, TenantSchema } from '../../schemas/tenant.schema';
+import { InventoryModule } from '../inventory/inventory.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { Tenant, TenantSchema } from '../../schemas/tenant.schema';
       { name: Consumer.name, schema: ConsumerSchema },
       { name: Tenant.name, schema: TenantSchema },
     ]),
+    InventoryModule,
   ],
   controllers: [OrdersController, PublicOrdersController],
   providers: [OrdersService, ConsumerService],

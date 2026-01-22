@@ -1,0 +1,71 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.1s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory/items/new ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 2.4s (524 modules)
+ GET /dashboard/inventory/items/new [32m200[39m in 2957ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 894ms (513 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 529ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 671ms (733 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/recipes in 452ms (739 modules)
+ GET /api/inventory/recipes [33m404[39m in 85ms
+ GET /api/inventory/recipes [33m404[39m in 58ms
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/restocking-armies in 367ms (751 modules)
+ [32m[1m✓[22m[39m Compiled in 526ms (762 modules)
+ GET /dashboard/inventory/restocking-armies [32m200[39m in 116ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 423ms (751 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 552ms
+ [32m[1m✓[22m[39m Compiled in 391ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 315ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 261ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 331ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 276ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 372ms (762 modules)
+ GET /dashboard/inventory/restocking-armies [32m200[39m in 129ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 308ms (751 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 418ms
+ [32m[1m✓[22m[39m Compiled in 663ms (762 modules)
+ GET /dashboard/inventory/restocking-armies [32m200[39m in 136ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 323ms (751 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 411ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.1s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory/items/new ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 2.4s (524 modules)
+ GET /dashboard/inventory/items/new [32m200[39m in 2957ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 894ms (513 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 529ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 671ms (733 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/recipes in 452ms (739 modules)
+ GET /api/inventory/recipes [33m404[39m in 85ms
+ GET /api/inventory/recipes [33m404[39m in 58ms
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/restocking-armies in 367ms (751 modules)
+ [32m[1m✓[22m[39m Compiled in 526ms (762 modules)
+ GET /dashboard/inventory/restocking-armies [32m200[39m in 116ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 423ms (751 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 552ms
+ [32m[1m✓[22m[39m Compiled in 391ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 315ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 261ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 331ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 276ms (765 modules)
+ [32m[1m✓[22m[39m Compiled in 372ms (762 modules)
+ GET /dashboard/inventory/restocking-armies [32m200[39m in 129ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 308ms (751 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 418ms
+ [32m[1m✓[22m[39m Compiled in 663ms (762 modules)
+ GET /dashboard/inventory/restocking-armies [32m200[39m in 136ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 323ms (751 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 411ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

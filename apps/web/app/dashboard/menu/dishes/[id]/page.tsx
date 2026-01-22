@@ -22,6 +22,20 @@ interface Topping {
   price: number;
 }
 
+interface InventoryItem {
+  _id: string;
+  name: string;
+  unit: string;
+  current_quantity: number;
+}
+
+interface Ingredient {
+  item_id: string;
+  item_name: string;
+  quantity_per_dish: number;
+  unit: string;
+}
+
 interface Dish {
   _id: string;
   category_ids: string[];
@@ -54,7 +68,12 @@ const ALLERGENS = [
   'sesame',
 ];
 
-const DIETARY_TAGS = ['vegetarian', 'vegan', 'gluten-free', 'dairy-free', 'halal', 'kosher'];
+const DIETARY_TAGS = ['Vegetarian', 'Non-Veg', 'Vegan'];
+
+// Unit mappings for ingredient selection
+const WEIGHT_UNITS = ['kg', 'g', 'mg', 'lb', 'oz'];
+const VOLUME_UNITS = ['L', 'ml', 'gallon', 'pint', 'cup', 'tbsp', 'tsp'];
+const QUANTITY_UNITS = ['piece', 'box', 'bag', 'dozen', 'bundle'];
 
 const STANDARD_VARIANTS = [
   { name: 'Small', price: 150 },
@@ -92,12 +111,17 @@ export default function DishEditorPage() {
   const [newTopping, setNewTopping] = useState({ name: '', price: 0 });
   const [loading, setLoading] = useState(false);
   const [step, setStep] = useState(1);
+  
+  // Step 5: Ingredients state
+  const [inventoryItems, setInventoryItems] = useState<InventoryItem[]>([]);
+  const [ingredients, setIngredients] = useState<Ingredient[]>([]);
 
   const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3001/api';
   const token = typeof window !== 'undefined' ? localStorage.getItem('token') : '';
 
   useEffect(() => {
     fetchCategories();
+    fetchInventoryItems();
     if (dishId && dishId !== 'new') {
       fetchDish();
     }
@@ -120,12 +144,72 @@ export default function DishEditorPage() {
       const res = await axios.get(`${API_BASE}/dishes/${dishId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
+      
+      console.log('=== FETCHED DISH ===');
+      console.log('Raw dish data:', JSON.stringify(res.data, null, 2));
+      console.log('Variants:', res.data.variants);
+      console.log('Toppings:', res.data.toppings);
+      
       setDish(res.data);
+      
+      // Fetch recipe/ingredients if exists
+      try {
+        console.log('🔍 Attempting to fetch recipe for dish:', dishId);
+        const recipeRes = await axios.get(`http://localhost:3001/api/inventory/recipes/${dishId}`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        console.log('📦 Recipe API response:', recipeRes.data);
+        
+        if (recipeRes.data) {
+          if (recipeRes.data.ingredients && recipeRes.data.ingredients.length > 0) {
+            console.log('📗 Recipe found with', recipeRes.data.ingredients.length, 'ingredients');
+            console.log('📗 Raw ingredients:', recipeRes.data.ingredients);
+            
+            // Map backend ingredients to frontend format
+            const mappedIngredients = recipeRes.data.ingredients.map((ing: any) => {
+              console.log('Mapping ingredient:', ing);
+              return {
+                item_id: ing.item_id?._id?.toString() || ing.item_id?.toString() || ing.item_id,
+                item_name: ing.item_name || '',
+                quantity_per_dish: ing.quantity_per_dish,
+                unit: ing.unit,
+              };
+            });
+            setIngredients(mappedIngredients);
+            console.log('✅ Ingredients loaded:', mappedIngredients);
+          } else {
+            console.log('📕 Recipe exists but has no ingredients');
+            setIngredients([]);
+          }
+        } else {
+          console.log('📕 No recipe found (null response)');
+          setIngredients([]);
+        }
+      } catch (recipeErr: any) {
+        // Recipe doesn't exist yet, that's okay
+        if (recipeErr.response?.status === 404) {
+          console.log('📕 Recipe not found (404)');
+        } else {
+          console.log('📕 Recipe fetch error:', recipeErr.response?.status, recipeErr.message);
+        }
+        setIngredients([]);
+      }
     } catch (err) {
       console.error('Error fetching dish:', err);
       alert('Failed to load dish');
     } finally {
       setLoading(false);
+    }
+  };
+  
+  const fetchInventoryItems = async () => {
+    try {
+      const res = await axios.get('http://localhost:3001/api/inventory/items?limit=1000', {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      setInventoryItems(res.data);
+    } catch (err) {
+      console.error('Error fetching inventory items:', err);
     }
   };
 
@@ -138,18 +222,66 @@ export default function DishEditorPage() {
         setLoading(false);
         return;
       }
-      console.log('Saving dish:', dish);
+      
+      // Debug: Log current dish state
+      console.log('=== SAVING DISH ===');
+      console.log('Dish state:', JSON.stringify(dish, null, 2));
+      console.log('Variants count:', dish.variants?.length);
+      console.log('Toppings count:', dish.toppings?.length);
+      console.log('Ingredients count:', ingredients.length);
+      
+      let savedDishId = dishId;
+      
       if (dishId && dishId !== 'new') {
-        await axios.patch(`${API_BASE}/dishes/${dishId}`, dish, {
+        console.log('Updating dish with PATCH:', `${API_BASE}/dishes/${dishId}`);
+        const updateResponse = await axios.patch(`${API_BASE}/dishes/${dishId}`, dish, {
           headers: { Authorization: `Bearer ${token}` },
         });
-        alert('Dish updated successfully!');
+        console.log('Update response:', updateResponse.data);
       } else {
-        await axios.post(`${API_BASE}/dishes`, dish, {
+        console.log('Creating new dish with POST');
+        const res = await axios.post(`${API_BASE}/dishes`, dish, {
           headers: { Authorization: `Bearer ${token}` },
         });
-        alert('Dish created successfully!');
+        savedDishId = res.data._id;
+        console.log('Created dish ID:', savedDishId);
       }
+      
+      // Save recipe/ingredients if any ingredients are added
+      console.log('💚 Checking ingredients to save...');
+      console.log('Ingredients count:', ingredients.length);
+      console.log('Ingredients data:', ingredients);
+      
+      if (ingredients.length > 0 && savedDishId && savedDishId !== 'new') {
+        try {
+          const recipePayload = {
+            dish_id: savedDishId,
+            dish_name: dish.name,
+            ingredients: ingredients.map(ing => ({
+              item_id: ing.item_id,
+              quantity_per_dish: ing.quantity_per_dish,
+              unit: ing.unit,
+            })),
+          };
+          
+          console.log('📦 Recipe payload to save:', JSON.stringify(recipePayload, null, 2));
+          
+          // Use PATCH which now has upsert enabled (creates if doesn't exist)
+          console.log('🔄 Saving recipe (upsert)...');
+          const response = await axios.patch(`http://localhost:3001/api/inventory/recipes/${savedDishId}`, recipePayload, {
+            headers: { Authorization: `Bearer ${token}` },
+          });
+          console.log('✅ Recipe saved successfully:', response.data);
+        } catch (recipeErr: any) {
+          console.error('❌ Error saving recipe:', recipeErr);
+          console.error('❌ Error response:', recipeErr?.response?.data);
+          alert('Dish saved but failed to save ingredients. You can add them later.');
+        }
+      } else {
+        console.log('⚠️ No ingredients to save (ingredients.length = 0 or no valid dishId)');
+      }
+      
+      alert(dishId && dishId !== 'new' ? 'Dish updated successfully!' : 'Dish created successfully!');
       router.push(`/dashboard/menu`);
     } catch (err: any) {
       console.error('Error saving dish:', err);
@@ -161,36 +293,125 @@ export default function DishEditorPage() {
   };
 
   const addVariant = () => {
+    console.log('🔵 Add variant button clicked!');
+    console.log('Current newVariant state:', newVariant);
+    
     if (newVariant.name) {
+      const updatedVariants = [...(dish.variants || []), newVariant];
+      console.log('✅ Adding variant:', newVariant);
+      console.log('✅ Updated variants:', updatedVariants);
       setDish({
         ...dish,
-        variants: [...(dish.variants || []), newVariant],
+        variants: updatedVariants,
       });
       setNewVariant({ name: '', price: 0 });
+    } else {
+      console.log('❌ Variant name is empty, not adding');
     }
   };
 
   const removeVariant = (index: number) => {
+    const updatedVariants = dish.variants?.filter((_, i) => i !== index) || [];
+    console.log('Removing variant at index:', index);
+    console.log('Updated variants:', updatedVariants);
     setDish({
       ...dish,
-      variants: dish.variants?.filter((_, i) => i !== index) || [],
+      variants: updatedVariants,
     });
+  };
+  
+  // Ingredient management functions
+  const addIngredient = () => {
+    if (inventoryItems.length === 0) {
+      alert('No inventory items available. Please add inventory items first.');
+      return;
+    }
+    
+    const firstItem = inventoryItems[0];
+    setIngredients([
+      ...ingredients,
+      {
+        item_id: firstItem._id,
+        item_name: firstItem.name,
+        quantity_per_dish: 0,
+        unit: firstItem.unit,
+      },
+    ]);
+  };
+  
+  // Get compatible units based on inventory item's unit type
+  const getCompatibleUnits = (baseUnit: string): string[] => {
+    const normalized = baseUnit.toLowerCase();
+    
+    // Weight units - normalize for comparison
+    const normalizedWeightUnits = WEIGHT_UNITS.map(u => u.toLowerCase());
+    if (normalizedWeightUnits.includes(normalized)) {
+      return WEIGHT_UNITS;
+    }
+    
+    // Volume units - normalize for comparison
+    const normalizedVolumeUnits = VOLUME_UNITS.map(u => u.toLowerCase());
+    if (normalizedVolumeUnits.includes(normalized)) {
+      return VOLUME_UNITS;
+    }
+    
+    // Quantity units (pieces, boxes, etc.) - normalize for comparison
+    const normalizedQuantityUnits = QUANTITY_UNITS.map(u => u.toLowerCase());
+    if (normalizedQuantityUnits.includes(normalized)) {
+      return QUANTITY_UNITS;
+    }
+    
+    // Default: return the base unit only
+    return [baseUnit];
+  };
+  
+  const removeIngredient = (index: number) => {
+    setIngredients(ingredients.filter((_, i) => i !== index));
+  };
+  
+  const updateIngredient = (index: number, field: string, value: any) => {
+    const updated = [...ingredients];
+    if (field === 'item_id') {
+      const selectedItem = inventoryItems.find(item => item._id === value);
+      if (selectedItem) {
+        updated[index] = {
+          ...updated[index],
+          item_id: value,
+          item_name: selectedItem.name,
+          unit: selectedItem.unit, // Reset to item's base unit when item changes
+        };
+      }
+    } else {
+      updated[index] = { ...updated[index], [field]: value };
+    }
+    setIngredients(updated);
   };
 
   const addTopping = () => {
+    console.log('🔵 Add topping button clicked!');
+    console.log('Current newTopping state:', newTopping);
+    
     if (newTopping.name) {
+      const updatedToppings = [...(dish.toppings || []), newTopping];
+      console.log('✅ Adding topping:', newTopping);
+      console.log('✅ Updated toppings:', updatedToppings);
       setDish({
         ...dish,
-        toppings: [...(dish.toppings || []), newTopping],
+        toppings: updatedToppings,
       });
       setNewTopping({ name: '', price: 0 });
+    } else {
+      console.log('❌ Topping name is empty, not adding');
     }
   };
 
   const removeTopping = (index: number) => {
+    const updatedToppings = dish.toppings?.filter((_, i) => i !== index) || [];
+    console.log('Removing topping at index:', index);
+    console.log('Updated toppings:', updatedToppings);
     setDish({
       ...dish,
-      toppings: dish.toppings?.filter((_, i) => i !== index) || [],
+      toppings: updatedToppings,
     });
   };
 
@@ -253,7 +474,7 @@ export default function DishEditorPage() {
       <div className="max-w-4xl mx-auto px-8 py-8">
         {/* Step indicator */}
         <div className="flex gap-2 mb-8">
-          {[1, 2, 3, 4].map((s) => (
+          {[1, 2, 3, 4, 5].map((s) => (
             <div
               key={s}
               className={`flex-1 h-2 rounded-full ${
@@ -416,6 +637,11 @@ export default function DishEditorPage() {
               <p className="text-sm text-gray-600 mb-4">
                 Add size options with their prices (e.g., Small ₹150, Medium ₹250, Large ₹350)
               </p>
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
+                <p className="text-sm text-blue-800">
+                  💡 <strong>Instructions:</strong> Type name & price, then click "Add Variant" button to add it to the list.
+                </p>
+              </div>
 
               <div className="space-y-2 mb-4">
                 {dish.variants?.map((variant, idx) => (
@@ -458,10 +684,11 @@ export default function DishEditorPage() {
                   className="w-28 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
                 <button
+                  type="button"
                   onClick={addVariant}
-                  className="px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+                  className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition font-medium whitespace-nowrap"
                 >
-                  ➕
+                  ➕ Add Variant
                 </button>
               </div>
 
@@ -486,6 +713,11 @@ export default function DishEditorPage() {
 
             <div className="pt-6 border-t border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-3">Optional Toppings</h3>
+              <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-4">
+                <p className="text-sm text-green-800">
+                  💡 <strong>Instructions:</strong> Type topping name & price, then click "Add Topping" button to add it to the list.
+                </p>
+              </div>
 
               <div className="space-y-2 mb-4">
                 {dish.toppings?.map((topping, idx) => (
@@ -510,12 +742,14 @@ export default function DishEditorPage() {
               <div className="flex gap-2">
                 <input
                   type="text"
+                  placeholder="Topping name (e.g., Extra Cheese)"
                   value={newTopping.name}
                   onChange={(e) => setNewTopping({ ...newTopping, name: e.target.value })}
                   className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
                 <input
                   type="number"
+                  placeholder="Price"
                   step="10"
                   min="0"
                   value={newTopping.price || ''}
@@ -523,10 +757,11 @@ export default function DishEditorPage() {
                   className="w-24 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
                 <button
+                  type="button"
                   onClick={addTopping}
-                  className="px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+                  className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition font-medium whitespace-nowrap"
                 >
-                  ➕
+                  ➕ Add Topping
                 </button>
               </div>
             </div>
@@ -707,11 +942,138 @@ export default function DishEditorPage() {
                 Back
               </button>
               <button
+                onClick={() => setStep(5)}
+                className="flex-1 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Step 5: Ingredients from Inventory */}
+        {step === 5 && (
+          <div className="space-y-6">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Recipe Ingredients</h2>
+              <p className="text-sm text-gray-600 mb-2">
+                Add ingredients from your inventory that are used to prepare this dish. 
+                This will automatically deduct from inventory when orders are placed.
+              </p>
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-sm text-blue-800">
+                💡 <strong>Tip:</strong> You can select different units for each ingredient. 
+                For example, if inventory is in kg, you can specify recipe in grams (g).
+                The system will automatically convert units when deducting from inventory.
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              {ingredients.map((ingredient, index) => {
+                const selectedItem = inventoryItems.find(item => item._id === ingredient.item_id);
+                const compatibleUnits = selectedItem ? getCompatibleUnits(selectedItem.unit) : [ingredient.unit];
+                
+                return (
+                  <div key={index} className="flex gap-3 items-end bg-gray-50 p-4 rounded-lg">
+                    <div className="flex-1">
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Ingredient *
+                      </label>
+                      <select
+                        value={ingredient.item_id}
+                        onChange={(e) => updateIngredient(index, 'item_id', e.target.value)}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                      >
+                        {inventoryItems.map((item) => (
+                          <option key={item._id} value={item._id}>
+                            {item.name} (Available: {item.current_quantity} {item.unit})
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="w-32">
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Quantity *
+                      </label>
+                      <input
+                        type="number"
+                        step="0.01"
+                        min="0"
+                        value={ingredient.quantity_per_dish || ''}
+                        onChange={(e) => updateIngredient(index, 'quantity_per_dish', parseFloat(e.target.value) || 0)}
+                        placeholder="0"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                      />
+                    </div>
+
+                    <div className="w-32">
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Unit *
+                      </label>
+                      <select
+                        value={ingredient.unit}
+                        onChange={(e) => updateIngredient(index, 'unit', e.target.value)}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 font-medium"
+                      >
+                        {compatibleUnits.map((unit) => (
+                          <option key={unit} value={unit}>
+                            {unit}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={() => removeIngredient(index)}
+                      className="px-3 py-2 text-red-600 hover:bg-red-50 rounded-lg transition"
+                    >
+                      🗑️
+                    </button>
+                  </div>
+                );
+              })}
+
+              {ingredients.length === 0 && (
+                <div className="text-center py-8 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
+                  <p className="text-gray-600 mb-2">No ingredients added yet</p>
+                  <p className="text-sm text-gray-500">
+                    Click "Add Ingredient" below to start adding ingredients
+                  </p>
+                </div>
+              )}
+
+              <button
+                type="button"
+                onClick={addIngredient}
+                disabled={inventoryItems.length === 0}
+                className="w-full px-4 py-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                + Add Ingredient
+              </button>
+
+              {inventoryItems.length === 0 && (
+                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                  <p className="text-sm text-yellow-800">
+                    ⚠️ No inventory items available. Please add inventory items first from the Inventory section.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <div className="flex gap-3 pt-4 border-t border-gray-200">
+              <button
+                onClick={() => setStep(4)}
+                className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition"
+              >
+                Back
+              </button>
+              <button
                 onClick={handleSave}
                 disabled={loading}
-                className="flex-1 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition disabled:opacity-50"
+                className="flex-1 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition disabled:opacity-50 font-medium"
               >
-                {loading ? 'Saving...' : 'Save Dish'}
+                {loading ? 'Saving...' : 'Save Dish & Recipe'}
               </button>
             </div>
           </div>

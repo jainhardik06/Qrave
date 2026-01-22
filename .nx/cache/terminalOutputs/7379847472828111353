@@ -1,0 +1,87 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.3s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.4s (734 modules)
+ GET /dashboard/inventory [32m200[39m in 2966ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 876ms (723 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 498ms
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 384ms (733 modules)
+ [32m[1m✓[22m[39m Compiled in 391ms (747 modules)
+ [31m[1m⨯[22m[39m ./app/dashboard/inventory/items/new/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\inventory\items\new\page.tsx[0m:140:1]
+ [2m140[0m |   if (!mounted) return null;
+ [2m141[0m | 
+ [2m142[0m |   return (
+ [2m143[0m |     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-4 md:p-8">
+     : [31;1m     ^^^[0m
+ [2m144[0m |       {/* Header */}
+ [2m145[0m |       <div className="mb-8">
+ [2m145[0m |         <Link href="/dashboard/inventory" className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 mb-6">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/inventory/items/new/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 919ms (959 modules)
+ GET /dashboard/inventory/items/new [32m200[39m in 87ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 24ms
+ [32m[1m✓[22m[39m Compiled in 292ms (973 modules)
+ GET /dashboard/inventory/items/new [32m200[39m in 129ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 471ms (971 modules)
+ [32m[1m✓[22m[39m Compiled in 277ms (971 modules)
+ [32m[1m✓[22m[39m Compiled in 586ms (971 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.3s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.4s (734 modules)
+ GET /dashboard/inventory [32m200[39m in 2966ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 876ms (723 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 498ms
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 384ms (733 modules)
+ [32m[1m✓[22m[39m Compiled in 391ms (747 modules)
+ [31m[1m⨯[22m[39m ./app/dashboard/inventory/items/new/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\inventory\items\new\page.tsx[0m:140:1]
+ [2m140[0m |   if (!mounted) return null;
+ [2m141[0m | 
+ [2m142[0m |   return (
+ [2m143[0m |     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-4 md:p-8">
+     : [31;1m     ^^^[0m
+ [2m144[0m |       {/* Header */}
+ [2m145[0m |       <div className="mb-8">
+ [2m145[0m |         <Link href="/dashboard/inventory" className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 mb-6">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/inventory/items/new/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 919ms (959 modules)
+ GET /dashboard/inventory/items/new [32m200[39m in 87ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 24ms
+ [32m[1m✓[22m[39m Compiled in 292ms (973 modules)
+ GET /dashboard/inventory/items/new [32m200[39m in 129ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 471ms (971 modules)
+ [32m[1m✓[22m[39m Compiled in 277ms (971 modules)
+ [32m[1m✓[22m[39m Compiled in 586ms (971 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

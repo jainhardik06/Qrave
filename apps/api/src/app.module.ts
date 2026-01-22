@@ -18,6 +18,7 @@ import { FeatureFlagGuard } from './app/common/guards/feature-flag.guard';
 import { OrdersModule } from './app/orders/orders.module';
 import { AnalyticsModule } from './app/analytics/analytics.module';
 import { StaffModule } from './app/staff/staff.module';
+import { InventoryModule } from './app/inventory/inventory.module';
 
 @Module({
   imports: [
@@ -46,6 +47,7 @@ import { StaffModule } from './app/staff/staff.module';
     OrdersModule,
     AnalyticsModule,
     StaffModule,
+    InventoryModule,
   ],
   controllers: [AppController],
   providers: [

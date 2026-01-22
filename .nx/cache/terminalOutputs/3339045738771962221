@@ -1,0 +1,39 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.7s (734 modules)
+ GET /dashboard/inventory [32m200[39m in 3223ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 904ms (723 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 516ms
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 384ms (729 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [32m[1m✓[22m[39m Compiled in 575ms (744 modules)
+ GET /dashboard/inventory [32m200[39m in 337ms
+ [32m[1m✓[22m[39m Compiled in 499ms (744 modules)
+ [32m[1m✓[22m[39m Compiled in 199ms (339 modules)
+ [32m[1m✓[22m[39m Compiled in 432ms (744 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.7s (734 modules)
+ GET /dashboard/inventory [32m200[39m in 3223ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 904ms (723 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 516ms
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 384ms (729 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [32m[1m✓[22m[39m Compiled in 575ms (744 modules)
+ GET /dashboard/inventory [32m200[39m in 337ms
+ [32m[1m✓[22m[39m Compiled in 499ms (744 modules)
+ [32m[1m✓[22m[39m Compiled in 199ms (339 modules)
+ [32m[1m✓[22m[39m Compiled in 432ms (744 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

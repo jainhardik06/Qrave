@@ -1,0 +1,25 @@
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/inventory/restocking-army.service.ts(32,11): error TS2322: Type '{ item_id: any; item_name: string; sku: string | undefined; quantity: number; unit: string; }[]' is not assignable to type 'RestockingItem[]'.
+  Type '{ item_id: any; item_name: string; sku: string | undefined; quantity: number; unit: string; }' is not assignable to type 'RestockingItem'.
+    Types of property 'sku' are incompatible.
+      Type 'string | undefined' is not assignable to type 'string'.
+        Type 'undefined' is not assignable to type 'string'.
+apps/api/src/app/inventory/restocking-army.service.ts(92,13): error TS2322: Type '{ item_id: any; item_name: string; sku: string | undefined; quantity: number; unit: string; }[]' is not assignable to type 'RestockingItem[]'.
+  Type '{ item_id: any; item_name: string; sku: string | undefined; quantity: number; unit: string; }' is not assignable to type 'RestockingItem'.
+    Types of property 'sku' are incompatible.
+      Type 'string | undefined' is not assignable to type 'string'.
+        Type 'undefined' is not assignable to type 'string'.
+[2m> [22mtsc -p apps/api/tsconfig.json
+
+apps/api/src/app/inventory/restocking-army.service.ts(32,11): error TS2322: Type '{ item_id: any; item_name: string; sku: string | undefined; quantity: number; unit: string; }[]' is not assignable to type 'RestockingItem[]'.
+  Type '{ item_id: any; item_name: string; sku: string | undefined; quantity: number; unit: string; }' is not assignable to type 'RestockingItem'.
+    Types of property 'sku' are incompatible.
+      Type 'string | undefined' is not assignable to type 'string'.
+        Type 'undefined' is not assignable to type 'string'.
+apps/api/src/app/inventory/restocking-army.service.ts(92,13): error TS2322: Type '{ item_id: any; item_name: string; sku: string | undefined; quantity: number; unit: string; }[]' is not assignable to type 'RestockingItem[]'.
+  Type '{ item_id: any; item_name: string; sku: string | undefined; quantity: number; unit: string; }' is not assignable to type 'RestockingItem'.
+    Types of property 'sku' are incompatible.
+      Type 'string | undefined' is not assignable to type 'string'.
+        Type 'undefined' is not assignable to type 'string'.
+Warning: command "tsc -p apps/api/tsconfig.json" exited with non-zero status code

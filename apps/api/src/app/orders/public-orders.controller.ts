@@ -1,17 +1,23 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Post, Req } from '@nestjs/common';
 import { OrdersService } from './orders.service';
 import { ConsumerService } from './consumer.service';
 import { CreateOrderDto } from './dto/create-order.dto';
+import { InventoryItemService } from '../inventory/inventory-item.service';
+import { InventoryRecipeService } from '../inventory/inventory-recipe.service';
 
 @Controller('public/orders')
 export class PublicOrdersController {
   constructor(
     private readonly ordersService: OrdersService,
     private readonly consumerService: ConsumerService,
+    private readonly inventoryItemService: InventoryItemService,
+    private readonly recipeService: InventoryRecipeService,
   ) {}
 
   @Post()
-  async create(@Body() body: any) {
+  async create(@Body() body: any, @Req() req: any) {
+    const tenantId = req.tenantId || req.user?.tenant_id;
+
     // Extract customer details
     const customerName = body.customer_name || body.customerName;
     const customerPhone = body.customer_phone || body.customerPhone;
@@ -56,6 +62,32 @@ export class PublicOrdersController {
     // Save delivery address if provided
     if (dto.order_type === 'delivery' && dto.delivery_address) {
       await this.consumerService.updateAddress((consumer as any)._id.toString(), dto.delivery_address);
+    }
+
+    // Deduct inventory based on recipes
+    try {
+      for (const item of dto.items) {
+        const recipe = await this.recipeService.findByDishId(tenantId, item.dish_id);
+
+        if (recipe) {
+          // Deduct each ingredient
+          for (const ingredient of recipe.ingredients) {
+            const totalQuantityNeeded = ingredient.quantity_per_dish * item.quantity;
+
+            await this.inventoryItemService.deductStock(
+              tenantId,
+              ingredient.item_id.toString(),
+              totalQuantityNeeded,
+              'dish_ordered',
+              order._id.toString(),
+              (consumer as any)._id.toString(),
+            );
+          }
+        }
+      }
+    } catch (error: any) {
+      // Log but don't fail the order if inventory deduction fails
+      console.error('Inventory deduction error:', error);
     }
 
     return order;

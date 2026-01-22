@@ -1,0 +1,29 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.1s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.7s (734 modules)
+ GET /dashboard/inventory [32m200[39m in 3286ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 927ms (723 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 523ms
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 367ms (733 modules)
+ [32m[1m✓[22m[39m Compiled in 502ms (744 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.1s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.7s (734 modules)
+ GET /dashboard/inventory [32m200[39m in 3286ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 927ms (723 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 523ms
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 367ms (733 modules)
+ [32m[1m✓[22m[39m Compiled in 502ms (744 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

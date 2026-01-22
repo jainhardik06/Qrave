@@ -1,0 +1,219 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.5s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 3.4s (565 modules)
+ GET /dashboard/inventory/items/new [32m200[39m in 2082ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 413ms (554 modules)
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+ [31m[1m⨯[22m[39m Internal error: TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:162242)
+    at usePathname (../../node_modules/next/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (../../node_modules/next/dist/client/components/error-boundary.js:159:50)
+    at au (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+digest: "3359133269"
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:162242)
+    at usePathname (webpack-internal:///(ssr)/../../node_modules/[4mnext[24m/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/../../node_modules/[4mnext[24m/dist/client/components/error-boundary.js:159:50)
+    at au (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+[90m    at listOnTimeout (node:internal/timers:588:17)[39m
+[90m    at process.processTimers (node:internal/timers:523:7)[39m
+ [31m[1m⨯[22m[39m TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:162242)
+    at usePathname (webpack-internal:///(ssr)/../../node_modules/[4mnext[24m/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/../../node_modules/[4mnext[24m/dist/client/components/error-boundary.js:159:50)
+    at au (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+[90m    at listOnTimeout (node:internal/timers:588:17)[39m
+[90m    at process.processTimers (node:internal/timers:523:7)[39m
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 4500ms
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 658ms (781 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 4428ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 164ms
+ [32m[1m✓[22m[39m Compiled in 370ms (795 modules)
+ [32m[1m✓[22m[39m Compiled in 328ms (795 modules)
+ [32m[1m✓[22m[39m Compiled in 255ms (795 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 657ms (993 modules)
+ [32m[1m✓[22m[39m Compiled in 691ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 288ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 266ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 376ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 451ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 303ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 320ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 333ms (1007 modules)
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.5s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/items/new in 3.4s (565 modules)
+ GET /dashboard/inventory/items/new [32m200[39m in 2082ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 413ms (554 modules)
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+ [31m[1m⨯[22m[39m Internal error: TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:162242)
+    at usePathname (../../node_modules/next/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (../../node_modules/next/dist/client/components/error-boundary.js:159:50)
+    at au (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (D:\D\Qrave\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+digest: "3359133269"
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:162242)
+    at usePathname (webpack-internal:///(ssr)/../../node_modules/[4mnext[24m/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/../../node_modules/[4mnext[24m/dist/client/components/error-boundary.js:159:50)
+    at au (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+[90m    at listOnTimeout (node:internal/timers:588:17)[39m
+[90m    at process.processTimers (node:internal/timers:523:7)[39m
+ [31m[1m⨯[22m[39m TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:162242)
+    at usePathname (webpack-internal:///(ssr)/../../node_modules/[4mnext[24m/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/../../node_modules/[4mnext[24m/dist/client/components/error-boundary.js:159:50)
+    at au (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (D:\D\Qrave\node_modules\[4mnext[24m\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+[90m    at listOnTimeout (node:internal/timers:588:17)[39m
+[90m    at process.processTimers (node:internal/timers:523:7)[39m
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 4500ms
+ [37m[1m○[22m[39m Compiling /_error ...
+ [32m[1m✓[22m[39m Compiled /_error in 658ms (781 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [31m500[39m in 4428ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 164ms
+ [32m[1m✓[22m[39m Compiled in 370ms (795 modules)
+ [32m[1m✓[22m[39m Compiled in 328ms (795 modules)
+ [32m[1m✓[22m[39m Compiled in 255ms (795 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 657ms (993 modules)
+ [32m[1m✓[22m[39m Compiled in 691ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 288ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 266ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 376ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 451ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 303ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 320ms (1007 modules)
+ [32m[1m✓[22m[39m Compiled in 333ms (1007 modules)
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

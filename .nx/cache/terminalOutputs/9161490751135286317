@@ -4,42 +4,62 @@
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 3.4s
+ [32m[1m✓[22m[39m Ready in 23s
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 35.3s (728 modules)
+ GET /dashboard [32m200[39m in 36723ms
+ [32m[1m✓[22m[39m Compiled in 1328ms (332 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 3.3s (744 modules)
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1610ms (748 modules)
+ GET / [32m200[39m in 2062ms
  [37m[1m○[22m[39m Compiling /qr/[tenant]/order-confirmation ...
- [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 14.3s (463 modules)
- [32m[1m✓[22m[39m Compiled in 501ms (239 modules)
- GET /qr/696e0b78acfe64aa03824c94/order-confirmation?orderId=69709b316c32426b15d07a3b [32m200[39m in 15575ms
- [32m[1m✓[22m[39m Compiled /_not-found in 269ms (452 modules)
- GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 539ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 989ms (754 modules)
+ GET /qr/696e0b78acfe64aa03824c94/order-confirmation?orderId=69709b316c32426b15d07a3b [32m200[39m in 2525ms
  [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
- [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 1063ms (495 modules)
- [32m[1m✓[22m[39m Compiled in 810ms (509 modules)
- [37m[1m○[22m[39m Compiling /qr/[tenant]/checkout ...
- [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 2.9s (498 modules)
- GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 1418ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 4.6s (793 modules)
  [37m[1m○[22m[39m Compiling /_not-found ...
- [32m[1m✓[22m[39m Compiled /_not-found in 3.1s (501 modules)
- GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 3294ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 6.2s (796 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 7666ms
+ [32m[1m✓[22m[39m Compiled in 1421ms (804 modules)
+ [32m[1m✓[22m[39m Compiled in 335ms (367 modules)
+ [32m[1m✓[22m[39m Compiled in 885ms (790 modules)
+ [32m[1m✓[22m[39m Compiled in 355ms (367 modules)
+ [32m[1m✓[22m[39m Compiled in 860ms (790 modules)
+ [32m[1m✓[22m[39m Compiled in 350ms (367 modules)
+ [32m[1m✓[22m[39m Compiled in 892ms (790 modules)
+ [32m[1m✓[22m[39m Compiled in 450ms (367 modules)
 [2m> [22mcd apps/web && npx next dev -p 3000
 
   [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
   - Local:        http://localhost:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 3.4s
+ [32m[1m✓[22m[39m Ready in 23s
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 35.3s (728 modules)
+ GET /dashboard [32m200[39m in 36723ms
+ [32m[1m✓[22m[39m Compiled in 1328ms (332 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 3.3s (744 modules)
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1610ms (748 modules)
+ GET / [32m200[39m in 2062ms
  [37m[1m○[22m[39m Compiling /qr/[tenant]/order-confirmation ...
- [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 14.3s (463 modules)
- [32m[1m✓[22m[39m Compiled in 501ms (239 modules)
- GET /qr/696e0b78acfe64aa03824c94/order-confirmation?orderId=69709b316c32426b15d07a3b [32m200[39m in 15575ms
- [32m[1m✓[22m[39m Compiled /_not-found in 269ms (452 modules)
- GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 539ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 989ms (754 modules)
+ GET /qr/696e0b78acfe64aa03824c94/order-confirmation?orderId=69709b316c32426b15d07a3b [32m200[39m in 2525ms
  [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
- [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 1063ms (495 modules)
- [32m[1m✓[22m[39m Compiled in 810ms (509 modules)
- [37m[1m○[22m[39m Compiling /qr/[tenant]/checkout ...
- [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 2.9s (498 modules)
- GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 1418ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 4.6s (793 modules)
  [37m[1m○[22m[39m Compiling /_not-found ...
- [32m[1m✓[22m[39m Compiled /_not-found in 3.1s (501 modules)
- GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 3294ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 6.2s (796 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 7666ms
+ [32m[1m✓[22m[39m Compiled in 1421ms (804 modules)
+ [32m[1m✓[22m[39m Compiled in 335ms (367 modules)
+ [32m[1m✓[22m[39m Compiled in 885ms (790 modules)
+ [32m[1m✓[22m[39m Compiled in 355ms (367 modules)
+ [32m[1m✓[22m[39m Compiled in 860ms (790 modules)
+ [32m[1m✓[22m[39m Compiled in 350ms (367 modules)
+ [32m[1m✓[22m[39m Compiled in 892ms (790 modules)
+ [32m[1m✓[22m[39m Compiled in 450ms (367 modules)
 Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code
