@@ -7,6 +7,7 @@ import { CreateInventoryItemDto, UpdateInventoryItemDto, AdjustInventoryDto } fr
 import { CreateRecipeDto, UpdateRecipeDto } from './inventory-recipe.service';
 import { CreateRestockingArmyDto, UpdateRestockingArmyDto } from './dto/restocking-army.dto';
 import { RequestContext } from '../../common/context/request-context';
+import { convertUnit } from './utils/unit-conversion';
 
 @Controller('inventory')
 export class InventoryController {
@@ -436,5 +437,91 @@ export class InventoryController {
       throw new InternalServerErrorException(error.message);
     }
   }
+
+  // ============== INVENTORY REVERT ENDPOINT ==============
+  // Called when an order is cancelled to restore inventory items
+  // Must mirror the exact logic from orders.service.ts create() method
+
+  @Patch('revert')
+  async revertInventory(
+    @Body() body: { dish_id: string; quantity: number; order_id: string },
+    @Req() req: any,
+  ) {
+    try {
+      const rawTenantId = RequestContext.getTenantId();
+      if (!rawTenantId) {
+        throw new BadRequestException('Tenant ID is required');
+      }
+      const tenantId = String(rawTenantId);
+      const { dish_id, quantity, order_id } = body;
+
+      if (!dish_id || !quantity) {
+        throw new BadRequestException('dish_id and quantity are required');
+      }
+
+      // Find the recipe for this dish to get ingredients
+      const recipe = await this.recipeService.findByDishId(tenantId, dish_id);
+      if (!recipe || !recipe.ingredients || recipe.ingredients.length === 0) {
+        this.logger.warn(`No recipe found for dish_id: ${dish_id}`);
+        return { success: false, message: 'Recipe not found for dish' };
+      }
+
+      // Revert inventory for each ingredient - MUST MIRROR deductStock logic
+      for (const ingredient of recipe.ingredients) {
+        try {
+          // Calculate total quantity to revert
+          // This mirrors: totalQuantityNeeded = ingredient.quantity_per_dish * item.quantity
+          const totalQuantityToRevert = ingredient.quantity_per_dish * quantity;
+
+          // Get the inventory item to handle unit conversion if needed
+          const inventoryItem = await this.itemService.findById(
+            tenantId,
+            ingredient.item_id.toString(),
+          );
+
+          if (!inventoryItem) {
+            this.logger.warn(`Inventory item not found: ${ingredient.item_id}`);
+            continue;
+          }
+
+          // Convert quantity from recipe unit to inventory item unit (mirrors deductStock logic)
+          let convertedQuantity = totalQuantityToRevert;
+          if (ingredient.unit && ingredient.unit !== inventoryItem.unit) {
+            try {
+              convertedQuantity = convertUnit(
+                totalQuantityToRevert,
+                ingredient.unit,
+                inventoryItem.unit,
+              );
+            } catch (conversionError) {
+              this.logger.warn(`Unit conversion failed: ${conversionError}`);
+              // If conversion fails, use the original quantity
+            }
+          }
+
+          const adjustDto: AdjustInventoryDto = {
+            quantity_change: convertedQuantity,
+            reason: `Order ${order_id} cancelled - reverted`,
+          };
+
+          await this.itemService.adjustStock(tenantId, ingredient.item_id.toString(), adjustDto);
+
+          this.logger.log(
+            `Reverted ${convertedQuantity} ${inventoryItem.unit} from order ${order_id}`,
+          );
+        } catch (error: any) {
+          this.logger.warn(`Failed to revert ingredient ${ingredient.item_id}: ${error.message}`);
+          // Continue with other ingredients even if one fails
+        }
+      }
+
+      this.logger.log(`Successfully reverted inventory for order ${order_id}`);
+      return { success: true, message: 'Inventory reverted successfully' };
+    } catch (error: any) {
+      this.logger.error(`Error reverting inventory: ${error.message}`, error.stack);
+      throw new InternalServerErrorException(error.message);
+    }
+  }
 }
+
 

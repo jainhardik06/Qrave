@@ -1,0 +1,123 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 24.3s
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 21s (728 modules)
+ GET /dashboard [32m200[39m in 22392ms
+ [32m[1m✓[22m[39m Compiled in 1315ms (332 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 741ms (754 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 226ms (757 modules)
+ GET /dashboard/inventory/items/6971da9db4c12aecba068584 [33m404[39m in 100ms
+ GET /dashboard/inventory [32m200[39m in 92ms
+ [32m[1m✓[22m[39m Compiled in 277ms (351 modules)
+ [32m[1m✓[22m[39m Compiled in 260ms (351 modules)
+ [32m[1m✓[22m[39m Compiled in 346ms (351 modules)
+ [32m[1m✓[22m[39m Compiled in 224ms (351 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/inventory/restocking-armies ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/restocking-armies in 633ms (768 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 329ms (782 modules)
+ [32m[1m✓[22m[39m Compiled in 303ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 374ms (363 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 305ms (785 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 106ms
+ GET /dashboard/inventory [32m200[39m in 119ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 65ms
+ GET /dashboard/inventory [32m200[39m in 57ms
+ [32m[1m✓[22m[39m Compiled in 221ms (365 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 27ms
+ GET /dashboard/inventory [32m200[39m in 74ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 30ms
+ GET /dashboard/inventory [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 237ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 197ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 152ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 302ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 201ms (363 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 323ms (785 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 96ms
+ GET /dashboard/inventory [32m200[39m in 129ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 22ms
+ GET /dashboard/inventory [32m200[39m in 76ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 461ms (363 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 224ms (785 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 139ms
+ GET /dashboard/inventory [32m200[39m in 112ms
+ [32m[1m✓[22m[39m Compiled in 271ms (365 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 56ms
+ GET /dashboard/inventory [32m200[39m in 50ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 42ms
+ GET /dashboard/inventory [32m200[39m in 76ms
+ GET /dashboard/inventory [32m200[39m in 44ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 29ms
+ GET /dashboard/inventory [32m200[39m in 49ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 48ms
+ GET /dashboard/inventory [32m200[39m in 53ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 28ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 24.3s
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 21s (728 modules)
+ GET /dashboard [32m200[39m in 22392ms
+ [32m[1m✓[22m[39m Compiled in 1315ms (332 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 741ms (754 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 226ms (757 modules)
+ GET /dashboard/inventory/items/6971da9db4c12aecba068584 [33m404[39m in 100ms
+ GET /dashboard/inventory [32m200[39m in 92ms
+ [32m[1m✓[22m[39m Compiled in 277ms (351 modules)
+ [32m[1m✓[22m[39m Compiled in 260ms (351 modules)
+ [32m[1m✓[22m[39m Compiled in 346ms (351 modules)
+ [32m[1m✓[22m[39m Compiled in 224ms (351 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/inventory/restocking-armies ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/restocking-armies in 633ms (768 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 329ms (782 modules)
+ [32m[1m✓[22m[39m Compiled in 303ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 374ms (363 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 305ms (785 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 106ms
+ GET /dashboard/inventory [32m200[39m in 119ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 65ms
+ GET /dashboard/inventory [32m200[39m in 57ms
+ [32m[1m✓[22m[39m Compiled in 221ms (365 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 27ms
+ GET /dashboard/inventory [32m200[39m in 74ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 30ms
+ GET /dashboard/inventory [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 237ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 197ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 152ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 302ms (363 modules)
+ [32m[1m✓[22m[39m Compiled in 201ms (363 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 323ms (785 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 96ms
+ GET /dashboard/inventory [32m200[39m in 129ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 22ms
+ GET /dashboard/inventory [32m200[39m in 76ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 461ms (363 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 224ms (785 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 139ms
+ GET /dashboard/inventory [32m200[39m in 112ms
+ [32m[1m✓[22m[39m Compiled in 271ms (365 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 56ms
+ GET /dashboard/inventory [32m200[39m in 50ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 42ms
+ GET /dashboard/inventory [32m200[39m in 76ms
+ GET /dashboard/inventory [32m200[39m in 44ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 29ms
+ GET /dashboard/inventory [32m200[39m in 49ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 48ms
+ GET /dashboard/inventory [32m200[39m in 53ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 28ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

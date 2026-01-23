@@ -72,6 +72,11 @@ export class UpdateInventoryItemDto {
   @IsNumber()
   @IsOptional()
   @Min(0)
+  current_quantity?: number;
+
+  @IsNumber()
+  @IsOptional()
+  @Min(0)
   reorder_level?: number;
 
   @IsNumber()

@@ -1,0 +1,145 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1969ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.9s (732 modules)
+ GET /dashboard/inventory [32m200[39m in 3418ms
+ [32m[1m✓[22m[39m Compiled in 594ms (334 modules)
+ GET /dashboard/inventory [32m200[39m in 329ms
+ GET /dashboard/inventory [32m200[39m in 59ms
+ GET /dashboard/inventory [32m200[39m in 67ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 364ms (721 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 88ms
+ GET /dashboard/inventory [32m200[39m in 97ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 48ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 41ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 641ms (732 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 96ms (721 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 84ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 472ms (735 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 78ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 16ms
+ [32m[1m✓[22m[39m Compiled in 358ms (735 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 66ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 52ms
+ [32m[1m✓[22m[39m Compiled in 433ms (735 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 64ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 83ms
+ GET /dashboard/inventory [32m200[39m in 120ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 52ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory/restocking-armies ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/restocking-armies in 512ms (735 modules)
+ GET /dashboard/inventory [32m200[39m in 177ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 634ms (749 modules)
+ [32m[1m✓[22m[39m Compiled in 500ms (738 modules)
+ [32m[1m✓[22m[39m Compiled in 557ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 175ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 247ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 351ms
+ GET /dashboard/inventory [32m200[39m in 115ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 37ms
+ GET /dashboard/inventory [32m200[39m in 49ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 79ms
+ [32m[1m✓[22m[39m Compiled in 505ms (741 modules)
+ [32m[1m✓[22m[39m Compiled in 358ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 173ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 305ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 413ms
+ [32m[1m✓[22m[39m Compiled in 483ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 140ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 328ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 464ms
+ GET /dashboard/inventory [32m200[39m in 106ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 59ms
+ [32m[1m✓[22m[39m Compiled in 469ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 185ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 280ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 390ms
+ [32m[1m✓[22m[39m Compiled in 444ms (741 modules)
+ [32m[1m✓[22m[39m Compiled in 315ms (741 modules)
+ [32m[1m✓[22m[39m Compiled in 419ms (738 modules)
+ [32m[1m✓[22m[39m Compiled in 392ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 177ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 287ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 410ms
+ [32m[1m✓[22m[39m Compiled in 477ms (738 modules)
+^C[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1969ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.9s (732 modules)
+ GET /dashboard/inventory [32m200[39m in 3418ms
+ [32m[1m✓[22m[39m Compiled in 594ms (334 modules)
+ GET /dashboard/inventory [32m200[39m in 329ms
+ GET /dashboard/inventory [32m200[39m in 59ms
+ GET /dashboard/inventory [32m200[39m in 67ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 364ms (721 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 88ms
+ GET /dashboard/inventory [32m200[39m in 97ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 48ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 41ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 641ms (732 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 96ms (721 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 84ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 39ms
+ [32m[1m✓[22m[39m Compiled in 472ms (735 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 78ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 16ms
+ [32m[1m✓[22m[39m Compiled in 358ms (735 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 66ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 52ms
+ [32m[1m✓[22m[39m Compiled in 433ms (735 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 64ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 83ms
+ GET /dashboard/inventory [32m200[39m in 120ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 52ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory/restocking-armies ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory/restocking-armies in 512ms (735 modules)
+ GET /dashboard/inventory [32m200[39m in 177ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 634ms (749 modules)
+ [32m[1m✓[22m[39m Compiled in 500ms (738 modules)
+ [32m[1m✓[22m[39m Compiled in 557ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 175ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 247ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 351ms
+ GET /dashboard/inventory [32m200[39m in 115ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 37ms
+ GET /dashboard/inventory [32m200[39m in 49ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 79ms
+ [32m[1m✓[22m[39m Compiled in 505ms (741 modules)
+ [32m[1m✓[22m[39m Compiled in 358ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 173ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 305ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 413ms
+ [32m[1m✓[22m[39m Compiled in 483ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 140ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 328ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 464ms
+ GET /dashboard/inventory [32m200[39m in 106ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 59ms
+ [32m[1m✓[22m[39m Compiled in 469ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 185ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 280ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 390ms
+ [32m[1m✓[22m[39m Compiled in 444ms (741 modules)
+ [32m[1m✓[22m[39m Compiled in 315ms (741 modules)
+ [32m[1m✓[22m[39m Compiled in 419ms (738 modules)
+ [32m[1m✓[22m[39m Compiled in 392ms (738 modules)
+ GET /dashboard/inventory [32m200[39m in 177ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 287ms (727 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 410ms
+ [32m[1m✓[22m[39m Compiled in 477ms (738 modules)
+^CWarning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

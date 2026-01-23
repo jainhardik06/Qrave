@@ -87,16 +87,19 @@ export default function RecipeFormPage() {
     const selectedItem = items.find((i) => i._id === newIngredient.item_id);
     if (!selectedItem) return;
 
+    // Unit will be stored from the inventory item
+    // The backend's deductStock will handle conversion if needed
     setIngredients([
       ...ingredients,
       {
         item_id: newIngredient.item_id,
         quantity_per_dish: newIngredient.quantity_per_dish,
-        unit: selectedItem.unit,
+        unit: selectedItem.unit, // Store the inventory item's unit
       },
     ]);
 
     setNewIngredient({ item_id: '', quantity_per_dish: 0 });
+    setError(''); // Clear any previous errors
   };
 
   const removeIngredient = (index: number) => {
@@ -134,9 +137,24 @@ export default function RecipeFormPage() {
   };
 
   const selectedItem = items.find((i) => i._id === newIngredient.item_id);
+  
+  // Calculate total cost - MUST convert units if recipe unit differs from inventory unit
   const totalCost = ingredients.reduce((sum, ing) => {
     const item = items.find((i) => i._id === ing.item_id);
-    return sum + (ing.quantity_per_dish * (item?.cost_per_unit || 0));
+    if (!item) return sum;
+    
+    let quantityInItemUnit = ing.quantity_per_dish;
+    
+    // If recipe unit differs from inventory unit, we need backend unit conversion
+    // For now, assume they match (backend handles actual conversion during deduction)
+    // TODO: Add client-side unit conversion utility if needed for accurate cost display
+    if (ing.unit && ing.unit !== item.unit) {
+      // Units don't match - cost calculation may be approximate
+      // Backend will handle actual unit conversion during order processing
+      console.warn(`Unit mismatch: recipe uses ${ing.unit}, inventory uses ${item.unit}`);
+    }
+    
+    return sum + (quantityInItemUnit * (item?.cost_per_unit || 0));
   }, 0);
 
   return (
@@ -232,16 +250,23 @@ export default function RecipeFormPage() {
                 {ingredients.map((ing, idx) => {
                   const item = items.find((i) => i._id === ing.item_id);
                   const cost = ing.quantity_per_dish * (item?.cost_per_unit || 0);
+                  const unitMismatch = ing.unit !== item?.unit;
+                  
                   return (
                     <div key={idx} className="flex justify-between items-center bg-white p-3 rounded border border-gray-200">
-                      <div>
+                      <div className="flex-1">
                         <p className="font-medium text-gray-900">{item?.name}</p>
                         <p className="text-sm text-gray-600">
-                          {ing.quantity_per_dish} {ing.unit} @ ₹{item?.cost_per_unit.toFixed(2)}/unit
+                          {ing.quantity_per_dish} {ing.unit} @ ₹{item?.cost_per_unit.toFixed(2)}/{item?.unit}
+                          {unitMismatch && (
+                            <span className="ml-2 text-orange-600 text-xs">
+                              ⚠️ Unit stored: {item?.unit}
+                            </span>
+                          )}
                         </p>
                       </div>
                       <div className="flex items-center gap-4">
-                        <p className="font-medium text-gray-900">₹{cost.toFixed(2)}</p>
+                        <p className="font-medium text-gray-900">≈₹{cost.toFixed(2)}</p>
                         <button
                           type="button"
                           onClick={() => removeIngredient(idx)}

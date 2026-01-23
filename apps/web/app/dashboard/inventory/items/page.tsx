@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Link from 'next/link';
 
 interface InventoryItem {
   _id: string;
@@ -23,6 +22,9 @@ export default function InventoryItemsPage() {
   const [error, setError] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedItem, setExpandedItem] = useState<string | null>(null);
+  const [editingItem, setEditingItem] = useState<InventoryItem | null>(null);
+  const [form, setForm] = useState<Partial<InventoryItem>>({});
+  const [saving, setSaving] = useState(false);
 
   useEffect(() => {
     fetchItems();
@@ -67,6 +69,47 @@ export default function InventoryItemsPage() {
     }
   };
 
+  const startEdit = (item: InventoryItem) => {
+    setEditingItem(item);
+    setForm({ ...item });
+  };
+
+  const resetEdit = () => {
+    if (editingItem) setForm({ ...editingItem });
+  };
+
+  const handleFormChange = (key: keyof InventoryItem, value: string | number | boolean) => {
+    setForm((prev) => ({ ...prev, [key]: value }));
+  };
+
+  const saveItem = async () => {
+    if (!editingItem) return;
+    setSaving(true);
+    try {
+      const payload = {
+        name: form.name,
+        sku: form.sku,
+        unit: form.unit,
+        cost_per_unit: Number(form.cost_per_unit) || 0,
+        current_quantity: Number(form.current_quantity) || 0,
+        reorder_level: Number(form.reorder_level) || 0,
+        category: form.category,
+        is_active: form.is_active,
+      };
+
+      const { data } = await axios.patch(`/api/inventory/items/${editingItem._id}`, payload);
+
+      setItems((prev) => prev.map((it) => (it._id === editingItem._id ? data : it)));
+      setFilteredItems((prev) => prev.map((it) => (it._id === editingItem._id ? data : it)));
+      setEditingItem(null);
+      setForm({});
+    } catch (err: any) {
+      setError(err.response?.data?.message || 'Failed to update item');
+    } finally {
+      setSaving(false);
+    }
+  };
+
   const isLowStock = (item: InventoryItem) => item.current_quantity <= item.reorder_level;
   const totalValue = filteredItems.reduce((sum, item) => sum + item.current_quantity * item.cost_per_unit, 0);
 
@@ -87,12 +130,12 @@ export default function InventoryItemsPage() {
             Total Items: {filteredItems.length} | Total Value: ₹{totalValue.toFixed(2)}
           </p>
         </div>
-        <Link
+        <a
           href="/dashboard/inventory/items/new"
           className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition"
         >
           + Add Item
-        </Link>
+        </a>
       </div>
 
       {error && <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">{error}</div>}
@@ -111,12 +154,9 @@ export default function InventoryItemsPage() {
       {filteredItems.length === 0 ? (
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 text-center">
           <p className="text-gray-600 mb-4">{searchQuery ? 'No items match your search' : 'No inventory items yet'}</p>
-          <Link
-            href="/dashboard/inventory/items/new"
-            className="text-orange-500 hover:text-orange-600 font-medium"
-          >
+          <a href="/dashboard/inventory/items/new" className="text-orange-500 hover:text-orange-600 font-medium">
             Create your first item
-          </Link>
+          </a>
         </div>
       ) : (
         <div className="bg-white rounded-lg shadow overflow-hidden">
@@ -164,12 +204,17 @@ export default function InventoryItemsPage() {
                     </td>
                     <td className="px-6 py-4 text-right">
                       <div className="flex items-center justify-end gap-2">
-                        <Link
-                          href={`/dashboard/inventory/items/${item._id}/edit`}
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            startEdit(item);
+                          }}
                           className="text-blue-500 hover:text-blue-700 text-sm font-medium"
                         >
                           Edit
-                        </Link>
+                        </button>
                         <button
                           onClick={() => deleteItem(item._id)}
                           className="text-red-500 hover:text-red-700 text-sm font-medium"
@@ -182,6 +227,133 @@ export default function InventoryItemsPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+      )}
+
+      {editingItem && (
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl p-6 border border-gray-200">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-semibold text-gray-900">Edit Item</h2>
+              <button
+                onClick={() => {
+                  setEditingItem(null);
+                  setForm({});
+                }}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                ✕
+              </button>
+            </div>
+
+            {error && (
+              <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+                {error}
+              </div>
+            )}
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Name</label>
+                <input
+                  value={form.name || ''}
+                  onChange={(e) => handleFormChange('name', e.target.value)}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">SKU</label>
+                <input
+                  value={form.sku || ''}
+                  onChange={(e) => handleFormChange('sku', e.target.value)}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Unit</label>
+                <input
+                  value={form.unit || ''}
+                  onChange={(e) => handleFormChange('unit', e.target.value)}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Cost per Unit</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  value={form.cost_per_unit ?? ''}
+                  onChange={(e) => handleFormChange('cost_per_unit', parseFloat(e.target.value))}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Current Quantity</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  value={form.current_quantity ?? ''}
+                  onChange={(e) => handleFormChange('current_quantity', parseFloat(e.target.value))}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Reorder Level</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  value={form.reorder_level ?? ''}
+                  onChange={(e) => handleFormChange('reorder_level', parseFloat(e.target.value))}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Category</label>
+                <input
+                  value={form.category || ''}
+                  onChange={(e) => handleFormChange('category', e.target.value)}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+              <div className="flex items-center gap-2 mt-6">
+                <input
+                  type="checkbox"
+                  checked={form.is_active ?? true}
+                  onChange={(e) => handleFormChange('is_active', e.target.checked)}
+                  className="h-4 w-4 text-orange-600 border-gray-300 rounded"
+                />
+                <span className="text-sm text-gray-700">Active</span>
+              </div>
+            </div>
+
+            <div className="mt-6 flex justify-end gap-3">
+              <button
+                onClick={resetEdit}
+                className="px-4 py-2 rounded border border-gray-300 text-gray-700 hover:bg-gray-50"
+                type="button"
+              >
+                Reset
+              </button>
+              <button
+                onClick={() => {
+                  setEditingItem(null);
+                  setForm({});
+                }}
+                className="px-4 py-2 rounded border border-gray-300 text-gray-700 hover:bg-gray-50"
+                type="button"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={saveItem}
+                disabled={saving}
+                className="px-4 py-2 rounded bg-orange-500 text-white hover:bg-orange-600 disabled:opacity-60"
+                type="button"
+              >
+                {saving ? 'Saving...' : 'Save Changes'}
+              </button>
+            </div>
           </div>
         </div>
       )}

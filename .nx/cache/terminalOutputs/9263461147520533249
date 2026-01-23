@@ -1,0 +1,73 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 3.5s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.8s (732 modules)
+ GET /dashboard/inventory [32m200[39m in 3195ms
+ [32m[1m✓[22m[39m Compiled in 349ms (334 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 412ms (721 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 95ms
+ [32m[1m✓[22m[39m Compiled in 297ms (336 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 50ms
+ [32m[1m✓[22m[39m Compiled in 220ms (336 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 53ms
+ GET /dashboard/inventory [32m200[39m in 109ms
+ [32m[1m✓[22m[39m Compiled in 338ms (334 modules)
+ [32m[1m✓[22m[39m Compiled in 256ms (334 modules)
+ GET /dashboard/inventory [32m200[39m in 55ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 289ms (721 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 119ms
+ GET /dashboard/inventory [32m200[39m in 131ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 24ms
+ GET /dashboard/inventory [32m200[39m in 71ms
+ GET /dashboard/inventory [32m200[39m in 43ms
+ [32m[1m✓[22m[39m Compiled /login in 343ms (724 modules)
+ [32m[1m✓[22m[39m Compiled in 231ms (336 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin in 313ms (736 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 182ms (742 modules)
+ [32m[1m✓[22m[39m Compiled in 241ms (342 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard in 452ms (778 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 364ms (792 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 327ms (795 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 88ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 3.5s
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 2.8s (732 modules)
+ GET /dashboard/inventory [32m200[39m in 3195ms
+ [32m[1m✓[22m[39m Compiled in 349ms (334 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 412ms (721 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 95ms
+ [32m[1m✓[22m[39m Compiled in 297ms (336 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 50ms
+ [32m[1m✓[22m[39m Compiled in 220ms (336 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 53ms
+ GET /dashboard/inventory [32m200[39m in 109ms
+ [32m[1m✓[22m[39m Compiled in 338ms (334 modules)
+ [32m[1m✓[22m[39m Compiled in 256ms (334 modules)
+ GET /dashboard/inventory [32m200[39m in 55ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 289ms (721 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 119ms
+ GET /dashboard/inventory [32m200[39m in 131ms
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 24ms
+ GET /dashboard/inventory [32m200[39m in 71ms
+ GET /dashboard/inventory [32m200[39m in 43ms
+ [32m[1m✓[22m[39m Compiled /login in 343ms (724 modules)
+ [32m[1m✓[22m[39m Compiled in 231ms (336 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin in 313ms (736 modules)
+ [32m[1m✓[22m[39m Compiled /superadmin/tenants in 182ms (742 modules)
+ [32m[1m✓[22m[39m Compiled in 241ms (342 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard in 452ms (778 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 364ms (792 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 327ms (795 modules)
+ GET /dashboard/inventory/items/6971d9de900ccc384948c163 [33m404[39m in 88ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

@@ -1,0 +1,475 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 9.4s
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 13.7s (455 modules)
+API fetch error: TypeError: fetch failed
+[90m    at node:internal/deps/undici/undici:13510:13[39m
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:10:21)
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+  [90m    at internalConnectMultiple (node:net:1139:18)[39m
+  [90m    at afterConnectMultiple (node:net:1714:7)[39m
+  [90m    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)[39m {
+    code: [32m'ECONNREFUSED'[39m,
+    [errors]: [ [36m[Error][39m, [36m[Error][39m ]
+  }
+}
+ GET / [32m200[39m in 14546ms
+ [32m[1m✓[22m[39m Compiled in 842ms (234 modules)
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 1385ms (718 modules)
+ GET /dashboard [32m200[39m in 1670ms
+ [32m[1m✓[22m[39m Compiled /login in 295ms (724 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 522ms (754 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 426ms (778 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 286ms (784 modules)
+ [32m[1m✓[22m[39m Compiled in 910ms (803 modules)
+ [32m[1m✓[22m[39m Compiled in 446ms (803 modules)
+ [32m[1m✓[22m[39m Compiled in 493ms (803 modules)
+ [32m[1m✓[22m[39m Compiled in 376ms (803 modules)
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m Expected ',', got 'className'
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:287:1]
+ [2m287[0m |         </div>
+ [2m288[0m |       )}
+ [2m289[0m |                 </div>
+ [2m290[0m |                 <div className="overflow-x-auto">
+     : [31;1m                     ^^^^^^^^^[0m
+ [2m291[0m |                   <table className="w-full text-sm">
+ [2m292[0m |                     <thead>
+ [2m292[0m |                       <tr className="border-b bg-slate-50">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m Expected ',', got 'className'
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:287:1]
+ [2m287[0m |         </div>
+ [2m288[0m |       )}
+ [2m289[0m |                 </div>
+ [2m290[0m |                 <div className="overflow-x-auto">
+     : [31;1m                     ^^^^^^^^^[0m
+ [2m291[0m |                   <table className="w-full text-sm">
+ [2m292[0m |                     <thead>
+ [2m292[0m |                       <tr className="border-b bg-slate-50">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ GET /dashboard/orders [31m500[39m in 26ms
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:91:1]
+ [2m91[0m |   };
+ [2m92[0m | 
+ [2m93[0m |   return (
+ [2m94[0m |     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-4 md:p-8">
+    : [31;1m     ^^^[0m
+ [2m95[0m |       {/* Header */}
+ [2m96[0m |       <div className="mb-8">
+ [2m96[0m |         <Link href="/dashboard" className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 mb-4">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 446ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard/orders [32m200[39m in 6ms
+ GET /dashboard/orders [31m500[39m in 11ms
+ GET /dashboard/orders [31m500[39m in 20ms
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:289:1]
+ [2m289[0m |     </div>
+ [2m290[0m |   );
+ [2m291[0m | }
+ [2m292[0m |         </div>
+     : [31;1m         ^[0m
+ [2m293[0m |       )}
+ [2m294[0m |     </div>
+ [2m294[0m |   );
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:290:1]
+ [2m290[0m |   );
+ [2m291[0m | }
+ [2m292[0m |         </div>
+ [2m293[0m |       )}
+     : [31;1m      ^[0m
+ [2m294[0m |     </div>
+ [2m295[0m |   );
+ [2m295[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 513ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/orders [32m200[39m in 10ms
+ GET /dashboard/orders [31m500[39m in 12ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 660ms (1018 modules)
+ GET /dashboard/orders [32m200[39m in 215ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 871ms
+ GET /dashboard/orders [32m200[39m in 73ms
+ [32m[1m✓[22m[39m Compiled in 403ms (1032 modules)
+ [32m[1m✓[22m[39m Compiled in 717ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 540ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 649ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 487ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 319ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 396ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 482ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 653ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 388ms (1029 modules)
+ GET /dashboard/orders [32m200[39m in 234ms
+ [32m[1m✓[22m[39m Compiled in 502ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 427ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 322ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 425ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 417ms (1018 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 595ms
+ GET /dashboard/orders [32m200[39m in 119ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 768ms (1032 modules)
+ GET /dashboard/orders [32m200[39m in 179ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 541ms (1032 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/orders [32m200[39m in 112ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 415ms (1029 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/orders [32m200[39m in 86ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 163ms (1018 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 222ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 278ms (1032 modules)
+ GET /dashboard/orders [32m200[39m in 222ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 24ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 390ms (1032 modules)
+ GET /dashboard/orders [32m200[39m in 244ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 22ms
+ [32m[1m✓[22m[39m Compiled in 417ms (1032 modules)
+ [32m[1m✓[22m[39m Compiled in 372ms (1029 modules)
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m the name `getTimeAgo` is defined multiple times
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:96:1]
+ [2m 96[0m |     }
+ [2m 97[0m |   };
+ [2m 98[0m | 
+ [2m 99[0m |   const getTimeAgo = (dateString?: string) => {
+     : [31;1m        ^^^^^|^^^^[0m
+     :              [31;1m`-- [31;1mprevious definition of `getTimeAgo` here[0m[0m
+ [2m100[0m |     if (!dateString) return '';
+ [2m101[0m |     const date = new Date(dateString);
+ [2m102[0m |     const now = new Date();
+ [2m103[0m |     const seconds = Math.floor((now.getTime() - date.getTime()) / 1000);
+ [2m104[0m |     
+ [2m105[0m |     if (seconds < 60) return `${seconds}s ago`;
+ [2m106[0m |     if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
+ [2m107[0m |     return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+ [2m108[0m |   };
+ [2m109[0m | 
+ [2m110[0m |   const queuedOrders = orders.filter((o) => o.status === 'QUEUED').sort((a, b) => {
+ [2m111[0m |     const timeA = new Date(a.createdAt || 0).getTime();
+ [2m112[0m |     const timeB = new Date(b.createdAt || 0).getTime();
+ [2m113[0m |     return timeA - timeB;
+ [2m114[0m |   });
+ [2m115[0m | 
+ [2m116[0m |   const completedOrders = orders.filter((o) => o.status === 'COMPLETED');
+ [2m117[0m |   const cancelledOrders = orders.filter((o) => o.status === 'CANCELLED');
+ [2m118[0m | 
+ [2m119[0m |   // Get order time in human readable format
+ [2m120[0m |   const getTimeAgo = (dateString?: string) => {
+     : [33;1m        ^^^^^|^^^^[0m
+     :              [33;1m`-- [33;1m`getTimeAgo` redefined here[0m[0m
+ [2m121[0m |     if (!dateString) return '';
+ [2m122[0m |     const date = new Date(dateString);
+ [2m122[0m |     const now = new Date();
+     `----
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ GET /dashboard/orders [31m500[39m in 15ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 427ms (1018 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 509ms
+ GET /dashboard/orders [32m200[39m in 90ms
+ GET /dashboard/orders [32m200[39m in 104ms
+ [32m[1m✓[22m[39m Compiled in 343ms (1032 modules)
+ [32m[1m✓[22m[39m Compiled in 442ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 317ms (1029 modules)
+ GET /dashboard/orders [32m200[39m in 185ms
+ [32m[1m✓[22m[39m Compiled in 679ms (1029 modules)
+ GET /dashboard/orders [32m200[39m in 132ms
+ [32m[1m✓[22m[39m Compiled in 421ms (1029 modules)
+ GET /dashboard/inventory [32m200[39m in 99ms
+ GET /dashboard/orders [32m200[39m in 70ms
+ GET /dashboard/orders [32m200[39m in 47ms
+^C[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 9.4s
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 13.7s (455 modules)
+API fetch error: TypeError: fetch failed
+[90m    at node:internal/deps/undici/undici:13510:13[39m
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async fetchApiStatus (webpack-internal:///(rsc)/./app/page.tsx:10:21)
+    at async Home (webpack-internal:///(rsc)/./app/page.tsx:26:18) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+  [90m    at internalConnectMultiple (node:net:1139:18)[39m
+  [90m    at afterConnectMultiple (node:net:1714:7)[39m
+  [90m    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)[39m {
+    code: [32m'ECONNREFUSED'[39m,
+    [errors]: [ [36m[Error][39m, [36m[Error][39m ]
+  }
+}
+ GET / [32m200[39m in 14546ms
+ [32m[1m✓[22m[39m Compiled in 842ms (234 modules)
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 1385ms (718 modules)
+ GET /dashboard [32m200[39m in 1670ms
+ [32m[1m✓[22m[39m Compiled /login in 295ms (724 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 522ms (754 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 426ms (778 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 286ms (784 modules)
+ [32m[1m✓[22m[39m Compiled in 910ms (803 modules)
+ [32m[1m✓[22m[39m Compiled in 446ms (803 modules)
+ [32m[1m✓[22m[39m Compiled in 493ms (803 modules)
+ [32m[1m✓[22m[39m Compiled in 376ms (803 modules)
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m Expected ',', got 'className'
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:287:1]
+ [2m287[0m |         </div>
+ [2m288[0m |       )}
+ [2m289[0m |                 </div>
+ [2m290[0m |                 <div className="overflow-x-auto">
+     : [31;1m                     ^^^^^^^^^[0m
+ [2m291[0m |                   <table className="w-full text-sm">
+ [2m292[0m |                     <thead>
+ [2m292[0m |                       <tr className="border-b bg-slate-50">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m Expected ',', got 'className'
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:287:1]
+ [2m287[0m |         </div>
+ [2m288[0m |       )}
+ [2m289[0m |                 </div>
+ [2m290[0m |                 <div className="overflow-x-auto">
+     : [31;1m                     ^^^^^^^^^[0m
+ [2m291[0m |                   <table className="w-full text-sm">
+ [2m292[0m |                     <thead>
+ [2m292[0m |                       <tr className="border-b bg-slate-50">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ [37m[1m○[22m[39m Compiling /_error ...
+ GET /dashboard/orders [31m500[39m in 26ms
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:91:1]
+ [2m91[0m |   };
+ [2m92[0m | 
+ [2m93[0m |   return (
+ [2m94[0m |     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-4 md:p-8">
+    : [31;1m     ^^^[0m
+ [2m95[0m |       {/* Header */}
+ [2m96[0m |       <div className="mb-8">
+ [2m96[0m |         <Link href="/dashboard" className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900 mb-4">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 446ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /dashboard/orders [32m200[39m in 6ms
+ GET /dashboard/orders [31m500[39m in 11ms
+ GET /dashboard/orders [31m500[39m in 20ms
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:289:1]
+ [2m289[0m |     </div>
+ [2m290[0m |   );
+ [2m291[0m | }
+ [2m292[0m |         </div>
+     : [31;1m         ^[0m
+ [2m293[0m |       )}
+ [2m294[0m |     </div>
+ [2m294[0m |   );
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:290:1]
+ [2m290[0m |   );
+ [2m291[0m | }
+ [2m292[0m |         </div>
+ [2m293[0m |       )}
+     : [31;1m      ^[0m
+ [2m294[0m |     </div>
+ [2m295[0m |   );
+ [2m295[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [31m500[39m in 513ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/orders [32m200[39m in 10ms
+ GET /dashboard/orders [31m500[39m in 12ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 660ms (1018 modules)
+ GET /dashboard/orders [32m200[39m in 215ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 871ms
+ GET /dashboard/orders [32m200[39m in 73ms
+ [32m[1m✓[22m[39m Compiled in 403ms (1032 modules)
+ [32m[1m✓[22m[39m Compiled in 717ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 540ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 649ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 487ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 319ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 396ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 482ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 653ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 388ms (1029 modules)
+ GET /dashboard/orders [32m200[39m in 234ms
+ [32m[1m✓[22m[39m Compiled in 502ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 427ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 322ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 425ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled /_not-found in 417ms (1018 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 595ms
+ GET /dashboard/orders [32m200[39m in 119ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 30ms
+ [32m[1m✓[22m[39m Compiled in 768ms (1032 modules)
+ GET /dashboard/orders [32m200[39m in 179ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 541ms (1032 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/orders [32m200[39m in 112ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 34ms
+ [32m[1m✓[22m[39m Compiled in 415ms (1029 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/orders [32m200[39m in 86ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 163ms (1018 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 222ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 278ms (1032 modules)
+ GET /dashboard/orders [32m200[39m in 222ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 24ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 390ms (1032 modules)
+ GET /dashboard/orders [32m200[39m in 244ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 22ms
+ [32m[1m✓[22m[39m Compiled in 417ms (1032 modules)
+ [32m[1m✓[22m[39m Compiled in 372ms (1029 modules)
+ [31m[1m⨯[22m[39m ./app/dashboard/orders/page.tsx
+Error: 
+  [31mx[0m the name `getTimeAgo` is defined multiple times
+     ,-[[36;1;4mD:\D\Qrave\apps\web\app\dashboard\orders\page.tsx[0m:96:1]
+ [2m 96[0m |     }
+ [2m 97[0m |   };
+ [2m 98[0m | 
+ [2m 99[0m |   const getTimeAgo = (dateString?: string) => {
+     : [31;1m        ^^^^^|^^^^[0m
+     :              [31;1m`-- [31;1mprevious definition of `getTimeAgo` here[0m[0m
+ [2m100[0m |     if (!dateString) return '';
+ [2m101[0m |     const date = new Date(dateString);
+ [2m102[0m |     const now = new Date();
+ [2m103[0m |     const seconds = Math.floor((now.getTime() - date.getTime()) / 1000);
+ [2m104[0m |     
+ [2m105[0m |     if (seconds < 60) return `${seconds}s ago`;
+ [2m106[0m |     if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
+ [2m107[0m |     return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+ [2m108[0m |   };
+ [2m109[0m | 
+ [2m110[0m |   const queuedOrders = orders.filter((o) => o.status === 'QUEUED').sort((a, b) => {
+ [2m111[0m |     const timeA = new Date(a.createdAt || 0).getTime();
+ [2m112[0m |     const timeB = new Date(b.createdAt || 0).getTime();
+ [2m113[0m |     return timeA - timeB;
+ [2m114[0m |   });
+ [2m115[0m | 
+ [2m116[0m |   const completedOrders = orders.filter((o) => o.status === 'COMPLETED');
+ [2m117[0m |   const cancelledOrders = orders.filter((o) => o.status === 'CANCELLED');
+ [2m118[0m | 
+ [2m119[0m |   // Get order time in human readable format
+ [2m120[0m |   const getTimeAgo = (dateString?: string) => {
+     : [33;1m        ^^^^^|^^^^[0m
+     :              [33;1m`-- [33;1m`getTimeAgo` redefined here[0m[0m
+ [2m121[0m |     if (!dateString) return '';
+ [2m122[0m |     const date = new Date(dateString);
+ [2m122[0m |     const now = new Date();
+     `----
+
+Import trace for requested module:
+./app/dashboard/orders/page.tsx
+ GET /dashboard/orders [31m500[39m in 15ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 427ms (1018 modules)
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/ff7d65fa7f9d556a.webpack.hot-update.json [33m404[39m in 509ms
+ GET /dashboard/orders [32m200[39m in 90ms
+ GET /dashboard/orders [32m200[39m in 104ms
+ [32m[1m✓[22m[39m Compiled in 343ms (1032 modules)
+ [32m[1m✓[22m[39m Compiled in 442ms (1029 modules)
+ [32m[1m✓[22m[39m Compiled in 317ms (1029 modules)
+ GET /dashboard/orders [32m200[39m in 185ms
+ [32m[1m✓[22m[39m Compiled in 679ms (1029 modules)
+ GET /dashboard/orders [32m200[39m in 132ms
+ [32m[1m✓[22m[39m Compiled in 421ms (1029 modules)
+ GET /dashboard/inventory [32m200[39m in 99ms
+ GET /dashboard/orders [32m200[39m in 70ms
+ GET /dashboard/orders [32m200[39m in 47ms
+^CWarning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

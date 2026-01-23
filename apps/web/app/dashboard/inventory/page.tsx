@@ -58,9 +58,18 @@ export default function InventoryPage() {
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredItems, setFilteredItems] = useState<InventoryItem[]>([]);
+  
+  // Transaction filters
+  const [txnTypeFilter, setTxnTypeFilter] = useState<string>('all');
+  const [txnItemFilter, setTxnItemFilter] = useState<string>('all');
+  const [txnSortBy, setTxnSortBy] = useState<'date' | 'type' | 'quantity'>('date');
+  const [txnSortOrder, setTxnSortOrder] = useState<'asc' | 'desc'>('desc');
   const [mounted, setMounted] = useState(false);
   const [restockingItemId, setRestockingItemId] = useState<string | null>(null);
   const [restockQuantities, setRestockQuantities] = useState<{ [key: string]: number }>({});
+  const [editingItem, setEditingItem] = useState<InventoryItem | null>(null);
+  const [editForm, setEditForm] = useState<Partial<InventoryItem>>({});
+  const [editSaving, setEditSaving] = useState(false);
 
   const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3001/api';
 
@@ -172,6 +181,66 @@ export default function InventoryPage() {
 
   const handleRestockCancel = () => {
     setRestockingItemId(null);
+  };
+
+  const startEdit = (item: InventoryItem) => {
+    setEditingItem(item);
+    setEditForm({ ...item });
+  };
+
+  const resetEdit = () => {
+    if (editingItem) {
+      setEditForm({ ...editingItem, current_quantity: 0 });
+    }
+  };
+
+  const handleEditFormChange = (key: keyof InventoryItem, value: string | number | boolean) => {
+    setEditForm((prev) => ({ ...prev, [key]: value }));
+  };
+
+  const saveEditedItem = async () => {
+    if (!editingItem) return;
+    setEditSaving(true);
+    try {
+      const token = localStorage.getItem('token');
+      const quantityChanged = Number(editForm.current_quantity) !== editingItem.current_quantity;
+      const quantityDiff = Number(editForm.current_quantity) - editingItem.current_quantity;
+      
+      const payload = {
+        name: editForm.name,
+        unit: editForm.unit,
+        cost_per_unit: Number(editForm.cost_per_unit),
+        // Do not include current_quantity here; adjustments are handled via /adjust to avoid double updates
+      };
+
+      const { data } = await axios.patch(
+        `${API_BASE}/inventory/items/${editingItem._id}`,
+        payload,
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
+
+      // Create transaction record if quantity changed
+      if (quantityChanged) {
+        await axios.patch(
+          `${API_BASE}/inventory/items/${editingItem._id}/adjust`,
+          {
+            quantity_change: quantityDiff,
+            reason: `Manual adjustment via edit modal${quantityDiff > 0 ? ' (increase)' : ' (decrease)'}`,
+          },
+          { headers: { Authorization: `Bearer ${token}` } }
+        );
+      }
+
+      setItems((prev) => prev.map((it) => (it._id === editingItem._id ? data : it)));
+      setEditingItem(null);
+      setEditForm({});
+      await fetchAllData(); // Refresh to get updated data
+    } catch (err: any) {
+      console.error('Failed to update item:', err);
+      alert(err.response?.data?.message || 'Failed to update item');
+    } finally {
+      setEditSaving(false);
+    }
   };
 
   const getTransactionColor = (type: string) => {
@@ -506,8 +575,14 @@ export default function InventoryPage() {
                                   <Plus size={16} />
                                 </button>
                                 <button
-                                  onClick={() => router.push(`/dashboard/inventory/items/${item._id}`)}
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    startEdit(item);
+                                  }}
+                                  type="button"
                                   className="p-2 text-slate-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
+                                  title="Edit item"
                                 >
                                   <Edit2 size={16} />
                                 </button>
@@ -566,70 +641,270 @@ export default function InventoryPage() {
 
         {/* Transactions Tab */}
         {activeTab === 'transactions' && (
-          <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
-            {transactions.length === 0 ? (
-              <div className="p-12 text-center">
-                <TrendingDown size={48} className="mx-auto text-slate-300 mb-3" />
-                <p className="text-slate-600 text-lg font-medium">No transactions yet</p>
+          <div className="space-y-4">
+            {/* Filters */}
+            <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-4">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Type</label>
+                  <select
+                    value={txnTypeFilter}
+                    onChange={(e) => setTxnTypeFilter(e.target.value)}
+                    className="w-full rounded border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="all">All Types</option>
+                    <option value="usage">Usage</option>
+                    <option value="adjustment">Adjustment</option>
+                    <option value="purchase">Purchase</option>
+                    <option value="refund">Refund</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Item</label>
+                  <select
+                    value={txnItemFilter}
+                    onChange={(e) => setTxnItemFilter(e.target.value)}
+                    className="w-full rounded border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="all">All Items</option>
+                    {items.map((item) => (
+                      <option key={item._id} value={item._id}>{item.name}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Sort By</label>
+                  <select
+                    value={txnSortBy}
+                    onChange={(e) => setTxnSortBy(e.target.value as 'date' | 'type' | 'quantity')}
+                    className="w-full rounded border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="date">Date</option>
+                    <option value="type">Type</option>
+                    <option value="quantity">Quantity</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Order</label>
+                  <select
+                    value={txnSortOrder}
+                    onChange={(e) => setTxnSortOrder(e.target.value as 'asc' | 'desc')}
+                    className="w-full rounded border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="desc">Newest First</option>
+                    <option value="asc">Oldest First</option>
+                  </select>
+                </div>
               </div>
-            ) : (
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead>
-                    <tr className="border-b border-slate-200 bg-slate-50">
-                      <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Item</th>
-                      <th className="px-6 py-3 text-center text-xs font-bold text-slate-700 uppercase tracking-wider">Type</th>
-                      <th className="px-6 py-3 text-center text-xs font-bold text-slate-700 uppercase tracking-wider">Qty</th>
-                      <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Reference</th>
-                      <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Date & Time</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-100">
-                    {transactions.map((txn) => {
-                      const item = items.find((i) => i._id === txn.item_id);
-                      const isIncrease = txn.quantity_change > 0;
-                      return (
-                        <tr key={txn._id} className="hover:bg-slate-50 transition-colors">
-                          <td className="px-6 py-4 font-semibold text-slate-900">{item?.name || 'Unknown'}</td>
-                          <td className="px-6 py-4 text-center">
-                            <div className="flex items-center justify-center gap-2">
-                              {isIncrease ? (
-                                <ArrowUpRight size={16} className="text-green-600" />
-                              ) : (
-                                <ArrowDownRight size={16} className="text-red-600" />
-                              )}
-                              <span className={`text-xs font-bold uppercase ${
-                                isIncrease ? 'text-green-700' : 'text-red-700'
-                              }`}>
-                                {txn.transaction_type}
-                              </span>
-                            </div>
-                          </td>
-                          <td className="px-6 py-4 text-center">
-                            <span
-                              className={`font-bold ${
-                                isIncrease ? 'text-green-600' : 'text-red-600'
-                              }`}
-                            >
-                              {isIncrease ? '+' : ''}{txn.quantity_change}
-                            </span>
-                          </td>
-                          <td className="px-6 py-4 text-slate-600 text-sm">
-                            {txn.reference_order_id ? `Order: ${txn.reference_order_id.slice(0, 8)}` : '—'}
-                          </td>
-                          <td className="px-6 py-4 text-slate-600 text-sm">
-                            {formatDate(txn.timestamp || txn.createdAt || '')}
-                          </td>
+            </div>
+
+            {/* Transactions Table */}
+            <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+              {(() => {
+                // Filter transactions
+                let filtered = transactions.filter((txn) => {
+                  const typeMatch = txnTypeFilter === 'all' || txn.transaction_type === txnTypeFilter;
+                  const itemMatch = txnItemFilter === 'all' || txn.item_id === txnItemFilter;
+                  return typeMatch && itemMatch;
+                });
+
+                // Sort transactions
+                filtered.sort((a, b) => {
+                  let compareValue = 0;
+                  if (txnSortBy === 'date') {
+                    const dateA = new Date(a.timestamp || a.createdAt || 0).getTime();
+                    const dateB = new Date(b.timestamp || b.createdAt || 0).getTime();
+                    compareValue = dateA - dateB;
+                  } else if (txnSortBy === 'type') {
+                    compareValue = a.transaction_type.localeCompare(b.transaction_type);
+                  } else if (txnSortBy === 'quantity') {
+                    compareValue = a.quantity_change - b.quantity_change;
+                  }
+                  return txnSortOrder === 'desc' ? -compareValue : compareValue;
+                });
+
+                if (filtered.length === 0) {
+                  return (
+                    <div className="p-12 text-center">
+                      <TrendingDown size={48} className="mx-auto text-slate-300 mb-3" />
+                      <p className="text-slate-600 text-lg font-medium">No transactions found</p>
+                      <p className="text-slate-500 text-sm mt-1">Try adjusting your filters</p>
+                    </div>
+                  );
+                }
+
+                return (
+                  <div className="overflow-x-auto">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="border-b border-slate-200 bg-slate-50">
+                          <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Item</th>
+                          <th className="px-6 py-3 text-center text-xs font-bold text-slate-700 uppercase tracking-wider">Type</th>
+                          <th className="px-6 py-3 text-center text-xs font-bold text-slate-700 uppercase tracking-wider">Qty</th>
+                          <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Notes</th>
+                          <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Date & Time</th>
                         </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </div>
-            )}
+                      </thead>
+                      <tbody className="divide-y divide-slate-100">
+                        {filtered.map((txn) => {
+                          const item = items.find((i) => i._id === txn.item_id);
+                          const isIncrease = txn.quantity_change > 0;
+                          return (
+                            <tr key={txn._id} className="hover:bg-slate-50 transition-colors">
+                              <td className="px-6 py-4 font-semibold text-slate-900">{item?.name || 'Unknown'}</td>
+                              <td className="px-6 py-4 text-center">
+                                <div className="flex items-center justify-center gap-2">
+                                  {isIncrease ? (
+                                    <ArrowUpRight size={16} className="text-green-600" />
+                                  ) : (
+                                    <ArrowDownRight size={16} className="text-red-600" />
+                                  )}
+                                  <span className={`text-xs font-bold uppercase ${
+                                    isIncrease ? 'text-green-700' : 'text-red-700'
+                                  }`}>
+                                    {txn.transaction_type}
+                                  </span>
+                                </div>
+                              </td>
+                              <td className="px-6 py-4 text-center">
+                                <span
+                                  className={`font-bold ${
+                                    isIncrease ? 'text-green-600' : 'text-red-600'
+                                  }`}
+                                >
+                                  {isIncrease ? '+' : ''}{txn.quantity_change.toFixed(2)}
+                                </span>
+                              </td>
+                              <td className="px-6 py-4 text-slate-600 text-sm">
+                                {txn.notes || (txn.reference_order_id ? `Order: ${txn.reference_order_id.slice(0, 8)}` : '—')}
+                              </td>
+                              <td className="px-6 py-4 text-slate-600 text-sm">
+                                {formatDate(txn.timestamp || txn.createdAt || '')}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                );
+              })()}
+            </div>
           </div>
         )}
       </div>
+
+      {/* Edit Item Modal */}
+      {editingItem && (
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl p-6 border border-gray-200 max-h-[90vh] overflow-y-auto">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-semibold text-gray-900">Edit Item</h2>
+              <button
+                onClick={() => {
+                  setEditingItem(null);
+                  setEditForm({});
+                }}
+                className="text-gray-500 hover:text-gray-700"
+                type="button"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Name</label>
+                <input
+                  value={editForm.name || ''}
+                  onChange={(e) => handleEditFormChange('name', e.target.value)}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Unit Type</label>
+                <select
+                  value={editForm.unit || ''}
+                  onChange={(e) => handleEditFormChange('unit', e.target.value)}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <optgroup label="Weight">
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="g">Gram (g)</option>
+                    <option value="mg">Milligram (mg)</option>
+                    <option value="lb">Pound (lb)</option>
+                    <option value="oz">Ounce (oz)</option>
+                  </optgroup>
+                  <optgroup label="Volume">
+                    <option value="L">Liter (L)</option>
+                    <option value="ml">Milliliter (ml)</option>
+                    <option value="gallon">Gallon (gal)</option>
+                    <option value="pint">Pint (pt)</option>
+                    <option value="cup">Cup</option>
+                    <option value="tbsp">Tablespoon (tbsp)</option>
+                    <option value="tsp">Teaspoon (tsp)</option>
+                  </optgroup>
+                  <optgroup label="Quantity">
+                    <option value="piece">Piece (pc)</option>
+                    <option value="box">Box</option>
+                    <option value="bag">Bag</option>
+                    <option value="dozen">Dozen (dz)</option>
+                    <option value="bundle">Bundle</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Cost per Unit (₹)</label>
+                <input
+                  type="number"
+                  step="5"
+                  value={editForm.cost_per_unit ?? ''}
+                  onChange={(e) => handleEditFormChange('cost_per_unit', e.target.value === '' ? 0 : parseFloat(e.target.value))}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">Current Quantity</label>
+                <input
+                  type="number"
+                  step="1"
+                  value={editForm.current_quantity ?? ''}
+                  onChange={(e) => handleEditFormChange('current_quantity', e.target.value === '' ? 0 : parseFloat(e.target.value))}
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            <div className="mt-6 flex justify-end gap-3">
+              <button
+                onClick={resetEdit}
+                className="px-4 py-2 rounded border border-gray-300 text-gray-700 hover:bg-gray-50"
+                type="button"
+              >
+                Reset
+              </button>
+              <button
+                onClick={() => {
+                  setEditingItem(null);
+                  setEditForm({});
+                }}
+                className="px-4 py-2 rounded border border-gray-300 text-gray-700 hover:bg-gray-50"
+                type="button"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={saveEditedItem}
+                disabled={editSaving}
+                className="px-4 py-2 rounded bg-slate-900 text-white hover:bg-slate-800 disabled:opacity-60"
+                type="button"
+              >
+                {editSaving ? 'Saving...' : 'Save Changes'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
