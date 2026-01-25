@@ -439,14 +439,25 @@ export class InventoryController {
   }
 
   // ============== INVENTORY REVERT ENDPOINT ==============
-  // Called when an order is cancelled to restore inventory items
-  // Must mirror the exact logic from orders.service.ts create() method
+  // DEPRECATED: This endpoint is no longer used.
+  // Refunds are now handled automatically by OrdersService.update() when status changes to CANCELLED.
+  // This uses transaction history instead of recipe lookup, ensuring accurate refunds.
 
   @Patch('revert')
   async revertInventory(
     @Body() body: { dish_id: string; quantity: number; order_id: string },
     @Req() req: any,
   ) {
+    // DISABLED: This endpoint caused duplicate/incorrect refunds.
+    // Refunds are now handled automatically in orders.service.ts when status changes to CANCELLED.
+    this.logger.warn('⚠️ DEPRECATED: /api/inventory/revert called but is disabled. Refunds are now automatic via OrdersService.');
+    return { 
+      success: true, 
+      message: 'This endpoint is deprecated. Refunds are handled automatically when order status changes to CANCELLED.',
+      deprecated: true 
+    };
+
+    /* OLD CODE - DISABLED
     try {
       const rawTenantId = RequestContext.getTenantId();
       if (!rawTenantId) {
@@ -521,6 +532,7 @@ export class InventoryController {
       this.logger.error(`Error reverting inventory: ${error.message}`, error.stack);
       throw new InternalServerErrorException(error.message);
     }
+    */
   }
 }
 

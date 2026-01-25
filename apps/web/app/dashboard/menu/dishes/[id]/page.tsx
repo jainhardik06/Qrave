@@ -5,6 +5,24 @@ import { useRouter, useSearchParams, useParams } from 'next/navigation';
 import axios from 'axios';
 import { X } from 'lucide-react';
 
+// Helper function to generate slug ID from name
+const generateSlugId = (name: string): string => {
+  return name.toLowerCase().replace(/\s+/g, '-');
+};
+
+// Helper function to ensure variants/toppings have _id
+const ensureIdsOnObjects = (objects: any[]): any[] => {
+  return objects.map(obj => {
+    if (!obj._id) {
+      return {
+        ...obj,
+        _id: generateSlugId(obj.name)
+      };
+    }
+    return obj;
+  });
+};
+
 interface Category {
   _id: string;
   name: string;
@@ -13,11 +31,13 @@ interface Category {
 }
 
 interface Variant {
+  _id?: string;
   name: string;
   price: number;
 }
 
 interface Topping {
+  _id?: string;
   name: string;
   price: number;
 }
@@ -29,11 +49,16 @@ interface InventoryItem {
   current_quantity: number;
 }
 
+type IngredientScope = 'base' | 'variant' | 'topping';
+
 interface Ingredient {
   item_id: string;
   item_name: string;
   quantity_per_dish: number;
   unit: string;
+  scope?: IngredientScope;
+  variant_id?: string;
+  topping_id?: string;
 }
 
 interface Dish {
@@ -150,7 +175,18 @@ export default function DishEditorPage() {
       console.log('Variants:', res.data.variants);
       console.log('Toppings:', res.data.toppings);
       
-      setDish(res.data);
+      // Ensure variants and toppings have _id fields
+      const dishData = {
+        ...res.data,
+        variants: ensureIdsOnObjects(res.data.variants || []),
+        toppings: ensureIdsOnObjects(res.data.toppings || [])
+      };
+      
+      console.log('Processed variants:', dishData.variants);
+      console.log('Processed toppings:', dishData.toppings);
+      console.log('Variant _ids:', dishData.variants.map(v => ({ name: v.name, _id: v._id })));
+      
+      setDish(dishData);
       
       // Fetch recipe/ingredients if exists
       try {
@@ -168,11 +204,17 @@ export default function DishEditorPage() {
             // Map backend ingredients to frontend format
             const mappedIngredients = recipeRes.data.ingredients.map((ing: any) => {
               console.log('Mapping ingredient:', ing);
+              const variantId = ing.variant_id?._id?.toString() || ing.variant_id?.toString();
+              const toppingId = ing.topping_id?._id?.toString() || ing.topping_id?.toString();
+              const scope: IngredientScope = variantId ? 'variant' : toppingId ? 'topping' : 'base';
               return {
                 item_id: ing.item_id?._id?.toString() || ing.item_id?.toString() || ing.item_id,
                 item_name: ing.item_name || '',
                 quantity_per_dish: ing.quantity_per_dish,
                 unit: ing.unit,
+                scope,
+                variant_id: variantId,
+                topping_id: toppingId,
               };
             });
             setIngredients(mappedIngredients);
@@ -261,6 +303,8 @@ export default function DishEditorPage() {
               item_id: ing.item_id,
               quantity_per_dish: ing.quantity_per_dish,
               unit: ing.unit,
+              ...(ing.scope === 'variant' && ing.variant_id ? { variant_id: ing.variant_id } : {}),
+              ...(ing.scope === 'topping' && ing.topping_id ? { topping_id: ing.topping_id } : {}),
             })),
           };
           
@@ -297,8 +341,11 @@ export default function DishEditorPage() {
     console.log('Current newVariant state:', newVariant);
     
     if (newVariant.name) {
-      const updatedVariants = [...(dish.variants || []), newVariant];
-      console.log('✅ Adding variant:', newVariant);
+      // Generate a stable ID based on the variant name (slug-like)
+      const variantId = newVariant.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+      const variantWithId = { ...newVariant, _id: variantId };
+      const updatedVariants = [...(dish.variants || []), variantWithId];
+      console.log('✅ Adding variant:', variantWithId);
       console.log('✅ Updated variants:', updatedVariants);
       setDish({
         ...dish,
@@ -335,6 +382,7 @@ export default function DishEditorPage() {
         item_name: firstItem.name,
         quantity_per_dish: 0,
         unit: firstItem.unit,
+        scope: 'base',
       },
     ]);
   };
@@ -381,6 +429,23 @@ export default function DishEditorPage() {
           unit: selectedItem.unit, // Reset to item's base unit when item changes
         };
       }
+    } else if (field === 'scope') {
+      const scopeValue = value as IngredientScope;
+      updated[index] = {
+        ...updated[index],
+        scope: scopeValue,
+        // Reset variant/topping linkage when scope changes
+        variant_id: scopeValue === 'variant' ? updated[index].variant_id : undefined,
+        topping_id: scopeValue === 'topping' ? updated[index].topping_id : undefined,
+      };
+    } else if (field === 'variant_id') {
+      console.log('🔵 Variant selected:', { value, index, current: updated[index] });
+      updated[index] = { ...updated[index], [field]: value };
+      console.log('✅ Updated ingredient:', updated[index]);
+    } else if (field === 'topping_id') {
+      console.log('🔵 Topping selected:', { value, index, current: updated[index] });
+      updated[index] = { ...updated[index], [field]: value };
+      console.log('✅ Updated ingredient:', updated[index]);
     } else {
       updated[index] = { ...updated[index], [field]: value };
     }
@@ -392,8 +457,11 @@ export default function DishEditorPage() {
     console.log('Current newTopping state:', newTopping);
     
     if (newTopping.name) {
-      const updatedToppings = [...(dish.toppings || []), newTopping];
-      console.log('✅ Adding topping:', newTopping);
+      // Generate a stable ID based on the topping name (slug-like)
+      const toppingId = newTopping.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+      const toppingWithId = { ...newTopping, _id: toppingId };
+      const updatedToppings = [...(dish.toppings || []), toppingWithId];
+      console.log('✅ Adding topping:', toppingWithId);
       console.log('✅ Updated toppings:', updatedToppings);
       setDish({
         ...dish,
@@ -698,9 +766,13 @@ export default function DishEditorPage() {
                   <button
                     key={v.name}
                     onClick={() => {
+                      const variantWithId = {
+                        ...v,
+                        _id: generateSlugId(v.name)
+                      };
                       setDish({
                         ...dish,
-                        variants: [...(dish.variants || []), v],
+                        variants: [...(dish.variants || []), variantWithId],
                       });
                     }}
                     className="px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition"
@@ -973,8 +1045,23 @@ export default function DishEditorPage() {
                 const compatibleUnits = selectedItem ? getCompatibleUnits(selectedItem.unit) : [ingredient.unit];
                 
                 return (
-                  <div key={index} className="flex gap-3 items-end bg-gray-50 p-4 rounded-lg">
-                    <div className="flex-1">
+                  <div key={index} className="flex flex-wrap gap-3 items-end bg-gray-50 p-4 rounded-lg">
+                    <div className="w-40">
+                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Scope
+                      </label>
+                      <select
+                        value={ingredient.scope || 'base'}
+                        onChange={(e) => updateIngredient(index, 'scope', e.target.value as IngredientScope)}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                      >
+                        <option value="base">Base</option>
+                        <option value="variant">Variant</option>
+                        <option value="topping">Topping</option>
+                      </select>
+                    </div>
+
+                    <div className="flex-1 min-w-[200px]">
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         Ingredient *
                       </label>
@@ -990,6 +1077,42 @@ export default function DishEditorPage() {
                         ))}
                       </select>
                     </div>
+
+                    {ingredient.scope === 'variant' && (
+                      <div className="w-48">
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Variant</label>
+                        <select
+                          value={ingredient.variant_id || ''}
+                          onChange={(e) => updateIngredient(index, 'variant_id', e.target.value || undefined)}
+                          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                        >
+                          <option value="">Select variant</option>
+                          {(dish.variants || []).map((v) => (
+                            <option key={v._id || v.name} value={v._id || v.name}>
+                              {v.name}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    )}
+
+                    {ingredient.scope === 'topping' && (
+                      <div className="w-48">
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Topping</label>
+                        <select
+                          value={ingredient.topping_id || ''}
+                          onChange={(e) => updateIngredient(index, 'topping_id', e.target.value || undefined)}
+                          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                        >
+                          <option value="">Select topping</option>
+                          {(dish.toppings || []).map((t) => (
+                            <option key={t._id || t.name} value={t._id || t.name}>
+                              {t.name}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    )}
 
                     <div className="w-32">
                       <label className="block text-sm font-medium text-gray-700 mb-1">

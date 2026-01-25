@@ -13,139 +13,441 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "menu.md",
-        "hash": "18200153328103519120"
-      },
-      {
-        "file": "temp-api-log.txt",
-        "hash": "4741253485829971635"
-      },
-      {
-        "file": "package.json",
-        "hash": "8510451765899302735"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "15378423341984598940"
+        "file": "UNIT_CONVERSION_GUIDE.md",
+        "hash": "6240697680962777792"
       },
       {
         "file": "QR_MENU_PROGRESS.md",
         "hash": "8780921513570309407"
       },
       {
+        "file": "QUICK_START.md",
+        "hash": "11312994313527281237"
+      },
+      {
         "file": "INVENTORY_EXECUTIVE_SUMMARY.md",
         "hash": "16529275313089350152"
-      },
-      {
-        "file": "FINAL_REPORT.md",
-        "hash": "3810500943016669946"
-      },
-      {
-        "file": "nx.json",
-        "hash": "3897980461332312024"
-      },
-      {
-        "file": "README.md",
-        "hash": "5721681303227786399"
-      },
-      {
-        "file": "CONSUMER_SYSTEM.md",
-        "hash": "15455398481303165962"
-      },
-      {
-        "file": "INVENTORY_MANAGEMENT_RESEARCH.md",
-        "hash": "9574252872071074632"
-      },
-      {
-        "file": "API_CONTRACT.md",
-        "hash": "18141321249637467054"
-      },
-      {
-        "file": "token.txt",
-        "hash": "15558633194263700325"
-      },
-      {
-        "file": "QR_MENU_STEP2_COMPLETE.md",
-        "hash": "2400536422361615732"
-      },
-      {
-        "file": "UNIT_CONVERSION_GUIDE.md",
-        "hash": "6240697680962777792"
-      },
-      {
-        "file": "SYSTEM_FLOW_COMPLETE.md",
-        "hash": "5210863026931858132"
-      },
-      {
-        "file": "RESOLUTION_SUMMARY.md",
-        "hash": "695467965577687361"
-      },
-      {
-        "file": "INVENTORY_DOCUMENTATION_INDEX.md",
-        "hash": "14288868409458789784"
-      },
-      {
-        "file": "INVENTORY_IMPLEMENTATION_CHECKLIST.md",
-        "hash": "10538502947508893894"
-      },
-      {
-        "file": "TESTING_GUIDE.md",
-        "hash": "7359223042151484867"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "2157159737062501812"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "6468668766053406242"
-      },
-      {
-        "file": "IMPLEMENTATION_STATUS.md",
-        "hash": "12419914318062959032"
-      },
-      {
-        "file": "QR_MENU_STEP1_COMPLETE.md",
-        "hash": "6838011169087266931"
       },
       {
         "file": "DEEP_DIVE_FIX.md",
         "hash": "11333975308720943759"
       },
       {
+        "file": "QR_MENU_STEP2_COMPLETE.md",
+        "hash": "2400536422361615732"
+      },
+      {
+        "file": "VARIANT_ID_FIX_COMPLETE.md",
+        "hash": "7403378142166947247"
+      },
+      {
         "file": "INVENTORY_FEATURES_MATRIX.md",
         "hash": "7069880010537437860"
       },
       {
-        "file": "NEXT_STEPS.md",
-        "hash": "12178758053152467833"
+        "file": "token.txt",
+        "hash": "15558633194263700325"
       },
       {
-        "file": ".env.example",
-        "hash": "13653663135303113341"
+        "file": "package-lock.json",
+        "hash": "2157159737062501812"
+      },
+      {
+        "file": "INVENTORY_MANAGEMENT_RESEARCH.md",
+        "hash": "9574252872071074632"
+      },
+      {
+        "file": "temp-api-log.txt",
+        "hash": "4741253485829971635"
       },
       {
         "file": "INVENTORY_IMPLEMENTATION_STEPS.md",
         "hash": "10092629389389626568"
       },
       {
+        "file": "tsconfig.base.json",
+        "hash": "15378423341984598940"
+      },
+      {
+        "file": ".env.example",
+        "hash": "13653663135303113341"
+      },
+      {
+        "file": "API_CONTRACT.md",
+        "hash": "18141321249637467054"
+      },
+      {
+        "file": "FINAL_REPORT.md",
+        "hash": "3810500943016669946"
+      },
+      {
+        "file": "CONSUMER_SYSTEM.md",
+        "hash": "15455398481303165962"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "6468668766053406242"
+      },
+      {
+        "file": "VARIANT_DEDUCTION_DEBUG.md",
+        "hash": "12809864567111628635"
+      },
+      {
+        "file": "SYSTEM_FLOW_COMPLETE.md",
+        "hash": "5210863026931858132"
+      },
+      {
+        "file": "INVENTORY_IMPLEMENTATION_CHECKLIST.md",
+        "hash": "10538502947508893894"
+      },
+      {
+        "file": "menu.md",
+        "hash": "18200153328103519120"
+      },
+      {
+        "file": "package.json",
+        "hash": "16432462704021317559"
+      },
+      {
+        "file": "nx.json",
+        "hash": "3897980461332312024"
+      },
+      {
+        "file": "QR_MENU_STEP1_COMPLETE.md",
+        "hash": "6838011169087266931"
+      },
+      {
+        "file": "TESTING_GUIDE.md",
+        "hash": "7359223042151484867"
+      },
+      {
+        "file": "IMPLEMENTATION_STATUS.md",
+        "hash": "12419914318062959032"
+      },
+      {
+        "file": "INVENTORY_DOCUMENTATION_INDEX.md",
+        "hash": "14288868409458789784"
+      },
+      {
+        "file": "NEXT_STEPS.md",
+        "hash": "12178758053152467833"
+      },
+      {
+        "file": "RESOLUTION_SUMMARY.md",
+        "hash": "695467965577687361"
+      },
+      {
+        "file": "README.md",
+        "hash": "5721681303227786399"
+      },
+      {
         "file": "INVENTORY_QUICK_REFERENCE.md",
         "hash": "16716363659390441632"
       },
       {
-        "file": "QUICK_START.md",
-        "hash": "11312994313527281237"
+        "file": "VARIANT_ID_FIX_SUMMARY.md",
+        "hash": "5273650918698960123"
       }
     ],
     "projectFileMap": {
-      "shared-types": [
+      "web": [
         {
-          "file": "libs/shared-types/project.json",
-          "hash": "11102004796360553658"
+          "file": "apps/web/app/components/dashboard/AddDishForm.tsx",
+          "hash": "1455565833144944943",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@hookform/resolvers",
+            "npm:zod",
+            "npm:axios"
+          ]
         },
         {
-          "file": "libs/shared-types/src/index.ts",
-          "hash": "12740873421295123623"
+          "file": "apps/web/app/components/dashboard/DishesList.tsx",
+          "hash": "6126139713643025483",
+          "deps": [
+            "npm:react",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/analytics/page.tsx",
+          "hash": "11019112087441508651",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/inventory/items/[id]/restock/page.tsx",
+          "hash": "642741413219340475",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/inventory/items/new/page.tsx",
+          "hash": "9472998121841412685",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/inventory/items/page.tsx",
+          "hash": "2867920883496497445",
+          "deps": [
+            "npm:react",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/inventory/page.tsx",
+          "hash": "10194841973948450407",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/inventory/recipes/new/page.tsx",
+          "hash": "4663527091415254255",
+          "deps": [
+            "npm:react",
+            "npm:axios",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/inventory/recipes/page.tsx",
+          "hash": "12446516414844764087",
+          "deps": [
+            "npm:react",
+            "npm:axios",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/inventory/restocking-armies/page.tsx",
+          "hash": "13909145080141930551",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/layout.tsx",
+          "hash": "7401730955911314270",
+          "deps": [
+            "npm:next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/menu/dishes/[id]/page.tsx",
+          "hash": "4505167172930877337",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/menu/dishes/[id]/page.tsx.bak",
+          "hash": "15568517184675838582"
+        },
+        {
+          "file": "apps/web/app/dashboard/menu/page.tsx",
+          "hash": "13558227937611560774",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/orders/page.tsx",
+          "hash": "15532401805393960147",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios",
+            "npm:lucide-react"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/page.tsx",
+          "hash": "7498509552754085005",
+          "deps": [
+            "npm:next",
+            "npm:react",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/settings/page.tsx",
+          "hash": "5966910570758807778",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/dashboard/staff/page.tsx",
+          "hash": "15560951162156474887",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/web/app/globals.css",
+          "hash": "12845073157604142621"
+        },
+        {
+          "file": "apps/web/app/layout.tsx",
+          "hash": "17119992047858118964",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/login/page.tsx",
+          "hash": "6431386461888858153",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/page.tsx",
+          "hash": "5478466786085398709"
+        },
+        {
+          "file": "apps/web/app/qr/[tenant]/checkout/page.tsx",
+          "hash": "16232417445715776158",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/qr/[tenant]/components/CartDrawer.tsx",
+          "hash": "4799806542837563907"
+        },
+        {
+          "file": "apps/web/app/qr/[tenant]/components/DishDetailModal.tsx",
+          "hash": "8646915123461370501",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/qr/[tenant]/menu/page.tsx",
+          "hash": "4487426786537556542",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/qr/[tenant]/order-confirmation/page.tsx",
+          "hash": "517309184954180359",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/qr/[tenant]/types.ts",
+          "hash": "926341787401178065"
+        },
+        {
+          "file": "apps/web/app/superadmin/SuperadminNav.tsx",
+          "hash": "12260328871454932525",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/layout.tsx",
+          "hash": "8566565295191894980",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/page.tsx",
+          "hash": "17980489158150899100",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/tenants/new/page.tsx",
+          "hash": "17261188709296540974",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/tenants/page.tsx",
+          "hash": "15135730862765353230",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/app/superadmin/users/page.tsx",
+          "hash": "8983607454573783502",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/web/next-env.d.ts",
+          "hash": "10054213917412045845"
+        },
+        {
+          "file": "apps/web/next.config.js",
+          "hash": "10986255167800012865"
+        },
+        {
+          "file": "apps/web/postcss.config.js",
+          "hash": "16750483254333733706"
+        },
+        {
+          "file": "apps/web/project.json",
+          "hash": "5071143176759411042"
+        },
+        {
+          "file": "apps/web/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web/styles/placeholder.txt",
+          "hash": "9274633116156084947"
+        },
+        {
+          "file": "apps/web/tailwind.config.js",
+          "hash": "13487245939906621909"
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "6023666558334324888"
         }
       ],
       "api": [
@@ -369,7 +671,7 @@
         },
         {
           "file": "apps/api/src/app/inventory/inventory-item.service.ts",
-          "hash": "11716387268220520101",
+          "hash": "8703953125148103550",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -378,7 +680,7 @@
         },
         {
           "file": "apps/api/src/app/inventory/inventory-recipe.service.ts",
-          "hash": "913705061018145317",
+          "hash": "2843311204031580677",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -396,14 +698,14 @@
         },
         {
           "file": "apps/api/src/app/inventory/inventory.controller.ts",
-          "hash": "8848280785977919929",
+          "hash": "7345156017828860582",
           "deps": [
             "npm:@nestjs/common"
           ]
         },
         {
           "file": "apps/api/src/app/inventory/inventory.module.ts",
-          "hash": "12156946888692556883",
+          "hash": "2389326555246363855",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose"
@@ -447,7 +749,7 @@
         },
         {
           "file": "apps/api/src/app/menu/dish.service.ts",
-          "hash": "11776413041205372814",
+          "hash": "6663687485316696823",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -505,7 +807,7 @@
         },
         {
           "file": "apps/api/src/app/orders/dto/create-order.dto.ts",
-          "hash": "8325114450718989778",
+          "hash": "8128681438281483867",
           "deps": [
             "npm:class-transformer",
             "npm:class-validator"
@@ -536,7 +838,7 @@
         },
         {
           "file": "apps/api/src/app/orders/orders.service.ts",
-          "hash": "4132056814586492752",
+          "hash": "3290908342900427972",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -545,7 +847,7 @@
         },
         {
           "file": "apps/api/src/app/orders/public-orders.controller.ts",
-          "hash": "7332623464335688666",
+          "hash": "14631289913411946377",
           "deps": [
             "npm:@nestjs/common"
           ]
@@ -598,7 +900,7 @@
         },
         {
           "file": "apps/api/src/app/schemas/order.schema.ts",
-          "hash": "2011352376459400575",
+          "hash": "6138458675369195248",
           "deps": [
             "npm:@nestjs/mongoose",
             "npm:mongoose"
@@ -734,7 +1036,7 @@
         },
         {
           "file": "apps/api/src/schemas/inventory-recipe.schema.ts",
-          "hash": "5715377620872279315",
+          "hash": "6309341344534886966",
           "deps": [
             "npm:@nestjs/mongoose",
             "npm:mongoose"
@@ -808,304 +1110,14 @@
           "hash": "13238060302026751848"
         }
       ],
-      "web": [
+      "shared-types": [
         {
-          "file": "apps/web/app/components/dashboard/AddDishForm.tsx",
-          "hash": "1455565833144944943",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:@hookform/resolvers",
-            "npm:zod",
-            "npm:axios"
-          ]
+          "file": "libs/shared-types/project.json",
+          "hash": "11102004796360553658"
         },
         {
-          "file": "apps/web/app/components/dashboard/DishesList.tsx",
-          "hash": "6126139713643025483",
-          "deps": [
-            "npm:react",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/analytics/page.tsx",
-          "hash": "11019112087441508651",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/inventory/items/[id]/restock/page.tsx",
-          "hash": "642741413219340475",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/inventory/items/new/page.tsx",
-          "hash": "9472998121841412685",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/inventory/items/page.tsx",
-          "hash": "2867920883496497445",
-          "deps": [
-            "npm:react",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/inventory/page.tsx",
-          "hash": "13188238410681982624",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:axios",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/inventory/recipes/new/page.tsx",
-          "hash": "4663527091415254255",
-          "deps": [
-            "npm:react",
-            "npm:axios",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/inventory/recipes/page.tsx",
-          "hash": "12446516414844764087",
-          "deps": [
-            "npm:react",
-            "npm:axios",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/inventory/restocking-armies/page.tsx",
-          "hash": "13909145080141930551",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/layout.tsx",
-          "hash": "7401730955911314270",
-          "deps": [
-            "npm:next",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/menu/dishes/[id]/page.tsx",
-          "hash": "15729133803607682694",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:axios",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/menu/dishes/[id]/page.tsx.bak",
-          "hash": "15568517184675838582"
-        },
-        {
-          "file": "apps/web/app/dashboard/menu/page.tsx",
-          "hash": "13558227937611560774",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:axios",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/orders/page.tsx",
-          "hash": "414324089244437410",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:axios",
-            "npm:lucide-react"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/page.tsx",
-          "hash": "7498509552754085005",
-          "deps": [
-            "npm:next",
-            "npm:react",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/settings/page.tsx",
-          "hash": "5966910570758807778",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/dashboard/staff/page.tsx",
-          "hash": "15560951162156474887",
-          "deps": [
-            "npm:react",
-            "npm:next",
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "apps/web/app/globals.css",
-          "hash": "12845073157604142621"
-        },
-        {
-          "file": "apps/web/app/layout.tsx",
-          "hash": "17119992047858118964",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/login/page.tsx",
-          "hash": "6431386461888858153",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/page.tsx",
-          "hash": "5478466786085398709"
-        },
-        {
-          "file": "apps/web/app/qr/[tenant]/checkout/page.tsx",
-          "hash": "11577015176508895226",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/qr/[tenant]/components/CartDrawer.tsx",
-          "hash": "4799806542837563907"
-        },
-        {
-          "file": "apps/web/app/qr/[tenant]/components/DishDetailModal.tsx",
-          "hash": "8646915123461370501",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/qr/[tenant]/menu/page.tsx",
-          "hash": "4487426786537556542",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/qr/[tenant]/order-confirmation/page.tsx",
-          "hash": "517309184954180359",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/qr/[tenant]/types.ts",
-          "hash": "1733543967493309892"
-        },
-        {
-          "file": "apps/web/app/superadmin/SuperadminNav.tsx",
-          "hash": "12260328871454932525",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/superadmin/layout.tsx",
-          "hash": "8566565295191894980",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/superadmin/page.tsx",
-          "hash": "17980489158150899100",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/superadmin/tenants/new/page.tsx",
-          "hash": "17261188709296540974",
-          "deps": [
-            "npm:react",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/web/app/superadmin/tenants/page.tsx",
-          "hash": "15135730862765353230",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/app/superadmin/users/page.tsx",
-          "hash": "8983607454573783502",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/web/next-env.d.ts",
-          "hash": "10054213917412045845"
-        },
-        {
-          "file": "apps/web/next.config.js",
-          "hash": "10986255167800012865"
-        },
-        {
-          "file": "apps/web/postcss.config.js",
-          "hash": "16750483254333733706"
-        },
-        {
-          "file": "apps/web/project.json",
-          "hash": "5071143176759411042"
-        },
-        {
-          "file": "apps/web/public/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/web/styles/placeholder.txt",
-          "hash": "9274633116156084947"
-        },
-        {
-          "file": "apps/web/tailwind.config.js",
-          "hash": "13487245939906621909"
-        },
-        {
-          "file": "apps/web/tsconfig.json",
-          "hash": "6023666558334324888"
+          "file": "libs/shared-types/src/index.ts",
+          "hash": "12740873421295123623"
         }
       ]
     }

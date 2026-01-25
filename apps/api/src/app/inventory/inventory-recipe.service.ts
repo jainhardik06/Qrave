@@ -29,7 +29,14 @@ export class InventoryRecipeService {
     // Calculate total cost
     let totalCost = 0;
 
-    for (const ingredient of createDto.ingredients) {
+    // Normalize variant_id and topping_id to lowercase slugs
+    const normalizedIngredients = createDto.ingredients.map(ing => ({
+      ...ing,
+      variant_id: ing.variant_id ? ing.variant_id.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') : undefined,
+      topping_id: ing.topping_id ? ing.topping_id.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') : undefined,
+    }));
+
+    for (const ingredient of normalizedIngredients) {
       const item = await this.itemModel.findOne({
         _id: new Types.ObjectId(ingredient.item_id),
         tenant_id: tenantId,
@@ -48,6 +55,7 @@ export class InventoryRecipeService {
 
     const recipe = new this.recipeModel({
       ...createDto,
+      ingredients: normalizedIngredients,
       tenant_id: tenantId,
       total_cost_per_dish: totalCost,
     });
@@ -74,8 +82,16 @@ export class InventoryRecipeService {
   async update(tenantId: string, dishId: string, updateDto: UpdateRecipeDto): Promise<InventoryRecipeDocument | null> {
     let totalCost = 0;
 
+    // Normalize variant_id and topping_id to lowercase slugs
+    let normalizedIngredients = updateDto.ingredients;
     if (updateDto.ingredients) {
-      for (const ingredient of updateDto.ingredients) {
+      normalizedIngredients = updateDto.ingredients.map(ing => ({
+        ...ing,
+        variant_id: ing.variant_id ? ing.variant_id.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') : undefined,
+        topping_id: ing.topping_id ? ing.topping_id.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') : undefined,
+      }));
+
+      for (const ingredient of normalizedIngredients) {
         const item = await this.itemModel.findOne({
           _id: new Types.ObjectId(ingredient.item_id),
           tenant_id: tenantId,
@@ -98,6 +114,7 @@ export class InventoryRecipeService {
         { tenant_id: tenantId, dish_id: new Types.ObjectId(dishId) },
         {
           ...updateDto,
+          ingredients: normalizedIngredients,
           dish_id: new Types.ObjectId(dishId),
           tenant_id: tenantId,
           total_cost_per_dish: totalCost > 0 ? totalCost : undefined,

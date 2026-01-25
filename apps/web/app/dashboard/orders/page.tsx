@@ -88,30 +88,8 @@ export default function OrdersPage() {
     try {
       setUpdatingId(id);
       
-      // If cancelling, revert inventory items
-      if (status === 'CANCELLED') {
-        const orderToCancel = orders.find(o => o._id === id);
-        if (orderToCancel && orderToCancel.items.length > 0) {
-          try {
-            // Revert each item back to inventory
-            for (const item of orderToCancel.items) {
-              await axios.patch(
-                `${API_BASE}/inventory/revert`,
-                {
-                  dish_id: item.dish_id,
-                  quantity: item.quantity,
-                  order_id: id
-                },
-                { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
-              );
-            }
-          } catch (inventoryError: any) {
-            console.warn('Inventory revert partially failed:', inventoryError);
-            // Continue with order cancellation even if inventory revert fails
-          }
-        }
-      }
-      
+      // Backend orders.service.ts now handles inventory refunds automatically
+      // when order status changes to CANCELLED. No need to call /inventory/revert separately.
       await axios.patch(
         `${API_BASE}/orders/${id}`,
         { status },

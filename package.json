@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "dev": "nx run-many --target=serve --projects=api,web",
+    "build": "nx run-many --target=build --projects=api,web",
     "dev:web": "nx run web:serve",
     "build:web": "nx run web:build",
     "dev:api": "nx run api:serve",

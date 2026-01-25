@@ -1,0 +1,58 @@
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully
+ [37m[1m [22m[39m Linting and checking validity of types ...
+ [37m[1m [22m[39m Collecting page data ...
+ [37m[1m [22m[39m Generating static pages (0/21) ...
+API fetch error: n [Error]: Dynamic server usage: no-store fetch http://localhost:3001/api /
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:14358
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21972
+    at o.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:21455[90m)[39m
+    at u.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:15655[90m)[39m
+    at u.startActiveSpan [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:30710[90m)[39m
+    at o.startActiveSpan [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:31244[90m)[39m
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21505
+    at o.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:21455[90m)[39m
+    at u.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:15655[90m)[39m
+    at y.trace [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21459[90m)[39m {
+  description: [32m'no-store fetch http://localhost:3001/api /'[39m,
+  digest: [32m'DYNAMIC_SERVER_USAGE'[39m
+}
+API fetch error: n [Error]: Dynamic server usage: no-store fetch http://localhost:3001/api /
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:14358
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21972
+    at o.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:21455[90m)[39m
+    at u.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:15655[90m)[39m
+    at u.startActiveSpan [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:30710[90m)[39m
+    at o.startActiveSpan [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:31244[90m)[39m
+    at [90mD:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21505
+    at o.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:21455[90m)[39m
+    at u.with [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:2:15655[90m)[39m
+    at y.trace [90m(D:\D\Qrave\apps\web\[39m.next\server\chunks\592.js:3:21459[90m)[39m {
+  description: [32m'no-store fetch http://localhost:3001/api /'[39m,
+  digest: [32m'DYNAMIC_SERVER_USAGE'[39m
+}
+ [37m[1m [22m[39m Generating static pages (5/21) 
+ [37m[1m [22m[39m Generating static pages (10/21) 
+ [37m[1m [22m[39m Generating static pages (15/21) 
+ [32m[1m✓[22m[39m Generating static pages (21/21)
+ [37m[1m [22m[39m Finalizing page optimization ...
+ [37m[1m [22m[39m Collecting build traces ...
+Error: ENOENT: no such file or directory, open 'D:\D\Qrave\apps\web\.next\server\app\_not-found\page.js.nft.json'
+[90m    at async open (node:internal/fs/promises:633:25)[39m
+[90m    at async Object.readFile (node:internal/fs/promises:1237:14)[39m
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\build\collect-build-traces.js:429:50
+    at async Promise.all (index 0)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\build\collect-build-traces.js:410:13
+    at async Span.traceAsyncFn (D:\D\Qrave\node_modules\[4mnext[24m\dist\trace\trace.js:154:20)
+    at async collectBuildTraces (D:\D\Qrave\node_modules\[4mnext[24m\dist\build\collect-build-traces.js:164:5)
+    at async D:\D\Qrave\node_modules\[4mnext[24m\dist\build\index.js:2134:13
+    at async Span.traceAsyncFn (D:\D\Qrave\node_modules\[4mnext[24m\dist\trace\trace.js:154:20)
+    at async build (D:\D\Qrave\node_modules\[4mnext[24m\dist\build\index.js:368:9) {
+  errno: [33m-4058[39m,
+  code: [32m'ENOENT'[39m,
+  syscall: [32m'open'[39m,
+  path: [32m'D:\\D\\Qrave\\apps\\web\\.next\\server\\app\\_not-found\\page.js.nft.json'[39m
+}
+[1m[31mBuild process exited due to code 1  [39m[22m

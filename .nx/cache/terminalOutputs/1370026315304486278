@@ -1,0 +1,71 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 11.5s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 19.7s (506 modules)
+ GET /qr/696e0b78acfe64aa03824c94/order-confirmation?orderId=69730ad300e40114d0bc27a4 [32m200[39m in 1559ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 156ms (495 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 280ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 314ms (501 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 738ms (772 modules)
+ GET /dashboard/inventory [32m200[39m in 935ms
+ [32m[1m✓[22m[39m Compiled in 530ms (786 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 396ms (783 modules)
+ GET /dashboard/inventory [32m200[39m in 180ms
+ GET /dashboard/orders [32m200[39m in 75ms
+ GET /dashboard/inventory [32m200[39m in 47ms
+ GET /dashboard/inventory [32m200[39m in 61ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 396ms (786 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 548ms
+ GET /dashboard/orders [32m200[39m in 141ms
+ GET /dashboard/inventory [32m200[39m in 144ms
+ GET /dashboard/inventory [32m200[39m in 48ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 77ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 59ms
+ GET /dashboard/inventory [32m200[39m in 74ms
+ GET /dashboard/orders [32m200[39m in 50ms
+ GET /dashboard/inventory [32m200[39m in 43ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 27ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 55ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 11.5s
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 19.7s (506 modules)
+ GET /qr/696e0b78acfe64aa03824c94/order-confirmation?orderId=69730ad300e40114d0bc27a4 [32m200[39m in 1559ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 156ms (495 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 280ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 314ms (501 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 738ms (772 modules)
+ GET /dashboard/inventory [32m200[39m in 935ms
+ [32m[1m✓[22m[39m Compiled in 530ms (786 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 396ms (783 modules)
+ GET /dashboard/inventory [32m200[39m in 180ms
+ GET /dashboard/orders [32m200[39m in 75ms
+ GET /dashboard/inventory [32m200[39m in 47ms
+ GET /dashboard/inventory [32m200[39m in 61ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 396ms (786 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 548ms
+ GET /dashboard/orders [32m200[39m in 141ms
+ GET /dashboard/inventory [32m200[39m in 144ms
+ GET /dashboard/inventory [32m200[39m in 48ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 77ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 59ms
+ GET /dashboard/inventory [32m200[39m in 74ms
+ GET /dashboard/orders [32m200[39m in 50ms
+ GET /dashboard/inventory [32m200[39m in 43ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 27ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 55ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

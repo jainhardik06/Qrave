@@ -17,6 +17,16 @@ export class Order extends Document {
         quantity: { type: Number, min: 1, required: true },
         price: { type: Number, min: 0, required: true },
         notes: { type: String },
+        variant_id: { type: String },
+        toppings: {
+          type: [
+            {
+              topping_id: { type: String, required: true },
+              quantity: { type: Number, min: 0, default: 1 },
+            },
+          ],
+          default: [],
+        },
       },
     ],
     required: true,
@@ -27,6 +37,8 @@ export class Order extends Document {
     quantity: number;
     price: number;
     notes?: string;
+    variant_id?: string;
+    toppings?: Array<{ topping_id: string; quantity?: number }>;
   }>;
 
   @Prop({ type: Number, required: true, min: 0 })

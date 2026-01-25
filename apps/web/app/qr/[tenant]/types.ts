@@ -14,6 +14,7 @@ export interface Category {
 }
 
 export interface DishVariant {
+  _id?: string;
   name: string;
   price: number;
 }

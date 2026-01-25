@@ -134,26 +134,57 @@ export class InventoryItemService {
     quantity: number,
     orderId: string,
     userId?: string,
+    quantityUnit?: string, // Optional: unit of the quantity being refunded (if different from item's unit)
   ): Promise<InventoryItemDocument | null> {
+    console.log(`🔄 refundStock called:`, { tenantId, itemId, quantity, orderId, userId, quantityUnit });
+    
     const item = await this.findById(tenantId, itemId);
 
     if (!item) {
       throw new Error(`Item not found: ${itemId}`);
     }
 
-    const newQuantity = item.current_quantity + quantity;
+    console.log(`📦 Item found:`, { name: item.name, unit: item.unit, currentQty: item.current_quantity });
 
-    await this.transactionModel.create({
+    // Convert quantity to item's unit if necessary
+    let refundQuantity = quantity;
+    if (quantityUnit && quantityUnit !== item.unit) {
+      try {
+        refundQuantity = convertUnit(quantity, quantityUnit, item.unit);
+        console.log(`🔄 Unit conversion for refund: ${quantity} ${quantityUnit} → ${refundQuantity} ${item.unit}`);
+      } catch (error) {
+        console.warn(`⚠️ Unit conversion failed for refund, using original quantity. Error: ${error}`);
+        // If units are incompatible, proceed with the original quantity
+        // This maintains backward compatibility
+      }
+    } else {
+      console.log(`✓ No unit conversion needed (quantityUnit: ${quantityUnit}, item.unit: ${item.unit})`);
+    }
+
+    const newQuantity = item.current_quantity + refundQuantity;
+
+    console.log(`📊 Refund calculation:`, {
+      currentQty: item.current_quantity,
+      refundQty: refundQuantity,
+      newQty: newQuantity,
+    });
+
+    const transaction = await this.transactionModel.create({
       tenant_id: tenantId,
       item_id: new Types.ObjectId(itemId),
       transaction_type: 'adjustment',
-      quantity_change: quantity,
+      quantity_change: refundQuantity,
       quantity_before: item.current_quantity,
       quantity_after: newQuantity,
       reason: 'order_cancelled',
       order_id: orderId,
       user_id: userId,
       notes: `Stock refunded due to cancelled order ${orderId}`,
+    });
+
+    console.log(`✅ Transaction created:`, {
+      _id: transaction._id,
+      quantityChange: transaction.quantity_change,
     });
 
     return this.inventoryItemModel

@@ -1,0 +1,39 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.4s
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 4.3s (746 modules)
+ GET /dashboard/menu/dishes/6973031f9ceff6c9503c516a [32m200[39m in 3664ms
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 288ms (754 modules)
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 367ms (793 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 104ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 238ms (796 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 356ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 426ms (802 modules)
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 276ms (808 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 284ms (832 modules)
+ GET /dashboard/inventory [32m200[39m in 441ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.4s
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 4.3s (746 modules)
+ GET /dashboard/menu/dishes/6973031f9ceff6c9503c516a [32m200[39m in 3664ms
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 288ms (754 modules)
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 367ms (793 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 104ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 238ms (796 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 356ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 426ms (802 modules)
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 276ms (808 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 284ms (832 modules)
+ GET /dashboard/inventory [32m200[39m in 441ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

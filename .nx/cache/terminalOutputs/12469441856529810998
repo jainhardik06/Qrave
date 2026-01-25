@@ -1,0 +1,57 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 3.1s
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 4.4s (722 modules)
+ GET /dashboard/menu [32m200[39m in 4909ms
+ [32m[1m✓[22m[39m Compiled in 525ms (329 modules)
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.1s (747 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 2233ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 285ms (750 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 419ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 408ms (756 modules)
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 291ms (762 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/orders ...
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 754ms (776 modules)
+ GET /dashboard/orders [32m200[39m in 960ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 559ms (800 modules)
+ [32m[1m✓[22m[39m Compiled in 388ms (807 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu/dishes/[id] ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 511ms (803 modules)
+ [32m[1m✓[22m[39m Compiled in 508ms (796 modules)
+^C[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 3.1s
+ [37m[1m○[22m[39m Compiling /dashboard/menu ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 4.4s (722 modules)
+ GET /dashboard/menu [32m200[39m in 4909ms
+ [32m[1m✓[22m[39m Compiled in 525ms (329 modules)
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 2.1s (747 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 2233ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 285ms (750 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 419ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 408ms (756 modules)
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 291ms (762 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/orders ...
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 754ms (776 modules)
+ GET /dashboard/orders [32m200[39m in 960ms
+ [37m[1m○[22m[39m Compiling /dashboard/inventory ...
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 559ms (800 modules)
+ [32m[1m✓[22m[39m Compiled in 388ms (807 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu/dishes/[id] ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 511ms (803 modules)
+ [32m[1m✓[22m[39m Compiled in 508ms (796 modules)
+^CWarning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

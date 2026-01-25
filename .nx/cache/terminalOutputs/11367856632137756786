@@ -1,0 +1,77 @@
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.2s
+ [37m[1m○[22m[39m Compiling /dashboard/orders ...
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 3.1s (714 modules)
+ GET /dashboard/orders [32m200[39m in 3713ms
+ [32m[1m✓[22m[39m Compiled in 559ms (325 modules)
+ [32m[1m✓[22m[39m Compiled in 315ms (325 modules)
+ [32m[1m✓[22m[39m Compiled in 208ms (325 modules)
+ [32m[1m✓[22m[39m Compiled in 221ms (325 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 389ms (722 modules)
+ [32m[1m✓[22m[39m Compiled in 309ms (335 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu/dishes/[id] ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 668ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 657ms (746 modules)
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 627ms (771 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 125ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 505ms (774 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 607ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 360ms (780 modules)
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 298ms (786 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 316ms (810 modules)
+ [32m[1m✓[22m[39m Compiled in 291ms (372 modules)
+ GET /dashboard/menu [32m200[39m in 171ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 75ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 372ms (804 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 514ms
+ GET /dashboard/inventory [32m200[39m in 91ms
+ GET /dashboard/menu [32m200[39m in 194ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 60ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 69ms
+ GET /dashboard/inventory [32m200[39m in 91ms
+[2m> [22mcd apps/web && npx next dev -p 3000
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+  - Local:        http://localhost:3000
+
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 2.2s
+ [37m[1m○[22m[39m Compiling /dashboard/orders ...
+ [32m[1m✓[22m[39m Compiled /dashboard/orders in 3.1s (714 modules)
+ GET /dashboard/orders [32m200[39m in 3713ms
+ [32m[1m✓[22m[39m Compiled in 559ms (325 modules)
+ [32m[1m✓[22m[39m Compiled in 315ms (325 modules)
+ [32m[1m✓[22m[39m Compiled in 208ms (325 modules)
+ [32m[1m✓[22m[39m Compiled in 221ms (325 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/menu in 389ms (722 modules)
+ [32m[1m✓[22m[39m Compiled in 309ms (335 modules)
+ [37m[1m○[22m[39m Compiling /dashboard/menu/dishes/[id] ...
+ [32m[1m✓[22m[39m Compiled /dashboard/menu/dishes/[id] in 668ms (732 modules)
+ [32m[1m✓[22m[39m Compiled in 657ms (746 modules)
+ [37m[1m○[22m[39m Compiling /qr/[tenant]/menu ...
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/menu in 627ms (771 modules)
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 125ms
+ [37m[1m○[22m[39m Compiling /_not-found ...
+ [32m[1m✓[22m[39m Compiled /_not-found in 505ms (774 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 607ms
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/checkout in 360ms (780 modules)
+ [32m[1m✓[22m[39m Compiled /qr/[tenant]/order-confirmation in 298ms (786 modules)
+ [32m[1m✓[22m[39m Compiled /dashboard/inventory in 316ms (810 modules)
+ [32m[1m✓[22m[39m Compiled in 291ms (372 modules)
+ GET /dashboard/menu [32m200[39m in 171ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 75ms
+ [32m[1m✓[22m[39m Compiled /_not-found in 372ms (804 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 514ms
+ GET /dashboard/inventory [32m200[39m in 91ms
+ GET /dashboard/menu [32m200[39m in 194ms
+ GET /qr/696e0b78acfe64aa03824c94/menu [32m200[39m in 60ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 69ms
+ GET /dashboard/inventory [32m200[39m in 91ms
+Warning: command "cd apps/web && npx next dev -p 3000" exited with non-zero status code

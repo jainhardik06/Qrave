@@ -4,9 +4,29 @@ import { OrderStatus } from '../../schemas/order.schema';
 
 const ORDER_STATUS_VALUES: OrderStatus[] = ['QUEUED', 'PREPARING', 'READY', 'COMPLETED', 'CANCELLED'];
 
+class OrderItemToppingDto {
+  @IsString()
+  topping_id!: string;
+
+  @IsNumber()
+  @Min(0)
+  @Type(() => Number)
+  @IsOptional()
+  quantity?: number;
+}
+
 class OrderItemDto {
   @IsMongoId()
   dish_id!: string;
+
+  @IsString()
+  @IsOptional()
+  variant_id?: string;
+
+  @ValidateNested({ each: true })
+  @Type(() => OrderItemToppingDto)
+  @IsOptional()
+  toppings?: OrderItemToppingDto[];
 
   @IsNumber()
   @IsPositive()

@@ -21,6 +21,6 @@ import { InventoryController } from './inventory.controller';
   ],
   providers: [InventoryItemService, InventoryTransactionService, InventoryRecipeService, RestockingArmyService],
   controllers: [InventoryController],
-  exports: [InventoryItemService, InventoryRecipeService, RestockingArmyService],
+  exports: [InventoryItemService, InventoryRecipeService, InventoryTransactionService, RestockingArmyService],
 })
 export class InventoryModule {}

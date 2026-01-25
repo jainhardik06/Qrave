@@ -7,6 +7,9 @@ export interface RecipeIngredient {
   item_id: Types.ObjectId;
   quantity_per_dish: number;
   unit: string;
+  // Optional scoping for variant- or topping-specific consumption (use string IDs for flexibility)
+  variant_id?: string;
+  topping_id?: string;
 }
 
 @Schema({ timestamps: true })

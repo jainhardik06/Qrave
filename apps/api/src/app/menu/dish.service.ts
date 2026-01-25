@@ -31,7 +31,7 @@ export class DishService {
     try {
       const tenant_id = RequestContext.getTenantId();
       console.log('DishService.create - tenant_id:', tenant_id, 'type:', typeof tenant_id);
-      const { category_ids, ...rest } = createDishDto;
+      const { category_ids, variants, toppings, ...rest } = createDishDto;
       
       if (!category_ids || category_ids.length === 0) {
         throw new Error('At least one category_id is required');
@@ -40,11 +40,37 @@ export class DishService {
       if (!tenant_id) {
         throw new Error('Tenant ID is required');
       }
+
+      // Generate _id for variants that don't have one (slug-based)
+      const processedVariants = (variants || []).map(v => {
+        if (!v._id) {
+          const slug = (v.name || '')
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/[^a-z0-9-]/g, '');
+          return { ...v, _id: slug };
+        }
+        return v;
+      });
+
+      // Generate _id for toppings that don't have one (slug-based)
+      const processedToppings = (toppings || []).map(t => {
+        if (!t._id) {
+          const slug = (t.name || '')
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/[^a-z0-9-]/g, '');
+          return { ...t, _id: slug };
+        }
+        return t;
+      });
       
       // Store tenant_id as string (database stores it as string)
       const dish = new this.dishModel({
         tenant_id: tenant_id,
         category_ids: category_ids.map(id => new Types.ObjectId(id)),
+        variants: processedVariants,
+        toppings: processedToppings,
         ...rest,
       });
       console.log('DishService.create - saving dish with tenant_id:', tenant_id, 'categories:', category_ids.length);
@@ -105,6 +131,34 @@ export class DishService {
       updateData.category_ids = updateData.category_ids.map((id: any) => 
         typeof id === 'string' ? new Types.ObjectId(id) : id
       );
+    }
+
+    // Generate _id for variants that don't have one (slug-based)
+    if (updateData.variants && Array.isArray(updateData.variants)) {
+      updateData.variants = updateData.variants.map((v: any) => {
+        if (!v._id) {
+          const slug = (v.name || '')
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/[^a-z0-9-]/g, '');
+          return { ...v, _id: slug };
+        }
+        return v;
+      });
+    }
+
+    // Generate _id for toppings that don't have one (slug-based)
+    if (updateData.toppings && Array.isArray(updateData.toppings)) {
+      updateData.toppings = updateData.toppings.map((t: any) => {
+        if (!t._id) {
+          const slug = (t.name || '')
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/[^a-z0-9-]/g, '');
+          return { ...t, _id: slug };
+        }
+        return t;
+      });
     }
     
     return this.dishModel.findOneAndUpdate(

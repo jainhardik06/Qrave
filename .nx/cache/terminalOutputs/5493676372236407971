@@ -1,0 +1,727 @@
+[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +25ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+Connecting to MongoDB: mongodb+srv://qrave_admin:****@qravecluster.qtcveit.mongodb.net/?appName=QraveCluster
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +1833ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +18ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mInventoryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMenuModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAdminModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRolesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyticsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mStaffModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mOrdersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +11ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCategoryController {/api/categories}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/reorder, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDishController {/api/dishes}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/category/:categoryId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/signature, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAdminController {/api/admin}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/status, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/features, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/stats, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRolesController {/api/roles}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mOrdersController {/api/orders}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicOrdersController {/api/public/orders}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/orders, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mInventoryController {/api/inventory}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/search/:query, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/availability, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id/adjust, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id/restock, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/low-stock, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions/audit-trail/:itemId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions/order/:orderId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/dashboard/summary, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id/execute, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/revert, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyticsController {/api/analytics}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/top-items, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mStaffController {/api/staff}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id/reset-password, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:14 am [32m    LOG[39m [38;5;3m[SuperAdminSeeder] [39m[32mSuper admin already exists, skipping seed[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:14 am [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+Qrave API running on http://localhost:3001
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 428.363 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 61.006 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 58.830 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 61.938 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 98.645 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 69.751 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 260.099 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 53.384 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 93.686 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 77.088 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 253.986 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 57.378 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "6973031f9ceff6c9503c516a",
+      "quantity": 2,
+      "price": 260,
+      "notes": "Variant: Medium | Toppings: Tomato Ketchup",
+      "variant_id": "medium",
+      "toppings": [
+        {
+          "topping_id": "tomato-ketchup",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 520,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik Jain",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: takeaway",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("697303970b0017428374af66")
+📦 Deducting inventory for dish 6973031f9ceff6c9503c516a: { variantId: [32m'medium'[39m, toppings: [ [32m'tomato-ketchup'[39m ] }
+📊 Ingredients to deduct: { baseCount: [33m0[39m, variantCount: [33m0[39m, toppingCount: [33m1[39m }
+✅ Order created successfully: new ObjectId("697303970b0017428374af66")
+POST /api/public/orders 201 742 - 452.711 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/697303970b0017428374af66 200 742 - 206.030 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/697303970b0017428374af66 304 - - 193.045 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 5519 - 463.762 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 809 - 61.538 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 58.638 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 50.046 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 60.795 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 247.340 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 46.336 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 46.553 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 48.290 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 58.112 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 238.741 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 176.728 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 264.626 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 56.734 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 53.813 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 53.676 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 59.444 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 52.081 ms
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 56.904 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 61.985 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 939 - 103.935 ms
+GET /api/inventory/transactions 200 25023 - 157.516 ms
+GET /api/inventory/dashboard/summary 200 69 - 196.795 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 304 - - 101.042 ms
+GET /api/inventory/transactions 304 - - 185.576 ms
+GET /api/inventory/dashboard/summary 304 - - 328.681 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 261.236 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 269.148 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 324.360 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 63.029 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 88.386 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 80.651 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 96.502 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 122.053 ms
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 84.112 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 72.141 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 411.339 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 75.484 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 97.901 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 90.679 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 59.861 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 1508.062 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 1530.903 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 282.370 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 286.576 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 76.466 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+GET /api/inventory/items?limit=1000 200 939 - 109.432 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 135.390 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 88.351 ms
+GET /api/inventory/items?limit=1000 304 - - 66.648 ms
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 58.231 ms
+GET /api/inventory/recipes/6971b819587b19a9e7f7500a 200 468 - 437.646 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/recipes/6971b819587b19a9e7f7500a 304 - - 169.226 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 87.128 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 72.640 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 263.493 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 77.184 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 112.507 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+GET /api/inventory/items?limit=1000 304 - - 120.671 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 116.545 ms
+GET /api/inventory/items?limit=1000 304 - - 104.025 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 260.251 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 75.049 ms
+GET /api/inventory/recipes/6973031f9ceff6c9503c516a 200 972 - 366.169 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/recipes/6973031f9ceff6c9503c516a 304 - - 287.132 ms
+^C[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +25ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:11 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+Connecting to MongoDB: mongodb+srv://qrave_admin:****@qravecluster.qtcveit.mongodb.net/?appName=QraveCluster
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +1833ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +18ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mInventoryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMenuModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAdminModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRolesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyticsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mStaffModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mOrdersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +11ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCategoryController {/api/categories}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/reorder, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDishController {/api/dishes}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/category/:categoryId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/signature, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAdminController {/api/admin}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/status, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/features, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/stats, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRolesController {/api/roles}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mOrdersController {/api/orders}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicOrdersController {/api/public/orders}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/orders, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mInventoryController {/api/inventory}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/search/:query, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/availability, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id/adjust, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id/restock, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/low-stock, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions/audit-trail/:itemId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions/order/:orderId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/dashboard/summary, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id/execute, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/revert, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyticsController {/api/analytics}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/top-items, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mStaffController {/api/staff}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:13 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id/reset-password, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:14 am [32m    LOG[39m [38;5;3m[SuperAdminSeeder] [39m[32mSuper admin already exists, skipping seed[39m
+[32m[Nest] 44172  - [39m23/01/2026, 10:43:14 am [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+Qrave API running on http://localhost:3001
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 428.363 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 61.006 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 58.830 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 61.938 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 98.645 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 69.751 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 260.099 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 53.384 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 93.686 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 77.088 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 253.986 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 57.378 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "6973031f9ceff6c9503c516a",
+      "quantity": 2,
+      "price": 260,
+      "notes": "Variant: Medium | Toppings: Tomato Ketchup",
+      "variant_id": "medium",
+      "toppings": [
+        {
+          "topping_id": "tomato-ketchup",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 520,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik Jain",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: takeaway",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("697303970b0017428374af66")
+📦 Deducting inventory for dish 6973031f9ceff6c9503c516a: { variantId: [32m'medium'[39m, toppings: [ [32m'tomato-ketchup'[39m ] }
+📊 Ingredients to deduct: { baseCount: [33m0[39m, variantCount: [33m0[39m, toppingCount: [33m1[39m }
+✅ Order created successfully: new ObjectId("697303970b0017428374af66")
+POST /api/public/orders 201 742 - 452.711 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/697303970b0017428374af66 200 742 - 206.030 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/697303970b0017428374af66 304 - - 193.045 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 5519 - 463.762 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 809 - 61.538 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 58.638 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 50.046 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 60.795 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 247.340 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 46.336 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 46.553 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 48.290 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 58.112 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 238.741 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 176.728 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 264.626 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 56.734 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 53.813 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 53.676 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 59.444 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 52.081 ms
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 56.904 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 61.985 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 939 - 103.935 ms
+GET /api/inventory/transactions 200 25023 - 157.516 ms
+GET /api/inventory/dashboard/summary 200 69 - 196.795 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 304 - - 101.042 ms
+GET /api/inventory/transactions 304 - - 185.576 ms
+GET /api/inventory/dashboard/summary 304 - - 328.681 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 261.236 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 269.148 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 324.360 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 63.029 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 88.386 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 80.651 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 96.502 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 122.053 ms
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 84.112 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 72.141 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 411.339 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 75.484 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 97.901 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 90.679 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 59.861 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 1508.062 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 1530.903 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 282.370 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 286.576 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 76.466 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+GET /api/inventory/items?limit=1000 200 939 - 109.432 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 135.390 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 88.351 ms
+GET /api/inventory/items?limit=1000 304 - - 66.648 ms
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 58.231 ms
+GET /api/inventory/recipes/6971b819587b19a9e7f7500a 200 468 - 437.646 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/recipes/6971b819587b19a9e7f7500a 304 - - 169.226 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 87.128 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 72.640 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 263.493 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 77.184 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 112.507 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+GET /api/inventory/items?limit=1000 304 - - 120.671 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 116.545 ms
+GET /api/inventory/items?limit=1000 304 - - 104.025 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 260.251 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 304 - - 75.049 ms
+GET /api/inventory/recipes/6973031f9ceff6c9503c516a 200 972 - 366.169 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/recipes/6973031f9ceff6c9503c516a 304 - - 287.132 ms
+^CWarning: command "node dist/apps/api/main.js" exited with non-zero status code

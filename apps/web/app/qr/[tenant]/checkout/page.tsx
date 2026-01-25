@@ -314,22 +314,51 @@ export default function CheckoutPage() {
 
     setIsPlacingOrder(true);
     try {
+      // Helper to generate slug ID if missing
+      const generateSlugId = (obj: any, fallbackField = 'name'): string => {
+        if (typeof obj === 'string') return obj;
+        if (obj._id) return obj._id;
+        if (obj.id) return obj.id;
+        const fallback = obj[fallbackField] || '';
+        return fallback.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+      };
+
       const orderPayload = {
-        items: cart.items.map((item) => ({
-          dish_id: item.dishId,
-          quantity: item.quantity,
-          // price must be unit price per DTO expectation
-          price: item.unitPrice ?? item.price / item.quantity,
-          // Pack variant/toppings and email into notes for staff context
-          notes: [
-            item.selectedVariant ? `Variant: ${item.selectedVariant.name}` : null,
-            item.selectedToppings && item.selectedToppings.length > 0
-              ? `Toppings: ${item.selectedToppings.map((t) => t.name).join(', ')}`
-              : null,
-          ]
-            .filter(Boolean)
-            .join(' | '),
-        })),
+        items: cart.items.map((item) => {
+          const variantId = item.selectedVariant ? generateSlugId(item.selectedVariant) : undefined;
+          const toppingIds = item.selectedToppings && item.selectedToppings.length > 0
+            ? item.selectedToppings.map((t: any) => generateSlugId(t))
+            : [];
+          
+          console.log(`🛒 Cart item variant/topping mapping:`, {
+            dishName: item.name,
+            selectedVariant: item.selectedVariant,
+            generatedVariantId: variantId,
+            selectedToppings: item.selectedToppings?.map((t: any) => t.name),
+            generatedToppingIds: toppingIds,
+          });
+
+          return {
+            dish_id: item.dishId,
+            quantity: item.quantity,
+            price: item.unitPrice ?? item.price / item.quantity,
+            ...(variantId ? { variant_id: variantId } : {}),
+            ...(toppingIds.length > 0 ? {
+              toppings: item.selectedToppings.map((t: any) => ({
+                topping_id: generateSlugId(t),
+                quantity: 1,
+              })),
+            } : {}),
+            notes: [
+              item.selectedVariant ? `Variant: ${item.selectedVariant.name}` : null,
+              item.selectedToppings && item.selectedToppings.length > 0
+                ? `Toppings: ${item.selectedToppings.map((t) => t.name).join(', ')}`
+                : null,
+            ]
+              .filter(Boolean)
+              .join(' | '),
+          };
+        }),
         total_amount: cart.total, // service will recompute if omitted
         customer_name: orderData.customerName,
         customer_phone: orderData.customerPhone,
@@ -350,6 +379,8 @@ export default function CheckoutPage() {
           .join(' | '),
       };
 
+      console.log('📤 Order Payload:', JSON.stringify(orderPayload, null, 2));
+
       const res = await fetch(`${API_BASE}/public/orders`, {
         method: 'POST',
         headers: {
@@ -359,14 +390,19 @@ export default function CheckoutPage() {
         body: JSON.stringify(orderPayload),
       });
 
-      if (!res.ok) throw new Error('Failed to place order');
+      if (!res.ok) {
+        const errorData = await res.json().catch(() => ({}));
+        const errorMsg = errorData.message || errorData.error || JSON.stringify(errorData) || res.statusText;
+        console.error('🔴 Server Error Response:', { status: res.status, errorData, errorMsg });
+        throw new Error(errorMsg);
+      }
       const createdOrder = await res.json();
 
       localStorage.removeItem('qrave_cart');
       router.push(`/qr/${tenant}/order-confirmation?orderId=${createdOrder._id}`);
     } catch (err) {
-      console.error('Error placing order:', err);
-      alert('Failed to place order. Please try again.');
+      console.error('❌ Error placing order:', err);
+      alert(`Failed to place order: ${err instanceof Error ? err.message : String(err)}`);
     } finally {
       setIsPlacingOrder(false);
     }

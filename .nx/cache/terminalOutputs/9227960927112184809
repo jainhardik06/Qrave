@@ -1,0 +1,2339 @@
+[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +26ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+Connecting to MongoDB: mongodb+srv://qrave_admin:****@qravecluster.qtcveit.mongodb.net/?appName=QraveCluster
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +2334ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +21ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mInventoryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMenuModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAdminModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRolesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyticsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mStaffModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mOrdersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +7ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCategoryController {/api/categories}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/reorder, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDishController {/api/dishes}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/category/:categoryId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/signature, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAdminController {/api/admin}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/status, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/features, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/stats, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRolesController {/api/roles}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mOrdersController {/api/orders}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicOrdersController {/api/public/orders}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/orders, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mInventoryController {/api/inventory}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/search/:query, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/availability, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id/adjust, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id/restock, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/low-stock, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions/audit-trail/:itemId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions/order/:orderId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/dashboard/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id/execute, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/revert, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyticsController {/api/analytics}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/top-items, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mStaffController {/api/staff}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id/reset-password, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[SuperAdminSeeder] [39m[32mSuper admin already exists, skipping seed[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+Qrave API running on http://localhost:3001
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+GET /api/categories - - - - ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+GET /api/categories - - - - ms
+CategoryService.findAll - found categories: [33m3[39m
+CategoryService.findAll - found categories: [33m3[39m
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730ad300e40114d0bc27a4 304 - - 260.371 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730ad300e40114d0bc27a4 304 - - 276.276 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 200 1014 - 157.299 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 123.257 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 139.976 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 255.425 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "697307b800e40114d0bc273c",
+      "quantity": 1,
+      "price": 370,
+      "notes": "Variant: Large | Toppings: tomato",
+      "variant_id": "large",
+      "toppings": [
+        {
+          "topping_id": "tomato",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 370,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik Jain",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: dine-in",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("69730bff0b57c899273d0ba6")
+📦 ===== DEDUCTING INVENTORY FOR DISH 697307b800e40114d0bc273c =====
+📦 Order variant_id: large (type: string)
+📦 Order toppings: [ { topping_id: [32m'tomato'[39m, quantity: [33m1[39m } ]
+📦 Recipe has 4 total ingredients
+📦 Recipe ingredient #0: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m100[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Small'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #1: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Medium'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #2: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m300[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Large'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #3: {
+  item_id: [32m'6971da9db4c12aecba068584'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'ml'[39m,
+  variant_id: [90mundefined[39m,
+  topping_id: [32m'tomato'[39m,
+  hasVariant: [33mfalse[39m,
+  hasTopping: [33mtrue[39m,
+  isBase: [33mfalse[39m
+}
+📦 Checking variant ingredient: variant_id="Small" (normalized: "small") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Medium" (normalized: "medium") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Large" (normalized: "large") === order variantId="large" (normalized: "large") ? true
+📦 Checking variant ingredient: variant_id="undefined" (normalized: "undefined") === order variantId="large" (normalized: "large") ? false
+📊 ===== INGREDIENT BREAKDOWN =====
+📊 Base ingredients (no variant/topping): 0
+📊 Variant ingredients (for "large"): 1
+  - 6971da79b4c12aecba06857d: 300 g [variant: Large]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📦 Looking for topping ingredients with topping_id="tomato"
+  - Recipe topping_id="tomato" (normalized: "tomato") === order topping_id="tomato" (normalized: "tomato") ? true
+  ✅ Found 1 ingredient(s) for topping "tomato"
+📊 Topping ingredients: 1
+  - 6971da9db4c12aecba068584: 200 ml x1 [topping: tomato]
+📊 ===== FINAL DEDUCTION LIST =====
+📊 ===== FINAL DEDUCTION LIST =====
+📊 Total deductions to make: 2
+  1. Item: 6971da79b4c12aecba06857d, Qty: 300 g (300 x 1 x 1)
+  2. Item: 6971da9db4c12aecba068584, Qty: 200 ml (200 x 1 x 1)
+💰 Deducting: 300 g from item 6971da79b4c12aecba06857d
+✅ Successfully deducted from item 6971da79b4c12aecba06857d
+💰 Deducting: 200 ml from item 6971da9db4c12aecba068584
+✅ Successfully deducted from item 6971da9db4c12aecba068584
+✅ Order created successfully: new ObjectId("69730bff0b57c899273d0ba6")
+POST /api/public/orders 201 723 - 1087.579 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730bff0b57c899273d0ba6 200 723 - 160.718 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730bff0b57c899273d0ba6 304 - - 175.180 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 938 - 185.247 ms
+GET /api/inventory/transactions 200 28211 - 227.751 ms
+GET /api/inventory/dashboard/summary 200 69 - 286.985 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 9163 - 207.940 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 149.006 ms
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 171.250 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 60.268 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 54.074 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 63.784 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 69.402 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 43.738 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 48.142 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 57.150 ms
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 55.713 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 57.531 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/orders/697303970b0017428374af66 200 745 - 323.418 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/orders/69730560e2023a3076c4ed0a 200 745 - 553.907 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/orders/697307dc00e40114d0bc2750 200 726 - 233.373 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/orders/697309a100e40114d0bc2782 200 728 - 227.735 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:56 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.1 kg from order 69730bff0b57c899273d0ba6[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:56 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 kg from order 69730bff0b57c899273d0ba6[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:56 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.3 kg from order 69730bff0b57c899273d0ba6[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:57 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 L from order 69730bff0b57c899273d0ba6[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:57 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mSuccessfully reverted inventory for order 69730bff0b57c899273d0ba6[39m
+PATCH /api/inventory/revert 200 60 - 960.347 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+🔄 Refunding inventory for dish 697307b800e40114d0bc273c: { variantId: [32m'large'[39m, variantType: [32m'string'[39m, toppings: [ [32m'tomato'[39m ] }
+📊 Recipe ingredients for refund: {
+  baseCount: [33m0[39m,
+  variantCount: [33m0[39m,
+  allVariantIds: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+}
+PATCH /api/orders/69730bff0b57c899273d0ba6 200 726 - 395.925 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 927 - 270.436 ms
+GET /api/inventory/transactions 200 30386 - 320.033 ms
+GET /api/inventory/dashboard/summary 200 70 - 804.607 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 9178 - 192.506 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 63.487 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 69.102 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 59.463 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 54.951 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 54.122 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 208.434 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 56.038 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 54.429 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 47.131 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 68.818 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 58.673 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 273.540 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 57.449 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 66.653 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 71.031 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 46.306 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 57.522 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 933.286 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 313.806 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 275.905 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 275.803 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 271.866 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 63.454 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 388.836 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 55.494 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 57.650 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 55.399 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 58.074 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 47.715 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 194.161 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 105.257 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 259.410 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 269.401 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 273.506 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 59.660 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 183.508 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 57.481 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 46.044 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 45.373 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 45.480 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 53.488 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/inventory/items/6971da79b4c12aecba06857d 200 310 - 89.357 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/inventory/items/6971da79b4c12aecba06857d/adjust 200 306 - 190.990 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 923 - 60.552 ms
+GET /api/inventory/transactions 200 30777 - 112.025 ms
+GET /api/inventory/dashboard/summary 200 67 - 156.675 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/inventory/items/6971da9db4c12aecba068584 200 324 - 79.903 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/inventory/items/6971da9db4c12aecba068584/adjust 200 319 - 196.826 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 918 - 70.404 ms
+GET /api/inventory/transactions 200 31170 - 339.451 ms
+GET /api/inventory/dashboard/summary 200 66 - 874.858 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 66.417 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 55.516 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 51.558 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 46.141 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 429.374 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 53.942 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 60.393 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 60.227 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 57.005 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 59.629 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "697307b800e40114d0bc273c",
+      "quantity": 1,
+      "price": 370,
+      "notes": "Variant: Large | Toppings: tomato",
+      "variant_id": "large",
+      "toppings": [
+        {
+          "topping_id": "tomato",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 370,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik Jain",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: dine-in",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("69730d470b57c899273d0c65")
+📦 ===== DEDUCTING INVENTORY FOR DISH 697307b800e40114d0bc273c =====
+📦 Order variant_id: large (type: string)
+📦 Order toppings: [ { topping_id: [32m'tomato'[39m, quantity: [33m1[39m } ]
+📦 Recipe has 4 total ingredients
+📦 Recipe ingredient #0: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m100[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Small'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #1: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Medium'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #2: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m300[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Large'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #3: {
+  item_id: [32m'6971da9db4c12aecba068584'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'ml'[39m,
+  variant_id: [90mundefined[39m,
+  topping_id: [32m'tomato'[39m,
+  hasVariant: [33mfalse[39m,
+  hasTopping: [33mtrue[39m,
+  isBase: [33mfalse[39m
+}
+📦 Checking variant ingredient: variant_id="Small" (normalized: "small") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Medium" (normalized: "medium") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Large" (normalized: "large") === order variantId="large" (normalized: "large") ? true
+📦 Checking variant ingredient: variant_id="undefined" (normalized: "undefined") === order variantId="large" (normalized: "large") ? false
+📊 ===== INGREDIENT BREAKDOWN =====
+📊 Base ingredients (no variant/topping): 0
+📊 Variant ingredients (for "large"): 1
+  - 6971da79b4c12aecba06857d: 300 g [variant: Large]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📦 Looking for topping ingredients with topping_id="tomato"
+  - Recipe topping_id="tomato" (normalized: "tomato") === order topping_id="tomato" (normalized: "tomato") ? true
+  ✅ Found 1 ingredient(s) for topping "tomato"
+📊 Topping ingredients: 1
+  - 6971da9db4c12aecba068584: 200 ml x1 [topping: tomato]
+📊 ===== FINAL DEDUCTION LIST =====
+📊 ===== FINAL DEDUCTION LIST =====
+📊 Total deductions to make: 2
+  1. Item: 6971da79b4c12aecba06857d, Qty: 300 g (300 x 1 x 1)
+  2. Item: 6971da9db4c12aecba068584, Qty: 200 ml (200 x 1 x 1)
+💰 Deducting: 300 g from item 6971da79b4c12aecba06857d
+✅ Successfully deducted from item 6971da79b4c12aecba06857d
+💰 Deducting: 200 ml from item 6971da9db4c12aecba068584
+✅ Successfully deducted from item 6971da9db4c12aecba068584
+✅ Order created successfully: new ObjectId("69730d470b57c899273d0c65")
+POST /api/public/orders 201 723 - 545.701 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730d470b57c899273d0c65 200 723 - 159.875 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730d470b57c899273d0c65 304 - - 148.949 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 9902 - 374.061 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 154.722 ms
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 266.471 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 45.340 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 60.001 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 48.226 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 48.674 ms
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 255.978 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 281.320 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 288.681 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 64.298 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 91.666 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 922 - 288.544 ms
+GET /api/inventory/transactions 200 32180 - 339.742 ms
+GET /api/inventory/dashboard/summary 200 68 - 379.941 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:52 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.1 kg from order 69730d470b57c899273d0c65[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:52 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 kg from order 69730d470b57c899273d0c65[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:52 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.3 kg from order 69730d470b57c899273d0c65[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:53 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 L from order 69730d470b57c899273d0c65[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:53 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mSuccessfully reverted inventory for order 69730d470b57c899273d0c65[39m
+PATCH /api/inventory/revert 200 60 - 939.083 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+🔄 Refunding inventory for dish 697307b800e40114d0bc273c: { variantId: [32m'large'[39m, variantType: [32m'string'[39m, toppings: [ [32m'tomato'[39m ] }
+📊 Recipe ingredients for refund: {
+  baseCount: [33m0[39m,
+  variantCount: [33m0[39m,
+  allVariantIds: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+}
+PATCH /api/orders/69730d470b57c899273d0c65 200 726 - 443.457 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/transactions 200 34264 - 107.952 ms
+GET /api/inventory/items 200 922 - 257.532 ms
+GET /api/inventory/dashboard/summary 200 69 - 793.145 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 9905 - 232.083 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 65.098 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 62.670 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 54.375 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 56.491 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 68.056 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 206.674 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 54.997 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 60.507 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 64.158 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 51.427 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 55.566 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 573.227 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 93.242 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 60.326 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 53.808 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 57.432 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 50.333 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 227.235 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 60.418 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 65.699 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 53.498 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 79.289 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 55.461 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 412.806 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 266.998 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 48.708 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 64.722 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 62.344 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 69.755 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 208.127 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 53.954 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 63.657 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 52.569 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 73.636 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 54.671 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 212.948 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 63.963 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 60.234 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 56.918 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 286.785 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 65.673 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 73.059 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 63.250 ms
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 71.565 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 296.949 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 280.224 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 280.097 ms
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 296.194 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 293.322 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "697307b800e40114d0bc273c",
+      "quantity": 1,
+      "price": 370,
+      "notes": "Variant: Large | Toppings: tomato",
+      "variant_id": "large",
+      "toppings": [
+        {
+          "topping_id": "tomato",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 370,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik3810@gmail.com",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: dine-in",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("69730e5d0b57c899273d0cf5")
+📦 ===== DEDUCTING INVENTORY FOR DISH 697307b800e40114d0bc273c =====
+📦 Order variant_id: large (type: string)
+📦 Order toppings: [ { topping_id: [32m'tomato'[39m, quantity: [33m1[39m } ]
+📦 Recipe has 4 total ingredients
+📦 Recipe ingredient #0: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m100[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Small'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #1: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Medium'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #2: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m300[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Large'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #3: {
+  item_id: [32m'6971da9db4c12aecba068584'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'ml'[39m,
+  variant_id: [90mundefined[39m,
+  topping_id: [32m'tomato'[39m,
+  hasVariant: [33mfalse[39m,
+  hasTopping: [33mtrue[39m,
+  isBase: [33mfalse[39m
+}
+📦 Checking variant ingredient: variant_id="Small" (normalized: "small") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Medium" (normalized: "medium") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Large" (normalized: "large") === order variantId="large" (normalized: "large") ? true
+📦 Checking variant ingredient: variant_id="undefined" (normalized: "undefined") === order variantId="large" (normalized: "large") ? false
+📊 ===== INGREDIENT BREAKDOWN =====
+📊 Base ingredients (no variant/topping): 0
+📊 Variant ingredients (for "large"): 1
+  - 6971da79b4c12aecba06857d: 300 g [variant: Large]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📦 Looking for topping ingredients with topping_id="tomato"
+  - Recipe topping_id="tomato" (normalized: "tomato") === order topping_id="tomato" (normalized: "tomato") ? true
+  ✅ Found 1 ingredient(s) for topping "tomato"
+📊 Topping ingredients: 1
+  - 6971da9db4c12aecba068584: 200 ml x1 [topping: tomato]
+📊 ===== FINAL DEDUCTION LIST =====
+📊 ===== FINAL DEDUCTION LIST =====
+📊 Total deductions to make: 2
+  1. Item: 6971da79b4c12aecba06857d, Qty: 300 g (300 x 1 x 1)
+  2. Item: 6971da9db4c12aecba068584, Qty: 200 ml (200 x 1 x 1)
+💰 Deducting: 300 g from item 6971da79b4c12aecba06857d
+✅ Successfully deducted from item 6971da79b4c12aecba06857d
+💰 Deducting: 200 ml from item 6971da9db4c12aecba068584
+✅ Successfully deducted from item 6971da9db4c12aecba068584
+✅ Order created successfully: new ObjectId("69730e5d0b57c899273d0cf5")
+POST /api/public/orders 201 732 - 744.356 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730e5d0b57c899273d0cf5 200 732 - 430.251 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730e5d0b57c899273d0cf5 304 - - 163.150 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 10638 - 215.256 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 71.743 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 57.131 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 50.399 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 58.836 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 69.346 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 922 - 68.118 ms
+GET /api/inventory/transactions 200 35278 - 113.190 ms
+GET /api/inventory/dashboard/summary 200 67 - 166.816 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 499.873 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 53.227 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 48.422 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 143.050 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 45.087 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 47.797 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 67.270 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 49.721 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 55.220 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 43.490 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 54.439 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 57.000 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:29 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.1 kg from order 69730e5d0b57c899273d0cf5[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:29 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 kg from order 69730e5d0b57c899273d0cf5[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:30 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.3 kg from order 69730e5d0b57c899273d0cf5[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:30 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 L from order 69730e5d0b57c899273d0cf5[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:30 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mSuccessfully reverted inventory for order 69730e5d0b57c899273d0cf5[39m
+PATCH /api/inventory/revert 200 60 - 925.129 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+🔄 Refunding inventory for dish 697307b800e40114d0bc273c: { variantId: [32m'large'[39m, variantType: [32m'string'[39m, toppings: [ [32m'tomato'[39m ] }
+📊 Recipe ingredients for refund: {
+  baseCount: [33m0[39m,
+  variantCount: [33m0[39m,
+  allVariantIds: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+}
+PATCH /api/orders/69730e5d0b57c899273d0cf5 200 735 - 413.688 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 922 - 70.831 ms
+GET /api/inventory/transactions 200 37370 - 135.244 ms
+GET /api/inventory/dashboard/summary 200 67 - 390.905 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 10641 - 302.007 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 49.321 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 56.143 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 61.818 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 63.372 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 63.569 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 512.630 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 76.519 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 65.301 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 56.663 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 66.234 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 100.274 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 497.461 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 60.579 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 97.852 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 56.143 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 65.475 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 61.509 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 213.308 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 49.983 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 92.499 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 710.511 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 186.394 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 286.681 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 445.197 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 64.543 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 63.971 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 82.061 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 64.160 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 272.003 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 429.875 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 57.230 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 63.942 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 65.087 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 54.049 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 59.992 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 146.222 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 247.009 ms
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 263.837 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 280.943 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 158.776 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 64.915 ms
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 71.525 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 274.854 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 536.303 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 281.733 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 81.461 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 137.000 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 122.350 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 107.530 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "697307b800e40114d0bc273c",
+      "quantity": 1,
+      "price": 270,
+      "notes": "Variant: Medium | Toppings: tomato",
+      "variant_id": "medium",
+      "toppings": [
+        {
+          "topping_id": "tomato",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 270,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik Jain",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: dine-in",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("69730f450b57c899273d0d8d")
+📦 ===== DEDUCTING INVENTORY FOR DISH 697307b800e40114d0bc273c =====
+📦 Order variant_id: medium (type: string)
+📦 Order toppings: [ { topping_id: [32m'tomato'[39m, quantity: [33m1[39m } ]
+📦 Recipe has 4 total ingredients
+📦 Recipe ingredient #0: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m100[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Small'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #1: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Medium'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #2: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m300[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Large'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #3: {
+  item_id: [32m'6971da9db4c12aecba068584'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'ml'[39m,
+  variant_id: [90mundefined[39m,
+  topping_id: [32m'tomato'[39m,
+  hasVariant: [33mfalse[39m,
+  hasTopping: [33mtrue[39m,
+  isBase: [33mfalse[39m
+}
+📦 Checking variant ingredient: variant_id="Small" (normalized: "small") === order variantId="medium" (normalized: "medium") ? false
+📦 Checking variant ingredient: variant_id="Medium" (normalized: "medium") === order variantId="medium" (normalized: "medium") ? true
+📦 Checking variant ingredient: variant_id="Large" (normalized: "large") === order variantId="medium" (normalized: "medium") ? false
+📦 Checking variant ingredient: variant_id="undefined" (normalized: "undefined") === order variantId="medium" (normalized: "medium") ? false
+📊 ===== INGREDIENT BREAKDOWN =====
+📊 Base ingredients (no variant/topping): 0
+📊 Variant ingredients (for "medium"): 1
+  - 6971da79b4c12aecba06857d: 200 g [variant: Medium]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📦 Looking for topping ingredients with topping_id="tomato"
+  - Recipe topping_id="tomato" (normalized: "tomato") === order topping_id="tomato" (normalized: "tomato") ? true
+  ✅ Found 1 ingredient(s) for topping "tomato"
+📊 Topping ingredients: 1
+  - 6971da9db4c12aecba068584: 200 ml x1 [topping: tomato]
+📊 ===== FINAL DEDUCTION LIST =====
+📊 ===== FINAL DEDUCTION LIST =====
+📊 Total deductions to make: 2
+  1. Item: 6971da79b4c12aecba06857d, Qty: 200 g (200 x 1 x 1)
+  2. Item: 6971da9db4c12aecba068584, Qty: 200 ml (200 x 1 x 1)
+💰 Deducting: 200 g from item 6971da79b4c12aecba06857d
+✅ Successfully deducted from item 6971da79b4c12aecba06857d
+💰 Deducting: 200 ml from item 6971da9db4c12aecba068584
+✅ Successfully deducted from item 6971da9db4c12aecba068584
+✅ Order created successfully: new ObjectId("69730f450b57c899273d0d8d")
+POST /api/public/orders 201 725 - 844.153 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730f450b57c899273d0d8d 200 725 - 185.082 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730f450b57c899273d0d8d 304 - - 222.079 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 939 - 94.082 ms
+GET /api/inventory/transactions 200 38401 - 127.792 ms
+GET /api/inventory/dashboard/summary 200 67 - 199.355 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 11367 - 405.548 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 171.508 ms
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 252.062 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 49.152 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 46.191 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 50.085 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 56.829 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 45.520 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 49.988 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 45.602 ms
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 50.076 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 47.508 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:04 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.1 kg from order 69730f450b57c899273d0d8d[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:05 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 kg from order 69730f450b57c899273d0d8d[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:05 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.3 kg from order 69730f450b57c899273d0d8d[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:05 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 L from order 69730f450b57c899273d0d8d[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:05 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mSuccessfully reverted inventory for order 69730f450b57c899273d0d8d[39m
+PATCH /api/inventory/revert 200 60 - 923.386 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+🔄 Refunding inventory for dish 697307b800e40114d0bc273c: { variantId: [32m'medium'[39m, variantType: [32m'string'[39m, toppings: [ [32m'tomato'[39m ] }
+📊 Recipe ingredients for refund: {
+  baseCount: [33m0[39m,
+  variantCount: [33m0[39m,
+  allVariantIds: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+}
+PATCH /api/orders/69730f450b57c899273d0d8d 200 728 - 435.439 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 936 - 292.771 ms
+GET /api/inventory/transactions 200 40580 - 343.282 ms
+GET /api/inventory/dashboard/summary 200 67 - 839.983 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 11370 - 204.874 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 63.704 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 66.718 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 65.512 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 73.941 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 71.927 ms
+[2m> [22mnode dist/apps/api/main.js
+
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +26ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mThrottlerModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:02 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+Connecting to MongoDB: mongodb+srv://qrave_admin:****@qravecluster.qtcveit.mongodb.net/?appName=QraveCluster
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseCoreModule dependencies initialized[39m[38;5;3m +2334ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +21ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMongooseModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mInventoryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMenuModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAdminModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRolesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAnalyticsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mStaffModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mOrdersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +7ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/api/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/register, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCategoryController {/api/categories}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/categories/reorder, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDishController {/api/dishes}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/category/:categoryId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dishes/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUploadController {/api/upload}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/upload/signature, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAdminController {/api/admin}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/status, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id/features, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/tenants/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/stats, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRolesController {/api/roles}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/roles/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mOrdersController {/api/orders}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/orders/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPublicOrdersController {/api/public/orders}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/public/orders, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mInventoryController {/api/inventory}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/search/:query, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/availability, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id/adjust, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/:id/restock, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/items/low-stock, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions/audit-trail/:itemId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/transactions/order/:orderId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/recipes/:dishId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/dashboard/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/:id/execute, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/restocking-armies/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/inventory/revert, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalyticsController {/api/analytics}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/top-items, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mStaffController {/api/staff}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/staff/:id/reset-password, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[SuperAdminSeeder] [39m[32mSuper admin already exists, skipping seed[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:19:05 am [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+Qrave API running on http://localhost:3001
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+GET /api/categories - - - - ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+GET /api/categories - - - - ms
+CategoryService.findAll - found categories: [33m3[39m
+CategoryService.findAll - found categories: [33m3[39m
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730ad300e40114d0bc27a4 304 - - 260.371 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730ad300e40114d0bc27a4 304 - - 276.276 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 200 1014 - 157.299 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 123.257 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 139.976 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 255.425 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "697307b800e40114d0bc273c",
+      "quantity": 1,
+      "price": 370,
+      "notes": "Variant: Large | Toppings: tomato",
+      "variant_id": "large",
+      "toppings": [
+        {
+          "topping_id": "tomato",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 370,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik Jain",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: dine-in",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("69730bff0b57c899273d0ba6")
+📦 ===== DEDUCTING INVENTORY FOR DISH 697307b800e40114d0bc273c =====
+📦 Order variant_id: large (type: string)
+📦 Order toppings: [ { topping_id: [32m'tomato'[39m, quantity: [33m1[39m } ]
+📦 Recipe has 4 total ingredients
+📦 Recipe ingredient #0: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m100[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Small'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #1: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Medium'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #2: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m300[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Large'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #3: {
+  item_id: [32m'6971da9db4c12aecba068584'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'ml'[39m,
+  variant_id: [90mundefined[39m,
+  topping_id: [32m'tomato'[39m,
+  hasVariant: [33mfalse[39m,
+  hasTopping: [33mtrue[39m,
+  isBase: [33mfalse[39m
+}
+📦 Checking variant ingredient: variant_id="Small" (normalized: "small") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Medium" (normalized: "medium") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Large" (normalized: "large") === order variantId="large" (normalized: "large") ? true
+📦 Checking variant ingredient: variant_id="undefined" (normalized: "undefined") === order variantId="large" (normalized: "large") ? false
+📊 ===== INGREDIENT BREAKDOWN =====
+📊 Base ingredients (no variant/topping): 0
+📊 Variant ingredients (for "large"): 1
+  - 6971da79b4c12aecba06857d: 300 g [variant: Large]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📦 Looking for topping ingredients with topping_id="tomato"
+  - Recipe topping_id="tomato" (normalized: "tomato") === order topping_id="tomato" (normalized: "tomato") ? true
+  ✅ Found 1 ingredient(s) for topping "tomato"
+📊 Topping ingredients: 1
+  - 6971da9db4c12aecba068584: 200 ml x1 [topping: tomato]
+📊 ===== FINAL DEDUCTION LIST =====
+📊 ===== FINAL DEDUCTION LIST =====
+📊 Total deductions to make: 2
+  1. Item: 6971da79b4c12aecba06857d, Qty: 300 g (300 x 1 x 1)
+  2. Item: 6971da9db4c12aecba068584, Qty: 200 ml (200 x 1 x 1)
+💰 Deducting: 300 g from item 6971da79b4c12aecba06857d
+✅ Successfully deducted from item 6971da79b4c12aecba06857d
+💰 Deducting: 200 ml from item 6971da9db4c12aecba068584
+✅ Successfully deducted from item 6971da9db4c12aecba068584
+✅ Order created successfully: new ObjectId("69730bff0b57c899273d0ba6")
+POST /api/public/orders 201 723 - 1087.579 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730bff0b57c899273d0ba6 200 723 - 160.718 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730bff0b57c899273d0ba6 304 - - 175.180 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 938 - 185.247 ms
+GET /api/inventory/transactions 200 28211 - 227.751 ms
+GET /api/inventory/dashboard/summary 200 69 - 286.985 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 9163 - 207.940 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 149.006 ms
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 171.250 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 60.268 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 54.074 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 63.784 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 69.402 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 43.738 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 48.142 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 57.150 ms
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 55.713 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 57.531 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/orders/697303970b0017428374af66 200 745 - 323.418 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/orders/69730560e2023a3076c4ed0a 200 745 - 553.907 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/orders/697307dc00e40114d0bc2750 200 726 - 233.373 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/orders/697309a100e40114d0bc2782 200 728 - 227.735 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:56 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.1 kg from order 69730bff0b57c899273d0ba6[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:56 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 kg from order 69730bff0b57c899273d0ba6[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:56 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.3 kg from order 69730bff0b57c899273d0ba6[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:57 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 L from order 69730bff0b57c899273d0ba6[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:20:57 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mSuccessfully reverted inventory for order 69730bff0b57c899273d0ba6[39m
+PATCH /api/inventory/revert 200 60 - 960.347 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+🔄 Refunding inventory for dish 697307b800e40114d0bc273c: { variantId: [32m'large'[39m, variantType: [32m'string'[39m, toppings: [ [32m'tomato'[39m ] }
+📊 Recipe ingredients for refund: {
+  baseCount: [33m0[39m,
+  variantCount: [33m0[39m,
+  allVariantIds: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+}
+PATCH /api/orders/69730bff0b57c899273d0ba6 200 726 - 395.925 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 927 - 270.436 ms
+GET /api/inventory/transactions 200 30386 - 320.033 ms
+GET /api/inventory/dashboard/summary 200 70 - 804.607 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 9178 - 192.506 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 63.487 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 69.102 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 59.463 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 54.951 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 54.122 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 208.434 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 56.038 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 54.429 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 47.131 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 68.818 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 58.673 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 273.540 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 57.449 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 66.653 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 71.031 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 46.306 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 57.522 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 933.286 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 313.806 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 275.905 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 275.803 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 271.866 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 63.454 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 388.836 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 55.494 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 57.650 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 55.399 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 58.074 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 47.715 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 194.161 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 105.257 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 259.410 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 269.401 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 273.506 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 59.660 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 183.508 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 57.481 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 46.044 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 45.373 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 45.480 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 53.488 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/inventory/items/6971da79b4c12aecba06857d 200 310 - 89.357 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/inventory/items/6971da79b4c12aecba06857d/adjust 200 306 - 190.990 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 923 - 60.552 ms
+GET /api/inventory/transactions 200 30777 - 112.025 ms
+GET /api/inventory/dashboard/summary 200 67 - 156.675 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/inventory/items/6971da9db4c12aecba068584 200 324 - 79.903 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+PATCH /api/inventory/items/6971da9db4c12aecba068584/adjust 200 319 - 196.826 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 918 - 70.404 ms
+GET /api/inventory/transactions 200 31170 - 339.451 ms
+GET /api/inventory/dashboard/summary 200 66 - 874.858 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 66.417 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 55.516 ms
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 51.558 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 46.141 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 429.374 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 53.942 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 60.393 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 60.227 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 57.005 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 59.629 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "697307b800e40114d0bc273c",
+      "quantity": 1,
+      "price": 370,
+      "notes": "Variant: Large | Toppings: tomato",
+      "variant_id": "large",
+      "toppings": [
+        {
+          "topping_id": "tomato",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 370,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik Jain",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: dine-in",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("69730d470b57c899273d0c65")
+📦 ===== DEDUCTING INVENTORY FOR DISH 697307b800e40114d0bc273c =====
+📦 Order variant_id: large (type: string)
+📦 Order toppings: [ { topping_id: [32m'tomato'[39m, quantity: [33m1[39m } ]
+📦 Recipe has 4 total ingredients
+📦 Recipe ingredient #0: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m100[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Small'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #1: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Medium'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #2: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m300[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Large'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #3: {
+  item_id: [32m'6971da9db4c12aecba068584'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'ml'[39m,
+  variant_id: [90mundefined[39m,
+  topping_id: [32m'tomato'[39m,
+  hasVariant: [33mfalse[39m,
+  hasTopping: [33mtrue[39m,
+  isBase: [33mfalse[39m
+}
+📦 Checking variant ingredient: variant_id="Small" (normalized: "small") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Medium" (normalized: "medium") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Large" (normalized: "large") === order variantId="large" (normalized: "large") ? true
+📦 Checking variant ingredient: variant_id="undefined" (normalized: "undefined") === order variantId="large" (normalized: "large") ? false
+📊 ===== INGREDIENT BREAKDOWN =====
+📊 Base ingredients (no variant/topping): 0
+📊 Variant ingredients (for "large"): 1
+  - 6971da79b4c12aecba06857d: 300 g [variant: Large]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📦 Looking for topping ingredients with topping_id="tomato"
+  - Recipe topping_id="tomato" (normalized: "tomato") === order topping_id="tomato" (normalized: "tomato") ? true
+  ✅ Found 1 ingredient(s) for topping "tomato"
+📊 Topping ingredients: 1
+  - 6971da9db4c12aecba068584: 200 ml x1 [topping: tomato]
+📊 ===== FINAL DEDUCTION LIST =====
+📊 ===== FINAL DEDUCTION LIST =====
+📊 Total deductions to make: 2
+  1. Item: 6971da79b4c12aecba06857d, Qty: 300 g (300 x 1 x 1)
+  2. Item: 6971da9db4c12aecba068584, Qty: 200 ml (200 x 1 x 1)
+💰 Deducting: 300 g from item 6971da79b4c12aecba06857d
+✅ Successfully deducted from item 6971da79b4c12aecba06857d
+💰 Deducting: 200 ml from item 6971da9db4c12aecba068584
+✅ Successfully deducted from item 6971da9db4c12aecba068584
+✅ Order created successfully: new ObjectId("69730d470b57c899273d0c65")
+POST /api/public/orders 201 723 - 545.701 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730d470b57c899273d0c65 200 723 - 159.875 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730d470b57c899273d0c65 304 - - 148.949 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 9902 - 374.061 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 154.722 ms
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 266.471 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 45.340 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 60.001 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 48.226 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 48.674 ms
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 255.978 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 281.320 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 288.681 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 64.298 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 91.666 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 922 - 288.544 ms
+GET /api/inventory/transactions 200 32180 - 339.742 ms
+GET /api/inventory/dashboard/summary 200 68 - 379.941 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:52 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.1 kg from order 69730d470b57c899273d0c65[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:52 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 kg from order 69730d470b57c899273d0c65[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:52 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.3 kg from order 69730d470b57c899273d0c65[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:53 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 L from order 69730d470b57c899273d0c65[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:25:53 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mSuccessfully reverted inventory for order 69730d470b57c899273d0c65[39m
+PATCH /api/inventory/revert 200 60 - 939.083 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+🔄 Refunding inventory for dish 697307b800e40114d0bc273c: { variantId: [32m'large'[39m, variantType: [32m'string'[39m, toppings: [ [32m'tomato'[39m ] }
+📊 Recipe ingredients for refund: {
+  baseCount: [33m0[39m,
+  variantCount: [33m0[39m,
+  allVariantIds: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+}
+PATCH /api/orders/69730d470b57c899273d0c65 200 726 - 443.457 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/transactions 200 34264 - 107.952 ms
+GET /api/inventory/items 200 922 - 257.532 ms
+GET /api/inventory/dashboard/summary 200 69 - 793.145 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 9905 - 232.083 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 65.098 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 62.670 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 54.375 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 56.491 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 68.056 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 206.674 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 54.997 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 60.507 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 64.158 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 51.427 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 55.566 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 573.227 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 93.242 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 60.326 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 53.808 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 57.432 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 50.333 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 227.235 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 60.418 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 65.699 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 53.498 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 79.289 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 55.461 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 412.806 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 266.998 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 48.708 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 64.722 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 62.344 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 69.755 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 208.127 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 53.954 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 63.657 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 52.569 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 73.636 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 54.671 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 212.948 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 63.963 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 60.234 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 56.918 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 286.785 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 65.673 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 73.059 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 63.250 ms
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 71.565 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 296.949 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 280.224 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 280.097 ms
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 296.194 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 293.322 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "697307b800e40114d0bc273c",
+      "quantity": 1,
+      "price": 370,
+      "notes": "Variant: Large | Toppings: tomato",
+      "variant_id": "large",
+      "toppings": [
+        {
+          "topping_id": "tomato",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 370,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik3810@gmail.com",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: dine-in",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("69730e5d0b57c899273d0cf5")
+📦 ===== DEDUCTING INVENTORY FOR DISH 697307b800e40114d0bc273c =====
+📦 Order variant_id: large (type: string)
+📦 Order toppings: [ { topping_id: [32m'tomato'[39m, quantity: [33m1[39m } ]
+📦 Recipe has 4 total ingredients
+📦 Recipe ingredient #0: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m100[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Small'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #1: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Medium'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #2: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m300[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Large'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #3: {
+  item_id: [32m'6971da9db4c12aecba068584'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'ml'[39m,
+  variant_id: [90mundefined[39m,
+  topping_id: [32m'tomato'[39m,
+  hasVariant: [33mfalse[39m,
+  hasTopping: [33mtrue[39m,
+  isBase: [33mfalse[39m
+}
+📦 Checking variant ingredient: variant_id="Small" (normalized: "small") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Medium" (normalized: "medium") === order variantId="large" (normalized: "large") ? false
+📦 Checking variant ingredient: variant_id="Large" (normalized: "large") === order variantId="large" (normalized: "large") ? true
+📦 Checking variant ingredient: variant_id="undefined" (normalized: "undefined") === order variantId="large" (normalized: "large") ? false
+📊 ===== INGREDIENT BREAKDOWN =====
+📊 Base ingredients (no variant/topping): 0
+📊 Variant ingredients (for "large"): 1
+  - 6971da79b4c12aecba06857d: 300 g [variant: Large]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📦 Looking for topping ingredients with topping_id="tomato"
+  - Recipe topping_id="tomato" (normalized: "tomato") === order topping_id="tomato" (normalized: "tomato") ? true
+  ✅ Found 1 ingredient(s) for topping "tomato"
+📊 Topping ingredients: 1
+  - 6971da9db4c12aecba068584: 200 ml x1 [topping: tomato]
+📊 ===== FINAL DEDUCTION LIST =====
+📊 ===== FINAL DEDUCTION LIST =====
+📊 Total deductions to make: 2
+  1. Item: 6971da79b4c12aecba06857d, Qty: 300 g (300 x 1 x 1)
+  2. Item: 6971da9db4c12aecba068584, Qty: 200 ml (200 x 1 x 1)
+💰 Deducting: 300 g from item 6971da79b4c12aecba06857d
+✅ Successfully deducted from item 6971da79b4c12aecba06857d
+💰 Deducting: 200 ml from item 6971da9db4c12aecba068584
+✅ Successfully deducted from item 6971da9db4c12aecba068584
+✅ Order created successfully: new ObjectId("69730e5d0b57c899273d0cf5")
+POST /api/public/orders 201 732 - 744.356 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730e5d0b57c899273d0cf5 200 732 - 430.251 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730e5d0b57c899273d0cf5 304 - - 163.150 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 10638 - 215.256 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 71.743 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 57.131 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 50.399 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 58.836 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 69.346 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 922 - 68.118 ms
+GET /api/inventory/transactions 200 35278 - 113.190 ms
+GET /api/inventory/dashboard/summary 200 67 - 166.816 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 499.873 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 53.227 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 48.422 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 143.050 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 45.087 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 47.797 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 67.270 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 49.721 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 55.220 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 43.490 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 54.439 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 57.000 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:29 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.1 kg from order 69730e5d0b57c899273d0cf5[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:29 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 kg from order 69730e5d0b57c899273d0cf5[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:30 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.3 kg from order 69730e5d0b57c899273d0cf5[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:30 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 L from order 69730e5d0b57c899273d0cf5[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:30:30 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mSuccessfully reverted inventory for order 69730e5d0b57c899273d0cf5[39m
+PATCH /api/inventory/revert 200 60 - 925.129 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+🔄 Refunding inventory for dish 697307b800e40114d0bc273c: { variantId: [32m'large'[39m, variantType: [32m'string'[39m, toppings: [ [32m'tomato'[39m ] }
+📊 Recipe ingredients for refund: {
+  baseCount: [33m0[39m,
+  variantCount: [33m0[39m,
+  allVariantIds: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+}
+PATCH /api/orders/69730e5d0b57c899273d0cf5 200 735 - 413.688 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 922 - 70.831 ms
+GET /api/inventory/transactions 200 37370 - 135.244 ms
+GET /api/inventory/dashboard/summary 200 67 - 390.905 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 10641 - 302.007 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 49.321 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 56.143 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 61.818 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 63.372 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 63.569 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 512.630 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 76.519 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 65.301 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 56.663 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 66.234 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 100.274 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 497.461 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 60.579 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 97.852 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 56.143 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 65.475 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 61.509 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 213.308 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 49.983 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 92.499 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 710.511 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 186.394 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 286.681 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 445.197 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 64.543 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 63.971 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 82.061 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 64.160 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 272.003 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 429.875 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 57.230 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 63.942 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 65.087 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 54.049 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 59.992 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 146.222 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 247.009 ms
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 263.837 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 280.943 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 158.776 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+CategoryService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+CategoryService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 64.915 ms
+CategoryService.findAll - found categories: [33m3[39m
+GET /api/categories 304 - - 71.525 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+DishService.findAll - tenant_id: 696e0b78acfe64aa03824c94 type: string
+DishService.findAll - query: {"tenant_id":"696e0b78acfe64aa03824c94"}
+DishService.findAll - found dishes: [33m2[39m
+GET /api/dishes 304 - - 274.854 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 536.303 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 281.733 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 81.461 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 137.000 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 122.350 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 107.530 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+📋 Order DTO before validation: {
+  "items": [
+    {
+      "dish_id": "697307b800e40114d0bc273c",
+      "quantity": 1,
+      "price": 270,
+      "notes": "Variant: Medium | Toppings: tomato",
+      "variant_id": "medium",
+      "toppings": [
+        {
+          "topping_id": "tomato",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "total_amount": 270,
+  "consumer_id": "6971c65de4335bddaba52c2e",
+  "customer_name": "Hardik Jain",
+  "customer_phone": "8209132917",
+  "order_type": "dine-in",
+  "notes": "Email: hardik3810@gmail.com | Payment: cash | Mode: dine-in",
+  "status": "QUEUED"
+}
+✅ Order created: new ObjectId("69730f450b57c899273d0d8d")
+📦 ===== DEDUCTING INVENTORY FOR DISH 697307b800e40114d0bc273c =====
+📦 Order variant_id: medium (type: string)
+📦 Order toppings: [ { topping_id: [32m'tomato'[39m, quantity: [33m1[39m } ]
+📦 Recipe has 4 total ingredients
+📦 Recipe ingredient #0: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m100[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Small'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #1: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Medium'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #2: {
+  item_id: [32m'6971da79b4c12aecba06857d'[39m,
+  quantity: [33m300[39m,
+  unit: [32m'g'[39m,
+  variant_id: [32m'Large'[39m,
+  topping_id: [90mundefined[39m,
+  hasVariant: [33mtrue[39m,
+  hasTopping: [33mfalse[39m,
+  isBase: [33mfalse[39m
+}
+📦 Recipe ingredient #3: {
+  item_id: [32m'6971da9db4c12aecba068584'[39m,
+  quantity: [33m200[39m,
+  unit: [32m'ml'[39m,
+  variant_id: [90mundefined[39m,
+  topping_id: [32m'tomato'[39m,
+  hasVariant: [33mfalse[39m,
+  hasTopping: [33mtrue[39m,
+  isBase: [33mfalse[39m
+}
+📦 Checking variant ingredient: variant_id="Small" (normalized: "small") === order variantId="medium" (normalized: "medium") ? false
+📦 Checking variant ingredient: variant_id="Medium" (normalized: "medium") === order variantId="medium" (normalized: "medium") ? true
+📦 Checking variant ingredient: variant_id="Large" (normalized: "large") === order variantId="medium" (normalized: "medium") ? false
+📦 Checking variant ingredient: variant_id="undefined" (normalized: "undefined") === order variantId="medium" (normalized: "medium") ? false
+📊 ===== INGREDIENT BREAKDOWN =====
+📊 Base ingredients (no variant/topping): 0
+📊 Variant ingredients (for "medium"): 1
+  - 6971da79b4c12aecba06857d: 200 g [variant: Medium]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📊 Available variant IDs in recipe: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+📦 Looking for topping ingredients with topping_id="tomato"
+  - Recipe topping_id="tomato" (normalized: "tomato") === order topping_id="tomato" (normalized: "tomato") ? true
+  ✅ Found 1 ingredient(s) for topping "tomato"
+📊 Topping ingredients: 1
+  - 6971da9db4c12aecba068584: 200 ml x1 [topping: tomato]
+📊 ===== FINAL DEDUCTION LIST =====
+📊 ===== FINAL DEDUCTION LIST =====
+📊 Total deductions to make: 2
+  1. Item: 6971da79b4c12aecba06857d, Qty: 200 g (200 x 1 x 1)
+  2. Item: 6971da9db4c12aecba068584, Qty: 200 ml (200 x 1 x 1)
+💰 Deducting: 200 g from item 6971da79b4c12aecba06857d
+✅ Successfully deducted from item 6971da79b4c12aecba06857d
+💰 Deducting: 200 ml from item 6971da9db4c12aecba068584
+✅ Successfully deducted from item 6971da9db4c12aecba068584
+✅ Order created successfully: new ObjectId("69730f450b57c899273d0d8d")
+POST /api/public/orders 201 725 - 844.153 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730f450b57c899273d0d8d 200 725 - 185.082 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders/69730f450b57c899273d0d8d 304 - - 222.079 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 939 - 94.082 ms
+GET /api/inventory/transactions 200 38401 - 127.792 ms
+GET /api/inventory/dashboard/summary 200 67 - 199.355 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 11367 - 405.548 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 304 - - 171.508 ms
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 252.062 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 49.152 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 46.191 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 50.085 ms
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 56.829 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 45.520 ms
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 49.988 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 45.602 ms
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 50.076 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 47.508 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:04 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.1 kg from order 69730f450b57c899273d0d8d[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:05 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 kg from order 69730f450b57c899273d0d8d[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:05 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.3 kg from order 69730f450b57c899273d0d8d[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:05 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mReverted 0.2 L from order 69730f450b57c899273d0d8d[39m
+[32m[Nest] 50384  - [39m23/01/2026, 11:34:05 am [32m    LOG[39m [38;5;3m[InventoryController] [39m[32mSuccessfully reverted inventory for order 69730f450b57c899273d0d8d[39m
+PATCH /api/inventory/revert 200 60 - 923.386 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+🔄 Refunding inventory for dish 697307b800e40114d0bc273c: { variantId: [32m'medium'[39m, variantType: [32m'string'[39m, toppings: [ [32m'tomato'[39m ] }
+📊 Recipe ingredients for refund: {
+  baseCount: [33m0[39m,
+  variantCount: [33m0[39m,
+  allVariantIds: [ [32m'Small'[39m, [32m'Medium'[39m, [32m'Large'[39m ]
+}
+PATCH /api/orders/69730f450b57c899273d0d8d 200 728 - 435.439 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/inventory/items 200 936 - 292.771 ms
+GET /api/inventory/transactions 200 40580 - 343.282 ms
+GET /api/inventory/dashboard/summary 200 67 - 839.983 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/orders 200 11370 - 204.874 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697307b800e40114d0bc273c 304 - - 63.704 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6973031f9ceff6c9503c516a 200 - - 66.718 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/696f0cb9a9c514ed46236154 200 - - 65.512 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/6971b819587b19a9e7f7500a 304 - - 73.941 ms
+TenancyMiddleware - Setting tenant_id: 696e0b78acfe64aa03824c94
+GET /api/dishes/697051ec0d84e93a9a0b67c2 200 - - 71.927 ms
+Warning: command "node dist/apps/api/main.js" exited with non-zero status code
